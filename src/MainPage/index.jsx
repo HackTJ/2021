@@ -1,8 +1,8 @@
 import React from 'react';
-import TeamPicture from './TeamPicture';
+// import TeamPicture from './TeamPicture';
 import {Link} from "@reach/router"
 import SocialLinks from '../SocialLinks';
-import RoadMap from './RoadMap';
+// import RoadMap from './RoadMap';
 import FAQuestion from './FAQuestion';
 import MLHTrustBadge from './MLHTrustBadge';
 import NavigationBar from './NavigationBar';
