@@ -119,7 +119,6 @@ function MainPage() {
         <div className="partner-container">
           <Logo url="http://mlh.io" logo={require('../images/partners/mlh.png')} name="Major League Hacking"/>
           <Logo url="http://tjpartnershipfund.org" logo={require('../images/partners/tjpartnershipfund.jpg')} name="TJ Partnership Fund"/>
-          <Logo url="http://tjclc.wordpress.com" logo={require('../images/partners/clc.png')} name="Coding Lady Colonials"/>
         </div>
         <p className="large">
           Interested in sponsoring? Check out our <a href="sponsorship.pdf">sponsorship packet</a> and email us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a>.
