@@ -2,16 +2,18 @@
   "name": "hacktj-2020",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org",
+  "homepage": "https://hacktj.org/2020",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "bootstrap": "^4.3.1",
+    "jquery": "^1.12.4",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.8.6",
     "react-map-gl": "^5.0.11",
     "react-scripts": "3.0.1",
-    "react-smooth-collapse": "^2.1.0"
+    "react-smooth-collapse": "^2.1.0",
+    "typescript": "^3.6.3"
   },
   "scripts": {
     "start": "npm run switch-homepage && react-scripts start",

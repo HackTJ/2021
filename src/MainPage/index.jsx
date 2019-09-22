@@ -16,7 +16,7 @@ function MainPage() {
       <div className="container">
         <img className="logo" src={require('../images/bigweblogo.png')} alt="HackTJ"/>
         <div className="event-announcement">Registration opens on February 18 at 8pm and closes on March 4 at 8pm</div>
-        <div className="event-date">March 21-22nd, 2020</div>
+        <div className="event-date">March 21-22, 2020</div>
         <div className="event-location">Thomas Jefferson High School for Science and Technology</div>
         <div className="register-button-block-old top">
           {/* TODO: change pictures URL */}
