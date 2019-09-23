@@ -23,8 +23,8 @@
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
     "predeploy": "npm run build",
-    "deploy-event": "npm run switch-event && gh-pages -d build",
-    "deploy-homepage": "npm run switch-homepage && gh-pages -b master -d build",
+    "deploy-event": "npm run switch-event && npm run build && gh-pages -d build",
+    "deploy-homepage": "npm run switch-homepage && npm run build && gh-pages -b master -d build",
     "deploy-all": "npm run deploy-event && npm run deploy-homepage"
   },
   "eslintConfig": {
