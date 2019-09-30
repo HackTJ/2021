@@ -110,6 +110,7 @@ function MainPage() {
           <Logo url="http://yext.com" logo={require('../images/sponsors/yext.png')} name="Yext"/>
           <Logo url="https://ensco.com" logo={require('../images/sponsors/ensco.png')} name="Ensco"/>
           <Logo url="https://phone2action.com" logo={require('../images/sponsors/phone2action.png')} name="Phone2Action"/>
+          <Logo url="https://digitalocean.com" logo={require('../images/sponsors/digitalocean.svg')} name="DigitalOcean"/>
           <Logo url="https://www.collinsaerospace.com" logo={require('../images/sponsors/collinsaerospace.jpeg')} name="Collins Aerospace"/>
           <Logo url="https://www.alertfive.io" logo={require('../images/sponsors/alertfive.png')} name="Alert Five"/>
           <Logo url="https://www.thinkfun.com" logo={require('../images/sponsors/thinkfun.png')} name="ThinkFun"/>
