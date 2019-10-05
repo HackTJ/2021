@@ -77,8 +77,7 @@ function MainPage() {
           <div className="row">
             <FAQuestion question="Is there any cost?" answer=<span>Nope! Thanks to our sponsors, HackTJ is completely free!</span>/>
             <FAQuestion question="Is there a deadline?" answer=<span>Registration will be open starting on February 18th through the beginning of March.</span>/>
-            <FAQuestion question="Do you have a code of conduct?" small={true} answer=<span>Yes, good question! We have adopted the
-              <a href="https://hacktj.org/conduct.pdf" target="_blank" rel="noopener noreferrer">MLH code of conduct</a>, which all attendees will be required to adhere to.</span>/>
+            <FAQuestion question="Do you have a code of conduct?" small={true} answer=<span>Yes, good question! We have adopted the <a href="https://hacktj.org/conduct.pdf" target="_blank" rel="noopener noreferrer">MLH code of conduct</a>, which all attendees will be required to adhere to.</span>/>
           </div>
           <div className="row">
             <FAQuestion question="Isn&apos;t hacking illegal?" answer=<span>In the context of a hackathon, &quot;hacking&quot; is to build a real application over the length of the event. It&apos;s important to not confuse this with illegal hacking, which is gaining unauthorized access to a computer.</span>/>
