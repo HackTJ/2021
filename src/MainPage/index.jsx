@@ -2,7 +2,7 @@ import React from 'react';
 // import TeamPicture from './TeamPicture';
 import {Link} from "@reach/router"
 import SocialLinks from '../SocialLinks';
-// import RoadMap from './RoadMap';
+import RoadMap from './RoadMap';
 import FAQuestion from './FAQuestion';
 import MLHTrustBadge from './MLHTrustBadge';
 import NavigationBar from './NavigationBar';
@@ -242,12 +242,23 @@ function MainPage() {
           <TeamPicture name="Ms. Ria Galanos" about="Ms. Galanos is a computer science teacher at Thomas Jefferson High School for Science and Technology and a teacher sponsor for HackTJ." image={require('../images/team/galanos.jpeg')}></TeamPicture>
         </div>
       </div>
-    </section>
+    </section>*/}
     <a className="anchor" id="map"></a>
     <section className="green map">
       <RoadMap/>
-    </section>*/
-    }
+      <div className="info-circle" id="map-info" style={{transform: 'matrix(1, 0, 0, 1, 0, 0)'}}>
+        <div className="info-container">
+          <h6>TJHSST</h6>
+          <div className="address">6560 Braddock Road</div>
+          <div className="address">Alexandria, VA</div>
+          <a className="button small" href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab" target="_blank" rel="noopener noreferrer">
+            <div className="text">Get Directions</div>
+            <div className="icon icon-caret-right"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section className="green register">
       <div className="container">
         <div className="register-button-block-old bottom">

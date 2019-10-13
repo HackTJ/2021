@@ -2160,7 +2160,8 @@ section.map .map-container {
   }
 }
 
-section.map .map-container .mapboxgl-ctrl-bottom-right {
+section.map .mapboxgl-ctrl-attrib {
+  /* hide "© Mapbox © OpenStreetMap Improve this map" */
   display: none;
 }
 
@@ -2188,6 +2189,7 @@ section.map .animation-container.horizontal {
 
 section.map .info-circle {
   background: #fff;
+  width: 250px;
   height: 200px;
   border-radius: 8px;
   color: #64d861;
