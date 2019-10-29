@@ -15,7 +15,7 @@ function MainPage() {
       <MLHTrustBadge/>
       <div className="container">
         <img className="logo" src={require('../images/bigweblogo.png')} alt="HackTJ"/>
-        <div className="event-announcement">Registration opens on February 18 at 8pm and closes on March 4 at 8pm</div>
+        {/* <div className="event-announcement">Registration opens on February 18 at 8pm and closes on March 4 at 8pm</div> */}
         <div className="event-date">March 21-22, 2020</div>
         <div className="event-location">Thomas Jefferson High School for Science and Technology</div>
         <div className="register-button-block-old top">
@@ -36,6 +36,7 @@ function MainPage() {
         <p className="large">Do you get excited watching your ideas come to life? Ever wanted to build the next Snapchat or create an Amazon Alexa skill? Program a drone? Create programs using the latest machine learning or virtual reality technology? Come to HackTJ to make new friends, build mind-blowing projects, attend workshops to learn new tricks, and have a fantastic time!</p>
       </div>
     </section>
+    {/*
     <a className="anchor" id="registration"></a>
     <section className="registration-info">
       <div className="container">
@@ -53,6 +54,7 @@ function MainPage() {
         </div>
       </div>
     </section>
+    */}
     <a className="anchor" id="faq"></a>
     <section className="green faq">
       <div className="container">
