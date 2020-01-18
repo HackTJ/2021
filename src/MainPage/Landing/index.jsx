@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "@reach/router";
+// import MLHTrustBadge from './MLHTrustBadge';
 import './index.css';
 
 class Landing extends Component {
