@@ -5,7 +5,7 @@ import './index.css';
 
 class NavigationBar extends Component {
   render() {
-    {/* TODO: style attribute in Navbar makes Navbar inline but hides the logo */}
+    // TODO: style attribute in Navbar makes Navbar inline but hides the logo
     return (<Navbar sticky="top" className='navcontainer' bg="#64d861" style={{
         position: 'sticky',
         top: '0px',

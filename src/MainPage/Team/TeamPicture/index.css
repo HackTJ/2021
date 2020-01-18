@@ -1,15 +1,3 @@
-section.team .container {
-  max-width: 800px;
-}
-
-section.team .team-pictures {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-}
-
 section.team .team-pictures .figure {
   width: 200px;
   height: 200px;
