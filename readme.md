@@ -41,9 +41,9 @@ We use ReactJS.
 ## Notes for next year
 
 -   click "Use this template" (next to the clone or download dropdown) and name the new repository `2021`, under the HackTJ organization—that way it will be displayed on our website at <https://hacktj.org/2021> while leaving the old website up at <https://hacktj.org/2020>
--   edit the `switch` script and replace all occurrences of `/2020` with `/2021`
+-   edit the [`switch`](switch) script and replace all occurrences of `/2020` with `/2021`
 -   all of the deploy commands involve running the `switch` script in this repository
-    -   if you notice that this script deletes the content of either `public/index.html` or `src/App.js`, immediately quit the `deploy` script and restore the contents with `git` and retry the `npm` script until it works
+    -   if you notice that this script deletes the content of either [`public/index.html`](public/index.html) or [`src/App.js`](src/App.js), immediately quit the deploy script and restore the contents with `git` and retry the `npm` script until it works
 -   the `deploy-event` script doesn't commit the source code to the repository's master branch, it only commits the built code
     -   you should commit the source code to the `master` branch each time you deploy
         -   before you commit to `master`, always make sure you run `npm run switch-event`
