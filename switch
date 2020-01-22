@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 if [ $1 == "event" ]; then
   jq '.homepage = "https://hacktj.org/2020"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Router>|<Router basepath="/2020">|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
+  sed 's|<Router>|<Router basename="/2020">|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
   sed 's|<base href="/" />|<base href="/2020" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   jq '.start_url = "/2020"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   rm -f public/CNAME
   git remote set-url origin git@github.com:HackTJ/2020.git
 elif [ $1 == "homepage" ]; then
   jq '.homepage = "https://hacktj.org"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Router basepath="/2020">|<Router>|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
+  sed 's|<Router basename="/2020">|<Router>|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
   sed 's|<base href="/2020" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   jq '.start_url = "/"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   cp CNAME.homepage public/CNAME

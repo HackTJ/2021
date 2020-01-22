@@ -11,7 +11,7 @@ import NotFoundPage from './NotFoundPage';
 
 function App() {
   return (
-    <Router basepath="/2020">
+    <Router basename="/2020">
         <Switch>
           <Route exact path="/history">
             <HistoryPage />
