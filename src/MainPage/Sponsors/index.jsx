@@ -13,13 +13,16 @@ class Intro extends Component {
           </div>
           <h1 className="section-title">Sponsors</h1>
           <div className="partner-container">
+            <Logo url="https://aws.amazon.com/" logo={require('../../images/sponsors/aws.png')} name="Amazon Web Services"/>
             <Logo url="https://www.yext.com" logo={require('../../images/sponsors/yext.png')} name="Yext"/>
             <Logo url="https://www.ensco.com" logo={require('../../images/sponsors/ensco.png')} name="Ensco"/>
             <Logo url="https://phone2action.com" logo={require('../../images/sponsors/phone2action.png')} name="Phone2Action"/>
             <Logo url="https://www.digitalocean.com" logo={require('../../images/sponsors/digitalocean.png')} name="DigitalOcean"/>
             <Logo url="https://www.collinsaerospace.com" logo={require('../../images/sponsors/collinsaerospace.jpeg')} name="Collins Aerospace"/>
             <Logo url="https://www.alertfive.io" logo={require('../../images/sponsors/alertfive.png')} name="Alert Five"/>
+            <Logo url="http://razorx2.com/" logo={require('../../images/sponsors/razorx2.png')} name="RazorX2"/>
             <Logo url="https://www.thinkfun.com" logo={require('../../images/sponsors/thinkfun.png')} name="ThinkFun"/>
+            <Logo url="http://spontit.io" logo={require('../../images/sponsors/spontit.png')} name="Spontit"/>
           </div>
           <p className="large">Can't see our sponsors? Try disabling ad block for this page.</p>
           <h1 className="section-title">Partners</h1>

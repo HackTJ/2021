@@ -1,0 +1,48 @@
+.centered-box .history-section {
+  font-family: "Avenir Next", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.centered-box .history-section .action-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .centered-box .history-section .action-section {
+    justify-content: center;
+  }
+}
+
+.centered-box .history-section .action-section img {
+  background: #fff;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.centered-box .history-section .action-section .info-container {
+  text-align: left;
+  background: #fff;
+  padding: 10px;
+  margin: 0 5vw;
+}
+
+@media only screen and (max-width: 640px) {
+  .centered-box .history-section .action-section .info-container {
+    text-align: center;
+  }
+}
+
+.centered-box .history-section .action-section .info-container .section-title {
+  font-size: 1.7em;
+}
+
+.centered-box .history-section .action-section .info-container .section-year {
+  font-size: 1.4em;
+}

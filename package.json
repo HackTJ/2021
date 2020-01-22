@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://hacktj.org/2020",
   "dependencies": {
-    "@reach/router": "^1.2.1",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "lodash": "^4.17.15",
@@ -12,6 +11,7 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-map-gl": "^5.2.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.0",
     "react-smooth-collapse": "^2.1.0",
     "react-tooltip": "^3.11.2",

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SocialLinks from '../../SocialLinks';
+import SocialLinks from '../SocialLinks';
 import './index.css';
 
 class Footer extends Component {

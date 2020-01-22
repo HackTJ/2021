@@ -1,16 +1,30 @@
 import React from 'react';
-import {Router} from "@reach/router";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import MainPage from './MainPage';
 import HistoryPage from './HistoryPage';
 import NotFoundPage from './NotFoundPage';
 
 function App() {
-  // const baseUrl = process.env.PUBLIC_URL;
-  return (<Router basepath="/2020">
-    <MainPage path="/" exact={true}/>
-    <HistoryPage path="history" exact={true}/>
-    <NotFoundPage path="*" exact={true}/>
-  </Router>);
+  return (
+    <Router basepath="/2020">
+        <Switch>
+          <Route exact path="/history">
+            <HistoryPage />
+          </Route>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route path="*">
+            <NotFoundPage />
+          </Route>
+        </Switch>
+      </Router>
+      );
 }
 
 export default App;

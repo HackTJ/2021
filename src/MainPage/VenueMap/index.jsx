@@ -41,7 +41,7 @@ class VenueMap extends Component {
             <h6>TJHSST</h6>
             <div className="address">6560 Braddock Road</div>
             <div className="address">Alexandria, VA</div>
-            <a className="button small" href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab" target="_blank" rel="noopener noreferrer">
+            <a className="button small" style={{width: "60%"}} href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab" target="_blank" rel="noopener noreferrer">
               <div className="text">Get directions</div>
               <div className="icon icon-caret-right"></div>
             </a>

@@ -9,7 +9,7 @@ import Sponsors from './Sponsors';
 import Schedule from './Schedule';
 import Team from './Team';
 import VenueMap from './VenueMap';
-import Footer from './Footer';
+import Footer from '../Footer';
 
 import '../index.css';
 
