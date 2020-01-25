@@ -15,7 +15,7 @@ class Landing extends Component {
         <div className="register-button-block-old top">
           <a className="button register-button mentor" href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523">2019 Pictures</a>
           <Link className="button register-button mentor" to='/history'>Past Projects</Link>
-          <a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a>
+          {/*<a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a>*/}
         </div>
       </div>
     </section>);
