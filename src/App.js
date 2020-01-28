@@ -1,12 +1,8 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import MainPage from './MainPage';
-import HistoryPage from './HistoryPage';
-import NotFoundPage from './NotFoundPage';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MainPage from "./MainPage";
+import HistoryPage from "./HistoryPage";
+import NotFoundPage from "./NotFoundPage";
 
 function App() {
   return (
@@ -23,7 +19,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-      );
+  );
 }
 
 export default App;

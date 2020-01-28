@@ -1,6 +1,6 @@
-# HackTJ 2020
+# HackTJ 7.0
 
-The website for HackTJ 2020, held on March 21st-22nd, 2020.
+The website for HackTJ 7.0, held on March 21st-22nd, 2020.
 
 ## Setup
 
@@ -10,19 +10,34 @@ The website for HackTJ 2020, held on March 21st-22nd, 2020.
 
 We use ReactJS.
 
-### What to Update
+### What to Change
 
 -   update the color scheme in all the CSS files
+-   [`switch`](switch) script
+    -   replace all occurrences of `/2020` with `/2021`
+-   [README](README.md)
+    -   fix years/information
+-   [`src/HistoryPage/Content/index.jsx`](src/HistoryPage/Content/index.jsx)
+    -   add a `DevpostCard` for HackTJ 7.0
 -   [`src/MainPage/Landing/MLHTrustBadge`](src/MainPage/Landing/MLHTrustBadge)
     -   update the badge to the correct year
 -   [`src/MainPage/Landing/index.jsx`](src/MainPage/Landing/index.jsx)
--   update the event date, venue, and URLs
+    -   update the event date, venue, and URLs
+    -   change "2019 Pictures" to "2020 Pictures" and update its URL
+    -   update the URL of "Past Projects"
 -   [`src/MainPage/Questions/index.jsx`](src/MainPage/Questions/index.jsx)
+    -   update the "When is HackTJ?" question's answer with the correct date
     -   update the "Is there a deadline?" question's answer with the correct registration deadline
+    -   update the "What prizes can I win?" question's answer with the correct iteration of HackTJ
+-   [`src/MainPage/Registration/index.jsx`](src/MainPage/Registration/index.jsx)
+    -   update registration start date
+    -   update admissions decisions date
+-   [`src/MainPage/Schedule/index.jsx`](src/MainPage/Schedule/index.jsx)
+    -   update the schedule or include previous year's schedule
 -   [`src/MainPage/Sponsors/index.jsx`](src/MainPage/Sponsors/index.jsx) and [`src/images/sponsors`](src/images/sponsors) and [`src/images/partners`](src/images/partners)
     -   update the sponsor logos, maintain ordering by donation amount
--   [`src/MainPage/Schedule/index.jsx`](src/MainPage/Schedule/index.jsx)
-    -   update schedule or include previous year's schedule
+-   [`src/MainPage/Statistics/index.jsx`](src/MainPage/Statistics/index.jsx)
+    -   update demographic data (`schoolData`, `genderData`, `ethnicityData`, and `graduationData`)
 -   [`src/MainPage/Team/index.jsx`](src/MainPage/Team/index.jsx) and [`src/images/team`](src/images/team)
     -   update team member pictures and descriptions
 -   [`src/MainPage/VenueMap/index.jsx`](src/MainPage/VenueMap)
@@ -41,7 +56,6 @@ We use ReactJS.
 ## Notes for next year
 
 -   click "Use this template" (next to the clone or download dropdown) and name the new repository `2021`, under the HackTJ organization—that way it will be displayed on our website at <https://hacktj.org/2021> while leaving the old website up at <https://hacktj.org/2020>
--   edit the [`switch`](switch) script and replace all occurrences of `/2020` with `/2021`
 -   all of the deploy commands involve running the `switch` script in this repository
     -   if you notice that this script deletes the content of either [`public/index.html`](public/index.html) or [`src/App.js`](src/App.js), immediately quit the deploy script and restore the contents with `git` and retry the `npm` script until it works
 -   the `deploy-event` script doesn't commit the source code to the repository's master branch, it only commits the built code
