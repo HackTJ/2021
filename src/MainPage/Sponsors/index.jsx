@@ -70,7 +70,7 @@ class Sponsors extends Component {
             </p>
             <h1 className="section-title">Partners</h1>
             <div className="partner-container">
-              {/* <Logo url="http://mlh.io" logo={require('../images/partners/mlh.png')} name="Major League Hacking"/> */}
+              <Logo url="http://mlh.io" logo={require('../../images/partners/mlh.png')} name="Major League Hacking"/>
               <Logo
                 url="https://www.tjpartnershipfund.org"
                 logo={require("../../images/partners/tjpartnershipfund.jpg")}

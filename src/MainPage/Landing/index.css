@@ -6,7 +6,7 @@ section.hero {
   background: url(../../images/bkg.png) center top;
   background-size: cover;
   font-family: "Roboto", sans-serif;
-  color: #fff;
+  color: #353535;
 }
 
 section.hero .social-links {
