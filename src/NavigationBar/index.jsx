@@ -21,7 +21,7 @@ class NavigationBar extends Component {
       >
         <Navbar.Brand>
           <img
-            src={require("../../images/bigweblogo.png")}
+            src={require("../images/bigweblogo.png")}
             style={{
               height: 50
             }}
@@ -38,6 +38,9 @@ class NavigationBar extends Component {
           <Nav.Link href="#sponsor">
             <h1>Sponsors</h1>
           </Nav.Link>
+          {/*<Nav.Link href="#demographics">
+            <h1>Demographics</h1>
+          </Nav.Link>*/}
           <Nav.Link href="#schedule">
             <h1>Schedule</h1>
           </Nav.Link>

@@ -57,7 +57,9 @@ class Questions extends Component {
                 />
                 <FAQuestion
                   question="Is there a deadline?"
-                  answer=<span>Registration will open soon!</span>
+                  answer=<span>
+                    Registration opens on February 10 and closes on February 24.{" "}
+                  </span>
                 />
                 <FAQuestion
                   question="Do you have a code of conduct?"
@@ -65,7 +67,7 @@ class Questions extends Component {
                   answer=<span>
                     Yes, good question! We have adopted the{" "}
                     <a
-                      href={process.env.PUBLIC_URL + '/conduct.pdf'}
+                      href={process.env.PUBLIC_URL + "/conduct.pdf"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
