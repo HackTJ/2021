@@ -25,10 +25,11 @@ class Registration extends Component {
               in advance (Emergency Care Form & Field Trip Form, links below).
             </p>
             <p className="large">
-              When you register we’ll give you the option to upload a r&eacute;sum&eacute;,
-              which would be given to certain sponsors looking to recruit
-              hackers. You will also have a chance to submit your resumé after
-              you register if you are not ready to upload it now.
+              When you register we’ll give you the option to upload a
+              r&eacute;sum&eacute;, which would be given to certain sponsors
+              looking to recruit hackers. You will also have a chance to submit
+              your resumé after you register if you are not ready to upload it
+              now.
             </p>
             <p className="large">
               Please note that registering alone does not guarantee you will
@@ -40,11 +41,14 @@ class Registration extends Component {
             <div className="register-button-block-old top">
               <a
                 className="flatbutton register-button"
-                href="forms/HackTJ2020-Field-Trip.pdf"
+                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Field-Trip.pdf'}
               >
                 Field Trip Form
               </a>
-              <a className="flatbutton register-button" href="forms/HackTJ2020-ECC.pdf">
+              <a
+                className="flatbutton register-button"
+                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-ECC.pdf'}
+              >
                 Emergency Care Form
               </a>
             </div>

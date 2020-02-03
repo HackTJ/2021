@@ -29,7 +29,7 @@
     "switch-homepage": "./switch homepage",
     "predeploy": "npm run build",
     "deploy-event": "npm run switch-event && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
-    "deploy-homepage": "npm run switch-homepage && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\"",
+    "deploy-homepage": "npm run switch-homepage && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\" && npm run switch-event",
     "deploy-all": "npm run deploy-event && npm run deploy-homepage"
   },
   "eslintConfig": {
