@@ -65,7 +65,7 @@ class Questions extends Component {
                   answer=<span>
                     Yes, good question! We have adopted the{" "}
                     <a
-                      href={process.env.PUBLIC_URL + '/HackTJ2020-Conduct.pdf'}
+                      href={process.env.PUBLIC_URL + '/conduct.pdf'}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
