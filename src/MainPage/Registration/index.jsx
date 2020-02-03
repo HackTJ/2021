@@ -41,25 +41,25 @@ class Registration extends Component {
             <div className="register-button-block-old top">
               <a
                 className="flatbutton register-button"
-                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Field-Trip.pdf'}
+                href={process.env.PUBLIC_URL + "/forms/field_trip.pdf"}
               >
                 Field Trip Form
               </a>
               <a
                 className="flatbutton register-button"
-                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-ECC.pdf'}
+                href={process.env.PUBLIC_URL + "/forms/ecc.pdf"}
               >
                 Emergency Care Form
               </a>
               <a
                 className="flatbutton register-button"
-                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Cvent-Waiver-Minors.docx'}
+                href={process.env.PUBLIC_URL + "/forms/cvent_minor_waiver.pdf"}
               >
                 Cvent Waiver (for minors under 18 years old)
               </a>
               <a
                 className="flatbutton register-button"
-                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Cvent-Waiver.docx'}
+                href={process.env.PUBLIC_URL + "/forms/cvent_adult_waiver.pdf"}
               >
                 Cvent Waiver (for adults at least 18 years old)
               </a>
