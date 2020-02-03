@@ -51,6 +51,18 @@ class Registration extends Component {
               >
                 Emergency Care Form
               </a>
+              <a
+                className="flatbutton register-button"
+                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Cvent-Waiver-Minors.docx'}
+              >
+                Cvent Waiver (for minors under 18 years old)
+              </a>
+              <a
+                className="flatbutton register-button"
+                href={process.env.PUBLIC_URL + '/forms/HackTJ2020-Cvent-Waiver.docx'}
+              >
+                Cvent Waiver (for adults at least 18 years old)
+              </a>
             </div>
           </div>
         </section>
