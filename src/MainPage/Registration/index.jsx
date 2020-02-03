@@ -40,11 +40,11 @@ class Registration extends Component {
             <div className="register-button-block-old top">
               <a
                 className="flatbutton register-button"
-                href="forms/fieldtrip.pdf"
+                href="forms/HackTJ2020-Field-Trip.pdf"
               >
                 Field Trip Form
               </a>
-              <a className="flatbutton register-button" href="forms/ecc.pdf">
+              <a className="flatbutton register-button" href="forms/HackTJ2020-ECC.pdf">
                 Emergency Care Form
               </a>
             </div>
