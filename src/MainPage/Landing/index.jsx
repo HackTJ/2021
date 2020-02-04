@@ -14,7 +14,7 @@ class Landing extends Component {
             src={require("../../images/bigweblogo.png")}
             alt="HackTJ"
           />
-          <div className="event-announcement">Registration opens on February 10 and closes on February 24</div>
+          <div className="event-announcement">Registration opens on February 10 at 8 p.m. and closes on February 24</div>
           <div className="event-date">March 21-22, 2020</div>
           <div className="event-location">
             Thomas Jefferson High School for Science and Technology
