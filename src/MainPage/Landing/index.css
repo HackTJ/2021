@@ -51,6 +51,7 @@ section.hero .logo {
 }
 
 section.hero .event-date, section.hero .event-location, section.hero .event-announcement {
+  /* color: rgb(53, 53, 53); */
   width: 100%;
   text-align: center;
   margin-top: 0;

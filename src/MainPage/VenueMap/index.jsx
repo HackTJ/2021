@@ -10,8 +10,8 @@ class VenueMap extends Component {
     viewport: {
       width: "100%",
       height: 385,
-      latitude: 38.818,
-      longitude: -77.17,
+      latitude: 38.92201,
+      longitude: -77.23312,
       zoom: 16
     }
   };
@@ -46,13 +46,13 @@ class VenueMap extends Component {
             mapStyle={"mapbox://styles/varun1470/cjsaupmju0by11fpkprq5prse"}
             onViewportChange={viewport => this.setState({ viewport })}
           >
-            <Marker latitude={38.818} longitude={-77.17}>
+            <Marker latitude={38.92201} longitude={-77.23312}>
               <h3
                 style={{
                   color: "#64D861"
                 }}
               >
-                TJHSST
+                Cvent
               </h3>
             </Marker>
           </ReactMapGL>
@@ -64,17 +64,17 @@ class VenueMap extends Component {
             }}
           >
             <div className="info-container">
-              <h6>TJHSST</h6>
-              <div className="address">6560 Braddock Road</div>
-              <div className="address">Alexandria, VA</div>
+              <h6>Cvent</h6>
+              <div className="address">1765 Greensboro Station Pl</div>
+              <div className="address">McLean, VA</div>
               <a
                 className="button small"
                 style={{ width: "60%" }}
-                href="https://www.google.com/maps/place/Thomas+Jefferson+High+School+for+Science+and+Technology/@38.8185004,-77.1708548,17z/data=!3m1!4b1!4m2!3m1!1s0x89b7b2e02877e895:0xc12f564af4d3bcab"
+                href="https://www.google.com/maps/dir//Cvent+HQ,+1765+Greensboro+Station+Pl,+McLean,+VA+22102/@38.9229121,-77.3033695,12z/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="text">Get directions</div>
+                <div className="text">Get Directions</div>
                 <div className="icon icon-caret-right"></div>
               </a>
             </div>
