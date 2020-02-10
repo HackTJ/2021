@@ -1,13 +1,19 @@
 import React from "react";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MainPage from "./MainPage";
+
+import RegistrationPage from "./RegistrationPage";
 import HistoryPage from "./HistoryPage";
+import MainPage from "./MainPage";
 import NotFoundPage from "./NotFoundPage";
 
 function App() {
   return (
     <Router basename="/2020">
       <Switch>
+        <Route exact path="/registration">
+          <RegistrationPage />
+        </Route>
         <Route exact path="/history">
           <HistoryPage />
         </Route>

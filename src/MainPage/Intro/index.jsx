@@ -5,7 +5,7 @@ class Intro extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="intro"></a>
+        <a className="anchor" id="intro">Intro</a>
         <section className="intro">
           <div className="container">
             <div

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./index.css";
 
-class Registration extends Component {
+class RegistrationInfo extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="registration"></a>
+        <a className="anchor" id="registration">Registration Info</a>
         <section className="registration-info">
           <div className="container">
             <div
@@ -16,7 +16,8 @@ class Registration extends Component {
             </div>
             <h1 className="section-title">Registration Info</h1>
             <p className="large">
-              Registration opens on February 10 and closes on February 24!
+              Registration opens on February 10 at 8 p.m. and closes on February
+              24!
             </p>
             <p className="large">
               When you register you&apos;ll be asked for several forms. If you
@@ -91,4 +92,4 @@ class Registration extends Component {
   }
 }
 
-export default Registration;
+export default RegistrationInfo;

@@ -40,7 +40,8 @@ section.schedule ul.day li.item {
   font-size: 0;
 }
 
-section.schedule ul.day li.item:before, section.schedule ul.day li.item:after {
+section.schedule ul.day li.item:before,
+section.schedule ul.day li.item:after {
   content: "";
   display: table;
 }

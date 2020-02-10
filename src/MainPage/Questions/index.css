@@ -71,7 +71,8 @@ section.faq ul.faq-container .row {
   font-size: 0;
 }
 
-section.faq ul.faq-container .row:before, section.faq ul.faq-container .row:after {
+section.faq ul.faq-container .row:before,
+section.faq ul.faq-container .row:after {
   content: "";
   display: table;
 }

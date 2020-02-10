@@ -1,17 +1,17 @@
 import React from "react";
 
 import NavigationBar from "../NavigationBar";
-import Error404Content from "./Error404Content";
+import RegistrationChoice from "./RegistrationChoice";
 import Footer from "../Footer";
 
-function NotFoundPage() {
+function RegistrationPage() {
   return (
     <>
       <NavigationBar />
-      <Error404Content />
+      <RegistrationChoice />
       <Footer />
     </>
   );
 }
 
-export default NotFoundPage;
+export default RegistrationPage;

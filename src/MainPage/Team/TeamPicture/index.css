@@ -17,7 +17,7 @@ section.team .team-pictures .img {
 }
 
 section.team .team-pictures .fade .figcaption {
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ section.team .team-pictures .fade .figcaption {
   padding: 0 10px;
   word-wrap: break-word;
   line-height: 200px;
-  background: rgba(100, 216, 97, .5);
+  background: rgba(100, 216, 97, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -82,7 +82,7 @@ section.team li.question-group.is-open:hover .icon {
 
 section.team li.question-group .question {
   cursor: pointer;
-  transition: color .5s;
+  transition: color 0.5s;
 }
 
 section.team li.question-group .question:hover {
@@ -106,7 +106,7 @@ section.team li.question-group .answer {
 }
 
 section.team li.question-group .answer:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 16px;

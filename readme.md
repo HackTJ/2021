@@ -29,7 +29,7 @@ We use ReactJS.
     -   update the "When is HackTJ?" question's answer with the correct date
     -   update the "Is there a deadline?" question's answer with the correct registration deadline
     -   update the "What prizes can I win?" question's answer with the correct iteration of HackTJ
--   [`src/MainPage/Registration/index.jsx`](src/MainPage/Registration/index.jsx)
+-   [`src/MainPage/RegistrationInfo/index.jsx`](src/MainPage/RegistrationInfo/index.jsx)
     -   update registration start date
     -   update admissions decisions date
 -   [`src/MainPage/Schedule/index.jsx`](src/MainPage/Schedule/index.jsx)

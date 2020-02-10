@@ -93,7 +93,8 @@ section.map .info-circle .info-container .button .altbutton {
     border-radius: 0;
   }
 
-  section.map .info-circle .info-container h6, section.map .info-circle .info-container .address {
+  section.map .info-circle .info-container h6,
+  section.map .info-circle .info-container .address {
     font-size: 1.3em;
   }
 }

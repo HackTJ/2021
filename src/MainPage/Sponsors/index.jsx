@@ -6,7 +6,7 @@ class Sponsors extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="sponsor"></a>
+        <a className="anchor" id="sponsor">Sponsors</a>
         <section id="sponsors">
           <div className="container">
             <div className="animation-container vertical top right extra-right extra-height">
@@ -70,7 +70,11 @@ class Sponsors extends Component {
             </p>
             <h1 className="section-title">Partners</h1>
             <div className="partner-container">
-              <Logo url="http://mlh.io" logo={require('../../images/partners/mlh.png')} name="Major League Hacking"/>
+              <Logo
+                url="https://mlh.io"
+                logo={require("../../images/partners/mlh.png")}
+                name="Major League Hacking"
+              />
               <Logo
                 url="https://www.tjpartnershipfund.org"
                 logo={require("../../images/partners/tjpartnershipfund.jpg")}

@@ -50,47 +50,63 @@ section.hero .logo {
   }
 }
 
-section.hero .event-date, section.hero .event-location, section.hero .event-announcement {
+section.hero .event-date,
+section.hero .event-location,
+section.hero .event-announcement {
   width: 100%;
   text-align: center;
   margin-top: 0;
 }
 
 @media only screen and (max-width: 640px) {
-  section.hero .event-date, section.hero .event-location, section.hero .event-announcement {
+  section.hero .event-date,
+  section.hero .event-location,
+  section.hero .event-announcement {
     width: 90%;
     text-align: center;
     margin: auto;
   }
 }
 
-section.hero .event-date.event-date, section.hero .event-location.event-date, section.hero .event-announcement.event-date {
+section.hero .event-date.event-date,
+section.hero .event-location.event-date,
+section.hero .event-announcement.event-date {
   font-size: 45px;
 }
 
 @media only screen and (max-width: 640px) {
-  section.hero .event-date.event-date, section.hero .event-location.event-date, section.hero .event-announcement.event-date {
+  section.hero .event-date.event-date,
+  section.hero .event-location.event-date,
+  section.hero .event-announcement.event-date {
     font-size: 32px;
   }
 }
 
-section.hero .event-date.event-location, section.hero .event-location.event-location, section.hero .event-announcement.event-location {
+section.hero .event-date.event-location,
+section.hero .event-location.event-location,
+section.hero .event-announcement.event-location {
   font-size: 25px;
 }
 
 @media only screen and (max-width: 640px) {
-  section.hero .event-date.event-location, section.hero .event-location.event-location, section.hero .event-announcement.event-location {
+  section.hero .event-date.event-location,
+  section.hero .event-location.event-location,
+  section.hero .event-announcement.event-location {
     margin-top: 10px;
     font-size: 22px;
   }
 }
 
-section.hero .event-date.event-announcement, section.hero .event-location.event-announcement, section.hero .event-announcement.event-announcement {
+section.hero .event-date.event-announcement,
+section.hero .event-location.event-announcement,
+section.hero .event-announcement.event-announcement {
   font-size: 35px;
 }
 
 @media only screen and (max-width: 640px) {
-  section.hero .event-date.event-announcement, section.hero .event-location.event-announcement, section.hero .event-announcement.event-announcement {
+  section.hero .event-date.event-announcement,
+  section.hero .event-location.event-announcement,
+  section.hero .event-announcement.event-announcement {
     margin-top: 0;
     font-size: 22px;
   }
@@ -108,16 +124,26 @@ section.hero .container {
   padding-top: 2%;
 }
 
-section.hero .event-date, section.hero .event-location {
+section.hero .event-date,
+section.hero .event-location {
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
 
-section.hero .event-date.event-date, section.hero .event-location.event-date {
+section.hero .event-date.event-date,
+section.hero .event-location.event-date {
   font-size: 45px;
 }
 
-section.hero .event-date.event-location, section.hero .event-location.event-location {
+section.hero .event-date.event-location,
+section.hero .event-location.event-location {
   font-size: 25px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px; /* Height of the footer */
 }

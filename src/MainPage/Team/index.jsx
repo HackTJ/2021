@@ -6,7 +6,7 @@ class Team extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="team"></a>
+        <a className="anchor" id="team">Team</a>
         <section className="team" id="team">
           <div className="container">
             <div className="animation-container vertical top left extra-right extra-height">
@@ -76,7 +76,7 @@ class Team extends Component {
               ></TeamPicture>
               <TeamPicture
                 name="Sumanth Ratna"
-                about="Sumanth is a sophomore at TJ and is a judging coordinator and working to find mentors. Sumanth wanted to join the HackTJ team after participating in HackTJ when he was a freshman last year. Interested in biochemistry and computer science, he likes to attend Bioinformatics Society, Nanotechnology Club, and Ethics Bowl (where he is on the Committees for Bioethics and Artificial Intelligence). He spends most of his free time reading Wikipedia articles on biology, playing sports with his friends, and listening to music."
+                about="Sumanth is a sophomore at TJ and is a judging coordinator and working to find mentors. He also maintains the HackTJ website. Sumanth wanted to join the HackTJ team after participating in HackTJ when he was a freshman last year. Interested in biochemistry and computer science, he likes to attend Bioinformatics Society, Nanotechnology Club, and Ethics Bowl (where he is on the Committees for Bioethics and Artificial Intelligence). He spends most of his free time playing football and basketball with his friends and listening to music."
                 image={require("../../images/team/SumanthRatna.jpg")}
               ></TeamPicture>
               <TeamPicture

@@ -5,7 +5,7 @@ class Schedule extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="schedule"></a>
+        <a className="anchor" id="schedule">Schedule</a>
         <section className="schedule" id="schedules">
           <div className="container">
             <div className="animation-container vertical top left extra-height">

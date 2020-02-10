@@ -36,7 +36,9 @@ class VenueMap extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="map"></a>
+        <a className="anchor" id="map">
+          Map
+        </a>
         <section className="green map">
           <ReactMapGL
             {...this.state.viewport}

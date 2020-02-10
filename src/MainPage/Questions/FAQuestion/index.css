@@ -23,11 +23,19 @@ section.faq ul.faq-container li.question-group {
   }
 }
 
-section.faq ul.faq-container li.question-group.is-open .question .icon.icon-close {
+section.faq
+  ul.faq-container
+  li.question-group.is-open
+  .question
+  .icon.icon-close {
   opacity: 1;
 }
 
-section.faq ul.faq-container li.question-group.is-open .question .icon.icon-plus {
+section.faq
+  ul.faq-container
+  li.question-group.is-open
+  .question
+  .icon.icon-plus {
   opacity: 0;
   transform: rotate(-45deg) translate(41%, -34%);
 }
@@ -45,7 +53,7 @@ section.faq ul.faq-container li.question-group.is-open:hover .icon {
 }
 
 section.faq ul.faq-container li.question-group .question {
-  transition: color .5s;
+  transition: color 0.5s;
   font: 20px/40px "Roboto", sans-serif;
   display: block;
   position: relative;
@@ -70,7 +78,7 @@ section.faq ul.faq-container li.question-group .question.small {
 }
 
 section.faq ul.faq-container li.question-group .question .icon {
-  transition: transform .4s, opacity .4s;
+  transition: transform 0.4s, opacity 0.4s;
   float: right;
   display: block;
   position: absolute;
@@ -106,7 +114,7 @@ section.faq ul.faq-container li.question-group .answer {
 }
 
 section.faq ul.faq-container li.question-group .answer:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 16px;

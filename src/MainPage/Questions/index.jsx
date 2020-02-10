@@ -6,7 +6,7 @@ class Questions extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="faq"></a>
+        <a className="anchor" id="faq">FAQ</a>
         <section className="green faq">
           <div className="container">
             <div className="animation-container vertical left top">
@@ -58,7 +58,8 @@ class Questions extends Component {
                 <FAQuestion
                   question="Is there a deadline?"
                   answer=<span>
-                    Registration opens on February 10 at 8 p.m. and closes on February 24.{" "}
+                    Registration opens on February 10 at 7 p.m. and closes on
+                    February 24.{" "}
                   </span>
                 />
                 <FAQuestion
@@ -168,7 +169,7 @@ class Questions extends Component {
                     pitches during our Sunday-morning expo and decide which
                     projects are winners. Experience is preferred but not
                     necessary. Volunteers help our team with logistical tasks
-                    such as registration, food service, and chaperoning. No
+                    such as check-in, food service, and chaperoning. No
                     experience is necessary to be a volunteer. Registration for
                     these roles will open in March, but you can reach out to{" "}
                     <a href="mailto:hello@hacktj.org">hello@hacktj.org</a> in

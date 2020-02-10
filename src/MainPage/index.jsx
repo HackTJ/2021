@@ -3,7 +3,7 @@ import React from "react";
 import Landing from "./Landing";
 import NavigationBar from "../NavigationBar";
 import Intro from "./Intro";
-import Registration from './Registration';
+import RegistrationInfo from "./RegistrationInfo";
 import Questions from "./Questions";
 import Sponsors from "./Sponsors";
 // import Statistics from "./Statistics";
@@ -20,7 +20,7 @@ function MainPage() {
       <Landing />
       <NavigationBar />
       <Intro />
-      <Registration/>
+      <RegistrationInfo />
       <Questions />
       <Sponsors />
       {/*<Statistics />*/}
