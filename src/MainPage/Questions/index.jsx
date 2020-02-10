@@ -179,6 +179,40 @@ class Questions extends Component {
                   </span>
                 />
               </div>
+              <div className="row">
+                <FAQuestion
+                  question="How do I register?"
+                  answer=<span>
+                    At 7 p.m. on February 10, a button will appear at the top of
+                    the site. Click this, and then you will be redirected to a
+                    page where you can click the appropriate form. If you're
+                    interested in participating as a hacker in HackTJ, click the
+                    first button, that says "Participants". Fill out the
+                    questions. Near the end, there will be a few questions where
+                    you can upload your forms. In order to speed up the
+                    registration process, print out these forms, fill them out,
+                    and scan them beforehand.
+                  </span>
+                />
+                <FAQuestion
+                  question="Wasn't HackTJ cancelled?"
+                  small={true}
+                  answer=<span>
+                    Overnight events are not allowed in Fairfax County Public
+                    Schools schools. However, Cvent has graciously donated their
+                    office to us for HackTJ. HackTJ 7.0 will remain overnight!
+                  </span>
+                />
+                <FAQuestion
+                  question="How are tickets decisions made?"
+                  small={true}
+                  answer=<span>
+                    Tickets decisisons are made based on a variety of factors,
+                    including the registration time. Sign up quickly to increase
+                    the chance that you are given a HackTJ 7.0 ticket!
+                  </span>
+                />
+              </div>
             </ul>
             <p className="large">
               If your question is not answered here, just ask us:{" "}

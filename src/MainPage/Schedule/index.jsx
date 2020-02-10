@@ -5,16 +5,18 @@ class Schedule extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="schedule">Schedule</a>
+        <a className="anchor" id="schedule">
+          Schedule
+        </a>
         <section className="schedule" id="schedules">
           <div className="container">
             <div className="animation-container vertical top left extra-height">
               <div className="animated"></div>
             </div>
-            <h1 className="section-title">Last Year's Schedule</h1>
+            <h1 className="section-title">Schedule</h1>
             <ul className="day">
               <div className="day-title">
-                <h3>Saturday, April 6</h3>
+                <h3>Saturday, March 21</h3>
                 <div className="animation-container horizontal line-schedule">
                   <div className="animated left"></div>
                 </div>
@@ -58,7 +60,7 @@ class Schedule extends Component {
             </ul>
             <ul className="day">
               <div className="day-title">
-                <h3>Sunday, April 7</h3>
+                <h3>Sunday, March 22</h3>
                 <div className="animation-container horizontal line-schedule">
                   <div className="animated left"></div>
                 </div>

@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+
 import "./index.css";
 
 class RegistrationInfo extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="registration">Registration Info</a>
+        <a className="anchor" id="registration">
+          Registration Info
+        </a>
         <section className="registration-info">
           <div className="container">
             <div
@@ -16,7 +19,7 @@ class RegistrationInfo extends Component {
             </div>
             <h1 className="section-title">Registration Info</h1>
             <p className="large">
-              Registration opens on February 10 at 8 p.m. and closes on February
+              Registration opens on February 10 at 7 p.m. and closes on February
               24!
             </p>
             <p className="large">
@@ -54,12 +57,13 @@ class RegistrationInfo extends Component {
             </p>
             <p className="large">
               Please note that registering alone does not guarantee you will
-              receive a ticket. Admission decisions will be made based on a
+              receive a ticket. Tickets decisions will be made based on a
               variety of factors including the date/time you register, so make
-              sure to sign up quickly! Admission decisions will be sent out on
+              sure to sign up quickly! Tickets decisions will be sent out on
               March 2.
             </p>
             <div className="register-button-block-old top">
+              {/*TODO: change from <a> to <Link>*/}
               <a
                 className="flatbutton register-button"
                 href={process.env.PUBLIC_URL + "/forms/field_trip.pdf"}

@@ -1788,6 +1788,11 @@ a.button {
   line-height: 50px;
 }
 
+a.greenbutton {
+  color: #353535;
+  border-color: #353535;
+}
+
 a.altbutton {
   color: #64d861;
   border-color: #64d861;

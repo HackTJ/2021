@@ -6,7 +6,6 @@ section.hero {
   background: url(../../images/bkg.png) center top;
   background-size: cover;
   font-family: "Roboto", sans-serif;
-  /* color: #353535; */
 }
 
 section.hero .social-links {
@@ -140,4 +139,11 @@ section.hero .event-location.event-date {
 section.hero .event-date.event-location,
 section.hero .event-location.event-location {
   font-size: 25px;
+}
+
+.event-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  color: rgb(53, 53, 53);
 }
