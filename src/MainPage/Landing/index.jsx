@@ -15,7 +15,7 @@ class Landing extends Component {
             alt="HackTJ"
           />
           <div className="event-announcement">
-            Registration opens on February 10 at 8 p.m. and closes on February
+            Registration opens on February 10 at 7 p.m. and closes on February
             24
           </div>
           <div className="event-date">March 21-22, 2020</div>
