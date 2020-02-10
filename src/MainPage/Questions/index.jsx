@@ -6,7 +6,9 @@ class Questions extends Component {
   render() {
     return (
       <>
-        <a className="anchor" id="faq">FAQ</a>
+        <a className="anchor" id="faq">
+          FAQ
+        </a>
         <section className="green faq">
           <div className="container">
             <div className="animation-container vertical left top">
