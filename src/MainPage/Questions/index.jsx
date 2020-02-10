@@ -60,8 +60,7 @@ class Questions extends Component {
                 <FAQuestion
                   question="Is there a deadline?"
                   answer=<span>
-                    Registration opens on February 10 at 7 p.m. and closes on
-                    February 24.{" "}
+                    Registration opens on February 10 at 8 p.m. and closes on February 24.{" "}
                   </span>
                 />
                 <FAQuestion
