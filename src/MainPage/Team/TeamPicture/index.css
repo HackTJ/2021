@@ -95,7 +95,7 @@ section.team li.question-group .answer {
   -o-transition: height 0.5s linear;
   -ms-transition: height 0.5s linear; */
   max-height: 500px;
-  transition: max-height 0.5s linear;
+  transition: max-height 0.5s ease-in;
   position: relative;
   box-sizing: border-box;
   font-size: 15px;
