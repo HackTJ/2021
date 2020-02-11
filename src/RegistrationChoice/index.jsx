@@ -16,7 +16,7 @@ class RegistrationChoice extends Component {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(4, 1fr)"
+                gridTemplateColumns: "repeat(3, 1fr)"
               }}
             >
               <a
@@ -31,20 +31,11 @@ class RegistrationChoice extends Component {
               <a
                 className="flatbutton"
                 style={{ width: "60%" }}
-                href="https://www.google.com/maps/dir//Cvent+HQ,+1765+Greensboro+Station+Pl,+McLean,+VA+22102/@38.9229121,-77.3033695,12z/"
+                href="https://hacktj.typeform.com/to/UoAWrS"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="text">Judges</div>
-              </a>
-              <a
-                className="flatbutton"
-                style={{ width: "60%" }}
-                href="https://www.google.com/maps/dir//Cvent+HQ,+1765+Greensboro+Station+Pl,+McLean,+VA+22102/@38.9229121,-77.3033695,12z/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="text">Mentors</div>
+                <div className="text">Judges/Mentors</div>
               </a>
               <a
                 className="flatbutton"
@@ -83,8 +74,13 @@ class RegistrationChoice extends Component {
             <p className="large">
               Volunteers help our team with logistical tasks such as check-in,
               food service, and chaperoning. No experience is necessary to be a
-              volunteer.
+              volunteer. You can find more information on volunteer duties{" "}
+              <a href="https://docs.google.com/document/d/1AkbyeWtjz7vnjeLcBmeaBtKUNlc8GOzB6rPXjRCcWjY/edit#heading=h.nv7qldxgyem">
+                here
+              </a>
+              .
             </p>
+            <br />
           </div>
         </section>
       </>

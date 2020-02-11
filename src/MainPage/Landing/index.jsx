@@ -16,7 +16,7 @@ class Landing extends Component {
               alt="HackTJ"
             />
             <div className="event-announcement landing">
-              Registration closes on February 24
+              Registration for participants closes on February 24
             </div>
             <div className="event-date landing">March 21-22, 2020</div>
             <div className="event-location landing">
@@ -24,19 +24,19 @@ class Landing extends Component {
             </div>
             <div className="register-button-block-old top">
               <Link
-                className="button register-button mentor greenbutton"
+                className="button register-button mentor blackbutton"
                 to="/registration"
               >
                 Register for HackTJ 7.0
               </Link>
               <a
-                className="button register-button mentor greenbutton"
+                className="button register-button mentor blackbutton"
                 href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
               >
                 2019 Pictures
               </a>
               <Link
-                className="button register-button mentor greenbutton"
+                className="button register-button mentor blackbutton"
                 to="/history"
               >
                 Past Projects

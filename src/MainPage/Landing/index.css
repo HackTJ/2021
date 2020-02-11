@@ -1,7 +1,7 @@
 section.hero {
   height: 100%;
   min-height: 750px;
-  padding-top: 5%;
+  padding: 5% 0 5% 0;
   position: relative;
   background: url(../../images/bkg.png) center top;
   background-size: cover;
@@ -52,7 +52,6 @@ section.hero .logo {
 section.hero .event-date,
 section.hero .event-location,
 section.hero .event-announcement {
-  /* color: rgb(53, 53, 53); */
   width: 100%;
   text-align: center;
   margin-top: 0;
@@ -120,8 +119,6 @@ section.hero .animation-container.left {
 
 section.hero .container {
   height: 100%;
-  margin-top: -5%;
-  padding-top: 2%;
 }
 
 section.hero .event-date,

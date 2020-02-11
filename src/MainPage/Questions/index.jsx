@@ -60,7 +60,11 @@ class Questions extends Component {
                 <FAQuestion
                   question="Is there a deadline?"
                   answer=<span>
-                    Registration opens on February 10 at 8 p.m. and closes on February 24.{" "}
+                    Registration for participants, judges, mentors, and
+                    volunteers opens on February 10 at 8 p.m. Registration for
+                    participants closes on February 24. Judges, mentors, and
+                    volunteers will be able to register until the start of the
+                    event.
                   </span>
                 />
                 <FAQuestion
@@ -150,7 +154,7 @@ class Questions extends Component {
                   question="What prizes can I win?"
                   answer=<span>
                     HackTJ hosts prizes for the best projects in the following
-                    categories: Overall Hack, Web App, Mobile App, Design,
+                    categories: Overall Hack, Web App, Mobile App, Hardware Hack, Design,
                     Social Impact Hack, and Beginner Hack (first-year coder
                     teams). Major League Hacking and some of our partners also
                     host their own Sponsored Prizes, which you can explore when
@@ -182,7 +186,7 @@ class Questions extends Component {
                 <FAQuestion
                   question="How do I register?"
                   answer=<span>
-                    At 7 p.m. on February 10, a button will appear at the top of
+                    At 8 p.m. on February 10, a button will appear at the top of
                     the site. Click this, and then you will be redirected to a
                     page where you can click the appropriate form. If you're
                     interested in participating as a hacker in HackTJ, click the

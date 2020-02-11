@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import NavigationBar from "../NavigationBar";
 import Intro from "./Intro";
 import RegistrationInfo from "./RegistrationInfo";
+import RegistrationChoice from "../RegistrationChoice";
 import Questions from "./Questions";
 import Sponsors from "./Sponsors";
 // import Statistics from "./Statistics";
@@ -21,6 +22,7 @@ function MainPage() {
       <NavigationBar />
       <Intro />
       <RegistrationInfo />
+      <RegistrationChoice />
       <Questions />
       <Sponsors />
       {/*<Statistics />*/}

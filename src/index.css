@@ -1639,7 +1639,7 @@ section {
 section .container {
   display: block;
   position: relative;
-  margin: 40px auto;
+  margin: auto auto;
   max-width: 700px;
 }
 
@@ -1650,6 +1650,7 @@ section .container {
 }
 
 section h1.section-title {
+  margin-top: 1rem;
   margin-bottom: 0.4em;
   font: 100 40px/1.3em "Roboto", sans-serif;
   text-align: center;
@@ -1788,7 +1789,7 @@ a.button {
   line-height: 50px;
 }
 
-a.greenbutton {
+a.blackbutton {
   color: #353535;
   border-color: #353535;
 }

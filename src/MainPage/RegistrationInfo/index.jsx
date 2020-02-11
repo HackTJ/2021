@@ -19,7 +19,7 @@ class RegistrationInfo extends Component {
             </div>
             <h1 className="section-title">Registration Info</h1>
             <p className="large">
-              Registration opens on February 10 at 7 p.m. and closes on February
+              Registration opens on February 10 at 8 p.m. and closes on February
               24!
             </p>
             <p className="large">
