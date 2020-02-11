@@ -16,7 +16,7 @@ class Sponsors extends Component {
             <div className="partner-container">
               <Logo
                 url="https://aws.amazon.com/"
-                logo={require("../../images/sponsors/aws.png")}
+                logo={require("../../images/sponsors/AWS.png")}
                 name="Amazon Web Services"
               />
               <Logo

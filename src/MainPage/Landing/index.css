@@ -119,6 +119,8 @@ section.hero .animation-container.left {
 
 section.hero .container {
   height: 100%;
+  margin: auto auto;
+  padding: 0;
 }
 
 section.hero .event-date,

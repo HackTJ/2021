@@ -103,6 +103,7 @@ section.faq ul.faq-container li.question-group .question:hover {
 }
 
 section.faq ul.faq-container li.question-group .answer {
+  transition: 0.5s cubic-bezier;
   background: #fff;
   box-sizing: border-box;
   font-size: 15px;

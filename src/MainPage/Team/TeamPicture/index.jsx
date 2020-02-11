@@ -35,7 +35,7 @@ class TeamPicture extends Component {
         <div
           className="answer"
           style={{
-            height: this.state.showAbout ? "100%" : 0
+            "max-height": this.state.showAbout ? "500px" : 0
           }}
         >
           <p>{this.props.about}</p>
