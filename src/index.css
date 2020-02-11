@@ -1802,6 +1802,7 @@ a.altbutton {
 }
 
 a.flatbutton {
+  border-radius: 1rem;
   width: 350px;
   margin: 5px auto;
   display: block;

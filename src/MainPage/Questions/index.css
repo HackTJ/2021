@@ -1,3 +1,7 @@
+/* .question {
+  border-radius: 1rem;
+} */
+
 section.faq {
   padding: 1px 0;
   line-height: 1.3em;
@@ -6,6 +10,7 @@ section.faq {
 section.faq .container {
   max-width: 900px;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 section.faq .header-row {
