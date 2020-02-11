@@ -53,6 +53,8 @@ We use ReactJS.
 -   `npm run deploy-homepage`: pushes to the [hacktj.github.io repo](https://github.com/HackTJ/hacktj.github.io) and deploys the site to <https://hacktj.org>
 -   `npm run deploy-all`: shortcut for both `npm run deploy-event` and `npm run deploy-homepage`
 
+In the case that one of the endpoints (/2020 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site. 
+
 ## Notes for next year
 
 -   click "Use this template" (next to the clone or download dropdown) and name the new repository `2021`, under the HackTJ organization—that way it will be displayed on our website at <https://hacktj.org/2021> while leaving the old website up at <https://hacktj.org/2020>
