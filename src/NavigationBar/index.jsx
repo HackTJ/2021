@@ -43,9 +43,11 @@ class NavigationBar extends Component {
             <Nav.Link href="#sponsor">
               <h1>Sponsors</h1>
             </Nav.Link>
-            {/*<Nav.Link href="#demographics">
-            <h1>Demographics</h1>
-          </Nav.Link>*/}
+            {/*
+            <Nav.Link href="#demographics">
+              <h1>Demographics</h1>
+            </Nav.Link>
+            */}
             <Nav.Link href="#schedule">
               <h1>Schedule</h1>
             </Nav.Link>

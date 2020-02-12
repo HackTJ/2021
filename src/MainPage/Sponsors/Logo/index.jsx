@@ -8,6 +8,7 @@ class Logo extends Component {
       <>
         <a
           href={this.props.url}
+          className="sponsor-wrapper"
           target="_blank"
           rel="noopener noreferrer"
           data-tip="data-tip"
@@ -17,6 +18,7 @@ class Logo extends Component {
             className="sponsor-image"
             src={this.props.logo}
             alt={this.props.name}
+            tintColor="#64d861"
           />
         </a>
         <ReactTooltip

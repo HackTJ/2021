@@ -141,7 +141,7 @@ section.hero .event-location.event-location {
   font-size: 25px;
 }
 
-.footer {
+section.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
