@@ -55,7 +55,6 @@ section.faq .animation-container.left {
 
 section.faq .animation-container.right {
   height: calc(100% + 11px);
-  margin-bottom: -40px;
 }
 
 section.faq ul.faq-container {

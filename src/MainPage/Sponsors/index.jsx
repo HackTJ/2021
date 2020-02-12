@@ -41,7 +41,7 @@ class Sponsors extends Component {
               />
               <Logo
                 url="https://www.collinsaerospace.com"
-                logo={require("../../images/sponsors/collinsaerospace.jpeg")}
+                logo={require("../../images/sponsors/collinsaerospace.png")}
                 name="Collins Aerospace"
               />
               <Logo

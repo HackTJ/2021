@@ -13,7 +13,11 @@ class Logo extends Component {
           data-tip="data-tip"
           data-for={this.props.name}
         >
-          <img src={this.props.logo} alt={this.props.name} />
+          <img
+            className="sponsor-image"
+            src={this.props.logo}
+            alt={this.props.name}
+          />
         </a>
         <ReactTooltip
           id={this.props.name}
@@ -21,7 +25,6 @@ class Logo extends Component {
           type="dark"
           effect="solid"
         >
-          {/* tooltip content */}
           {this.props.name}
         </ReactTooltip>
       </>
