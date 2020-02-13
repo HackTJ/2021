@@ -9,7 +9,7 @@ import NotFoundPage from "./NotFoundPage";
 
 function App() {
   return (
-    <Router basename="/2020">
+    <Router>
       <Switch>
         <Route exact path="/registration">
           <RegistrationPage />

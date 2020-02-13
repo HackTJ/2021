@@ -1,9 +1,9 @@
 section.team .team-pictures .figure {
   width: 200px;
   height: 200px;
-  display: inline-block;
+  border-radius: 2rem;
   vertical-align: top;
-  margin: 20px;
+  margin: 18px auto;
   max-width: 200px;
   max-height: 200px;
   position: relative;
@@ -90,11 +90,12 @@ section.team li.question-group .question:hover {
 }
 
 section.team li.question-group .answer {
-  -webkit-transition: height 0.5s linear;
+  /* -webkit-transition: height 0.5s linear;
   -moz-transition: height 0.5s linear;
   -o-transition: height 0.5s linear;
-  -ms-transition: height 0.5s linear;
-  transition: height 0.5s linear;
+  -ms-transition: height 0.5s linear; */
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
   position: relative;
   box-sizing: border-box;
   font-size: 15px;
