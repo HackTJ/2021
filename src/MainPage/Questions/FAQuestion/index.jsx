@@ -33,7 +33,7 @@ class FAQuestion extends Component {
         <div
           className="answer"
           style={{
-            "max-height": this.state.showAnswer ? "500px" : 0
+            "max-height": this.state.showAnswer ? "700px" : 0
           }}
         >
           <p>{this.props.answer}</p>
