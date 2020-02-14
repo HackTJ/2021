@@ -78,7 +78,7 @@ section.faq ul.faq-container li.question-group .question.small {
 }
 
 section.faq ul.faq-container li.question-group .question .icon {
-  transition: transform 0.4s, opacity 0.4s;
+  transition: transform 0.5s, opacity 0.5s;
   float: right;
   display: block;
   position: absolute;
@@ -87,7 +87,7 @@ section.faq ul.faq-container li.question-group .question .icon {
   font-size: 26px;
   right: 16px;
   opacity: 0;
-  transition: transform 0.4s, opacity 0.4s;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 section.faq ul.faq-container li.question-group .question .icon.icon-plus {

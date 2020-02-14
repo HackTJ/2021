@@ -1,46 +1,29 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+
 import "./index.css";
 
-class FAQuestion extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showAnswer: false
-    };
-    this.onClick = this.onClick.bind(this);
-  }
-
-  onClick() {
-    const { showAnswer } = this.state;
-    this.setState(state => ({
-      showAnswer: !showAnswer
-    }));
-  }
-
-  render() {
-    return (
-      <li
-        className={`question-group ${this.state.showAnswer ? "is-open" : ""}`}
+function FAQuestion({ question, answer, small }) {
+  const [showAnswer, setshowAnswer] = useState(false);
+  return (
+    <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
+      <h3
+        className={`question ${small ? "small" : ""}`}
+        onClick={() => setshowAnswer(!showAnswer)}
       >
-        <h3
-          className={`question ${this.props.small ? "small" : ""}`}
-          onClick={this.onClick}
-        >
-          {this.props.question}
-          <div className="icon icon-plus"></div>
-          <div className="icon icon-close"></div>
-        </h3>
-        <div
-          className="answer"
-          style={{
-            "max-height": this.state.showAnswer ? "700px" : 0
-          }}
-        >
-          <p>{this.props.answer}</p>
-        </div>
-      </li>
-    );
-  }
+        {question}
+        <div className="icon icon-plus"></div>
+        <div className="icon icon-close"></div>
+      </h3>
+      <div
+        className="answer"
+        style={{
+          "max-height": showAnswer ? "700px" : 0
+        }}
+      >
+        <p>{answer}</p>
+      </div>
+    </li>
+  );
 }
 
 export default FAQuestion;

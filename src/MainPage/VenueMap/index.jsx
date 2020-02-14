@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+
 import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import assign from "lodash/assign";
 import debounce from "lodash/debounce";
+
 import "./index.css";
 
 class VenueMap extends Component {

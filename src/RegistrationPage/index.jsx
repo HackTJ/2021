@@ -4,14 +4,12 @@ import NavigationBar from "../NavigationBar";
 import RegistrationChoice from "../RegistrationChoice";
 import Footer from "../Footer";
 
-function RegistrationPage() {
-  return (
-    <>
-      <NavigationBar />
-      <RegistrationChoice />
-      <Footer />
-    </>
-  );
-}
+const RegistrationPage = () => (
+  <>
+    <NavigationBar />
+    <RegistrationChoice />
+    <Footer />
+  </>
+);
 
 export default RegistrationPage;

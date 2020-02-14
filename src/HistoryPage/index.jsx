@@ -4,14 +4,12 @@ import NavigationBar from "../NavigationBar";
 import Content from "./Content";
 import Footer from "../Footer";
 
-function HistoryPage() {
-  return (
-    <>
-      <NavigationBar />
-      <Content />
-      <Footer />
-    </>
-  );
-}
+const HistoryPage = () => (
+  <>
+    <NavigationBar />
+    <Content />
+    <Footer />
+  </>
+);
 
 export default HistoryPage;

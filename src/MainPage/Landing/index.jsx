@@ -1,53 +1,49 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { Link } from "react-router-dom";
 
 import "./index.css";
 
-class Landing extends Component {
-  render() {
-    return (
-      <section className="hero">
-        <div className="container">
-          <div className="event-container">
-            <img
-              className="logo"
-              src={require("../../images/bigweblogo.png")}
-              alt="HackTJ"
-            />
-            <div className="event-announcement landing">
-              Registration for participants closes on February 24
-            </div>
-            <div className="event-date landing">March 21-22, 2020</div>
-            <div className="event-location landing">
-              Thomas Jefferson High School for Science and Technology
-            </div>
-            <div className="register-button-block-old top">
-              <Link
-                className="button register-button mentor blackbutton"
-                to="/registration"
-              >
-                Register for HackTJ 7.0
-              </Link>
-              <a
-                className="button register-button mentor blackbutton"
-                href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
-              >
-                2019 Pictures
-              </a>
-              <Link
-                className="button register-button mentor blackbutton"
-                to="/history"
-              >
-                Past Projects
-              </Link>
-              {/*<a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a>*/}
-            </div>
-          </div>
+const Landing = () => (
+  <section className="hero">
+    <div className="container">
+      <div className="event-container">
+        <img
+          className="logo"
+          src={require("../../images/bigweblogo.png")}
+          alt="HackTJ"
+        />
+        <div className="event-announcement landing">
+          Registration for participants closes on February 24
         </div>
-      </section>
-    );
-  }
-}
+        <div className="event-date landing">March 21-22, 2020</div>
+        <div className="event-location landing">
+          Thomas Jefferson High School for Science and Technology
+        </div>
+        <div className="register-button-block-old top">
+          <Link
+            className="button register-button mentor blackbutton"
+            to="/registration"
+          >
+            Register for HackTJ 7.0
+          </Link>
+          <a
+            className="button register-button mentor blackbutton"
+            href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
+          >
+            2019 Pictures
+          </a>
+          <Link
+            className="button register-button mentor blackbutton"
+            to="/history"
+          >
+            Past Projects
+          </Link>
+          {/*<a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a>*/}
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 export default Landing;

@@ -15,23 +15,21 @@ import Footer from "../Footer";
 
 import "../index.css";
 
-function MainPage() {
-  return (
-    <span className="App">
-      <Landing />
-      <NavigationBar />
-      <Intro />
-      <RegistrationInfo />
-      <RegistrationChoice />
-      <Questions />
-      <Sponsors />
-      {/*<Statistics />*/}
-      <Schedule />
-      <Team />
-      <VenueMap />
-      <Footer />
-    </span>
-  );
-}
+const MainPage = () => (
+  <span className="App">
+    <Landing />
+    <NavigationBar />
+    <Intro />
+    <RegistrationInfo />
+    <RegistrationChoice />
+    <Questions />
+    <Sponsors />
+    {/*<Statistics />*/}
+    <Schedule />
+    <Team />
+    <VenueMap />
+    <Footer />
+  </span>
+);
 
 export default MainPage;
