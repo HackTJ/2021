@@ -18,7 +18,6 @@ const Logo = ({ url, name, logo }) => (
         className="sponsor-image"
         src={logo}
         alt={name}
-        tintColor="#64d861"
       />
     </a>
     <ReactTooltip id={name} place="top" type="dark" effect="solid">

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./index.css";
 
-function FAQuestion({ question, answer, small }) {
+const FAQuestion = ({ question, answer, small }) => {
   const [showAnswer, setshowAnswer] = useState(false);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
@@ -17,7 +17,7 @@ function FAQuestion({ question, answer, small }) {
       <div
         className="answer"
         style={{
-          "max-height": showAnswer ? "700px" : 0
+          "maxHeight": showAnswer ? "700px" : 0
         }}
       >
         <p>{answer}</p>

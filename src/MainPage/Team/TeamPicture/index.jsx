@@ -4,7 +4,7 @@ import Figure from "react-bootstrap/Figure";
 
 import "./index.css";
 
-function TeamPicture({ name, image, about }) {
+const TeamPicture = ({ name, image, about }) => {
   const [showAbout, setShowAbout] = useState(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
@@ -18,7 +18,7 @@ function TeamPicture({ name, image, about }) {
       <div
         className="answer"
         style={{
-          "max-height": showAbout ? "500px" : 0
+          "maxHeight": showAbout ? "500px" : 0
         }}
       >
         <p>{about}</p>
