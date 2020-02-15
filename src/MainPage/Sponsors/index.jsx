@@ -57,6 +57,11 @@ const Sponsors = () => (
             name="RazorX2"
           />
           <Logo
+            url="http://hackp.ac/mlh-stickermule-hackathons"
+            logo={require("../../images/sponsors/stickermule.png")}
+            name="Sticker Mule"
+          />
+          <Logo
             url="https://www.thinkfun.com"
             logo={require("../../images/sponsors/thinkfun.png")}
             name="ThinkFun"
