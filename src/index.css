@@ -2078,3 +2078,20 @@ a.empty {
   font-size: 0;
   color: transparent;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+svg.progress {
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  animation: spin 1s linear infinite;
+}
