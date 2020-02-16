@@ -1652,15 +1652,7 @@
 }
 
 .social-links {
-  position: relative;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  width: 80px;
-  vertical-align: middle;
-  margin: 20px auto;
-  width: 250px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 640px) {

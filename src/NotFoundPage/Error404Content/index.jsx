@@ -10,7 +10,7 @@ const Error404Content = () => (
         <div className="animation-container vertical top right extra-right extra-height">
           <div className="animated"></div>
         </div>
-        <h1 className="section-title">Error 404</h1>
+        <h1 className="section-title" style={{marginTop: "20vh"}}>Error 404</h1>
         <p className="large" style={{ textAlign: "center" }}>
           We couldn't find that page, sorry.
         </p>

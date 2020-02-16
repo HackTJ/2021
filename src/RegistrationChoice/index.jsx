@@ -6,7 +6,14 @@ const RegistrationChoice = () => (
       Register
     </a>
     <section id="register">
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          margin: "auto"
+        }}
+      >
         <div className="animation-container vertical top right extra-right extra-height">
           <div className="animated"></div>
         </div>
@@ -19,7 +26,7 @@ const RegistrationChoice = () => (
         >
           <a
             className="flatbutton"
-            style={{ width: "60%" }}
+            style={{ width: "80%" }}
             href="https://hacktj.typeform.com/to/VRfmTH"
             target="_blank"
             rel="noopener noreferrer"
@@ -28,7 +35,7 @@ const RegistrationChoice = () => (
           </a>
           <a
             className="flatbutton"
-            style={{ width: "60%" }}
+            style={{ width: "80%" }}
             href="https://hacktj.typeform.com/to/UoAWrS"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +44,7 @@ const RegistrationChoice = () => (
           </a>
           <a
             className="flatbutton"
-            style={{ width: "60%" }}
+            style={{ width: "80%" }}
             href="https://www.signupgenius.com/go/904094fabac2ea0f58-hacktj"
             target="_blank"
             rel="noopener noreferrer"

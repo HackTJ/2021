@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "jq-cli-wrapper": "^1.6.1"
   }
 }

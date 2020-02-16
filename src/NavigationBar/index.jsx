@@ -7,9 +7,8 @@ import MLHTrustBadge from "./MLHTrustBadge";
 
 import "./index.css";
 
-// TODO: style attribute in Navbar makes Navbar inline but hides the logo
-
 const NavigationBar = () => (
+  // TODO: get rid of <div style={{height: "50px"}} /> and use CSS instead
   <>
     <MLHTrustBadge />
     <Navbar
@@ -24,15 +23,7 @@ const NavigationBar = () => (
         zIndex: 1000
       }}
     >
-      <Navbar.Brand>
-        <img
-          src={require("../images/bigweblogo.png")}
-          style={{
-            height: 50
-          }}
-          alt="HackTJ"
-        />
-      </Navbar.Brand>
+      <div style={{ height: "50px" }} />
       <Nav className="nav justify-content-center">
         <Nav.Link href="#intro">
           <h1>Intro</h1>
