@@ -166,10 +166,16 @@ const Questions = () => (
                   All of the hardware at HackTJ is generously provided by MLH.
                   Our list is not finalized yet, but you can browse through the
                   usual offerings at{" "}
-                  <a href="https://hardware.mlh.io/">hardware.mlh.io</a>. In
-                  previous years we’ve had multiple Raspberry Pi and Arduino
-                  kits, powerful computers, Oculus headsets, Amazon Echos,
-                  Google Homes, and various sensors, motors, wires, etc.
+                  <a
+                    href="https://hardware.mlh.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    hardware.mlh.io
+                  </a>
+                  . In previous years we’ve had multiple Raspberry Pi and
+                  Arduino kits, powerful computers, Oculus headsets, Amazon
+                  Echos, Google Homes, and various sensors, motors, wires, etc.
                 </span>
               }
             />
@@ -203,8 +209,14 @@ const Questions = () => (
                   chaperoning. No experience is necessary to be a volunteer.
                   Registration for these roles will open in March, but you can
                   reach out to{" "}
-                  <a href="mailto:hello@hacktj.org">hello@hacktj.org</a> in
-                  advance to be notified when the form is available!
+                  <a
+                    href="mailto:hello@hacktj.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    hello@hacktj.org
+                  </a>{" "}
+                  in advance to be notified when the form is available!
                 </span>
               }
             />
@@ -253,7 +265,14 @@ const Questions = () => (
         <div></div>
         <p className="large bottom-question">
           If your question is not answered here, just ask us:{" "}
-          <a href="mailto:hello@hacktj.org">hello@hacktj.org</a>.
+          <a
+            href="mailto:hello@hacktj.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@hacktj.org
+          </a>
+          .
         </p>
         <div className="animation-container vertical right bottom">
           <div className="animated white"></div>

@@ -34,8 +34,8 @@ const RegistrationChoice = () => (
             <div className="text">Participants</div>
           </a>
           <a
-            className="flatbutton"
-            style={{ width: "80%" }}
+            className="flatbutton long-label"
+            style={{ width: "99.99%" }}
             href="https://hacktj.typeform.com/to/UoAWrS"
             target="_blank"
             rel="noopener noreferrer"

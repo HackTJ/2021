@@ -50,12 +50,13 @@ section.team li.question-group {
 
 @media only screen and (max-width: 640px) {
   section.team li.question-group {
-    box-sizing: border-box;
-    float: left;
-    margin: 10px 0;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  section.team li.question-group div.answer {
+    margin: auto;
+    width: calc(200px + 2 * 18px);
   }
 }
 
@@ -90,10 +91,6 @@ section.team li.question-group .question:hover {
 }
 
 section.team li.question-group .answer {
-  /* -webkit-transition: height 0.5s linear;
-  -moz-transition: height 0.5s linear;
-  -o-transition: height 0.5s linear;
-  -ms-transition: height 0.5s linear; */
   max-height: 500px;
   transition: max-height 0.5s ease-in;
   position: relative;

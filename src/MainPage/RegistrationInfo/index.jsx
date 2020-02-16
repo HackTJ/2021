@@ -41,19 +41,6 @@ const RegistrationInfo = () => (
           </a>
           . Remember, HackTJ is only open to current high school students!
         </p>
-        <p className="large">
-          When registering you'll also have the option to upload a
-          r&eacute;sum&eacute;, which would be given to certain sponsors looking
-          to recruit hackers. You will also have a chance to submit your
-          r&eacute;sum&eacute; after you register if you are not ready to upload
-          it now.
-        </p>
-        <p className="large">
-          Please note that registering alone does not guarantee you will receive
-          a ticket. Tickets decisions will be made based on a variety of factors
-          including the date/time you register, so make sure to sign up quickly!
-          Tickets decisions will be sent out on March 2.
-        </p>
         <div className="register-button-block-old top">
           {/*TODO: change from <a> to <Link>*/}
           <a
@@ -81,6 +68,19 @@ const RegistrationInfo = () => (
             Cvent Waiver (for adults)
           </a>
         </div>
+        <p className="large">
+          When registering you'll also have the option to upload a
+          r&eacute;sum&eacute;, which would be given to certain sponsors looking
+          to recruit hackers. You will also have a chance to submit your
+          r&eacute;sum&eacute; after you register if you are not ready to upload
+          it now.
+        </p>
+        <p className="large">
+          Please note that registering alone does not guarantee you will receive
+          a ticket. Tickets decisions will be made based on a variety of factors
+          including the date/time you register, so make sure to sign up quickly!
+          Tickets decisions will be sent out on March 2.
+        </p>
       </div>
     </section>
   </>

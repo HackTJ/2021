@@ -18,7 +18,7 @@ const Landing = () => (
         </div>
         <div className="event-date landing">March 21-22, 2020</div>
         <div className="event-location landing">
-          Thomas Jefferson High School for Science and Technology
+          Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
         </div>
         <div className="register-button-block-old top">
           <Link

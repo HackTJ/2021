@@ -66,7 +66,7 @@ const VenueMap = () => {
             <a
               className="button small"
               style={{ width: "60%" }}
-              href="https://www.google.com/maps/dir//Cvent+HQ,+1765+Greensboro+Station+Pl,+McLean,+VA+22102/@38.9229121,-77.3033695,12z/"
+              href="https://www.cvent.com/en/contact/directions-to-cvent"
               target="_blank"
               rel="noopener noreferrer"
             >
