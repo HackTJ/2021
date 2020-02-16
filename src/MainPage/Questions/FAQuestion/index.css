@@ -5,11 +5,8 @@ section.faq ul.faq-container li.question-group {
   width: 33.33333%;
   padding-left: 10px;
   padding-right: 10px;
-  white-space: normal;
   list-style: none;
   font-size: 16px;
-  display: inline-block;
-  vertical-align: 0.3333333333;
 }
 
 @media only screen and (max-width: 640px) {
@@ -40,7 +37,7 @@ section.faq
   transform: rotate(-45deg) translate(41%, -34%);
 }
 
-section.faq ul.faq-container li.question-group.is-open .question:hover {
+section.faq ul.faq-container li.question-group.is-open h3.question:hover {
   color: #555;
 }
 
@@ -52,7 +49,7 @@ section.faq ul.faq-container li.question-group.is-open:hover .icon {
   color: #64d861;
 }
 
-section.faq ul.faq-container li.question-group .question {
+section.faq ul.faq-container li.question-group h3.question {
   transition: color 0.5s;
   font: 20px/40px "Roboto", sans-serif;
   display: block;
@@ -61,23 +58,26 @@ section.faq ul.faq-container li.question-group .question {
   background-color: #fff;
   color: #555;
   text-align: left;
-  height: 56px;
+  height: calc(3em + 16px + 8px);
   padding: 8px 40px 8px 16px;
   cursor: pointer;
   transition: color 0.5s;
+  line-height: 1em;
+  display: flex;
+  align-items: center;
 }
 
-section.faq ul.faq-container li.question-group .question.small {
+section.faq ul.faq-container li.question-group h3.question.small {
   line-height: 1em;
 }
 
 @media only screen and (max-width: 640px) {
-  section.faq ul.faq-container li.question-group .question.small.not-mobile {
+  section.faq ul.faq-container li.question-group h3.question.small.not-mobile {
     line-height: 40px;
   }
 }
 
-section.faq ul.faq-container li.question-group .question .icon {
+section.faq ul.faq-container li.question-group h3.question .icon {
   transition: transform 0.5s, opacity 0.5s;
   float: right;
   display: block;
@@ -90,19 +90,19 @@ section.faq ul.faq-container li.question-group .question .icon {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-section.faq ul.faq-container li.question-group .question .icon.icon-plus {
+section.faq ul.faq-container li.question-group h3.question .icon.icon-plus {
   opacity: 1;
 }
 
-section.faq ul.faq-container li.question-group .question .icon.icon-close {
+section.faq ul.faq-container li.question-group h3.question .icon.icon-close {
   transform: translate(-55%, -50%);
 }
 
-section.faq ul.faq-container li.question-group .question:hover {
+section.faq ul.faq-container li.question-group h3.question:hover {
   color: #64d861;
 }
 
-section.faq ul.faq-container li.question-group .answer {
+section.faq ul.faq-container li.question-group div.answer {
   transition: all 0.5s ease-in;
   background: #fff;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ section.faq ul.faq-container li.question-group .answer {
   color: #555;
 }
 
-section.faq ul.faq-container li.question-group .answer:before {
+section.faq ul.faq-container li.question-group div.answer:before {
   content: "";
   display: block;
   position: absolute;
@@ -125,10 +125,10 @@ section.faq ul.faq-container li.question-group .answer:before {
   background-color: #64d861;
 }
 
-section.faq ul.faq-container li.question-group .answer p {
+section.faq ul.faq-container li.question-group div.answer p {
   margin: 16px;
 }
 
-section.faq ul.faq-container li.question-group .answer a {
+section.faq ul.faq-container li.question-group div.answer a {
   color: #64d861;
 }
