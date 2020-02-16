@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 
 import Figure from "react-bootstrap/Figure";
 
@@ -18,13 +18,13 @@ const TeamPicture = ({ name, image, about }) => {
       <div
         className="answer"
         style={{
-          "maxHeight": showAbout ? "500px" : 0
+          maxHeight: showAbout ? "500px" : 0
         }}
       >
         <p>{about}</p>
       </div>
     </li>
   );
-}
+};
 
-export default TeamPicture;
+export default memo(TeamPicture);

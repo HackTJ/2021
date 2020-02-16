@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 
 import "./index.css";
 
@@ -17,13 +17,13 @@ const FAQuestion = ({ question, answer, small }) => {
       <div
         className="answer"
         style={{
-          "maxHeight": showAnswer ? "700px" : 0
+          maxHeight: showAnswer ? "700px" : 0
         }}
       >
         <p>{answer}</p>
       </div>
     </li>
   );
-}
+};
 
-export default FAQuestion;
+export default memo(FAQuestion);

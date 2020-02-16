@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 
 import ReactTooltip from "react-tooltip";
 
@@ -44,4 +44,4 @@ const Logo = ({ url, name, logo }) => {
   );
 };
 
-export default Logo;
+export default memo(Logo);

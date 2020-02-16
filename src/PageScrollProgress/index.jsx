@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 
 const PageScrollProgress = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -72,4 +72,4 @@ const PageScrollProgress = () => {
   );
 };
 
-export default PageScrollProgress;
+export default memo(PageScrollProgress);
