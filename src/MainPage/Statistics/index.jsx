@@ -94,7 +94,9 @@ const graduationData = {
 
 const Statistics = () => (
   <>
-    <a className="anchor" id="demographics"></a>
+    <a className="anchor" id="demographics">
+      Demographics
+    </a>
     <section id="demographics">
       <div className="container">
         <div className="animation-container vertical top right extra-right extra-height">

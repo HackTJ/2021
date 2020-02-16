@@ -4,9 +4,7 @@
   "private": true,
   "homepage": "https://hacktj.org/2020",
   "dependencies": {
-    "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
-    "jquery": "^3.4.1",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -14,11 +12,10 @@
     "react-dom": "^16.12.0",
     "react-map-gl": "^5.2.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.0",
     "react-smooth-collapse": "^2.1.0",
     "react-tooltip": "^3.11.2",
-    "react-virtualized-auto-sizer": "^1.0.2",
-    "typescript": "^3.7.5"
+    "react-virtualized-auto-sizer": "^1.0.2"
   },
   "scripts": {
     "start": "npm run switch-homepage && react-scripts start",
@@ -27,7 +24,7 @@
     "eject": "react-scripts eject",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
-    "predeploy": "npm run build && NODE_DEBUG=gh-pages",
+    "predeploy": "npm run build && export NODE_DEBUG=gh-pages",
     "deploy-event": "npm run switch-event && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
     "deploy-homepage": "npm run switch-homepage && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\" && npm run switch-event",
     "deploy-all": "npm run deploy-event && npm run deploy-homepage"
