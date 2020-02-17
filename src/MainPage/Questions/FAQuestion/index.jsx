@@ -15,10 +15,7 @@ const FAQuestion = ({
   answer,
   small = false
 }: Props): Element<"li"> => {
-  const [
-    showAnswer: boolean,
-    setshowAnswer: (newShowAnswer: boolean) => void
-  ] = useState(false);
+  const [showAnswer, setshowAnswer] = useState<boolean>(false);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
       <h3

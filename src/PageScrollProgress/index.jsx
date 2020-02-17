@@ -3,19 +3,19 @@ import React, { useState, useEffect, memo } from "react";
 import type { Element } from "react";
 
 const PageScrollProgress = (): Element<"div"> => {
-  const [
-    scrollPosition: number,
-    setScrollPosition: (newScrollPosition: number) => void
-  ] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
 
   const getDocHeight = (): number => {
+    // TODO: Flow still returns errors
+    const bodyExists: boolean = document.body === null;
+    const docElExists: boolean = document.documentElement === null;
     return Math.max(
-      document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.offsetHeight,
-      document.body.clientHeight,
-      document.documentElement.clientHeight
+      bodyExists ? document.body.scrollHeight : 0,
+      docElExists ? document.documentElement.scrollHeight : 0,
+      bodyExists ? document.body.offsetHeight : 0,
+      docElExists ? document.documentElement.offsetHeight : 0,
+      bodyExists ? document.body.clientHeight : 0,
+      docElExists ? document.documentElement.clientHeight : 0
     );
   };
 

@@ -17,10 +17,7 @@ const VenueMap = (): Element<typeof Fragment> => {
     longitude: number,
     zoom: number
   };
-  const [
-    viewport: viewportType,
-    setViewport: (newViewport: viewportType) => void
-  ] = useState({
+  const [viewport, setViewport] = useState<viewportType>({
     width: "100%",
     height: "385px", // use calc to make map fill whole page minus footer+header
     latitude: 38.92201,

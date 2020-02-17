@@ -13,10 +13,7 @@ type Props = {
 };
 
 const TeamPicture = ({ name, image, about }: Props): Element<"li"> => {
-  const [
-    showAbout: boolean,
-    setShowAbout: (newShowAbout: boolean) => void
-  ] = useState(false);
+  const [showAbout, setShowAbout] = useState<boolean>(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
       <Figure
