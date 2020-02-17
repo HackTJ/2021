@@ -23,6 +23,7 @@ elif [ $1 == "homepage" ]; then
   sed 's|<meta property="og:title" content="HackTJ 7.0" />|<meta property="og:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta property="og:site_name" content="HackTJ 7.0" />|<meta property="og:site_name" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta name="twitter:title" content="HackTJ 7.0" />|<meta name="twitter:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<title>HackTJ 7.0</title>|<title>HackTJ</title>|' public/404.html > public/tmp.$$.html && mv public/tmp.$$.html public/404.html
   sed 's|var segmentCount = 1;|var segmentCount = 0;|' public/404.html > public/tmp.$$.js && mv public/tmp.$$.js public/404.html
   cp CNAME.homepage public/CNAME
   git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
