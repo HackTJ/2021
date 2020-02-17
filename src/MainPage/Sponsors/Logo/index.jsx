@@ -1,13 +1,24 @@
+// @flow
 import React, { useState, memo } from "react";
+import type { Element } from "react";
 
 import ReactTooltip from "react-tooltip";
 
 import "./index.css";
 
-const Logo = ({ url, name, logo }) => {
-  const sponsorID = name.toLowerCase().replace(/ /g, "-");
+type Props = {
+  url: string,
+  name: string,
+  logo: string
+};
 
-  const [showTooltip, setShowTooltip] = useState(false);
+const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
+  const sponsorID: string = name.toLowerCase().replace(/ /g, "-");
+
+  const [
+    showTooltip: boolean,
+    setShowTooltip: (newShowTooltip: boolean) => void
+  ] = useState(false);
 
   return (
     <>
@@ -44,4 +55,4 @@ const Logo = ({ url, name, logo }) => {
   );
 };
 
-export default memo(Logo);
+export default memo<Props>(Logo);

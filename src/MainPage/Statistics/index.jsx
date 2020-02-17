@@ -1,8 +1,13 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import { Pie } from "react-chartjs-2";
 
-const schoolData = {
+const schoolData: {
+  labels: Array<string>,
+  datasets: Array<{ data: Array<number> }>
+} = {
   labels: [
     "Thomas Jefferson High School for Science and Technology",
     "Wilbert Tucker Woodson High School",
@@ -57,7 +62,10 @@ const schoolData = {
   ]
 };
 
-const genderData = {
+const genderData: {
+  labels: Array<string>,
+  datasets: Array<{ data: Array<number>, backgroundColor: Array<string> }>
+} = {
   labels: ["Male", "Female", "Other"],
   datasets: [
     {
@@ -67,7 +75,10 @@ const genderData = {
   ]
 };
 
-const ethnicityData = {
+const ethnicityData: {
+  labels: Array<string>,
+  datasets: Array<{ data: Array<number>, backgroundColor: Array<string> }>
+} = {
   labels: [
     "Asian or Asian Indian",
     "Caucasian",
@@ -83,7 +94,10 @@ const ethnicityData = {
   ]
 };
 
-const graduationData = {
+const graduationData: {
+  labels: Array<string>,
+  datasets: Array<{ data: Array<number> }>
+} = {
   labels: ["2022", "2021", "2020", "2019"],
   datasets: [
     {
@@ -92,7 +106,9 @@ const graduationData = {
   ]
 };
 
-const Statistics = () => (
+const Statistics: StatelessFunctionalComponent<{}> = (): Element<
+  typeof Fragment
+> => (
   <>
     <a className="anchor" id="demographics">
       Demographics

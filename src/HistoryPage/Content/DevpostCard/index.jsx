@@ -1,8 +1,21 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import "./index.css";
 
-const DevpostCard = ({logo, iteration, year, url}) => (
+type Props = {
+  logo: string,
+  iteration: string,
+  year: string,
+  url: string
+};
+
+const DevpostCard: React.StatelessFunctionalComponent<Props> = ({
+  logo,
+  iteration,
+  year,
+  url
+}: Props): React.Element<"div"> => (
   <div className="history-section">
     <div className="action-section">
       <img

@@ -1,8 +1,11 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import "./index.css";
 
-const Intro = () => (
+const Intro: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  typeof React.Fragment
+> => (
   <>
     <a className="anchor" id="intro">
       Intro

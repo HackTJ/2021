@@ -1,10 +1,13 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import SocialLinks from "./SocialLinks";
 
 import "./index.css";
 
-const Footer = () => (
+const Footer: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  "section"
+> => (
   <section className="green register footer">
     <div className="container">
       <div className="register-button-block-old bottom">

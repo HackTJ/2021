@@ -1,6 +1,8 @@
+// @flow
 import React from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
-const MLHTrustBadge = () => (
+const MLHTrustBadge: StatelessFunctionalComponent<{}> = (): Element<"a"> => (
   <a
     id="mlh-trust-badge"
     href="https://mlh.io/seasons/na-2020/events?utm_source=na-hacktahon&amp;utm_medium=TrustBadge&amp;utm_campaign=2020-season&amp;utm_content=white"

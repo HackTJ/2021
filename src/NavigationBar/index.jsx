@@ -1,4 +1,6 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -7,7 +9,9 @@ import MLHTrustBadge from "./MLHTrustBadge";
 
 import "./index.css";
 
-const NavigationBar = () => (
+const NavigationBar: StatelessFunctionalComponent<{}> = (): Element<
+  typeof Fragment
+> => (
   // TODO: get rid of <div style={{height: "50px"}} /> and use CSS instead
   <>
     <MLHTrustBadge />
@@ -35,10 +39,10 @@ const NavigationBar = () => (
           <h1>Sponsors</h1>
         </Nav.Link>
         {/*
-            <Nav.Link href="#demographics">
-              <h1>Demographics</h1>
-            </Nav.Link>
-            */}
+        <Nav.Link href="#demographics">
+          <h1>Demographics</h1>
+        </Nav.Link>
+        */}
         <Nav.Link href="#schedule">
           <h1>Schedule</h1>
         </Nav.Link>

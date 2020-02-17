@@ -1,8 +1,11 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import "./index.css";
 
-const IndeterminateLoadingIndicator = () => (
+const IndeterminateLoadingIndicator: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  "div"
+> => (
   <div className="loading">
     <svg
       xmlns="https://www.w3.org/2000/svg"
@@ -10,7 +13,6 @@ const IndeterminateLoadingIndicator = () => (
       className="progress"
     >
       <circle cx="16" cy="16" r="16" className="weak" />
-
       <circle cx="16" cy="16" r="16" className="strong" />
     </svg>
   </div>

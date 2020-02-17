@@ -1,10 +1,12 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import TeamPicture from "./TeamPicture";
 
 import "./index.css";
 
-const Team = () => (
+const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
   <>
     <a className="anchor" id="team">
       Team

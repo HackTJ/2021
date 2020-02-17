@@ -1,10 +1,13 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import { Link } from "react-router-dom";
 
 import "./index.css";
 
-const Landing = () => (
+const Landing: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  "section"
+> => (
   <section className="hero">
     <div className="container">
       <div className="event-container">

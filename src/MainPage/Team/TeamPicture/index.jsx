@@ -1,11 +1,22 @@
+// @flow
 import React, { useState, memo } from "react";
+import type { Element } from "react";
 
 import Figure from "react-bootstrap/Figure";
 
 import "./index.css";
 
-const TeamPicture = ({ name, image, about }) => {
-  const [showAbout, setShowAbout] = useState(false);
+type Props = {
+  name: string,
+  image: string,
+  about: string
+};
+
+const TeamPicture = ({ name, image, about }: Props): Element<"li"> => {
+  const [
+    showAbout: boolean,
+    setShowAbout: (newShowAbout: boolean) => void
+  ] = useState(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
       <Figure
@@ -27,4 +38,4 @@ const TeamPicture = ({ name, image, about }) => {
   );
 };
 
-export default memo(TeamPicture);
+export default memo<Props>(TeamPicture);

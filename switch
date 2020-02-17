@@ -2,9 +2,9 @@
 if [ $1 == "event" ]; then
   jq '.homepage = "https://hacktj.org/2020"' package.json > tmp.$$.json && mv tmp.$$.json package.json
   sed 's|<Router>|<Router basename="/2020">|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
-  sed 's|<base href="/" />|<base href="/2020" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   jq '.start_url = "/2020"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   jq '.short_name = "HackTJ 7.0"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
+  sed 's|<base href="/" />|<base href="/2020" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<title>HackTJ</title>|<title>HackTJ 7.0</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta property="og:title" content="HackTJ" />|<meta property="og:title" content="HackTJ 7.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta property="og:site_name" content="HackTJ" />|<meta property="og:site_name" content="HackTJ 7.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
@@ -16,9 +16,9 @@ if [ $1 == "event" ]; then
 elif [ $1 == "homepage" ]; then
   jq '.homepage = "https://hacktj.org"' package.json > tmp.$$.json && mv tmp.$$.json package.json
   sed 's|<Router basename="/2020">|<Router>|' src/App.js > src/tmp.$$.js && mv src/tmp.$$.js src/App.js
-  sed 's|<base href="/2020" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   jq '.start_url = "/"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   jq '.short_name = "HackTJ"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
+  sed 's|<base href="/2020" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<title>HackTJ 7.0</title>|<title>HackTJ</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta property="og:title" content="HackTJ 7.0" />|<meta property="og:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
   sed 's|<meta property="og:site_name" content="HackTJ 7.0" />|<meta property="og:site_name" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html

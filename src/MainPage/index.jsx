@@ -1,4 +1,6 @@
+// @flow
 import React, { Suspense, lazy } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import IndeterminateLoadingIndicator from "../IndeterminateLoadingIndicator";
 const Landing = lazy(() => import("./Landing"));
@@ -14,9 +16,9 @@ const Team = lazy(() => import("./Team"));
 const VenueMap = lazy(() => import("./VenueMap"));
 const Footer = lazy(() => import("../Footer"));
 
-const MainPage = () => (
+const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
   <span className="App">
-    <Suspense fallback=<IndeterminateLoadingIndicator />>
+    <Suspense fallback={<IndeterminateLoadingIndicator />}>
       <Landing />
       <NavigationBar />
       <Intro />

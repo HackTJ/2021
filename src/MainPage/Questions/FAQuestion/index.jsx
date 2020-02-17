@@ -1,13 +1,28 @@
+// @flow
 import React, { useState, memo } from "react";
+import type { Element, Config } from "react";
 
 import "./index.css";
 
-const FAQuestion = ({ question, answer, small }) => {
-  const [showAnswer, setshowAnswer] = useState(false);
+type Props = {
+  question: string,
+  answer: Element<"span">,
+  small: boolean
+};
+
+const FAQuestion = ({
+  question,
+  answer,
+  small = false
+}: Props): Element<"li"> => {
+  const [
+    showAnswer: boolean,
+    setshowAnswer: (newShowAnswer: boolean) => void
+  ] = useState(false);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
       <h3
-        className={`question ${small ? "small" : ""}`}
+        className={`question ${small || false ? "small" : ""}`}
         onClick={() => setshowAnswer(!showAnswer)}
       >
         {question}
@@ -26,4 +41,15 @@ const FAQuestion = ({ question, answer, small }) => {
   );
 };
 
-export default memo(FAQuestion);
+FAQuestion.defaultProps = {
+  small: false
+};
+
+export default memo<
+  Config<
+    Props,
+    {
+      small: false
+    }
+  >
+>(FAQuestion);

@@ -1,10 +1,14 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import Logo from "./Logo";
 
 import "./index.css";
 
-const Sponsors = () => (
+const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
+  typeof Fragment
+> => (
   <>
     <a className="anchor" id="sponsor">
       Sponsors

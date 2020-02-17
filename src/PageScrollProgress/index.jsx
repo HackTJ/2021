@@ -1,22 +1,14 @@
+// @flow
 import React, { useState, useEffect, memo } from "react";
+import type { Element } from "react";
 
-const PageScrollProgress = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+const PageScrollProgress = (): Element<"div"> => {
+  const [
+    scrollPosition: number,
+    setScrollPosition: (newScrollPosition: number) => void
+  ] = useState(0);
 
-  const calculateScrollDistance = () => {
-    const scrollTop = window.pageYOffset; // how much the user has scrolled by
-    const winHeight = window.innerHeight;
-    const docHeight = getDocHeight();
-
-    const totalDocScrollLength = docHeight - winHeight;
-    const currentScrollPostion = Math.floor(
-      (scrollTop / totalDocScrollLength) * 100
-    );
-
-    setScrollPosition(currentScrollPostion);
-  };
-
-  const getDocHeight = () => {
+  const getDocHeight = (): number => {
     return Math.max(
       document.body.scrollHeight,
       document.documentElement.scrollHeight,
@@ -27,7 +19,20 @@ const PageScrollProgress = () => {
     );
   };
 
-  const scrollEvent = () => {
+  const calculateScrollDistance = (): void => {
+    const scrollTop: number = window.pageYOffset; // how much the user has scrolled by
+    const winHeight: number = window.innerHeight;
+    const docHeight: number = getDocHeight();
+
+    const totalDocScrollLength: number = docHeight - winHeight;
+    const currentScrollPostion: number = Math.floor(
+      (scrollTop / totalDocScrollLength) * 100
+    );
+
+    setScrollPosition(currentScrollPostion);
+  };
+
+  const scrollEvent = (): void => {
     requestAnimationFrame(() => {
       calculateScrollDistance();
     });
@@ -38,8 +43,8 @@ const PageScrollProgress = () => {
     return () => window.removeEventListener("scroll", scrollEvent);
   });
 
-  window.mobileAndTabletcheck = () => {
-    var check = false;
+  window.isMobileOrTablet = (): boolean => {
+    var check: boolean = false;
     (function(a) {
       if (
         /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(
@@ -53,8 +58,9 @@ const PageScrollProgress = () => {
     })(navigator.userAgent || navigator.vendor || window.opera);
     return check;
   };
-  var barBackground;
-  if (window.mobileAndTabletcheck()) {
+
+  var barBackground: string;
+  if (window.isMobileOrTablet()) {
     barBackground = `linear-gradient(to right, rgba(101, 216, 97, 0.9) ${scrollPosition}%, transparent 0)`;
   } else {
     barBackground = `linear-gradient(to right, rgba(255, 255, 255, 0.9) ${scrollPosition}%, transparent 0)`;
@@ -72,4 +78,4 @@ const PageScrollProgress = () => {
   );
 };
 
-export default memo(PageScrollProgress);
+export default memo<{}>(PageScrollProgress);

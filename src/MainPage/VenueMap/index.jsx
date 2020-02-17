@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+// @flow
+import React, { Fragment, useState, useEffect } from "react";
+import type { Element } from "react";
 
 import ReactMapGL, { Marker } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -7,25 +9,39 @@ import debounce from "lodash/debounce";
 
 import "./index.css";
 
-const VenueMap = () => {
-  const [viewport, setViewport] = useState({
+const VenueMap = (): Element<typeof Fragment> => {
+  type viewportType = {
+    width: string,
+    height: string,
+    latitude: number,
+    longitude: number,
+    zoom: number
+  };
+  const [
+    viewport: viewportType,
+    setViewport: (newViewport: viewportType) => void
+  ] = useState({
     width: "100%",
-    height: 385,
+    height: "385px", // use calc to make map fill whole page minus footer+header
     latitude: 38.92201,
     longitude: -77.23312,
     zoom: 16
   });
   useEffect(() => {
     // Automatically resizes the map when size is changed horizontally.
-    const handleResize = debounce(function onResize() {
-      setViewport(
-        assign({}, viewport, {
-          width: window.innerWidth
-        })
-      );
-    });
+    const handleResize: ((viewportType) => void) => void = debounce(
+      function onResize() {
+        setViewport(
+          assign({}, viewport, {
+            width: window.innerWidth
+          })
+        );
+      }
+    );
     window.addEventListener("resize", handleResize, 100);
-    return () => window.removeEventListener("resize", handleResize);
+    return function cleanup() {
+      window.removeEventListener("resize", handleResize);
+    };
   });
 
   return (

@@ -1,8 +1,12 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
 import "./index.css";
 
-const RegistrationInfo = () => (
+const RegistrationInfo: StatelessFunctionalComponent<{}> = (): Element<
+  typeof Fragment
+> => (
   <>
     <a className="anchor" id="registration">
       Registration Info
@@ -23,20 +27,28 @@ const RegistrationInfo = () => (
           When you register you&apos;ll be asked for several forms. If you want
           to be able to submit your registration quickly, fill them out in
           advance. The required forms are the{" "}
-          <a href={process.env.PUBLIC_URL + "/forms/ecc.pdf"}>
+          <a href={(process.env.PUBLIC_URL || "") + "/forms/ecc.pdf"}>
             Emergency Care Form
           </a>
           ,{" "}
-          <a href={process.env.PUBLIC_URL + "/forms/field_trip.pdf"}>
+          <a href={(process.env.PUBLIC_URL || "") + "/forms/field_trip.pdf"}>
             Field Trip Form
           </a>
           , and the Cvent Visitor and Publicity waiver (see the links below). If
           you are under 18 years old, fill out the{" "}
-          <a href={process.env.PUBLIC_URL + "/forms/cvent_minor_waiver.pdf"}>
+          <a
+            href={
+              (process.env.PUBLIC_URL || "") + "/forms/cvent_minor_waiver.pdf"
+            }
+          >
             form for minors
           </a>
           , and if you are over 18 years old, fill out the{" "}
-          <a href={process.env.PUBLIC_URL + "/forms/cvent_adult_waiver.pdf"}>
+          <a
+            href={
+              (process.env.PUBLIC_URL || "") + "/forms/cvent_adult_waiver.pdf"
+            }
+          >
             form for adults
           </a>
           . Remember, HackTJ is only open to current high school students!
@@ -45,25 +57,29 @@ const RegistrationInfo = () => (
           {/*TODO: change from <a> to <Link>*/}
           <a
             className="flatbutton register-button"
-            href={process.env.PUBLIC_URL + "/forms/field_trip.pdf"}
+            href={(process.env.PUBLIC_URL || "") + "/forms/field_trip.pdf"}
           >
             Field Trip Form
           </a>
           <a
             className="flatbutton register-button"
-            href={process.env.PUBLIC_URL + "/forms/ecc.pdf"}
+            href={(process.env.PUBLIC_URL || "") + "/forms/ecc.pdf"}
           >
             Emergency Care Form
           </a>
           <a
             className="flatbutton register-button"
-            href={process.env.PUBLIC_URL + "/forms/cvent_minor_waiver.pdf"}
+            href={
+              (process.env.PUBLIC_URL || "") + "/forms/cvent_minor_waiver.pdf"
+            }
           >
             Cvent Waiver (for minors)
           </a>
           <a
             className="flatbutton register-button"
-            href={process.env.PUBLIC_URL + "/forms/cvent_adult_waiver.pdf"}
+            href={
+              (process.env.PUBLIC_URL || "") + "/forms/cvent_adult_waiver.pdf"
+            }
           >
             Cvent Waiver (for adults)
           </a>

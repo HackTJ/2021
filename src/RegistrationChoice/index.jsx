@@ -1,6 +1,10 @@
-import React from "react";
+// @flow
+import React, { Fragment } from "react";
+import type { StatelessFunctionalComponent, Element } from "react";
 
-const RegistrationChoice = () => (
+const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
+  typeof Fragment
+> => (
   <>
     <a className="anchor" id="register">
       Register

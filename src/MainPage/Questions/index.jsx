@@ -1,10 +1,11 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import FAQuestion from "./FAQuestion";
 
 import "./index.css";
 
-const Questions = () => (
+const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<typeof React.Fragment> => (
   <>
     <a className="anchor" id="faq">
       FAQ
@@ -83,7 +84,7 @@ const Questions = () => (
                 <span>
                   Yes, good question! We have adopted the{" "}
                   <a
-                    href={process.env.PUBLIC_URL + "/conduct.pdf"}
+                    href={(process.env.PUBLIC_URL || "") + "/conduct.pdf"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -1,10 +1,13 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
 import DevpostCard from "./DevpostCard";
 
 import "./index.css";
 
-const Content = () => (
+const Content: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  "div"
+> => (
   <div className="centered-box relative history">
     <div className="header-section">
       <div className="icon icon-clock" />
