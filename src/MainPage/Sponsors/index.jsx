@@ -22,58 +22,68 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
         <div className="partner-container">
           <Logo
             url="https://aws.amazon.com/"
-            logo={require("../../images/sponsors/aws.png")}
+            logo="aws.png"
             name="Amazon Web Services"
           />
           <Logo
             url="https://www.yext.com"
-            logo={require("../../images/sponsors/yext.png")}
+            logo="yext.png"
             name="Yext"
           />
           <Logo
             url="https://www.ensco.com"
-            logo={require("../../images/sponsors/ensco.png")}
+            logo="ensco.png"
             name="Ensco"
           />
           <Logo
             url="https://phone2action.com"
-            logo={require("../../images/sponsors/phone2action.png")}
+            logo="phone2action.png"
             name="Phone2Action"
           />
           <Logo
+            url="https://www.wolfram.com"
+            logo="wolfram.png"
+            name="Wolfram"
+          />
+          <Logo
             url="https://www.digitalocean.com"
-            logo={require("../../images/sponsors/digitalocean.png")}
+            logo="digitalocean.png"
             name="DigitalOcean"
           />
           <Logo
             url="https://www.collinsaerospace.com"
-            logo={require("../../images/sponsors/collinsaerospace.png")}
+            logo="collinsaerospace.png"
             name="Collins Aerospace"
           />
           <Logo
             url="https://www.alertfive.io"
-            logo={require("../../images/sponsors/alertfive.png")}
+            logo="alertfive.png"
             name="Alert Five"
           />
           <Logo
             url="http://razorx2.com/"
-            logo={require("../../images/sponsors/razorx2.png")}
+            logo="razorx2.png"
             name="RazorX2"
           />
           <Logo
             url="http://hackp.ac/mlh-stickermule-hackathons"
-            logo={require("../../images/sponsors/stickermule.png")}
+            logo="stickermule.png"
             name="Sticker Mule"
           />
           <Logo
             url="https://www.thinkfun.com"
-            logo={require("../../images/sponsors/thinkfun.png")}
+            logo="thinkfun.png"
             name="ThinkFun"
           />
           <Logo
             url="http://spontit.io"
-            logo={require("../../images/sponsors/spontit.png")}
+            logo="spontit.png"
             name="Spontit"
+          />
+          <Logo
+            url="https://ultrapress.com"
+            logo="ultrapress.png"
+            name="UltraPress"
           />
         </div>
         <p className="large">
@@ -83,12 +93,12 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
         <div className="partner-container">
           <Logo
             url="https://mlh.io"
-            logo={require("../../images/partners/mlh.png")}
+            logo="mlh.png"
             name="Major League Hacking"
           />
           <Logo
             url="https://www.tjpartnershipfund.org"
-            logo={require("../../images/partners/tjpartnershipfund.jpg")}
+            logo="tjpartnershipfund.png"
             name="TJ Partnership Fund"
           />
         </div>

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+cd src/images/sponsors/normal
+rm ../tint/*
+for f in *
+do
+  echo $f
+  convert $f -colorspace gray -fill $1 -colorize 70 ../tint/$f
+done

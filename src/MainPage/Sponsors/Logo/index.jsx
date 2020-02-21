@@ -33,7 +33,7 @@ const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
         <img
           id={"img-" + sponsorID}
           className={`sponsor-image ${showTooltip ? "hover" : ""}`}
-          src={logo}
+          src={require("../../../images/sponsors/normal/" + logo)}
           alt={name}
         />
       </a>

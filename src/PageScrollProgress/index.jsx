@@ -7,8 +7,8 @@ const PageScrollProgress = (): Element<"div"> => {
 
   const getDocHeight = (): number => {
     // TODO: Flow still returns errors
-    const bodyExists: boolean = document.body === null;
-    const docElExists: boolean = document.documentElement === null;
+    const bodyExists: boolean = document.body !== null;
+    const docElExists: boolean = document.documentElement !== null;
     return Math.max(
       bodyExists ? document.body.scrollHeight : 0,
       docElExists ? document.documentElement.scrollHeight : 0,
