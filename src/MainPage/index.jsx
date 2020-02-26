@@ -23,7 +23,7 @@ const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
       <NavigationBar />
       <Intro />
       <RegistrationInfo />
-      <RegistrationChoice />
+      {/*<RegistrationChoice />*/}
       <Questions />
       <Sponsors />
       {/*<Statistics />*/}

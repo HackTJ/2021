@@ -25,15 +25,13 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             logo="aws.png"
             name="Amazon Web Services"
           />
+          <Logo url="https://www.yext.com" logo="yext.png" name="Yext" />
+          <Logo url="https://www.ensco.com" logo="ensco.png" name="Ensco" />
+          <Logo url="https://www.atpco.net/" logo="atpco.png" name="ATPCO" />
           <Logo
-            url="https://www.yext.com"
-            logo="yext.png"
-            name="Yext"
-          />
-          <Logo
-            url="https://www.ensco.com"
-            logo="ensco.png"
-            name="Ensco"
+            url="https://cloudwaveinc.com/"
+            logo="cloudwave.png"
+            name="CloudWave"
           />
           <Logo
             url="https://phone2action.com"
@@ -60,11 +58,7 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             logo="alertfive.png"
             name="Alert Five"
           />
-          <Logo
-            url="http://razorx2.com/"
-            logo="razorx2.png"
-            name="RazorX2"
-          />
+          <Logo url="http://razorx2.com/" logo="razorx2.png" name="RazorX2" />
           <Logo
             url="http://hackp.ac/mlh-stickermule-hackathons"
             logo="stickermule.png"
@@ -75,15 +69,16 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             logo="thinkfun.png"
             name="ThinkFun"
           />
-          <Logo
-            url="http://spontit.io"
-            logo="spontit.png"
-            name="Spontit"
-          />
+          <Logo url="http://spontit.io" logo="spontit.png" name="Spontit" />
           <Logo
             url="https://ultrapress.com"
             logo="ultrapress.png"
             name="UltraPress"
+          />
+          <Logo
+            url="https://stackoverflow.com"
+            logo="stackoverflow.png"
+            name="StackOverflow"
           />
         </div>
         <p className="large">

@@ -5,7 +5,9 @@ import FAQuestion from "./FAQuestion";
 
 import "./index.css";
 
-const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<typeof React.Fragment> => (
+const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
+  typeof React.Fragment
+> => (
   <>
     <a className="anchor" id="faq">
       FAQ
@@ -72,8 +74,10 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<type
                 <span>
                   Registration for participants, judges, mentors, and volunteers
                   opens on February 10 at 8 p.m. Registration for participants
-                  closes on February 24. Judges, mentors, and volunteers will be
-                  able to register until the start of the event.
+                  closes on February 24&mdash;this is a hard deadline; we do not
+                  accept submissions after 8 p.m. Judges, mentors, and
+                  volunteers will be able to register until the start of the
+                  event.
                 </span>
               }
             />

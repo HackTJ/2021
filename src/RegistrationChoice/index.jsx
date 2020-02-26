@@ -58,12 +58,13 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
         </div>
         <br />
         <p className="large">
-          Participants must be current high school students. Computer science
-          and engineering experience is not necessary, as we'll have workshops
-          and mentors so you can learn. Please note that registering alone does
-          not guarantee you will receive a ticket. Admission decisions will be
-          made based on a variety of factors including the date/time you
-          register, so make sure to sign up quickly!
+          Registration for participants has closed. Participants must be current
+          high school students. Computer science and engineering experience is
+          not necessary, as we'll have workshops and mentors so you can learn.
+          Please note that registering alone does not guarantee you will receive
+          a ticket. Admission decisions will be made based on a variety of
+          factors including the date/time you register, so make sure to sign up
+          quickly!
         </p>
         <br />
         <p className="large">

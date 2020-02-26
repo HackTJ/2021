@@ -24,12 +24,12 @@ const Landing: React.StatelessFunctionalComponent<{}> = (): React.Element<
           Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
         </div>
         <div className="register-button-block-old top">
-          <Link
+          {/*<Link
             className="button register-button mentor blackbutton"
             to="/registration"
           >
             Register for HackTJ 7.0
-          </Link>
+          </Link>*/}
           <a
             className="button register-button mentor blackbutton"
             href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
