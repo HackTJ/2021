@@ -2,6 +2,8 @@
 import React, { Fragment } from "react";
 import type { StatelessFunctionalComponent, Element } from "react";
 
+import './index.css';
+
 const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
   typeof Fragment
 > => (
@@ -25,10 +27,10 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)"
+            gridTemplateColumns: "repeat(2, 1fr)"
           }}
         >
-          <a
+          {/*<a
             className="flatbutton"
             style={{ width: "80%" }}
             href="https://hacktj.typeform.com/to/VRfmTH"
@@ -36,10 +38,10 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
             rel="noopener noreferrer"
           >
             <div className="text">Participants</div>
-          </a>
+          </a>*/}
           <a
             className="flatbutton long-label"
-            style={{ width: "99.99%" }}
+            style={{ width: "80%" }}
             href="https://hacktj.typeform.com/to/UoAWrS"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,30 +59,31 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
           </a>
         </div>
         <br />
-        <p className="large">
-          Registration for participants has closed. Participants must be current
+        <p className="large centered" style={{ textAlign: "center" }}>
+          Registration for participants has closed.{" "}
+          {/*Participants must be current
           high school students. Computer science and engineering experience is
           not necessary, as we'll have workshops and mentors so you can learn.
           Please note that registering alone does not guarantee you will receive
           a ticket. Admission decisions will be made based on a variety of
           factors including the date/time you register, so make sure to sign up
-          quickly!
+          quickly!*/}
         </p>
         <br />
-        <p className="large">
+        <p className="large centered">
           Judges must be present during the entire judging process (9:30 a.m. to
           11:30 a.m. on Sunday), but not necessarily during the entire
           hackathon. Computer science and engineering experience is preferred
           but not required.
         </p>
         <br />
-        <p className="large">
+        <p className="large centered">
           Mentors help students if they have any technical questions, and don't
           have to be present at HackTJ the entire time. Computer science and
           engineering experience is required.
         </p>
         <br />
-        <p className="large">
+        <p className="large centered">
           Volunteers help our team with logistical tasks such as check-in, food
           service, and chaperoning. No experience is necessary to be a
           volunteer. You can find more information on volunteer duties{" "}

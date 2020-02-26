@@ -18,7 +18,7 @@ const Intro: React.StatelessFunctionalComponent<{}> = (): React.Element<
         >
           <div className="animated"></div>
         </div>
-        <p className="large">
+        <p className="large centered">
           Do you get excited watching your ideas come to life? Ever wanted to
           build the next Snapchat or create an Amazon Alexa skill? Program a
           drone? Create programs using the latest machine learning or virtual

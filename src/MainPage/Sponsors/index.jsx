@@ -44,11 +44,6 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             name="Wolfram"
           />
           <Logo
-            url="https://www.digitalocean.com"
-            logo="digitalocean.png"
-            name="DigitalOcean"
-          />
-          <Logo
             url="https://www.collinsaerospace.com"
             logo="collinsaerospace.png"
             name="Collins Aerospace"
@@ -65,6 +60,11 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             name="Sticker Mule"
           />
           <Logo
+            url="https://www.digitalocean.com"
+            logo="digitalocean.png"
+            name="DigitalOcean"
+          />
+          <Logo
             url="https://www.thinkfun.com"
             logo="thinkfun.png"
             name="ThinkFun"
@@ -74,6 +74,11 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             url="https://ultrapress.com"
             logo="ultrapress.png"
             name="UltraPress"
+          />
+          <Logo
+            url="https://www.usehawkeye.com"
+            logo="hawkeye.png"
+            name="Hawkeye"
           />
           <Logo
             url="https://stackoverflow.com"

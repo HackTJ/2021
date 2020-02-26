@@ -43,7 +43,7 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
               answer={
                 <span>
                   HackTJ will start on Saturday, March 21 and run until Sunday,
-                  March 22. Check-in closes at 1pm on Saturday. We will not
+                  March 22. Check-in closes at 1 p.m. on Saturday. We will not
                   allow entry after this time.
                 </span>
               }
@@ -212,7 +212,7 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                   Experience is preferred but not necessary. Volunteers help our
                   team with logistical tasks such as check-in, food service, and
                   chaperoning. No experience is necessary to be a volunteer.
-                  Registration for these roles will open in March, but you can
+                  {/*Registration for these roles will open in March, but you can
                   reach out to{" "}
                   <a
                     href="mailto:hello@hacktj.org"
@@ -221,7 +221,7 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                   >
                     hello@hacktj.org
                   </a>{" "}
-                  in advance to be notified when the form is available!
+                  in advance to be notified when the form is available!*/}
                 </span>
               }
             />

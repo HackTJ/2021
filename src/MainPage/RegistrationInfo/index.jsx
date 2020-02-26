@@ -20,10 +20,10 @@ const RegistrationInfo: StatelessFunctionalComponent<{}> = (): Element<
           <div className="animated"></div>
         </div>
         <h1 className="section-title">Registration Info</h1>
-        <p className="large">
-          Registration opens on February 10 at 8 p.m. and closes on February 24!
+        <p className="large centered">
+          Registration for participants opens on February 10 at 8 p.m. and closes on February 24!
         </p>
-        <p className="large">
+        <p className="large centered">
           When you register you&apos;ll be asked for several forms. If you want
           to be able to submit your registration quickly, fill them out in
           advance. The required forms are the{" "}
@@ -67,14 +67,14 @@ const RegistrationInfo: StatelessFunctionalComponent<{}> = (): Element<
           >
             Emergency Care Form
           </a>
-          <a
+          {/*<a
             className="flatbutton register-button"
             href={
               (process.env.PUBLIC_URL || "") + "/forms/cvent_minor_waiver.pdf"
             }
           >
             Cvent Waiver (for minors)
-          </a>
+          </a>*/}
           <a
             className="flatbutton register-button"
             href={
@@ -84,14 +84,14 @@ const RegistrationInfo: StatelessFunctionalComponent<{}> = (): Element<
             Cvent Waiver (for adults)
           </a>
         </div>
-        <p className="large">
+        <p className="large centered">
           When registering you'll also have the option to upload a
           r&eacute;sum&eacute;, which would be given to certain sponsors looking
           to recruit hackers. You will also have a chance to submit your
           r&eacute;sum&eacute; after you register if you are not ready to upload
           it now.
         </p>
-        <p className="large">
+        <p className="large centered">
           Please note that registering alone does not guarantee you will receive
           a ticket. Tickets decisions will be made based on a variety of factors
           including the date/time you register, so make sure to sign up quickly!

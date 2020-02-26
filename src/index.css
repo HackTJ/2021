@@ -2087,3 +2087,8 @@ a.empty {
     transform: rotate(360deg);
   }
 }
+
+
+p.centered {
+  text-align: center;
+}
