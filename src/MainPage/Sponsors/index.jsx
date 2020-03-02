@@ -81,6 +81,11 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
           />
           <Logo url="http://razorx2.com" logo="razorx2.png" name="RazorX2" />
           <Logo
+            url="https://www.verizonmedia.com/"
+            logo="verizonmedia.png"
+            name="Verizon Media"
+          />
+          <Logo
             url="https://www.primamedicine.com"
             logo="primamedicine.png"
             name="Prima Medicine"
