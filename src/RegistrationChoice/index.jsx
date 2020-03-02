@@ -2,7 +2,7 @@
 import React, { Fragment } from "react";
 import type { StatelessFunctionalComponent, Element } from "react";
 
-import './index.css';
+import "./index.css";
 
 const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
   typeof Fragment
@@ -20,9 +20,10 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
           margin: "auto"
         }}
       >
-        <div className="animation-container vertical top right extra-right extra-height">
-          <div className="animated"></div>
-        </div>
+        {/*<div
+          className="vertical-segment green"
+          style={{ left: "-15%", top: "-14%", height: "123%" }}
+        ></div>*/}
         <h1 className="section-title">Register</h1>
         <div
           style={{

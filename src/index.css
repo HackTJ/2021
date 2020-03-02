@@ -1636,6 +1636,7 @@ section {
   position: relative;
   box-sizing: border-box;
   width: 100%;
+  z-index: 12;
 }
 
 section .container {
@@ -2088,7 +2089,34 @@ a.empty {
   }
 }
 
-
 p.centered {
   text-align: center;
+}
+
+div.vertical-segment.green {
+  border-left: 6px solid #64d861;
+  height: 113%;
+  position: absolute;
+  left: -20%;
+  top: -13%;
+}
+
+div.vertical-segment.white {
+  border-left: 6px solid white;
+  height: 113%;
+  position: absolute;
+  left: -20%;
+  top: -13%;
+}
+
+div.horizontal-segment.green {
+  border-top: 6px solid #64d861;
+  width: 100%;
+  position: absolute;
+}
+
+div.horizontal-segment.white {
+  border-top: 6px solid white;
+  width: 100%;
+  position: absolute;
 }

@@ -15,9 +15,30 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
     </a>
     <section id="sponsors">
       <div className="container">
-        <div className="animation-container vertical top right extra-right extra-height">
-          <div className="animated"></div>
-        </div>
+        {/*<div
+          className="vertical-segment green"
+          style={{
+            borderLeft: "6px solid #64d861",
+            height: "3%",
+            position: "absolute",
+            left: "auto",
+            right: "-14.3%",
+            top: "-3.45%"
+          }}
+        ></div>
+        <div
+          className="horizontal-segment green"
+          style={{ width: "125%", top: "-0.7%", right: "-14.4%" }}
+        ></div>
+        <div
+          className="vertical-segment green"
+          style={{
+            borderLeft: "6px solid #64d861",
+            left: "-10.6%",
+            top: "-0.6%",
+            height: "100.6"
+          }}
+        ></div>*/}
         <h1 className="section-title">Sponsors</h1>
         <div className="partner-container">
           <Logo
@@ -32,6 +53,11 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             url="https://cloudwaveinc.com/"
             logo="cloudwave.png"
             name="CloudWave"
+          />
+          <Logo
+            url="https://www.citadelsecurities.com/"
+            logo="citadelsecurities.png"
+            name="Citadel Securities"
           />
           <Logo
             url="https://phone2action.com"
@@ -53,7 +79,12 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             logo="alertfive.png"
             name="Alert Five"
           />
-          <Logo url="http://razorx2.com/" logo="razorx2.png" name="RazorX2" />
+          <Logo url="http://razorx2.com" logo="razorx2.png" name="RazorX2" />
+          <Logo
+            url="https://www.primamedicine.com"
+            logo="primamedicine.png"
+            name="Prima Medicine"
+          />
           <Logo
             url="http://hackp.ac/mlh-stickermule-hackathons"
             logo="stickermule.png"
@@ -109,9 +140,6 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
         </p>
       </div>
     </section>
-    <div className="animation-container horizontal sponsors">
-      <div className="animated right"></div>
-    </div>
   </>
 );
 

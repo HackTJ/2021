@@ -30,12 +30,20 @@ const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
         data-tip="data-tip"
         data-for={sponsorID}
       >
-        <img
-          id={"img-" + sponsorID}
-          className={`sponsor-image ${showTooltip ? "hover" : ""}`}
-          src={require("../../../images/sponsors/normal/" + logo)}
-          alt={name}
-        />
+        <>
+          <img
+            id={"img-normal-" + sponsorID}
+            className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
+            src={require("../../../images/sponsors/normal/" + logo)}
+            alt={name}
+          />
+          <img
+            id={"img-tint-" + sponsorID}
+            className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
+            src={require("../../../images/sponsors/tint/" + logo)}
+            alt={name}
+          />
+        </>
       </a>
       <ReactTooltip
         id={sponsorID}

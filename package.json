@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "tint": "./tint-sponsors '#64d861'",
+    "tint": "./tint-sponsors '#6BE667'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
     "predeploy": "npm run build && export NODE_DEBUG=gh-pages",

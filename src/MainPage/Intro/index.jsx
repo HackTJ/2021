@@ -12,12 +12,7 @@ const Intro: React.StatelessFunctionalComponent<{}> = (): React.Element<
     </a>
     <section className="intro">
       <div className="container">
-        <div
-          className="animation-container vertical left top extra-height"
-          id="trigger"
-        >
-          <div className="animated"></div>
-        </div>
+        {/*<div className="vertical-segment green"></div>*/}
         <p className="large centered">
           Do you get excited watching your ideas come to life? Ever wanted to
           build the next Snapchat or create an Amazon Alexa skill? Program a

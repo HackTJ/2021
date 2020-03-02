@@ -13,16 +13,18 @@ const Schedule: StatelessFunctionalComponent<{}> = (): Element<
     </a>
     <section className="schedule" id="schedules">
       <div className="container">
-        <div className="animation-container vertical top left extra-height">
-          <div className="animated"></div>
-        </div>
+        {/*<div
+          className="horizontal-segment green"
+          style={{ left: "-6%", top: "-4.4%", width: "112%" }}
+        ></div>
+        <div
+          className="vertical-segment green"
+          style={{ left: "-5.9%", top: "-3.4%" }}
+        ></div>*/}
         <h1 className="section-title">Schedule</h1>
         <ul className="day">
           <div className="day-title">
             <h3>Saturday, March 21</h3>
-            <div className="animation-container horizontal line-schedule">
-              <div className="animated left"></div>
-            </div>
           </div>
           <li className="item">
             <h6 className="time">10:00am</h6>
@@ -62,9 +64,6 @@ const Schedule: StatelessFunctionalComponent<{}> = (): Element<
         <ul className="day">
           <div className="day-title">
             <h3>Sunday, March 22</h3>
-            <div className="animation-container horizontal line-schedule">
-              <div className="animated left"></div>
-            </div>
           </div>
           <li className="item">
             <h6 className="time">12:00am</h6>

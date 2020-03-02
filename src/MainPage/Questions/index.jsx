@@ -14,18 +14,15 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
     </a>
     <section className="green faq">
       <div className="container">
-        <div className="animation-container vertical left top">
-          <div className="animated white"></div>
-        </div>
-        <div className="header-row">
-          <div className="animation-container horizontal left-side">
-            <div className="animated left white"></div>
-          </div>
-          <h1 className="section-title">FAQ</h1>
-          <div className="animation-container horizontal right-side">
-            <div className="animated left white"></div>
-          </div>
-        </div>
+        {/*<div
+          className="vertical-segment white"
+          style={{ top: "-0.1%", left: "-0.52%", height: "2.8%" }}
+        ></div>
+        <div
+          className="horizontal-segment white"
+          style={{ left: "-0.52%", top: "2.7%" }}
+        ></div>*/}
+        <h1 className="section-title">FAQ</h1>
         <ul className="faq-container">
           <div className="row">
             <FAQuestion
@@ -279,9 +276,17 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
           </a>
           .
         </p>
-        <div className="animation-container vertical right bottom">
-          <div className="animated white"></div>
-        </div>
+        {/*<div
+          className="vertical-segment white"
+          style={{
+            borderLeft: "6px solid white",
+            height: "102.7%",
+            position: "absolute",
+            left: "auto",
+            right: "0%",
+            top: "2.7%"
+          }}
+        ></div>*/}
       </div>
     </section>
   </>
