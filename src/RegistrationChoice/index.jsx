@@ -61,7 +61,16 @@ const RegistrationChoice: StatelessFunctionalComponent<{}> = (): Element<
         </div>
         <br />
         <p className="large centered" style={{ textAlign: "center" }}>
-          Registration for participants has closed.{" "}
+          Registration for participants has closed. Mentors, judges, and
+          volunteers should fill out the{" "}
+          <a
+            href={
+              (process.env.PUBLIC_URL || "") + "/forms/cvent_adult_waiver.pdf"
+            }
+          >
+            Cvent adult waiver
+          </a>
+          .
           {/*Participants must be current
           high school students. Computer science and engineering experience is
           not necessary, as we'll have workshops and mentors so you can learn.

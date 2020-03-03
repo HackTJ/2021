@@ -6,7 +6,7 @@ import IndeterminateLoadingIndicator from "../IndeterminateLoadingIndicator";
 const Landing = lazy(() => import("./Landing"));
 const NavigationBar = lazy(() => import("../NavigationBar"));
 const Intro = lazy(() => import("./Intro"));
-const RegistrationInfo = lazy(() => import("./RegistrationInfo"));
+// const RegistrationInfo = lazy(() => import("./RegistrationInfo"));
 const RegistrationChoice = lazy(() => import("../RegistrationChoice"));
 const Questions = lazy(() => import("./Questions"));
 const Sponsors = lazy(() => import("./Sponsors"));
@@ -22,7 +22,7 @@ const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
       <Landing />
       <NavigationBar />
       <Intro />
-      <RegistrationInfo />
+      {/*<RegistrationInfo />*/}
       <RegistrationChoice />
       <Questions />
       <Sponsors />

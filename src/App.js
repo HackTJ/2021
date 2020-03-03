@@ -17,7 +17,7 @@ const App: StatelessFunctionalComponent<{}> = (): Element<
   return (
     <React.StrictMode>
       <PageScrollProgress />
-      <Router basename="/2020">
+      <Router>
         <Suspense fallback={<IndeterminateLoadingIndicator />}>
           <Switch>
             <Route exact path="/registration" component={RegistrationPage} />

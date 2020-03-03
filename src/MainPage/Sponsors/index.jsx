@@ -133,6 +133,11 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
             name="Major League Hacking"
           />
           <Logo
+            url="https://www.cvent.com"
+            logo="cvent.png"
+            name="Cvent"
+          />
+          <Logo
             url="https://www.tjpartnershipfund.org"
             logo="tjpartnershipfund.png"
             name="TJ Partnership Fund"
