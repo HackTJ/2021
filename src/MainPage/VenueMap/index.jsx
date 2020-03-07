@@ -53,7 +53,7 @@ const VenueMap = (): Element<typeof Fragment> => {
             "pk.eyJ1IjoidmFydW4xNDcwIiwiYSI6ImNqc2FzcTg0dDAxeDc0NG9hdnl2ZW96ajAifQ.tm0RFQRooHhcpOKw9lL_9g"
           }
           mapStyle={"mapbox://styles/varun1470/cjsaupmju0by11fpkprq5prse"}
-          onViewportChange={viewport => setViewport(viewport)}
+          onViewportChange={newViewport => setViewport(newViewport)}
         >
           <Marker latitude={38.92201} longitude={-77.23312}>
             <h3
