@@ -7,7 +7,7 @@ const Landing = lazy(() => import("./Landing"));
 const NavigationBar = lazy(() => import("../NavigationBar"));
 const Intro = lazy(() => import("./Intro"));
 // const RegistrationInfo = lazy(() => import("./RegistrationInfo"));
-const RegistrationChoice = lazy(() => import("../RegistrationChoice"));
+// const RegistrationChoice = lazy(() => import("../RegistrationChoice"));
 const Questions = lazy(() => import("./Questions"));
 const Sponsors = lazy(() => import("./Sponsors"));
 // const Statistics = lazy(() => import("./Statistics"));
@@ -22,8 +22,8 @@ const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
       <Landing />
       <NavigationBar />
       <Intro />
-      {/*<RegistrationInfo />*/}
-      <RegistrationChoice />
+      {/*<RegistrationInfo />
+      {/*<RegistrationChoice />*/}
       <Questions />
       <Sponsors />
       {/*<Statistics />*/}

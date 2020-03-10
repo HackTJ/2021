@@ -16,20 +16,23 @@ const Landing: React.StatelessFunctionalComponent<{}> = (): React.Element<
           src={require("../../images/bigweblogo.png")}
           alt="HackTJ"
         />
-        <div className="event-announcement landing">
-          Registration for mentors, judges, and volunteers is open
+        <div
+          className="event-announcement landing"
+          style={{ color: "#FF0000" }}
+        >
+          The March dates have been cancelled for the health of all attendees
         </div>
-        <div className="event-date landing">March 21-22, 2020</div>
+        <div className="event-date landing">Alternate Dates TBD</div>
         <div className="event-location landing">
           Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
         </div>
         <div className="register-button-block-old top">
-          <Link
+          {/*<Link
             className="button register-button mentor blackbutton"
             to="/registration"
           >
             Register for HackTJ 7.0
-          </Link>
+          </Link>*/}
           <a
             className="button register-button mentor blackbutton"
             href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
