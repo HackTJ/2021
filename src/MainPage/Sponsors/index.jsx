@@ -48,7 +48,6 @@ const Sponsors: StatelessFunctionalComponent<{}> = (): Element<
           />
           <Logo url="https://www.yext.com" logo="yext.png" name="Yext" />
           <Logo url="https://www.ensco.com" logo="ensco.png" name="Ensco" />
-          <Logo url="https://www.atpco.net/" logo="atpco.png" name="ATPCO" />
           <Logo
             url="https://cloudwaveinc.com/"
             logo="cloudwave.png"

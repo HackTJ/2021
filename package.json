@@ -2,7 +2,7 @@
   "name": "hacktj-2020",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org/2020",
+  "homepage": "https://hacktj.org",
   "dependencies": {
     "chart.js": "^2.9.3",
     "eslint-plugin-flowtype": "^4.6.0",
