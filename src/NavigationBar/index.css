@@ -17,6 +17,8 @@
   z-index: 1000;
   white-space: nowrap;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
 }
 
 .active {
