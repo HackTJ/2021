@@ -19,7 +19,7 @@
     "react-virtualized-auto-sizer": "^1.0.2"
   },
   "scripts": {
-    "start": "npm run switch-homepage && react-scripts start",
+    "start": "yarn run switch-homepage && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -27,10 +27,10 @@
     "tint": "./tint-sponsors '#6BE667'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
-    "predeploy": "npm run build && export NODE_DEBUG=gh-pages",
-    "deploy-event": "npm run switch-event && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
-    "deploy-homepage": "npm run switch-homepage && npm run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\" && npm run switch-event",
-    "deploy-all": "npm run deploy-event && npm run deploy-homepage"
+    "predeploy": "yarn run build && export NODE_DEBUG=gh-pages",
+    "deploy-event": "yarn run switch-event && yarn run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
+    "deploy-homepage": "yarn run switch-homepage && yarn run build && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\" && yarn run switch-event",
+    "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "eslintConfig": {
     "extends": "react-app"
