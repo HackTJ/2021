@@ -51,5 +51,12 @@
   "devDependencies": {
     "flow-bin": "^0.118.0",
     "gh-pages": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackTJ/2021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HackTJ/2021/issues"
   }
 }
