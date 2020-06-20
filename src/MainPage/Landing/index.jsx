@@ -18,7 +18,7 @@ const Landing: React.StatelessFunctionalComponent<{}> = (): React.Element<
         />
         <div className="event-date landing">November 21st-22nd, 2020</div>
         <div className="event-location landing">
-          Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
+          Online
         </div>
         <div className="register-button-block-old top">
           {/*<Link
