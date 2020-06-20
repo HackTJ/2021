@@ -21,7 +21,7 @@ const Schedule: StatelessFunctionalComponent<{}> = (): Element<
           className="vertical-segment green"
           style={{ left: "-5.9%", top: "-3.4%" }}
         ></div>*/}
-        <h1 className="section-title">Schedule</h1>
+        <h1 className="section-title">Last Year's Schedule</h1>
         <ul className="day">
           <div className="day-title">
             <h3>Saturday, March 21</h3>
