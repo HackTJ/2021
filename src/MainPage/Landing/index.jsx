@@ -16,13 +16,7 @@ const Landing: React.StatelessFunctionalComponent<{}> = (): React.Element<
           src={require("../../images/bigweblogo.png")}
           alt="HackTJ"
         />
-        <div
-          className="event-announcement landing"
-          style={{ color: "#FF0000" }}
-        >
-          The March dates have been cancelled for the health of all attendees
-        </div>
-        <div className="event-date landing">Alternate Dates TBD</div>
+        <div className="event-date landing">November 21st-22nd, 2020</div>
         <div className="event-location landing">
           Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
         </div>
