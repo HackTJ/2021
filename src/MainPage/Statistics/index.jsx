@@ -11,44 +11,42 @@ const schoolData: {
   labels: [
     "Thomas Jefferson High School for Science and Technology",
     "Wilbert Tucker Woodson High School",
-    "Ocean Lakes High School",
-    "Westfield High School",
-    "Bishop Ireton High School",
-    "Chantilly High School",
-    "Wheaton High School",
-    "Montgomery Blair High School",
     "Rock Ridge High School",
-    "James Madison High School",
-    "Poolesville High School",
-    "West Springfield High School",
-    "Oakton High School",
+    "Bishop Ireton High School",
     "Academies of Loudoun",
-    "Edison High School",
-    "Forest Park High School",
-    "Thomas S. Wootton High School",
-    "West Potomac High School",
-    "Briar Woods High School",
-    "Centreville High School",
-    "Herndon High School",
+    "Ocean Lakes High School",
+    "West Springfield High School",
+    "Riverside High School",
+    "Baltimore Polytechnic Institute",
+    "Montgomery Blair High School",
+    "Oakton High School",
+    "Stone Bridge High School",
+    "John Champe High School",
+    "James Madison High School",
+    "Lake Braddock Secondary School",
+    "Winston Churchill High School",
+    "George C. Marshall High School",
+    "Freedom High School",
+    "Chantilly High School",
+    "Washington-Liberty High School",
     "Other"
   ],
   datasets: [
     {
       data: [
-        530,
-        35,
-        18,
-        10,
+        413,
+        19,
+        15,
+        13,
+        12,
         9,
-        7,
+        9,
         6,
         5,
-        5,
         4,
         4,
         4,
-        3,
-        3,
+        4,
         2,
         2,
         2,
@@ -56,7 +54,7 @@ const schoolData: {
         2,
         2,
         2,
-        23
+        15
       ]
     }
   ]
@@ -69,7 +67,7 @@ const genderData: {
   labels: ["Male", "Female", "Other"],
   datasets: [
     {
-      data: [445, 238, 4],
+      data: [392, 160, 1],
       backgroundColor: ["#00caab", "#a000fd", "#bbbbbb"]
     }
   ]
@@ -98,10 +96,10 @@ const graduationData: {
   labels: Array<string>,
   datasets: Array<{ data: Array<number> }>
 } = {
-  labels: ["2022", "2021", "2020", "2019"],
+  labels: ["2023", "2022", "2021", "2020"],
   datasets: [
     {
-      data: [106, 197, 161, 125]
+      data: [39, 162, 214, 137]
     }
   ]
 };
@@ -125,9 +123,9 @@ const Statistics: StatelessFunctionalComponent<{}> = (): Element<
         <div>
           <Pie data={genderData} />
         </div>
-        <div>
+        {/*<div>
           <Pie data={ethnicityData} />
-        </div>
+        </div>*/}
         <div>
           <Pie data={graduationData} />
         </div>
