@@ -73,25 +73,6 @@ const genderData: {
   ]
 };
 
-const ethnicityData: {
-  labels: Array<string>,
-  datasets: Array<{ data: Array<number>, backgroundColor: Array<string> }>
-} = {
-  labels: [
-    "Asian or Asian Indian",
-    "Caucasian",
-    "Black or African-American",
-    "Hispanic, Latino, or Spanish",
-    "Other"
-  ],
-  datasets: [
-    {
-      data: [524, 92, 18, 15, 38],
-      backgroundColor: ["#ff0000", "#73a9ff", "#00ff00", "#ffaa00", "#8e5544"]
-    }
-  ]
-};
-
 const graduationData: {
   labels: Array<string>,
   datasets: Array<{ data: Array<number> }>
@@ -123,9 +104,6 @@ const Statistics: StatelessFunctionalComponent<{}> = (): Element<
         <div>
           <Pie data={genderData} />
         </div>
-        {/*<div>
-          <Pie data={ethnicityData} />
-        </div>*/}
         <div>
           <Pie data={graduationData} />
         </div>
