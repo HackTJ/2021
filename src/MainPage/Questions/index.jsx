@@ -75,9 +75,9 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                             answer={
                                 <span>
                                     Registration for participants, judges,
-                                    mentors, and volunteers opens on October 10
+                                    mentors, and volunteers opens on September 25
                                     at 8 p.m. Registration for participants
-                                    closes on October 24&mdash;this is a hard
+                                    closes on October 16&mdash;this is a hard
                                     deadline; we do not accept submissions after
                                     8 p.m. Judges, mentors, and volunteers will
                                     be able to register until the start of the
@@ -256,7 +256,7 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                             question='How do I register?'
                             answer={
                                 <span>
-                                    At 8 p.m. on October 10, a button will
+                                    At 8 p.m. on September 25, a button will
                                     appear at the top of the site. Click this,
                                     and then you will be redirected to a page
                                     where you can click the appropriate form. If

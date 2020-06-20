@@ -16,8 +16,8 @@ const RegistrationInfo: StatelessFunctionalComponent<{}> = (): Element<
         {/*<div className="vertical-segment green"></div>*/}
         <h1 className="section-title">Registration Info</h1>
         <p className="large centered">
-          Registration for participants opens on October 10 at 8 p.m. and
-          closes on October 24!
+          Registration for participants opens on September 25 at 8 p.m. and
+          closes on October 16!
         </p>
         <p className="large centered">
           When you register you&apos;ll be asked for several forms. If you want
