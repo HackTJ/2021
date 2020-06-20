@@ -14,6 +14,12 @@ const Content: React.StatelessFunctionalComponent<{}> = (): React.Element<
       <h3 className="title">A Walk Through Memory Lane</h3>
     </div>
     <DevpostCard
+      logo="https://raw.githubusercontent.com/HackTJ/2020/master/src/images/logo.png" //previous logo on the HackTJ webstie is encrpyted
+      iteration="7.0"
+      year="2020"
+      url="https://hacktj2020.devpost.com/" //there was no devpost for this year
+    /> 
+    <DevpostCard
       logo="https://hacktj.org/2019/img/logo2.png"
       iteration="6.0"
       year="2019"
