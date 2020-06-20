@@ -2,7 +2,7 @@
   "name": "hacktj-2021",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org",
+  "homepage": "https://hacktj.org/2021",
   "dependencies": {
     "chart.js": "^3.0.0-alpha",
     "eslint": "^7.3.0",
