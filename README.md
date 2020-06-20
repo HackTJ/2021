@@ -1,6 +1,6 @@
-# HackTJ 7.0
+# HackTJ 7.5
 
-The website for HackTJ 7.0, held on March 21st-22nd, 2020.
+The website for HackTJ 7.5, held on November 21st-22nd, 2020.
 
 ## Setup
 
@@ -13,27 +13,19 @@ We use ReactJS.
 ### What to Change
 
 -   update the color scheme in all the CSS files
--   [`switch`](switch) script
-    -   replace all occurrences of `/2020` with `/2021`
 -   [README](README.md)
     -   fix years/information
--   [`src/HistoryPage/Content/index.jsx`](src/HistoryPage/Content/index.jsx)
-    -   add a `DevpostCard` for HackTJ 7.0
 -   [`src/MainPage/Landing/MLHTrustBadge`](src/MainPage/Landing/MLHTrustBadge)
     -   update the badge to the correct year
 -   [`src/MainPage/Landing/index.jsx`](src/MainPage/Landing/index.jsx)
     -   update the event date, venue, and URLs
     -   change "2019 Pictures" to "2020 Pictures" and update its URL
     -   update the URL of "Past Projects"
--   [`src/MainPage/Questions/index.jsx`](src/MainPage/Questions/index.jsx)
-    -   update the "When is HackTJ?" question's answer with the correct date
-    -   update the "Is there a deadline?" question's answer with the correct registration deadline
-    -   update the "What prizes can I win?" question's answer with the correct iteration of HackTJ
 -   [`src/MainPage/RegistrationInfo/index.jsx`](src/MainPage/RegistrationInfo/index.jsx)
     -   update registration start date
     -   update admissions decisions date
 -   [`src/MainPage/Schedule/index.jsx`](src/MainPage/Schedule/index.jsx)
-    -   update the schedule or include previous year's schedule
+    -   update the schedule
 -   [`src/MainPage/Sponsors/index.jsx`](src/MainPage/Sponsors/index.jsx) and [`src/images/sponsors`](src/images/sponsors) and [`src/images/partners`](src/images/partners)
     -   update the sponsor logos, maintain ordering by donation amount
 -   [`src/MainPage/Statistics/index.jsx`](src/MainPage/Statistics/index.jsx)
