@@ -46,7 +46,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
                     <TeamPicture
                         name='Rashad Philizaire'
                         about='Rashad is a senior at TJ and is involved in the website, Devpost, and workshop for HackTJ. He became interested in joining the team after hearing about how much time and energy the organizers would dedicate towards HackTJ. Rashad is passionate about computer science and especially fascinated by the fields of Artificial Intelligence and Machine Learning. He currently serves as the Black Student Union (BSU) President and TJ Consulting Club Vice President. In his free time, he likes to spend time with his friends and family, listen to music, and watch Netflix.'
-                        /*image={require('../../images/team/RashadPhilizaire.png')}*/></TeamPicture>
+                        image={require('../../images/team/RashadPhilizaire.png')}></TeamPicture>
                     <TeamPicture
                         name='Raunak Daga'
                         about='(Need update)Raunak is a senior at TJ and the website development lead. He is passionate about computer science and excited to be a part of the HackTJ team after participating for two years. He is also a big fan of debate as a teaching coordinator for the TJ Public Forum Debate Team. Outside of school, he spends his free time playing with his Yorkie, listening to music, and watching Futurama.'
