@@ -1,8 +1,8 @@
 {
-  "name": "hacktj-2020",
+  "name": "hacktj-2021",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org/2020",
+  "homepage": "https://hacktj.org/2021",
   "dependencies": {
     "chart.js": "^2.9.3",
     "eslint": "^7.1.0",

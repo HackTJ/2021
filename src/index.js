@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-// Redirect to /2020:
-// window.location.href = "https://hacktj.org/2020";
+// Redirect to /2021:
+// window.location.href = "https://hacktj.org/2021";
 
 // Start Single Page Apps for GitHub Pages
 // Single Page Apps for GitHub Pages
