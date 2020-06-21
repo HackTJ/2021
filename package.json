@@ -2,7 +2,7 @@
   "name": "hacktj-2021",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org/2021",
+  "homepage": "https://hacktj.org",
   "dependencies": {
     "chart.js": "^3.0.0-alpha",
     "eslint": "^7.3.0",
@@ -28,7 +28,7 @@
     "tint": "./tint-sponsors '#6BE667'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
-    "predeploy": "yarn run build && export NODE_DEBUG=gh-pages",
+    "predeploy": "yarn run build && NODE_DEBUG=gh-pages",
     "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
     "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b master -d build -m \"Update $timestamp\" && yarn run switch-event",
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
@@ -49,8 +49,8 @@
     ]
   },
   "devDependencies": {
-    "flow-bin": "^0.118.0",
-    "gh-pages": "^2.2.0"
+    "flow-bin": "^0.127.0",
+    "gh-pages": "^3.1.0"
   },
   "repository": {
     "type": "git",

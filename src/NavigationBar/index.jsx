@@ -49,9 +49,11 @@ const NavigationBar: StatelessFunctionalComponent<{}> = (): Element<
         <Nav.Link href="#team">
           <h1>Team</h1>
         </Nav.Link>
+        {/*
         <Nav.Link href="#map">
           <h1>Map</h1>
         </Nav.Link>
+        */}
       </Nav>
     </Navbar>
   </>

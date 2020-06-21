@@ -13,7 +13,7 @@ const Sponsors = lazy(() => import("./Sponsors"));
 // const Statistics = lazy(() => import("./Statistics"));
 const Schedule = lazy(() => import("./Schedule"));
 const Team = lazy(() => import("./Team"));
-const VenueMap = lazy(() => import("./VenueMap"));
+// const VenueMap = lazy(() => import("./VenueMap"));
 const Footer = lazy(() => import("../Footer"));
 
 const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
@@ -29,7 +29,7 @@ const MainPage: StatelessFunctionalComponent<{}> = (): Element<"span"> => (
       {/*<Statistics />*/}
       <Schedule />
       <Team />
-      <VenueMap />
+      {/*<VenueMap />*/}
       <Footer />
     </Suspense>
   </span>
