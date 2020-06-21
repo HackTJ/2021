@@ -26,7 +26,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
                     <TeamPicture
                         name='Nishitha Vattikonda'
                         about='Nishitha is the Director of HackTJ 7.5 and 8.0. She&apos;s a senior, and this is her third year organizing HackTJ after participating during her freshman year. She’s passionate about empowering young women to pursue computer science—she serves as Vice President of Coding Lady Colonials, a computer science club focused on encouraging girls to pursue advanced coursework, career development, and extracurricular enrichment in computer science. In her free time, Nishitha enjoys reading science fiction and baking desserts with friends and family.'
-                        /*image={require('../../images/team/NishithaVattikonda.png')}*/></TeamPicture>
+                        image={require('../../images/team/NishithaVattikonda.png')}></TeamPicture>
                     <TeamPicture
                         name='Marian Qian'
                         about='Marian is a senior at TJ and the assistant director of HackTJ 7.5. The excitement from her participation in HackTJ as an underclassmen led her to join the hackathon’s team last year, and she looks forward to planning this year’s HackTJ. She is interested in machine learning and the developments of the field in areas such as astronomy. Marian participates in Science Olympiad and the cheer team and is editor in chief of the yearbook. Outside of school, she enjoys sketching and watching TV shows.'
