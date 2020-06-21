@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
 // Redirect to /2021:
 // window.location.href = "https://hacktj.org/2021";
@@ -19,31 +19,31 @@ import * as serviceWorker from "./serviceWorker";
 // When the single page app is loaded further down in this file,
 // the correct url will be waiting in the browser's history for
 // the single page app to route accordingly.
-(function(l) {
+(function (l) {
   if (l.search) {
-    var q = {};
+    const q = {};
     l.search
       .slice(1)
-      .split("&")
-      .forEach(function(v) {
-        var a = v.split("=");
+      .split('&')
+      .forEach((v) => {
+        const a = v.split('=');
         q[a[0]] = a
           .slice(1)
-          .join("=")
-          .replace(/~and~/g, "&");
+          .join('=')
+          .replace(/~and~/g, '&');
       });
     if (q.p !== undefined) {
       window.history.replaceState(
         null,
         null,
-        l.pathname.slice(0, -1) + (q.p || "") + (q.q ? "?" + q.q : "") + l.hash
+        l.pathname.slice(0, -1) + (q.p || '') + (q.q ? `?${q.q}` : '') + l.hash,
       );
     }
   }
-})(window.location);
+}(window.location));
 // End Single Page Apps for GitHub Pages
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
