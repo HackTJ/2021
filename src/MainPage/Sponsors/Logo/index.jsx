@@ -2,7 +2,7 @@
 import React, { useState, memo } from "react";
 import type { Element } from "react";
 
-import ReactTooltip from "react-tooltip";
+import { Tooltip } from 'reactstrap';
 
 import "./index.css";
 
@@ -29,6 +29,7 @@ const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
         rel="noopener noreferrer"
         data-tip="data-tip"
         data-for={sponsorID}
+        id={"img-" + sponsorID}
       >
         <>
           <img
@@ -45,20 +46,18 @@ const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
           />
         </>
       </a>
-      <ReactTooltip
+      <Tooltip
         id={sponsorID}
-        place="top"
+        placement="top"
         type="dark"
         effect="solid"
-        afterShow={evt => {
-          setShowTooltip(true);
-        }}
-        afterHide={evt => {
-          setShowTooltip(false);
-        }}
+        isOpen={showTooltip}
+        toggle={() => setShowTooltip(!showTooltip)}
+        autohide={false}
+        target={"img-" + sponsorID}
       >
         {name}
-      </ReactTooltip>
+      </Tooltip>
     </>
   );
 };

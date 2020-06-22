@@ -2,7 +2,7 @@
 import React, { useState, memo } from "react";
 import type { Element } from "react";
 
-import Figure from "react-bootstrap/Figure";
+import { Card, CardTitle, CardImg, CardImgOverlay } from 'reactstrap';
 
 import "./index.css";
 
@@ -16,13 +16,12 @@ const TeamPicture = ({ name, image, about }: Props): Element<"li"> => {
   const [showAbout, setShowAbout] = useState<boolean>(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
-      <Figure
-        className="figure fade question"
-        onClick={() => setShowAbout(!showAbout)}
-      >
-        <Figure.Image alt={name} src={image} className="img" thumbnail={true} />
-        <Figure.Caption className="figcaption">{name}</Figure.Caption>
-      </Figure>
+      <Card className="figure fade question" onClick={() => setShowAbout(!showAbout)}>
+        <CardImg className="img" src={image} />
+        <CardImgOverlay>
+          <CardTitle className="figcaption">{name}</CardTitle>
+        </CardImgOverlay>
+      </Card>
       <div
         className="answer"
         style={{

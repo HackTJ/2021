@@ -2,8 +2,7 @@
 import React, { Fragment } from "react";
 import type { StatelessFunctionalComponent, Element } from "react";
 
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import { Navbar, Nav, NavLink } from 'reactstrap';
 
 import MLHTrustBadge from "./MLHTrustBadge";
 
@@ -29,30 +28,30 @@ const NavigationBar: StatelessFunctionalComponent<{}> = (): Element<
     >
       <div style={{ height: "50px" }} />
       <Nav className="nav justify-content-center">
-        <Nav.Link href="#intro">
+        <NavLink href="#intro">
           <h1>Intro</h1>
-        </Nav.Link>
-        <Nav.Link href="#faq">
+        </NavLink>
+        <NavLink href="#faq">
           <h1>FAQ</h1>
-        </Nav.Link>
-        <Nav.Link href="#sponsor">
+        </NavLink>
+        <NavLink href="#sponsor">
           <h1>Sponsors</h1>
-        </Nav.Link>
+        </NavLink>
         {/*
-        <Nav.Link href="#demographics">
+        <NavLink href="#demographics">
           <h1>Demographics</h1>
-        </Nav.Link>
+        </NavLink>
         */}
-        <Nav.Link href="#schedule">
+        <NavLink href="#schedule">
           <h1>Schedule</h1>
-        </Nav.Link>
-        <Nav.Link href="#team">
+        </NavLink>
+        <NavLink href="#team">
           <h1>Team</h1>
-        </Nav.Link>
+        </NavLink>
         {/*
-        <Nav.Link href="#map">
+        <NavLink href="#map">
           <h1>Map</h1>
-        </Nav.Link>
+        </NavLink>
         */}
       </Nav>
     </Navbar>
