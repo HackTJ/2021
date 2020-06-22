@@ -18,7 +18,7 @@ const Logo = ({ url, name, logo }: Props): Element<typeof React.Fragment> => {
   const [
     showTooltip: boolean,
     setShowTooltip: (newShowTooltip: boolean) => void
-  ] = useState(false);
+  ] = useState<boolean>(false);
 
   return (
     <>
