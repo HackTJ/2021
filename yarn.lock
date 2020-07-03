@@ -6817,7 +6817,6 @@ fsevents@^1.2.7:
     react-map-gl: ^5.2.7
     react-router-dom: ^5.2.0
     react-scripts: ^3.4.1
-    react-smooth-collapse: ^2.1.0
     reactstrap: ^8.4.1
   languageName: unknown
   linkType: soft
@@ -11598,7 +11597,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -12045,18 +12044,6 @@ fsevents@^1.2.7:
   bin:
     react-scripts: ./bin/react-scripts.js
   checksum: 3/417fc7cfb3c7b632f8286e02febf2301ae4a4bc25299a9ef8662c777dcaef8de9d7f2320cd7491bf796674fa1de7d86fdb9e9a2852266167e19085dd78b15f79
-  languageName: node
-  linkType: hard
-
-"react-smooth-collapse@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "react-smooth-collapse@npm:2.1.0"
-  dependencies:
-    "@babel/runtime": ^7.0.0
-    prop-types: ^15.6.0
-  peerDependencies:
-    react: ^16.3.0
-  checksum: 3/60e752f065551d89ca55eddb1d90e31074cb81bd6a59f013c8dc3759857e91ddc40029bc4c3a80d0082deab1d4c36089294c109e5fa08ee085ede682d2cce03b
   languageName: node
   linkType: hard
 

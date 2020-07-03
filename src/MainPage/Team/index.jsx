@@ -33,7 +33,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
             {
               name: "Marian Qian",
               about:
-                "Marian is a senior at TJ and the assistant director of HackTJ 7.5. The excitement from her participation in HackTJ as an underclassmen led her to join the hackathon’s team last year, and she looks forward to planning this year’s HackTJ. She is interested in machine learning and the developments of the field in areas such as astronomy. Marian participates in Science Olympiad and the cheer team and is editor in chief of the yearbook. Outside of school, she enjoys sketching and watching TV shows.",
+                "Marian is a senior at TJ and the assistant director of HackTJ 7.5 and 8.0. The excitement from her participation in HackTJ as an underclassmen led her to join the hackathon’s team last year, and she looks forward to planning this year’s HackTJ. She is interested in machine learning and the developments of the field in areas such as astronomy. Marian participates in Science Olympiad and the cheer team and is editor in chief of the yearbook. Outside of school, she enjoys sketching and watching TV shows.",
               image: require("../../images/team/MarianQian.png"),
             },
             {
@@ -45,7 +45,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
             {
               name: "Tammy Ding",
               about:
-                "Tammy Ding is a senior who serves as the graphic designer for HackTJ branding and merch, and is also responsible for creating and sending invoices. She was inspired by the organization and complexity of HackTJ after participating in the hackathon and writing an article for the school newspaper on the behind-the-scenes of the event. Interested in robotics, engineering, and design, Tammy immerses herself in a variety of extracurriculars, such as Science Olympiad, journalism, National Art Honor Society, and FIRST Tech Challenge.",
+                "Tammy is a senior at TJ who serves as the graphic designer for HackTJ branding and is also responsible for creating and sending invoices. She was inspired by the organization and complexity of HackTJ after participating in the hackathon and writing an article for the school newspaper on the behind-the-scenes of the event. Outside of HackTJ, Tammy is part of the varsity cheer and track teams and immerses herself in a variety of extracurriculars, such as journalism, National Art Honor Society, and FIRST Tech Challenge.",
               image: require("../../images/team/TammyDing.png"),
             },
             {
@@ -63,8 +63,8 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
             {
               name: "Raunak Daga",
               about:
-                "(Needs update) Raunak is a senior at TJ and the website development lead. He is passionate about computer science and excited to be a part of the HackTJ team after participating for two years. He is also a big fan of debate as a teaching coordinator for the TJ Public Forum Debate Team. Outside of school, he spends his free time playing with his Yorkie, listening to music, and watching Futurama.",
-              /*image: {require('../../images/team/RaunakDaga.png')}*/
+                "Raunak is a senior at TJ and the website development lead. He is passionate about computer science and excited to be a part of the HackTJ team after participating for two years. He is also a big fan of debate as a teaching coordinator for the TJ Public Forum Debate Team. Outside of school, he spends his free time playing with his Yorkie, listening to music, and watching Futurama.",
+              image: require("../../images/team/RaunakDaga.png"),
             },
             {
               name: "Sadhika Dhanasekar",
@@ -87,7 +87,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
             {
               name: "Arjun Jagannathan",
               about:
-                "Arjun is a junior at TJ and coordinates sponsorships, reaches out to mentors, and helps organize workshops. He became interested in joining the team after winning the CapitalOne Challenge for Best Financial Hack in HackTJ 6.0. Arjun is passionate about business, specifically finance, and is an aspiring Investment Banker. He currently serves as the Senior Vice President of the Investment Club and participates in other business clubs, such as FBLA and Consulting Club. In his free time, Arjun loves to play basketball and soccer, listen to music, and trade stocks.",
+                "Arjun is a junior at TJ and coordinates sponsorships, reaches out to mentors, and helps organize workshops. He became interested in joining the team after attending HackTJ 6.0. Arjun is passionate about business, specifically finance, and is an aspiring Investment Banker. He currently serves as the Senior Vice President of the Investment Club and participates in other business clubs, such as FBLA and Consulting Club. In his free time, Arjun loves to play basketball and soccer, listen to music, and trade stocks.",
               image: require("../../images/team/ArjunJagannathan.png"),
             },
             {
@@ -106,7 +106,7 @@ const Team: StatelessFunctionalComponent<{}> = (): Element<typeof Fragment> => (
               name: "Shreya Singh",
               about:
                 "Shreya is a junior at TJ and is one of the mentors, workshops, and judging coordinators for HackTJ. She wanted to join the HackTJ team after attending the event in her freshman year and wanting to learn more about the behind-the-scenes experience. Shreya is passionate about artificial intelligence and chemistry and is interested in the intersection between these two fields. She is an officer of Coding Lady Colonials, where she teaches other club members about various computer science topics and applications. In her free time, Shreya enjoys running, photography, and playing the piano.",
-              /*image: {require('../../images/team/ShreyaSingh.png')}*/
+              image: require("../../images/team/ShreyaSingh.png")
             },
             {
               name: "Shreyas Mayya",
