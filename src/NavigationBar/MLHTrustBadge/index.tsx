@@ -3,7 +3,7 @@ import * as React from "react";
 const MLHTrustBadge = () => (
   <a
     id="mlh-trust-badge"
-    href="https://mlh.io/seasons/na-2020/events?utm_source=na-hacktahon&amp;utm_medium=TrustBadge&amp;utm_campaign=2020-season&amp;utm_content=white"
+    href="https://mlh.io/seasons/na-2021/events?utm_source=na-hacktahon&amp;utm_medium=TrustBadge&amp;utm_campaign=2021-season&amp;utm_content=white"
     target="_blank"
     rel="noopener noreferrer"
     style={{
@@ -18,8 +18,8 @@ const MLHTrustBadge = () => (
     }}
   >
     <img
-      src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-white.svg"
-      alt="Major League Hacking 2020 Hackathon Season"
+      src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
+      alt="Major League Hacking 2021 Hackathon Season"
       style={{
         width: "100%",
       }}
