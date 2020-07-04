@@ -11,7 +11,7 @@ const Sponsors = React.lazy(() => import("./Sponsors"));
 // const Statistics = React.lazy(() => import("./Statistics"));
 const Schedule = React.lazy(() => import("./Schedule"));
 const Team = React.lazy(() => import("./Team"));
-const VenueMap = React.lazy(() => import("./VenueMap"));
+// const VenueMap = React.lazy(() => import("./VenueMap"));
 const Footer = React.lazy(() => import("../Footer"));
 
 const MainPage = () => (
@@ -27,7 +27,7 @@ const MainPage = () => (
       {/*<Statistics />*/}
       <Schedule />
       <Team />
-      <VenueMap />
+      {/*<VenueMap />*/}
       <Footer />
     </React.Suspense>
   </span>
