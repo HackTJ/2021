@@ -41,9 +41,7 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                             answer={
                                 <span>
                                     HackTJ will start on Saturday, November 21
-                                    and run until Sunday, November 22. Check-in
-                                    closes at 1 p.m. on Saturday. We will not
-                                    allow entry after this time.
+                                    and run until Sunday, November 22.
                                 </span>
                             }
                         />
@@ -147,63 +145,6 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                     </div>
                     <div className='row'>
                         <FAQuestion
-                            question='What should I bring?'
-                            answer={
-                                <span>
-                                    You&apos;ll need to bring your laptop,
-                                    phone, chargers, a sleeping bag/pillow,
-                                    toiletries, and extra clothing. We suggest
-                                    you bring a set of nice clothes for demos;
-                                    you&apos;ll want to make the best
-                                    impression.
-                                </span>
-                            }
-                        />
-                        <FAQuestion
-                            question='Will there be food?'
-                            answer={<span>Yes. Lots and lots of food.</span>}
-                        />
-                        <FAQuestion
-                            question='What if I have dietary concerns?'
-                            small={true}
-                            answer={
-                                <span>
-                                    We&apos;ll be providing meals for most
-                                    everyone at HackTJ, but if you have special
-                                    concerns please{' '}
-                                    <a href='mailto:hello@hacktj.org'>
-                                        let us know
-                                    </a>
-                                    .
-                                </span>
-                            }
-                        />
-                    </div>
-                    <div className='row'>
-                        <FAQuestion
-                            question='What hardware will be available?'
-                            small={true}
-                            answer={
-                                <span>
-                                    All of the hardware at HackTJ is generously
-                                    provided by MLH. Our list is not finalized
-                                    yet, but you can browse through the usual
-                                    offerings at{' '}
-                                    <a
-                                        href='https://hardware.mlh.io/'
-                                        target='_blank'
-                                        rel='noopener noreferrer'>
-                                        hardware.mlh.io
-                                    </a>
-                                    . In previous years we’ve had multiple
-                                    Raspberry Pi and Arduino kits, powerful
-                                    computers, Oculus headsets, Amazon Echos,
-                                    Google Homes, and various sensors, motors,
-                                    wires, etc.
-                                </span>
-                            }
-                        />
-                        <FAQuestion
                             question='What prizes can I win?'
                             answer={
                                 <span>
@@ -218,40 +159,6 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                                 </span>
                             }
                         />
-                        <FAQuestion
-                            question='Can I be a mentor, judge, or volunteer?'
-                            small={true}
-                            answer={
-                                <span>
-                                    Mentors work interactively with students to
-                                    help them develop their projects. This could
-                                    mean brainstorming ideas, teaching students
-                                    new skills or languages, and troubleshooting
-                                    when they run into obstacles. If you have
-                                    any experience with CS and are available at
-                                    any time during HackTJ, you can be a mentor!
-                                    Judges listen to student pitches during our
-                                    Sunday-morning expo and decide which
-                                    projects are winners. Experience is
-                                    preferred but not necessary. Volunteers help
-                                    our team with logistical tasks such as
-                                    check-in, food service, and chaperoning. No
-                                    experience is necessary to be a volunteer.
-                                    {/*Registration for these roles will open in March, but you can
-                  reach out to{" "}
-                  <a
-                    href="mailto:hello@hacktj.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    hello@hacktj.org
-                  </a>{" "}
-                  in advance to be notified when the form is available!*/}
-                                </span>
-                            }
-                        />
-                    </div>
-                    <div className='row'>
                         <FAQuestion
                             question='How do I register?'
                             answer={
@@ -268,19 +175,6 @@ const Questions: React.StatelessFunctionalComponent<{}> = (): React.Element<
                                     In order to speed up the registration
                                     process, print out these forms, fill them
                                     out, and scan them beforehand.
-                                </span>
-                            }
-                        />
-                        <FAQuestion
-                            question="Wasn't HackTJ cancelled?"
-                            small={true}
-                            answer={
-                                <span>
-                                    Overnight events are not allowed in Fairfax
-                                    County Public Schools schools. However,
-                                    Cvent has graciously donated their office to
-                                    us for HackTJ. HackTJ 7.5 will remain
-                                    overnight!
                                 </span>
                             }
                         />
