@@ -85,3 +85,12 @@ section#sponsors a.sponsor-wrapper:before {
 section#sponsors a.sponsor-wrapper:hover:before {
   background: none;
 } */
+
+div.tooltip.show {
+  /* section#sponsors because reactstrap adds the tooltip to the end of <body> */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 7px;
+  border-radius: .5rem;
+  z-index: 50;
+}
