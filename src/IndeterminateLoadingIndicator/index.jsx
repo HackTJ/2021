@@ -1,20 +1,15 @@
 // @flow
-import * as React from "react";
+import React from "react";
 
 import "./index.css";
+
+import BounceLoader from "react-spinners/BounceLoader";
 
 const IndeterminateLoadingIndicator: React.StatelessFunctionalComponent<{}> = (): React.Element<
   "div"
 > => (
   <div className="loading">
-    <svg
-      xmlns="https://www.w3.org/2000/svg"
-      viewBox="-1 -1 34 34"
-      className="progress"
-    >
-      <circle cx="16" cy="16" r="16" className="weak" />
-      <circle cx="16" cy="16" r="16" className="strong" />
-    </svg>
+    <BounceLoader color={"#65d861"} size={120} />
   </div>
 );
 
