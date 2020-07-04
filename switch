@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 if [ $1 == "event" ]; then
   jq '.homepage = "https://hacktj.org/2021"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Router>|<Router basename="/2021">|' src/App.jsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.jsx
+  sed 's|<Router>|<Router basename="/2021">|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
   jq '.start_url = "/2021"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   jq '.short_name = "HackTJ 7.5"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   sed 's|<base href="/" />|<base href="/2021" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
@@ -15,7 +15,7 @@ if [ $1 == "event" ]; then
   git remote set-url origin git@github.com:HackTJ/2021.git
 elif [ $1 == "homepage" ]; then
   jq '.homepage = "https://hacktj.org"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Router basename="/2021">|<Router>|' src/App.jsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.jsx
+  sed 's|<Router basename="/2021">|<Router>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
   jq '.start_url = "/"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   jq '.short_name = "HackTJ"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   sed 's|<base href="/2021" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html

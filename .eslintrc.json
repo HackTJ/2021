@@ -4,7 +4,7 @@
         "es2020": true
     },
     "extends": [
-        "airbnb", "airbnb/hooks",
+        "airbnb", "airbnb/hooks", "airbnb-typescript-prettier",
         "plugin:react/recommended",
         "plugin:flowtype/recommended"
     ],
