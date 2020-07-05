@@ -44,7 +44,11 @@ const VenueMap = (): JSX.Element => {
       </a>
       <section className="green map">
         <ReactMapGL
-          {...viewport}
+          width={viewport.width}
+          height={viewport.height}
+          longitude={viewport.longitude}
+          latitude={viewport.latitude}
+          zoom={viewport.zoom}
           mapboxApiAccessToken="pk.eyJ1IjoidmFydW4xNDcwIiwiYSI6ImNqc2FzcTg0dDAxeDc0NG9hdnl2ZW96ajAifQ.tm0RFQRooHhcpOKw9lL_9g"
           mapStyle="mapbox://styles/varun1470/cjsaupmju0by11fpkprq5prse"
           onViewportChange={(newViewport) => setViewport(newViewport)}
