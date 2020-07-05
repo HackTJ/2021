@@ -4,14 +4,14 @@ import Logo from "./Logo";
 
 import "./index.css";
 
-const Sponsors = () => (
+const Sponsors = (): JSX.Element => (
   <>
     <a className="anchor" id="sponsor">
       Sponsors
     </a>
     <section id="sponsors">
       <div className="container">
-        {/*<div
+        {/* <div
          className="vertical-segment green"
          style={{
            borderLeft: "6px solid #64d861",
@@ -34,7 +34,7 @@ const Sponsors = () => (
            top: "-0.6%",
            height: "100.6"
          }}
-        ></div>*/}
+        ></div> */}
         <h1 className="section-title">Sponsors</h1>
         <div className="partner-container">
           {[
@@ -139,11 +139,11 @@ const Sponsors = () => (
               url={company.url}
               logo={company.logo}
               key={company.name}
-            ></Logo>
+            />
           ))}
         </div>
         <p className="large">
-          Can't see our sponsors? Try disabling ad block for this page.
+          Can&#39;t see our sponsors? Try disabling ad block for this page.
         </p>
         <h1 className="section-title">Partners</h1>
         <div className="partner-container">
@@ -169,7 +169,7 @@ const Sponsors = () => (
               url={partner.url}
               logo={partner.logo}
               key={partner.name}
-            ></Logo>
+            />
           ))}
         </div>
         <p className="large">

@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import IndeterminateLoadingIndicator from "../IndeterminateLoadingIndicator";
+
 const Landing = React.lazy(() => import("./Landing"));
 const NavigationBar = React.lazy(() => import("../NavigationBar"));
 const Intro = React.lazy(() => import("./Intro"));
@@ -14,20 +15,20 @@ const Team = React.lazy(() => import("./Team"));
 // const VenueMap = React.lazy(() => import("./VenueMap"));
 const Footer = React.lazy(() => import("../Footer"));
 
-const MainPage = () => (
+const MainPage = (): JSX.Element => (
   <span className="App">
     <React.Suspense fallback={<IndeterminateLoadingIndicator />}>
       <Landing />
       <NavigationBar />
       <Intro />
-      {/*<RegistrationInfo />
-      {/*<RegistrationChoice />*/}
+      {/* <RegistrationInfo />
+      {/*<RegistrationChoice /> */}
       <Questions />
       <Sponsors />
-      {/*<Statistics />*/}
+      {/* <Statistics /> */}
       <Schedule />
       <Team />
-      {/*<VenueMap />*/}
+      {/* <VenueMap /> */}
       <Footer />
     </React.Suspense>
   </span>

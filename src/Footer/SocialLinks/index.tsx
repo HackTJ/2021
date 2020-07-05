@@ -37,7 +37,7 @@ const instagram: React.ReactElement<"a"> = (
   </a>
 );
 
-const SocialLinks = () => (
+const SocialLinks = (): JSX.Element => (
   <div className="social-links">
     {twitter}
     {facebook}

@@ -9,7 +9,7 @@ const HistoryPage = lazy(() => import("./HistoryPage"));
 const MainPage = lazy(() => import("./MainPage"));
 const NotFoundPage = lazy(() => import("./NotFoundPage"));
 
-const App = () => (
+const App = (): JSX.Element => (
   <React.StrictMode>
     <PageScrollProgress />
     <Router basename="/2021">

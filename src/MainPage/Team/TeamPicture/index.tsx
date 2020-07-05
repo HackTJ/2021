@@ -10,7 +10,7 @@ type Props = {
   about: string;
 };
 
-const TeamPicture = ({ name, image, about }: Props) => {
+const TeamPicture = ({ name, image, about }: Props): JSX.Element => {
   const [showAbout, setShowAbout] = useState<boolean>(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const MLHTrustBadge = () => (
+const MLHTrustBadge = (): JSX.Element => (
   <a
     id="mlh-trust-badge"
     href="https://mlh.io/seasons/na-2021/events?utm_source=na-hacktahon&amp;utm_medium=TrustBadge&amp;utm_campaign=2021-season&amp;utm_content=white"

@@ -2400,7 +2400,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^3.3.0":
+"@typescript-eslint/eslint-plugin@npm:^3.3.0, @typescript-eslint/eslint-plugin@npm:latest":
   version: 3.5.0
   resolution: "@typescript-eslint/eslint-plugin@npm:3.5.0"
   dependencies:
@@ -6005,7 +6005,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.4":
+"eslint-plugin-prettier@npm:^3.1.4, eslint-plugin-prettier@npm:latest":
   version: 3.1.4
   resolution: "eslint-plugin-prettier@npm:3.1.4"
   dependencies:
@@ -7263,6 +7263,7 @@ fsevents@^1.2.7:
     "@types/react-map-gl": ^5.2.4
     "@types/react-router-dom": ^5.1.5
     "@types/reactstrap": ^8.4.3
+    "@typescript-eslint/eslint-plugin": latest
     chart.js: ^3.0.0-alpha
     eslint: ^7.4.0
     eslint-config-airbnb: 18.2.0
@@ -7270,6 +7271,7 @@ fsevents@^1.2.7:
     eslint-import-resolver-node: ^0.3.4
     eslint-plugin-import: ^2.21.2
     eslint-plugin-jsx-a11y: ^6.3.1
+    eslint-plugin-prettier: latest
     eslint-plugin-react: ^7.20.0
     eslint-plugin-react-hooks: ^4.0.4
     gh-pages: ^3.1.0

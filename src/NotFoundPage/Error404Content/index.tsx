@@ -1,6 +1,6 @@
 import React from "react";
 
-const Error404Content = () => (
+const Error404Content = (): JSX.Element => (
   <>
     <a className="anchor" id="notfound">
       Page Not Found
@@ -8,13 +8,13 @@ const Error404Content = () => (
     <section id="notfound">
       <div className="container">
         <div className="animation-container vertical top right extra-right extra-height">
-          <div className="animated"></div>
+          <div className="animated" />
         </div>
         <h1 className="section-title" style={{ marginTop: "20vh" }}>
           Error 404
         </h1>
         <p className="large" style={{ textAlign: "center" }}>
-          We couldn't find that page, sorry.
+          We couldn&#39;t find that page, sorry.
         </p>
       </div>
     </section>

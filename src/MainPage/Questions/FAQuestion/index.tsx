@@ -12,7 +12,7 @@ const FAQuestion = ({
   question,
   answer,
   small = false,
-}: Props) => {
+}: Props): JSX.Element => {
   const [showAnswer, setshowAnswer] = React.useState<boolean>(false);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
@@ -21,8 +21,8 @@ const FAQuestion = ({
         onClick={() => setshowAnswer(!showAnswer)}
       >
         {question}
-        <div className="icon icon-plus"></div>
-        <div className="icon icon-close"></div>
+        <div className="icon icon-plus" />
+        <div className="icon icon-close" />
       </h3>
       <div
         className="answer"

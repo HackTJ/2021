@@ -2,22 +2,22 @@ import * as React from "react";
 
 import "./index.css";
 
-const Schedule = () => (
+const Schedule = (): JSX.Element => (
   <>
     <a className="anchor" id="schedule">
       Schedule
     </a>
     <section className="schedule" id="schedules">
       <div className="container">
-        {/*<div
+        {/* <div
          className="horizontal-segment green"
          style={{ left: "-6%", top: "-4.4%", width: "112%" }}
         ></div>
         <div
          className="vertical-segment green"
          style={{ left: "-5.9%", top: "-3.4%" }}
-        ></div>*/}
-        <h1 className="section-title">Last Year's Schedule</h1>
+        ></div> */}
+        <h1 className="section-title">Last Year&#39;s Schedule</h1>
         <ul className="day">
           <div className="day-title">
             <h3>Saturday, March 21</h3>

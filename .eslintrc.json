@@ -5,8 +5,7 @@
     },
     "extends": [
         "airbnb", "airbnb/hooks", "airbnb-typescript-prettier",
-        "plugin:react/recommended",
-        "plugin:flowtype/recommended"
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,16 +15,12 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "flowtype"
+        "react"
     ],
-    "rules": {
-    },
     "settings": {
       "react": {
         "pragma": "React",
-        "version": "detect",
-        "flowVersion": "detect"
+        "version": "detect"
       }
   }
 }

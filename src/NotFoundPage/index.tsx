@@ -4,7 +4,7 @@ import NavigationBar from "../NavigationBar";
 import Error404Content from "./Error404Content";
 import Footer from "../Footer";
 
-const NotFoundPage = () => (
+const NotFoundPage = (): JSX.Element => (
   <>
     <NavigationBar />
     <Error404Content />

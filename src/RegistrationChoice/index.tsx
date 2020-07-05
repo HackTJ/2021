@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import "./index.css";
 
-const RegistrationChoice = () => (
+const RegistrationChoice = (): JSX.Element => (
   <>
     <a className="anchor" id="register">
       Register
@@ -16,10 +16,10 @@ const RegistrationChoice = () => (
           margin: "auto",
         }}
       >
-        {/*<div
+        {/* <div
          className="vertical-segment green"
          style={{ left: "-15%", top: "-14%", height: "123%" }}
-        ></div>*/}
+        ></div> */}
         <h1 className="section-title">Register</h1>
         <div
           style={{
@@ -27,7 +27,7 @@ const RegistrationChoice = () => (
             gridTemplateColumns: "repeat(2, 1fr)",
           }}
         >
-          {/*<a
+          {/* <a
            className="flatbutton"
            style={{ width: "80%" }}
            href="https://hacktj.typeform.com/to/VRfmTH"
@@ -35,7 +35,7 @@ const RegistrationChoice = () => (
            rel="noopener noreferrer"
           >
            <div className="text">Participants</div>
-          </a>*/}
+          </a> */}
           <a
             className="flatbutton long-label"
             style={{ width: "80%" }}
@@ -60,20 +60,20 @@ const RegistrationChoice = () => (
           Registration for participants has closed. Mentors, judges, and
           volunteers should fill out the{" "}
           <a
-            href={
-              (process.env.PUBLIC_URL || "") + "/forms/cvent_adult_waiver.pdf"
-            }
+            href={`${
+              process.env.PUBLIC_URL || ""
+            }/forms/cvent_adult_waiver.pdf`}
           >
             Cvent adult waiver
           </a>
           .
-          {/*Participants must be current
+          {/* Participants must be current
           high school students. Computer science and engineering experience is
-          not necessary, as we'll have workshops and mentors so you can learn.
+          not necessary, as we&#39;ll have workshops and mentors so you can learn.
           Please note that registering alone does not guarantee you will receive
           a ticket. Admission decisions will be made based on a variety of
           factors including the date/time you register, so make sure to sign up
-          quickly!*/}
+          quickly! */}
         </p>
         <br />
         <p className="large centered">
@@ -84,9 +84,9 @@ const RegistrationChoice = () => (
         </p>
         <br />
         <p className="large centered">
-          Mentors help students if they have any technical questions, and don't
-          have to be present at HackTJ the entire time. Computer science and
-          engineering experience is required.
+          Mentors help students if they have any technical questions, and
+          don&#39;t have to be present at HackTJ the entire time. Computer
+          science and engineering experience is required.
         </p>
         <br />
         <p className="large centered">

@@ -4,7 +4,7 @@ import SocialLinks from "./SocialLinks";
 
 import "./index.css";
 
-const Footer = () => (
+const Footer = (): JSX.Element => (
   <section className="green register footer">
     <div className="container">
       <div className="register-button-block-old bottom">

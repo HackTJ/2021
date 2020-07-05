@@ -41,7 +41,7 @@ const PageScrollProgress = () => {
     return () => window.removeEventListener("scroll", scrollEvent);
   });
 
-  let barBackground: string = `linear-gradient(to right, rgba(255, 255, 255, 0.9) ${scrollPosition}%, transparent 0)`;
+  const barBackground = `linear-gradient(to right, rgba(255, 255, 255, 0.9) ${scrollPosition}%, transparent 0)`;
   return (
     <div
       style={{
@@ -51,7 +51,7 @@ const PageScrollProgress = () => {
         height: "6px",
         zIndex: 10001,
       }}
-    ></div>
+    />
   );
 };
 

@@ -6,7 +6,8 @@ import MLHTrustBadge from "./MLHTrustBadge";
 
 import "./index.css";
 
-const NavigationBar = () => ( // TODO: get rid of <div style={{height: "50px"}} /> and use CSS instead
+const NavigationBar = (): JSX.Element => (
+  // TODO: get rid of <div style={{height: "50px"}} /> and use CSS instead
   <>
     <MLHTrustBadge />
     <Navbar

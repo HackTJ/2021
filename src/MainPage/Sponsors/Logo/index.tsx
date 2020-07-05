@@ -10,11 +10,7 @@ type Props = {
   logo: string;
 };
 
-const Logo = ({
-  url,
-  name,
-  logo,
-}: Props) => {
+const Logo = ({ url, name, logo }: Props): JSX.Element => {
   const sponsorID: string = name.toLowerCase().replace(/ /g, "-");
 
   const [showTooltip, setShowTooltip] = useState<boolean>(false);
@@ -28,19 +24,19 @@ const Logo = ({
         rel="noopener noreferrer"
         data-tip="data-tip"
         data-for={sponsorID}
-        id={"img-" + sponsorID}
+        id={`img-${sponsorID}`}
       >
         <>
           <img
-            id={"img-normal-" + sponsorID}
+            id={`img-normal-${sponsorID}`}
             className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
-            src={require("../../../images/sponsors/normal/" + logo)}
+            src={require(`../../../images/sponsors/normal/${logo}`)}
             alt={name}
           />
           <img
-            id={"img-tint-" + sponsorID}
+            id={`img-tint-${sponsorID}`}
             className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
-            src={require("../../../images/sponsors/tint/" + logo)}
+            src={require(`../../../images/sponsors/tint/${logo}`)}
             alt={name}
           />
         </>
@@ -53,7 +49,7 @@ const Logo = ({
         isOpen={showTooltip}
         toggle={() => setShowTooltip(!showTooltip)}
         autohide={false}
-        target={"img-" + sponsorID}
+        target={`img-${sponsorID}`}
       >
         {name}
       </Tooltip>

@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import NavigationBar from "../NavigationBar";
 import RegistrationChoice from "../RegistrationChoice";
 import Footer from "../Footer";
 
-const RegistrationPage = () => (
+const RegistrationPage = (): JSX.Element => (
   <>
     <NavigationBar />
     <RegistrationChoice />

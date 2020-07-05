@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import { Pie } from "react-chartjs-2";
 
@@ -83,7 +83,7 @@ const graduationData: {
   ],
 };
 
-const Statistics = () => (
+const Statistics = (): JSX.Element => (
   <>
     <a className="anchor" id="demographics">
       Demographics
@@ -91,7 +91,7 @@ const Statistics = () => (
     <section id="demographics">
       <div className="container">
         <div className="animation-container vertical top right extra-right extra-height">
-          <div className="animated"></div>
+          <div className="animated" />
         </div>
         <h1 className="section-title">Demographics</h1>
         <div>

@@ -7,7 +7,7 @@ import debounce from "lodash/debounce";
 
 import "./index.css";
 
-const VenueMap = () => {
+const VenueMap = (): JSX.Element => {
   type viewportType = {
     width: string | number;
     height: string | number;
@@ -24,15 +24,13 @@ const VenueMap = () => {
   });
   useEffect(() => {
     // Automatically resizes the map when size is changed horizontally.
-    const handleResize = debounce(
-      function onResize() {
-        setViewport(
-          assign({}, viewport, {
-            width: window.innerWidth,
-          })
-        );
-      }
-    );
+    const handleResize = debounce(function onResize() {
+      setViewport(
+        assign({}, viewport, {
+          width: window.innerWidth,
+        })
+      );
+    });
     window.addEventListener("resize", handleResize);
     return function cleanup() {
       window.removeEventListener("resize", handleResize);
@@ -47,10 +45,8 @@ const VenueMap = () => {
       <section className="green map">
         <ReactMapGL
           {...viewport}
-          mapboxApiAccessToken={
-            "pk.eyJ1IjoidmFydW4xNDcwIiwiYSI6ImNqc2FzcTg0dDAxeDc0NG9hdnl2ZW96ajAifQ.tm0RFQRooHhcpOKw9lL_9g"
-          }
-          mapStyle={"mapbox://styles/varun1470/cjsaupmju0by11fpkprq5prse"}
+          mapboxApiAccessToken="pk.eyJ1IjoidmFydW4xNDcwIiwiYSI6ImNqc2FzcTg0dDAxeDc0NG9hdnl2ZW96ajAifQ.tm0RFQRooHhcpOKw9lL_9g"
+          mapStyle="mapbox://styles/varun1470/cjsaupmju0by11fpkprq5prse"
           onViewportChange={(newViewport) => setViewport(newViewport)}
         >
           <Marker latitude={38.92201} longitude={-77.23312}>
@@ -82,7 +78,7 @@ const VenueMap = () => {
               rel="noopener noreferrer"
             >
               <div className="text">Get Directions</div>
-              <div className="icon icon-caret-right"></div>
+              <div className="icon icon-caret-right" />
             </a>
           </div>
         </div>

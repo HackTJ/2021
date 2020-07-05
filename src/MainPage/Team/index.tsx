@@ -4,21 +4,21 @@ import TeamPicture from "./TeamPicture";
 
 import "./index.css";
 
-const Team = () => (
+const Team = (): JSX.Element => (
   <>
     <a className="anchor" id="team">
       Team
     </a>
     <section className="team" id="team">
       <div className="container">
-        {/*<div
+        {/* <div
          className="horizontal-segment green"
          style={{ left: "-6%", top: "-4.4%", width: "112%" }}
         ></div>
         <div
          className="vertical-segment green"
          style={{ left: "-5.9%", top: "-3.4%" }}
-        ></div>*/}
+        ></div> */}
         <h1 className="section-title">Meet the Team</h1>
         <div className="team-pictures">
           {[
@@ -38,7 +38,7 @@ const Team = () => (
               name: "Forrest Meng",
               about:
                 "Forrest is a senior and serves as a sponsorship coordinator and maintains DevPost for HackTJ 7.5. He became interested in organizing HackTJ after participating in the hackathon for two years. Being interested in robotics and AI, Forrest is interested in how to spread STEM education and technology into everyday life, so he serves as part of the BranchOut! STEM Education Program management team. Besides interests in engineering and programming, Forrest also is a member of TJ’s Model UN team, a yearbook photographer, a school newspaper staff writer, and participates in the FIRST Tech Challenge.",
-              /*image: {require('../../images/team/ForrestMeng.png')}*/
+              /* image: {require('../../images/team/ForrestMeng.png')} */
             },
             {
               name: "Tammy Ding",
@@ -130,7 +130,7 @@ const Team = () => (
               about={person.about}
               image={person.image ?? require("../../images/logo.png")}
               key={person.name}
-            ></TeamPicture>
+            />
           ))}
         </div>
       </div>

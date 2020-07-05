@@ -9,12 +9,7 @@ type Props = {
   url: string;
 };
 
-const DevpostCard = ({
-  logo,
-  iteration,
-  year,
-  url,
-}: Props) => (
+const DevpostCard = ({ logo, iteration, year, url }: Props): JSX.Element => (
   <div className="history-section">
     <div className="action-section">
       <img
@@ -23,7 +18,7 @@ const DevpostCard = ({
           width: "200px",
           height: "200px",
         }}
-        alt={"HackTJ " + iteration}
+        alt={`HackTJ ${iteration}`}
       />
       <div className="info-container">
         <h3 className="section-title">HackTJ {iteration}</h3>
