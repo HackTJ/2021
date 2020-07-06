@@ -38,7 +38,7 @@ const Team = (): JSX.Element => (
               name: "Forrest Meng",
               about:
                 "Forrest is a senior and serves as a sponsorship coordinator and maintains DevPost for HackTJ 7.5. He became interested in organizing HackTJ after participating in the hackathon for two years. Being interested in robotics and AI, Forrest is interested in how to spread STEM education and technology into everyday life, so he serves as part of the BranchOut! STEM Education Program management team. Besides interests in engineering and programming, Forrest also is a member of TJ’s Model UN team, a yearbook photographer, a school newspaper staff writer, and participates in the FIRST Tech Challenge.",
-              /* image: {require('../../images/team/ForrestMeng.png')} */
+              image: require("../../images/team/ForrestMeng.png"),
             },
             {
               name: "Tammy Ding",
@@ -117,12 +117,6 @@ const Team = (): JSX.Element => (
               about:
                 "Ms. Razzino is a Math Teacher at TJ and also one of the faculty sponsors of HackTJ 7.5. She was the Division Manager for Math and Computer Science at TJ for 5 years and gained an understanding and appreciation for computer science during that time. She also attended TJ back in the late 1990s and fondly remembers her Foundations of CS class. When not creating tests and grading papers, Ms. Razzino enjoys baking, skiing, travelling, and spending time with family and friends. ",
               image: require("../../images/team/MsRazzino.jpg"),
-            },
-            {
-              name: "Ms. Mills",
-              about:
-                "Ms. Mills is a faculty sponsor for HackTJ 7.5. She teaches Geosystems and Astronomy at TJ, and is also the Lab Director for the Astronomy and Astrophysics senior research lab. She volunteered at HackTJ 6.0. In her free time she enjoys traveling, reading, riding her bike, and spending time with her family and friends.",
-              image: require("../../images/team/MsMills.jpg"),
             },
           ].map((person) => (
             <TeamPicture

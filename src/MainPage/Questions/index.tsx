@@ -51,8 +51,6 @@ const Questions = (): JSX.Element => (
                 </span>
               }
             />
-          </div>
-          <div className="row">
             <FAQuestion
               question="Is there any cost?"
               answer={
@@ -61,6 +59,9 @@ const Questions = (): JSX.Element => (
                 </span>
               }
             />
+          </div>
+          <div className="row">
+
             <FAQuestion
               question="Is there a deadline?"
               answer={
@@ -91,8 +92,6 @@ const Questions = (): JSX.Element => (
                 </span>
               }
             />
-          </div>
-          <div className="row">
             <FAQuestion
               question="Isn&#39;t hacking illegal?"
               answer={
@@ -115,6 +114,8 @@ const Questions = (): JSX.Element => (
                 </span>
               }
             />
+          </div>
+          <div className="row">
             <FAQuestion
               question="What if I don&#39;t know how to code?"
               small
@@ -126,8 +127,6 @@ const Questions = (): JSX.Element => (
                 </span>
               }
             />
-          </div>
-          <div className="row">
             <FAQuestion
               question="What prizes can I win?"
               answer={
