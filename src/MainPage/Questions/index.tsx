@@ -61,7 +61,6 @@ const Questions = (): JSX.Element => (
             />
           </div>
           <div className="row">
-
             <FAQuestion
               question="Is there a deadline?"
               answer={
