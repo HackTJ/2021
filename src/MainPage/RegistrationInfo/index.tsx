@@ -4,7 +4,7 @@ import "./index.css";
 
 const RegistrationInfo = (): JSX.Element => (
   <>
-    <a className="anchor" id="registration">
+    <a className="anchor" id="registration" href="#registration">
       Registration Info
     </a>
     <section className="registration-info">

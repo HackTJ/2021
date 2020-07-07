@@ -2,7 +2,7 @@ import React from "react";
 
 const Error404Content = (): JSX.Element => (
   <>
-    <a className="anchor" id="notfound">
+    <a className="anchor" id="notfound" href="#notfound">
       Page Not Found
     </a>
     <section id="notfound">

@@ -4,7 +4,7 @@ import "./index.css";
 
 const Intro = (): JSX.Element => (
   <>
-    <a className="anchor" id="intro">
+    <a className="anchor" id="intro" href="#intro">
       Intro
     </a>
     <section className="intro">

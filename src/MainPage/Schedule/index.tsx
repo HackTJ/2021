@@ -4,7 +4,7 @@ import "./index.css";
 
 const Schedule = (): JSX.Element => (
   <>
-    <a className="anchor" id="schedule">
+    <a className="anchor" id="schedule" href="#schedule">
       Schedule
     </a>
     <section className="schedule" id="schedules">

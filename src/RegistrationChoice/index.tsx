@@ -4,7 +4,7 @@ import "./index.css";
 
 const RegistrationChoice = (): JSX.Element => (
   <>
-    <a className="anchor" id="register">
+    <a className="anchor" id="register" href="#register">
       Register
     </a>
     <section id="register">

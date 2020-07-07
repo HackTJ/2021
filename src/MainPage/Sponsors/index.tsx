@@ -6,7 +6,7 @@ import "./index.css";
 
 const Sponsors = (): JSX.Element => (
   <>
-    <a className="anchor" id="sponsor">
+    <a className="anchor" id="sponsor" href="#sponsor">
       Sponsors
     </a>
     <section id="sponsors">

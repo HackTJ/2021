@@ -85,7 +85,7 @@ const graduationData: {
 
 const Statistics = (): JSX.Element => (
   <>
-    <a className="anchor" id="demographics">
+    <a className="anchor" id="demographics" href="#demographics">
       Demographics
     </a>
     <section id="demographics">

@@ -6,7 +6,7 @@ import "./index.css";
 
 const Questions = (): JSX.Element => (
   <>
-    <a className="anchor" id="faq">
+    <a className="anchor" id="faq" href="#faq">
       FAQ
     </a>
     <section className="green faq">

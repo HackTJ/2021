@@ -39,7 +39,7 @@ const VenueMap = (): JSX.Element => {
 
   return (
     <>
-      <a className="anchor" id="map">
+      <a className="anchor" id="map" href="#map">
         Map
       </a>
       <section className="green map">

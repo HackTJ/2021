@@ -6,7 +6,7 @@ import "./index.css";
 
 const Team = (): JSX.Element => (
   <>
-    <a className="anchor" id="team">
+    <a className="anchor" id="team" href="#team">
       Team
     </a>
     <section className="team" id="team">

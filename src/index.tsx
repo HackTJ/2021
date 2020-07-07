@@ -22,7 +22,7 @@ import * as serviceWorker from "./serviceWorker";
 // the single page app to route accordingly.
 (function (l) {
   if (l.search) {
-    const q: { [param: string] : string } = {};
+    const q: { [param: string]: string } = {};
     l.search
       .slice(1)
       .split("&")
