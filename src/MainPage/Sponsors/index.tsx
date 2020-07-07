@@ -178,7 +178,7 @@ const Sponsors = (): JSX.Element => (
           in-person benefits) and our{" "}
           <a href="sponsorship7.5.pdf">7.5 sponsorship packet</a>. Please email
           us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
-          you're interested or have any questions!
+          you&#39;re interested or have any questions!
         </p>
       </div>
     </section>

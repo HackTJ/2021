@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 
 import "./index.css";
@@ -9,7 +10,13 @@ const logo = require("../../images/bigweblogo.png");
 const Landing = (): JSX.Element => (
   <section className="hero">
     <div className="container">
-      <div className="event-container">
+      <Tilt
+        className="event-container"
+        trackOnWindow
+        gyroscope
+        tiltMaxAngleX={5}
+        tiltMaxAngleY={5}
+      >
         <img className="logo" src={String(logo)} alt="HackTJ" />
         <div className="event-date landing">November 21st-22nd, 2020</div>
         <div className="event-location landing">Online</div>
@@ -34,7 +41,7 @@ const Landing = (): JSX.Element => (
           </Link>
           {/* <a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a> */}
         </div>
-      </div>
+      </Tilt>
     </div>
   </section>
 );
