@@ -1,7 +1,7 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { hydrate, render } from "react-dom";
 import * as serviceWorker from './serviceWorker';
 
 // Redirect to /2021:
@@ -43,7 +43,13 @@ import * as serviceWorker from './serviceWorker';
 }(window.location));
 // End Single Page Apps for GitHub Pages
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// https://github.com/stereobooster/react-snap#basic-usage-with-create-react-app
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
