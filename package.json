@@ -29,7 +29,8 @@
   },
   "scripts": {
     "start": "yarn run switch-homepage && react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run postbuild",
+    "postbuild": "echo \"YEEEEE\" && yarn dlx purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier src/ --write",
@@ -58,6 +59,7 @@
     ]
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@typescript-eslint/eslint-plugin": "latest",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "18.2.0",
