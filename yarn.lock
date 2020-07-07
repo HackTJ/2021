@@ -7306,6 +7306,7 @@ fsevents@^1.2.7:
     react-spinners: ^0.9.0
     reactstrap: ^8.4.1
     typescript: ^3.9.6
+    web-vitals: ^0.2.3
   languageName: unknown
   linkType: soft
 
@@ -15129,6 +15130,13 @@ typescript@^3.9.6:
   dependencies:
     minimalistic-assert: ^1.0.0
   checksum: 3/5916a49cb25fc8c70e4e7eb2d01955061132687a79879292fbdee632952f368c12bc5a641d0404794dbc0e3563f8b6e74dda04467b3e96be8bcd0b919bd47a8c
+  languageName: node
+  linkType: hard
+
+"web-vitals@npm:^0.2.3":
+  version: 0.2.3
+  resolution: "web-vitals@npm:0.2.3"
+  checksum: 3/a582ba7b0f6a53baf45288cf40bda590d680f1cb4255971c29501e2e4270e7ceb9ed98bde440d744bc23da7a762bb365f2cc0e2e7683a1efdb4563125f7729b8
   languageName: node
   linkType: hard
 

@@ -1,8 +1,9 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+// import reportWebVitals from "./reportWebVitals";
 
 // Redirect to /2021:
 // window.location.href = "https://hacktj.org/2021";
@@ -21,31 +22,38 @@ import * as serviceWorker from './serviceWorker';
 // the single page app to route accordingly.
 (function (l) {
   if (l.search) {
-    const q = {};
+    const q: { [param: string] : string } = {};
     l.search
       .slice(1)
-      .split('&')
+      .split("&")
       .forEach((v) => {
-        const a = v.split('=');
-        q[a[0]] = a
-          .slice(1)
-          .join('=')
-          .replace(/~and~/g, '&');
+        const a: string[] = v.split("=");
+        q[a[0]] = a.slice(1).join("=").replace(/~and~/g, "&");
       });
     if (q.p !== undefined) {
       window.history.replaceState(
         null,
-        null,
-        l.pathname.slice(0, -1) + (q.p || '') + (q.q ? `?${q.q}` : '') + l.hash,
+        null || "",
+        l.pathname.slice(0, -1) + (q.p || "") + (q.q ? `?${q.q}` : "") + l.hash
       );
     }
   }
-}(window.location));
+})(window.location);
 // End Single Page Apps for GitHub Pages
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// Learn more about service workers: https://cra.link/PWA
 serviceWorker.unregister();
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// reportWebVitals();
