@@ -4,7 +4,6 @@ const PageScrollProgress = () => {
   const [scrollPosition, setScrollPosition] = React.useState<number>(0);
 
   const getDocHeight = (): number => {
-    // TODO: Flow still returns errors
     const bodyExists: boolean = document.body !== null;
     const docElExists: boolean = document.documentElement !== null;
     return Math.max(
@@ -24,16 +23,14 @@ const PageScrollProgress = () => {
 
     const totalDocScrollLength: number = docHeight - winHeight;
     const currentScrollPostion: number = Math.floor(
-      (scrollTop / totalDocScrollLength) * 100
+      (scrollTop / totalDocScrollLength) * 100.
     );
 
     setScrollPosition(currentScrollPostion);
   };
 
   const scrollEvent = (): void => {
-    requestAnimationFrame(() => {
-      calculateScrollDistance();
-    });
+    requestAnimationFrame(calculateScrollDistance);
   };
 
   React.useEffect(() => {
