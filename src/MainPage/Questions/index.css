@@ -63,31 +63,31 @@ section.faq .animation-container.right {
   height: calc(100% + 11px);
 }
 
-section.faq ul.faq-container {
+section.faq .faq-container {
   display: block;
   position: relative;
   overflow: hidden;
   font-size: 0;
 }
 
-section.faq ul.faq-container .row {
+section.faq .faq-container .row {
   margin: 20px -10px 0;
   padding: 0 30px;
   font-size: 0;
 }
 
-section.faq ul.faq-container .row:before,
-section.faq ul.faq-container .row:after {
+section.faq .faq-container .row:before,
+section.faq .faq-container .row:after {
   content: "";
   display: table;
 }
 
-section.faq ul.faq-container .row:after {
+section.faq .faq-container .row:after {
   clear: both;
 }
 
 @media only screen and (max-width: 640px) {
-  section.faq ul.faq-container .row {
+  section.faq .faq-container .row {
     margin: 0;
   }
 }
