@@ -16,11 +16,10 @@ const FAQuestion = ({
   const [showAnswer, setshowAnswer] = React.useState<boolean>(false);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
-      <h3
-        className={`question ${small || false ? "small" : ""}`}
-        onClick={() => setshowAnswer(!showAnswer)}
-      >
-        {question}
+      <h3 className={`question ${small || false ? "small" : ""}`}>
+        <button type="button" onClick={() => setshowAnswer(!showAnswer)}>
+          {question}
+        </button>
         <div className="icon icon-plus" />
         <div className="icon icon-close" />
       </h3>
