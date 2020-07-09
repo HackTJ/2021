@@ -10,7 +10,7 @@ const MainPage = lazy(() => import("./MainPage"));
 const NotFoundPage = lazy(() => import("./NotFoundPage"));
 
 const App = (): JSX.Element => (
-  <React.StrictMode>
+  <>
     <PageScrollProgress />
     <Router>
       <Suspense fallback={<IndeterminateLoadingIndicator />}>
@@ -22,7 +22,7 @@ const App = (): JSX.Element => (
         </Routes>
       </Suspense>
     </Router>
-  </React.StrictMode>
+  </>
 );
 
 export default App;
