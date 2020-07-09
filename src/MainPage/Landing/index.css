@@ -143,7 +143,7 @@ section.hero .event-location.event-location {
 section.hero .event-container {
   margin: auto;
   width: 60%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background: radial-gradient(rgba(217, 231, 255, 0.6), rgba(227, 255, 231, 0.8));
   padding: 1rem;
   border-radius: 10px;
   color: rgb(53, 53, 53);
