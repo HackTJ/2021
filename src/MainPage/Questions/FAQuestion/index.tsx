@@ -13,15 +13,16 @@ const FAQuestion = ({
   answer,
   small = false,
 }: Props): JSX.Element => {
-  const [showAnswer, setshowAnswer] = React.useState<boolean>(false);
+  const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
+  const toggleShowAnswer = () => setShowAnswer(!showAnswer);
   return (
     <li className={`question-group ${showAnswer ? "is-open" : ""}`}>
       <h3 className={`question ${small || false ? "small" : ""}`}>
-        <button type="button" onClick={() => setshowAnswer(!showAnswer)}>
+        <button type="button" onClick={toggleShowAnswer}>
           {question}
         </button>
-        <span className="icon icon-plus" onClick={() => setshowAnswer(!showAnswer)} />
-        <span className="icon icon-close" onClick={() => setshowAnswer(!showAnswer)} />
+        <span className="icon icon-plus" onClick={toggleShowAnswer} />
+        <span className="icon icon-close" onClick={toggleShowAnswer} />
       </h3>
       <div
         className="answer"
