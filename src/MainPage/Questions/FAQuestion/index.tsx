@@ -20,8 +20,8 @@ const FAQuestion = ({
         <button type="button" onClick={() => setshowAnswer(!showAnswer)}>
           {question}
         </button>
-        <div className="icon icon-plus" />
-        <div className="icon icon-close" />
+        <span className="icon icon-plus" onClick={() => setshowAnswer(!showAnswer)} />
+        <span className="icon icon-close" onClick={() => setshowAnswer(!showAnswer)} />
       </h3>
       <div
         className="answer"
