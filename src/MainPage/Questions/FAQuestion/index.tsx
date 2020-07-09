@@ -23,8 +23,22 @@ const FAQuestion = ({
         <button type="button" onClick={toggleShowAnswer}>
           {question}
         </button>
-        <span className="icon icon-plus" onClick={toggleShowAnswer} />
-        <span className="icon icon-close" onClick={toggleShowAnswer} />
+        <span
+          className="icon icon-plus"
+          onClick={toggleShowAnswer}
+          onKeyDown={toggleShowAnswer}
+          role="button"
+          aria-label="Show answer"
+          tabIndex={0}
+        />
+        <span
+          className="icon icon-close"
+          onClick={toggleShowAnswer}
+          onKeyDown={toggleShowAnswer}
+          role="button"
+          aria-label="Hide answer"
+          tabIndex={0}
+        />
       </h3>
       <div
         className="answer"
