@@ -23,7 +23,7 @@ const PageScrollProgress = () => {
 
     const totalDocScrollLength: number = docHeight - winHeight;
     const currentScrollPostion: number = Math.floor(
-      (scrollTop / totalDocScrollLength) * 100.
+      (scrollTop / totalDocScrollLength) * 100
     );
 
     setScrollPosition(currentScrollPostion);
