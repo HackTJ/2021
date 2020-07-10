@@ -7,9 +7,16 @@ type Props = {
   iteration: string;
   year: string;
   url: string;
+  disabled: boolean;
 };
 
-const DevpostCard = ({ logo, iteration, year, url }: Props): JSX.Element => (
+const DevpostCard = ({
+  logo,
+  iteration,
+  year,
+  url,
+  disabled,
+}: Props): JSX.Element => (
   <div className="history-section">
     <div className="action-section">
       <img
@@ -23,10 +30,11 @@ const DevpostCard = ({ logo, iteration, year, url }: Props): JSX.Element => (
       <div className="info-container">
         <h3 className="section-title">HackTJ {iteration}</h3>
         <h4 className="section-year">{year}</h4>
+        {/* TODO: accessibility, jsx-a11y/anchor-is-valid */}
         <a
           className="altbutton"
           style={{ width: "100%" }}
-          href={url}
+          href={disabled ? undefined : url}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,5 +44,9 @@ const DevpostCard = ({ logo, iteration, year, url }: Props): JSX.Element => (
     </div>
   </div>
 );
+
+DevpostCard.defaultProps = {
+  disabled: false,
+};
 
 export default DevpostCard;

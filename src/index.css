@@ -1800,10 +1800,14 @@ a.blackbutton {
 }
 
 a.altbutton {
-  color: #64d861;
-  border-color: #64d861;
   text-align: center;
   line-height: 50px;
+  color: #64d861;
+  border-color: #64d861;
+}
+
+a.altbutton:not([href]), a.altbutton:not(:link) {
+  cursor: not-allowed;
 }
 
 a.flatbutton {
