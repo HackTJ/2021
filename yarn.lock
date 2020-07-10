@@ -7391,7 +7391,7 @@ fsevents@^1.2.7:
     react-chartjs-2: ^2.9.0
     react-dom: ^16.13.1
     react-map-gl: ^5.2.7
-    react-parallax-tilt: ^1.4.56
+    react-parallax-tilt: ^1.4.57
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^3.4.1
@@ -12531,13 +12531,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.56":
-  version: 1.4.56
-  resolution: "react-parallax-tilt@npm:1.4.56"
+"react-parallax-tilt@npm:^1.4.57":
+  version: 1.4.57
+  resolution: "react-parallax-tilt@npm:1.4.57"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0
     react-dom: ^15.0.0 || ^16.0.0
-  checksum: 3/aaa2620020d6abb359914b19a470aef511254e8ab7cc5a1d9d0573880d109b47b470498c0bbefd21a0f4c40e0e8e50d6bf52cfcb597538a3ca547c68286889e0
+  checksum: 3/8c151624e694038f9b5742cb0d09d4b4570d64017067a2441471783b5324063a337a16d27160841d0cd51c824e93413b751a5f35aaf183663c4c0127cadc136e
   languageName: node
   linkType: hard
 

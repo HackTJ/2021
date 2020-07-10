@@ -21,7 +21,7 @@
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
     "react-map-gl": "^5.2.7",
-    "react-parallax-tilt": "^1.4.56",
+    "react-parallax-tilt": "^1.4.57",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^3.4.1",
