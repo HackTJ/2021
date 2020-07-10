@@ -23,7 +23,7 @@ const Landing = (): JSX.Element => (
         <div className="register-button-block-old top">
           {/* <Link
            className="button register-button mentor blackbutton"
-           to="/registration"
+           to="registration"
           >
            Register for HackTJ 7.0
           </Link> */}
@@ -35,7 +35,7 @@ const Landing = (): JSX.Element => (
           </a>
           <Link
             className="button register-button mentor blackbutton"
-            to="/history"
+            to="history"
           >
             Past Projects
           </Link>
