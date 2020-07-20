@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import "./index.css";
 
+// import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 const logo = require("../../images/bigweblogo.png");
 
 const Landing = (): JSX.Element => (
@@ -17,6 +18,7 @@ const Landing = (): JSX.Element => (
         tiltMaxAngleX={5}
         tiltMaxAngleY={5}
       >
+        {/*<Logo className="logo" />*/}
         <img className="logo" src={String(logo)} alt="HackTJ" />
         <div className="event-date landing">November 21st-22nd, 2020</div>
         <div className="event-location landing">Online</div>

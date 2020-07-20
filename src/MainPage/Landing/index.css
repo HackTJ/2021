@@ -38,9 +38,11 @@ section.hero #mlh-trust-badge {
 }
 
 section.hero .logo {
-  display: block;
-  max-width: 500px;
-  margin: auto;
+  /* max-width: 500px; */
+  max-height: 500px;
+  /* margin: auto; */
+  margin: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 640px) {
