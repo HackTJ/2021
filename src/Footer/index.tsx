@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import SocialLinks from "./SocialLinks";
-import MLHTrustBadge from "./MLHTrustBadge";
+// import MLHTrustBadge from "./MLHTrustBadge";
 
 import "./index.css";
 
@@ -17,7 +17,7 @@ const Footer = (): JSX.Element => (
         <SocialLinks />
       </div>
     </section>
-    <MLHTrustBadge />
+    {/*<MLHTrustBadge />*/}
   </>
 );
 
