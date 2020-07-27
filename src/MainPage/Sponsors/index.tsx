@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import { Link } from "react-router-dom";
+
 import Logo from "./Logo";
 
 import "./index.css";
@@ -174,9 +176,10 @@ const Sponsors = (): JSX.Element => (
         </div>
         <p className="large">
           Interested in sponsoring? Check out our{" "}
-          <a href="sponsorship7.5.pdf">7.5 sponsorship packet</a> and{" "}
-          <a href="sponsorship8.0.pdf">8.0 sponsorship packet</a>. Please email
-          us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
+          <Link to="sponsorship7.5.pdf">7.5 sponsorship packet</Link>
+          and <Link to="sponsorship8.0.pdf">8.0 sponsorship packet</Link>.
+          Please email us at{" "}
+          <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
           you&#39;re interested or have any questions!
         </p>
       </div>
