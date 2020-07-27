@@ -17,7 +17,7 @@ const Footer = (): JSX.Element => (
         <SocialLinks />
       </div>
     </section>
-    {/*<MLHTrustBadge />*/}
+    {/* <MLHTrustBadge /> */}
   </>
 );
 

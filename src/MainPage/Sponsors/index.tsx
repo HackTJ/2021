@@ -174,9 +174,8 @@ const Sponsors = (): JSX.Element => (
         </div>
         <p className="large">
           Interested in sponsoring? Check out our{" "}
-          <a href="sponsorship.pdf">7.0 sponsorship packet</a> (to check out our
-          in-person benefits) and our{" "}
-          <a href="sponsorship7.5.pdf">7.5 sponsorship packet</a>. Please email
+          <a href="sponsorship7.5.pdf">7.5 sponsorship packet</a> and{" "}
+          <a href="sponsorship8.0.pdf">8.0 sponsorship packet</a>. Please email
           us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
           you&#39;re interested or have any questions!
         </p>
