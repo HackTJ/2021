@@ -71,6 +71,11 @@ const Sponsors = (): JSX.Element => (
               name: "Phone2Action",
             },
             {
+              url: "https://www.tensorflow.org/",
+              logo: "tensorflow.png",
+              name: "TensorFlow",
+            },
+            {
               url: "https://www.wolfram.com",
               logo: "wolfram.png",
               name: "Wolfram",
@@ -176,10 +181,24 @@ const Sponsors = (): JSX.Element => (
         </div>
         <p className="large">
           Interested in sponsoring? Check out our{" "}
-          <Link to="sponsorship7.5.pdf" target="_blank" rel="noopener noreferrer">7.5 sponsorship packet</Link> and{" "}
-          <Link to="sponsorship8.0.pdf" target="_blank" rel="noopener noreferrer">8.0 sponsorship packet</Link>. Please
-          email us at <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a>{" "}
-          if you&#39;re interested or have any questions!
+          <Link
+            to="sponsorship7.5.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            7.5 sponsorship packet
+          </Link>{" "}
+          and{" "}
+          <Link
+            to="sponsorship8.0.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            8.0 sponsorship packet
+          </Link>
+          . Please email us at{" "}
+          <a href="mailto:sponsor@hacktj.org">sponsor@hacktj.org</a> if
+          you&#39;re interested or have any questions!
         </p>
       </div>
     </section>
