@@ -40,7 +40,7 @@ const Sponsors = (): JSX.Element => (
         <h1 className="section-title">Sponsors</h1>
 
         {/* Platinum Tier */}
-        <h1 className="tier-title">PLATINUM</h1>
+        <h2 className="tier-title">PLATINUM</h2>
         <div className="partner-container">
           {[
             {
@@ -59,7 +59,7 @@ const Sponsors = (): JSX.Element => (
         </div>
 
         {/* Gold Tier */}
-        <h1 className="tier-title">GOLD</h1>
+        <h2 className="tier-title">GOLD</h2>
         <div className="partner-container">
           {[
             {
@@ -78,7 +78,7 @@ const Sponsors = (): JSX.Element => (
         </div>
 
         {/* Silver Tier */}
-        <h1 className="tier-title">SILVER</h1>
+        <h2 className="tier-title">SILVER</h2>
         <div className="partner-container">
           {[
             {
@@ -112,7 +112,7 @@ const Sponsors = (): JSX.Element => (
         </div>
 
         {/* Bronze Tier */}
-        <h1 className="tier-title">BRONZE</h1>
+        <h2 className="tier-title">BRONZE</h2>
         <div className="partner-container">
           {[
             {
@@ -171,7 +171,7 @@ const Sponsors = (): JSX.Element => (
         </div>
 
         {/* Prize Tier */}
-        <h1 className="tier-title">PRIZE</h1>
+        <h2 className="tier-title">PRIZE</h2>
         <div className="partner-container">
           {[
             {

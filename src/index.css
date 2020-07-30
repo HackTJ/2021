@@ -1673,17 +1673,6 @@ section.green h1.section-title {
   color: #fff;
 }
 
-section h1.tier-title {
-  margin-top: 1rem;
-  margin-bottom: 0.4em;
-  font: 100 29px/1.3em "Roboto", sans-serif;
-  text-align: center;
-  margin-bottom: 0.4em;
-  color: #000000;
-  font-weight: 400;
-  border-bottom: 1.3px solid #000000;
-}
-
 input {
   transition: border-color 0.25s;
   display: inline-block;
