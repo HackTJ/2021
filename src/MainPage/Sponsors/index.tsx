@@ -38,6 +38,28 @@ const Sponsors = (): JSX.Element => (
          }}
         ></div> */}
         <h1 className="section-title">Sponsors</h1>
+
+        {/* Platinum Tier */}
+        <h1 className="tier-title">PLATINUM</h1>
+        <div className="partner-container">
+          {[
+            {
+              url: "https://eastbanctech.com",
+              logo: "eastbanc.png",
+              name: "EastBanc Technologies",
+            },
+          ].map((company) => (
+            <Logo
+              name={company.name}
+              url={company.url}
+              logo={company.logo}
+              key={company.name}
+            />
+          ))}
+        </div>
+
+        {/* Gold Tier */}
+        <h1 className="tier-title">GOLD</h1>
         <div className="partner-container">
           {[
             {
@@ -45,6 +67,20 @@ const Sponsors = (): JSX.Element => (
               logo: "aws.png",
               name: "Amazon Web Services",
             },
+          ].map((company) => (
+            <Logo
+              name={company.name}
+              url={company.url}
+              logo={company.logo}
+              key={company.name}
+            />
+          ))}
+        </div>
+
+        {/* Silver Tier */}
+        <h1 className="tier-title">SILVER</h1>
+        <div className="partner-container">
+          {[
             {
               url: "https://www.yext.com",
               logo: "yext.png",
@@ -65,6 +101,20 @@ const Sponsors = (): JSX.Element => (
               logo: "citadelsecurities.png",
               name: "Citadel Securities",
             },
+          ].map((company) => (
+            <Logo
+              name={company.name}
+              url={company.url}
+              logo={company.logo}
+              key={company.name}
+            />
+          ))}
+        </div>
+
+        {/* Bronze Tier */}
+        <h1 className="tier-title">BRONZE</h1>
+        <div className="partner-container">
+          {[
             {
               url: "https://phone2action.com",
               logo: "phone2action.png",
@@ -106,15 +156,24 @@ const Sponsors = (): JSX.Element => (
               name: "Prima Medicine",
             },
             {
-              url: "http://hackp.ac/mlh-stickermule-hackathons",
-              logo: "stickermule.png",
-              name: "Sticker Mule",
-            },
-            {
               url: "https://www.digitalocean.com",
               logo: "digitalocean.png",
               name: "DigitalOcean",
             },
+          ].map((company) => (
+            <Logo
+              name={company.name}
+              url={company.url}
+              logo={company.logo}
+              key={company.name}
+            />
+          ))}
+        </div>
+
+        {/* Prize Tier */}
+        <h1 className="tier-title">PRIZE</h1>
+        <div className="partner-container">
+          {[
             {
               url: "https://www.thinkfun.com",
               logo: "thinkfun.png",
@@ -140,6 +199,11 @@ const Sponsors = (): JSX.Element => (
               logo: "stackoverflow.png",
               name: "StackOverflow",
             },
+            {
+              url: "http://hackp.ac/mlh-stickermule-hackathons",
+              logo: "stickermule.png",
+              name: "Sticker Mule",
+            },
           ].map((company) => (
             <Logo
               name={company.name}
@@ -152,7 +216,6 @@ const Sponsors = (): JSX.Element => (
         <p className="large">
           Can&#39;t see our sponsors? Try disabling ad block for this page.
         </p>
-        <h1 className="section-title">Partners</h1>
         <div className="partner-container">
           {[
             {
