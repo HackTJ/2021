@@ -87,11 +87,13 @@ body {
   background-color: #fff;
   background: #fff;
   background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      color-stop(0%, #fff),
-      color-stop(100%, #fff));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #fff),
+    color-stop(100%, #fff)
+  );
   background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
   background: -o-linear-gradient(top, #fff 0%, #fff 100%);
   background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
@@ -329,16 +331,16 @@ dd {
 
   a[href]:after,
   a:visited[href]:after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
     font-size: smaller;
   }
 
   q:after {
-    content: " (Source:"attr(cite) ")";
+    content: " (Source:" attr(cite) ")";
   }
 
   abbr[title]:after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   a:after,
@@ -401,7 +403,6 @@ dd {
 }
 
 @media print {
-
   .badge,
   .badge:before,
   .badge *:after,
@@ -465,7 +466,6 @@ table td {
 }
 
 @media (min-width: 30em) {
-
   table th,
   table td {
     line-height: 48px;
@@ -888,7 +888,6 @@ address {
 }
 
 @media (min-width: 18em) {
-
   .show--sm,
   .hide--xsm,
   .hide--md,
@@ -909,7 +908,6 @@ address {
 }
 
 @media (min-width: 60em) {
-
   .show--md,
   .hide--sm,
   .hide--xsm,
@@ -930,7 +928,6 @@ address {
 }
 
 @media (min-width: 70em) {
-
   .show--lg,
   .hide--xsm,
   .hide--sm,
@@ -951,7 +948,6 @@ address {
 }
 
 @media (min-width: 80em) {
-
   .show--xlg,
   .hide--xsm,
   .hide--sm,
@@ -972,9 +968,9 @@ address {
 }
 
 @media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3 / 2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
+  only screen and (-o-min-device-pixel-ratio: 3 / 2),
+  only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
   .show--hd {
     display: block;
     visibility: visible;
@@ -1212,7 +1208,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @font-face {
   font-family: "Avenir Next";
   src: url("./fonts/avenir/AvenirNext-UltraLight.eot");
-  src: url("./fonts/avenir/AvenirNext-UltraLight.eot?#iefix") format("embedded-opentype"),
+  src: url("./fonts/avenir/AvenirNext-UltraLight.eot?#iefix")
+      format("embedded-opentype"),
     url("./fonts/avenir/AvenirNext-UltraLight.woff") format("woff"),
     url("./fonts/avenir/AvenirNext-UltraLight.ttf") format("truetype");
   font-weight: 200;
@@ -1222,7 +1219,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @font-face {
   font-family: "Avenir Next";
   src: url("./fonts/avenir/AvenirNext-Regular.eot");
-  src: url("./fonts/avenir/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("./fonts/avenir/AvenirNext-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("./fonts/avenir/AvenirNext-Regular.woff") format("woff"),
     url("./fonts/avenir/AvenirNext-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -1242,7 +1240,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @font-face {
   font-family: "Roboto";
   src: url("./fonts/roboto/Roboto-Regular.eot");
-  src: url("./fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+  src: url("./fonts/roboto/Roboto-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("./fonts/roboto/Roboto-Regular.woff") format("woff"),
     url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -1542,7 +1541,8 @@ button:active,
 @font-face {
   font-family: avenir next;
   src: url(./fonts/avenir/AvenirNext-UltraLight.eot);
-  src: url(./fonts/avenir/AvenirNext-UltraLight.eot?#iefix) format("embedded-opentype"),
+  src: url(./fonts/avenir/AvenirNext-UltraLight.eot?#iefix)
+      format("embedded-opentype"),
     url(./fonts/avenir/AvenirNext-UltraLight.woff) format("woff"),
     url(./fonts/avenir/AvenirNext-UltraLight.ttf) format("truetype");
   font-weight: 200;
@@ -1552,7 +1552,8 @@ button:active,
 @font-face {
   font-family: avenir next;
   src: url(./fonts/avenir/AvenirNext-Regular.eot);
-  src: url(./fonts/avenir/AvenirNext-Regular.eot?#iefix) format("embedded-opentype"),
+  src: url(./fonts/avenir/AvenirNext-Regular.eot?#iefix)
+      format("embedded-opentype"),
     url(./fonts/avenir/AvenirNext-Regular.woff) format("woff"),
     url(./fonts/avenir/AvenirNext-Regular.ttf) format("truetype");
   font-weight: 400;

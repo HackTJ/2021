@@ -19,7 +19,7 @@ section.faq div.container div.col h3.question button {
   color: #555;
   text-align: left;
   cursor: pointer;
-  transition: color .5s;
+  transition: color 0.5s;
   line-height: 1em;
   display: flex;
   align-items: center;
