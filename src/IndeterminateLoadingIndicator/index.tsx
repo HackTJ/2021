@@ -6,7 +6,7 @@ import BounceLoader from "react-spinners/BounceLoader";
 
 const IndeterminateLoadingIndicator = (): JSX.Element => (
   <div className="loading">
-    <BounceLoader color="#65d861" size={120} />
+    <BounceLoader color="#33cccc" size={120} />
   </div>
 );
 
