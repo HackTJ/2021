@@ -39,7 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier src/ --write; eslint src/ --fix",
-    "tint": "./tint-sponsors '#6BE667'",
+    "tint": "./tint-sponsors '#269999'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
     "predeploy": "yarn run build && NODE_DEBUG=gh-pages",

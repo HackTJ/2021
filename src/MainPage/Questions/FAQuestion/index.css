@@ -32,7 +32,7 @@ section.faq div.container div.col h3.question button {
 section.faq div.container div.col h3.question button:hover {
   background: none;
   border: none;
-  color: #64d861;
+  color: #33cccc;
 }
 
 @media only screen and (max-width: 640px) {
@@ -64,7 +64,7 @@ section.faq div.container div.col.is-open:hover {
 }
 
 section.faq div.container div.col.is-open:hover .icon {
-  color: #64d861;
+  color: #33cccc;
 }
 
 section.faq div.container div.col h3.question {
@@ -117,7 +117,7 @@ section.faq div.container div.col h3.question .icon.icon-close {
 }
 
 section.faq div.container div.col h3.question:hover {
-  color: #64d861;
+  color: #33cccc;
 }
 
 section.faq div.container div.col div.answer {
@@ -140,7 +140,7 @@ section.faq div.container div.col div.answer:before {
   right: 16px;
   top: 1px;
   height: 2px;
-  background-color: #64d861;
+  background-color: #33cccc;
 }
 
 section.faq div.container div.col div.answer p {
@@ -148,5 +148,5 @@ section.faq div.container div.col div.answer p {
 }
 
 section.faq div.container div.col div.answer a {
-  color: #64d861;
+  color: #33cccc;
 }

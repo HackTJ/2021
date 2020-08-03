@@ -604,7 +604,7 @@ a {
   transition: 150ms;
   text-decoration: underline;
   transition: color 0.3s;
-  color: #64d861;
+  color: #33cccc;
   text-decoration: underline;
   transition: color 0.3s;
 }
@@ -1265,7 +1265,7 @@ button,
   line-height: 50px;
   margin: 20px auto 0;
   padding: 0 20px;
-  color: #64d861;
+  color: #33cccc;
   background: none 0 0;
   text-decoration: none;
   display: inline-block;
@@ -1303,8 +1303,8 @@ button:hover,
 .button:hover,
 .altbutton:hover {
   color: #fff;
-  background-color: #64d861;
-  border-color: #64d861;
+  background-color: #33cccc;
+  border-color: #33cccc;
 }
 
 button:active,
@@ -1613,7 +1613,7 @@ h6 .small {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  background-color: #64d861;
+  background-color: #33cccc;
   color: #fff !important;
   width: 100%;
   min-height: 30px;
@@ -1661,11 +1661,11 @@ section h1.section-title {
   font: 100 40px/1.3em "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 0.4em;
-  color: #64d861;
+  color: #33cccc;
 }
 
 section.green {
-  background-color: #64d861;
+  background-color: #33cccc;
   color: #fff;
 }
 
@@ -1752,7 +1752,7 @@ button.small,
 button.small .text,
 .button.small .text,
 .altbutton.small .text {
-  background-color: #64d861;
+  background-color: #33cccc;
   line-height: 40px;
 }
 
@@ -1803,8 +1803,8 @@ a.blackbutton {
 a.altbutton {
   text-align: center;
   line-height: 50px;
-  color: #64d861;
-  border-color: #64d861;
+  color: #33cccc;
+  border-color: #33cccc;
 }
 
 a.altbutton:not([href]),
@@ -1820,8 +1820,8 @@ a.flatbutton {
   text-decoration: none;
   text-align: center;
   line-height: 50px;
-  border-color: #64d861;
-  background-color: #64d861;
+  border-color: #33cccc;
+  background-color: #33cccc;
   transition: transform 0.2s;
 }
 
@@ -1873,7 +1873,7 @@ p.large {
 }
 
 .animation-container .animated {
-  /* background: #64d861; */
+  /* background: #33cccc; */
   position: absolute;
   top: 0;
 }
@@ -2065,7 +2065,7 @@ section.register .container .register-button-block.bottom {
 
 section.register button.register-button:hover {
   background: #fff;
-  color: #64d861;
+  color: #33cccc;
 }
 
 button .text,
@@ -2103,7 +2103,7 @@ p.centered {
 }
 
 div.vertical-segment.green {
-  border-left: 6px solid #64d861;
+  border-left: 6px solid #33cccc;
   height: 113%;
   position: absolute;
   left: -20%;
@@ -2119,7 +2119,7 @@ div.vertical-segment.white {
 }
 
 div.horizontal-segment.green {
-  border-top: 6px solid #64d861;
+  border-top: 6px solid #33cccc;
   width: 100%;
   position: absolute;
 }

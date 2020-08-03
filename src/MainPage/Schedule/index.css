@@ -9,7 +9,7 @@ section.schedule ul.day {
 
 section.schedule ul.day .day-title {
   box-sizing: border-box;
-  color: #64d861;
+  color: #33cccc;
   display: inline-block;
   margin-left: -50px;
   width: 50%;
@@ -64,7 +64,7 @@ section.schedule ul.day li.item h6.time {
   padding-left: 10px;
   padding-right: 10px;
   display: inline-block;
-  color: #64d861;
+  color: #33cccc;
   font: 16px "Avenir Next", sans-serif;
   display: inline-block;
   vertical-align: 0.25;

@@ -11,7 +11,7 @@
   color: #fff;
   position: absolute;
   width: 100%;
-  background: #64d861;
+  background: #33cccc;
   height: 70px;
   padding: 10px 200px 10px 10px;
   z-index: 1000;
@@ -47,7 +47,7 @@
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  background: #64d861;
+  background: #33cccc;
   height: 70px;
   padding: 10px 200px 10px 10px;
   z-index: 1000;

@@ -16,7 +16,7 @@ const Sponsors = (): JSX.Element => (
         {/* <div
          className="vertical-segment green"
          style={{
-           borderLeft: "6px solid #64d861",
+           borderLeft: "6px solid #33cccc",
            height: "3%",
            position: "absolute",
            left: "auto",
@@ -31,7 +31,7 @@ const Sponsors = (): JSX.Element => (
         <div
          className="vertical-segment green"
          style={{
-           borderLeft: "6px solid #64d861",
+           borderLeft: "6px solid #33cccc",
            left: "-10.6%",
            top: "-0.6%",
            height: "100.6"
