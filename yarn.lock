@@ -7365,9 +7365,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"hacktj-2020v2@workspace:.":
+"hacktj-2021@workspace:.":
   version: 0.0.0-use.local
-  resolution: "hacktj-2020v2@workspace:."
+  resolution: "hacktj-2021@workspace:."
   dependencies:
     "@types/chart.js": ^2.9.22
     "@types/jest": ^26.0.3

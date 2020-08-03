@@ -1,29 +1,29 @@
 #!/usr/bin/env bash
 if [ $1 == "event" ]; then
-  jq '.homepage = "https://hacktj.org/2020v2"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Routes>|<Routes basename="/2020v2">|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
-  jq '.start_url = "/2020v2"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
-  jq '.short_name = "HackTJ 7.5"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
-  sed 's|<base href="/" />|<base href="/2020v2" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ</title>|<title>HackTJ 7.5</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:title" content="HackTJ" />|<meta property="og:title" content="HackTJ 7.5" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:site_name" content="HackTJ" />|<meta property="og:site_name" content="HackTJ 7.5" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta name="twitter:title" content="HackTJ" />|<meta name="twitter:title" content="HackTJ 7.5" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ</title>|<title>HackTJ 7.5</title>|' public/404.html > public/tmp.$$.html && mv public/tmp.$$.html public/404.html
+  jq '.homepage = "https://hacktj.org/2021"' package.json > tmp.$$.json && mv tmp.$$.json package.json
+  sed 's|<Routes>|<Routes basename="/2021">|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
+  jq '.start_url = "/2021"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
+  jq '.short_name = "HackTJ 8.0"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
+  sed 's|<base href="/" />|<base href="/2021" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<title>HackTJ</title>|<title>HackTJ 8.0</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta property="og:title" content="HackTJ" />|<meta property="og:title" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta property="og:site_name" content="HackTJ" />|<meta property="og:site_name" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta name="twitter:title" content="HackTJ" />|<meta name="twitter:title" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<title>HackTJ</title>|<title>HackTJ 8.0</title>|' public/404.html > public/tmp.$$.html && mv public/tmp.$$.html public/404.html
   sed 's|var segmentCount = 0;|var segmentCount = 1;|' public/404.html > public/tmp.$$.js && mv public/tmp.$$.js public/404.html
   rm -f public/CNAME
-  git remote set-url origin git@github.com:HackTJ/2020v2.git
+  git remote set-url origin git@github.com:HackTJ/2021.git
 elif [ $1 == "homepage" ]; then
   jq '.homepage = "https://hacktj.org"' package.json > tmp.$$.json && mv tmp.$$.json package.json
-  sed 's|<Routes basename="/2020v2">|<Routes>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
+  sed 's|<Routes basename="/2021">|<Routes>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
   jq '.start_url = "/"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
   jq '.short_name = "HackTJ"' public/manifest.json > public/tmp.$$.json && mv public/tmp.$$.json public/manifest.json
-  sed 's|<base href="/2020v2" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ 7.5</title>|<title>HackTJ</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:title" content="HackTJ 7.5" />|<meta property="og:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:site_name" content="HackTJ 7.5" />|<meta property="og:site_name" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta name="twitter:title" content="HackTJ 7.5" />|<meta name="twitter:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ 7.5</title>|<title>HackTJ</title>|' public/404.html > public/tmp.$$.html && mv public/tmp.$$.html public/404.html
+  sed 's|<base href="/2021" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<title>HackTJ 8.0</title>|<title>HackTJ</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta property="og:title" content="HackTJ 8.0" />|<meta property="og:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta property="og:site_name" content="HackTJ 8.0" />|<meta property="og:site_name" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<meta name="twitter:title" content="HackTJ 8.0" />|<meta name="twitter:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  sed 's|<title>HackTJ 8.0</title>|<title>HackTJ</title>|' public/404.html > public/tmp.$$.html && mv public/tmp.$$.html public/404.html
   sed 's|var segmentCount = 1;|var segmentCount = 0;|' public/404.html > public/tmp.$$.js && mv public/tmp.$$.js public/404.html
   cp CNAME.homepage public/CNAME
   git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git

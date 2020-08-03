@@ -14,7 +14,7 @@ const App = (): JSX.Element => (
     <PageScrollProgress />
     <Router>
       <Suspense fallback={<IndeterminateLoadingIndicator />}>
-        <Routes basename="/2020v2">
+        <Routes basename="/2021">
           {/* <Route path="/registration" element={<RegistrationPage />} /> */}
           <Route path="/history" element={<HistoryPage />} />
           <Route path="/" element={<MainPage />} />

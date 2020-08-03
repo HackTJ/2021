@@ -1,8 +1,8 @@
 {
-  "name": "hacktj-2020v2",
+  "name": "hacktj-2021",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://hacktj.org/2020v2",
+  "homepage": "https://hacktj.org/2021",
   "dependencies": {
     "@types/chart.js": "^2.9.22",
     "@types/jest": "^26.0.3",
@@ -79,9 +79,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/HackTJ/2020v2.git"
+    "url": "https://github.com/HackTJ/2021.git"
   },
   "bugs": {
-    "url": "https://github.com/HackTJ/2020v2/issues"
+    "url": "https://github.com/HackTJ/2021/issues"
   }
 }

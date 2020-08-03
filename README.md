@@ -1,6 +1,6 @@
-# HackTJ 7.5
+# HackTJ 8.0
 
-The website for HackTJ 7.5, held on November 21st-22nd, 2020.
+The website for HackTJ 8.0, held on November 21st-22nd, 2020.
 
 ## Setup
 
