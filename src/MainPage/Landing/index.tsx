@@ -20,14 +20,15 @@ const Landing = (): JSX.Element => (
       >
         {/* <Logo className="logo" /> */}
         <img className="logo" src={String(logo)} alt="HackTJ" />
-        <div className="event-date landing">November 21st-22nd, 2020</div>
-        <div className="event-location landing">Online</div>
+        <div className="event-date landing">March 6th-7th, 2021</div>
+        {/*<div className="event-date landing">April 24th-25th, 2021</div>*/}
+        <div className="event-location landing">Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)</div>
         <div className="register-button-block-old top">
           {/* <Link
            className="button register-button mentor blackbutton"
            to="registration"
           >
-           Register for HackTJ 7.0
+           Register for HackTJ 8.0
           </Link> */}
           <a
             className="button register-button mentor blackbutton"
