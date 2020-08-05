@@ -19,7 +19,7 @@ const Landing = (): JSX.Element => (
         tiltMaxAngleY={5}
       >
         <Logo className="logo" />
-        {/*<img className="logo" src={String(logo)} alt="HackTJ" />*/}
+        {/* <img className="logo" src={String(logo)} alt="HackTJ" /> */}
         <div className="event-date landing">March 6th-7th, 2021</div>
         {/* <div className="event-date landing">April 24th-25th, 2021</div> */}
         <div className="event-location landing">

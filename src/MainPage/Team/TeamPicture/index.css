@@ -27,7 +27,7 @@ section.team .team-pictures .fade .figcaption {
   padding: 0 10px;
   word-wrap: break-word;
   line-height: 200px;
-  background: rgba(100, 216, 97, 0.5);
+  background: rgba(51, 204, 204, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 1rem;
