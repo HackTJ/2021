@@ -1,6 +1,7 @@
 section.faq {
   padding: 1px 0;
   line-height: 1.3em;
+  margin-y: 10px;
 }
 
 section.faq .container {
@@ -90,4 +91,8 @@ section.faq .faq-container .row:after {
   section.faq .faq-container .row {
     margin: 0;
   }
+}
+
+section.faq .bottom-question {
+  margin-top: 1em;
 }
