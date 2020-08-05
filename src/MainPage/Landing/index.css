@@ -3,7 +3,7 @@ section.hero {
   min-height: 750px;
   padding: 5% 0 5% 0;
   position: relative;
-  background: url(../../images/bkg-untinted.jpg) center top;
+  background: url(../../images/bkg-cyan.jpg) center top;
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
