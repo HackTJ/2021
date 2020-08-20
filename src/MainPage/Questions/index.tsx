@@ -37,8 +37,8 @@ const Questions = (): JSX.Element => (
             question="When is HackTJ?"
             answer={
               <span>
-                HackTJ will start on Saturday, November 21 and run until Sunday,
-                November 22.
+                HackTJ will start on Saturday, April 24 and run until Sunday,
+                April 25.
               </span>
             }
           />
