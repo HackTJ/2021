@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { Container, Row } from "reactstrap";
+import { Link } from "react-router-dom";
 
 import FAQuestion from "./FAQuestion";
 
@@ -80,13 +81,13 @@ const Questions = (): JSX.Element => (
             answer={
               <span>
                 Yes, good question! We have adopted the{" "}
-                <a
-                  href={`${process.env.PUBLIC_URL || ""}/conduct.pdf`}
+                <Link
+                  to="conduct.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   MLH code of conduct
-                </a>
+                </Link>
                 , which all attendees will be required to adhere to.
               </span>
             }
