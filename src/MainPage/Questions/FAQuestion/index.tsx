@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import { Col } from "reactstrap";
-
 import "./index.css";
 
 type Props = {
@@ -18,7 +16,7 @@ const FAQuestion = ({
   const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
   const toggleShowAnswer = () => setShowAnswer(!showAnswer);
   return (
-    <Col className={`${showAnswer ? "is-open" : ""}`}>
+    <div className={`${showAnswer ? "is-open" : ""}`}>
       <h3 className={`question ${small || false ? "small" : ""}`}>
         <button type="button" onClick={toggleShowAnswer}>
           {question}
@@ -48,7 +46,7 @@ const FAQuestion = ({
       >
         <p>{answer}</p>
       </div>
-    </Col>
+    </div>
   );
 };
 
