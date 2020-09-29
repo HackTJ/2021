@@ -27,6 +27,7 @@ const Logo = ({ url, name, logo }: Props): JSX.Element => {
         id={`img-${sponsorID}`}
       >
         <>
+          {/* eslint-disable import/no-dynamic-require */}
           <img
             id={`img-normal-${sponsorID}`}
             className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
@@ -39,6 +40,7 @@ const Logo = ({ url, name, logo }: Props): JSX.Element => {
             src={require(`../../../images/sponsors/tint/${logo}`)}
             alt={name}
           />
+          {/* eslint-enable import/no-dynamic-require */}
         </>
       </a>
       <Tooltip

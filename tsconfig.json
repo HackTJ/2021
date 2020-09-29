@@ -28,5 +28,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "files": ["./typings/globals.d.ts"]
 }

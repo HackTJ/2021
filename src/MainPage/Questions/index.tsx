@@ -7,7 +7,7 @@ import FAQuestion from "./FAQuestion";
 
 import "./index.css";
 
-const Questions = (): JSX.Element => (
+const Questions: React.FunctionComponent = (): JSX.Element => (
   <>
     <a className="anchor" id="faq" href="#faq">
       FAQ
@@ -68,10 +68,11 @@ const Questions = (): JSX.Element => (
             answer={
               <span>
                 Registration for participants, judges, mentors, and volunteers
-                opens on September 25 at 8 p.m. Registration for participants
-                closes on October 16&mdash;this is a hard deadline; we do not
-                accept submissions after 8 p.m. Judges, mentors, and volunteers
-                will be able to register until the start of the event.
+                will likely open sometime during mid-October and close near
+                mid-November. Registration for participants will also likely
+                open during mid-October and will end in late-October. All of our
+                plans are still tentative due to COVID-19; changes to our dates
+                will be reflected on this webpage as soon as they are decided!
               </span>
             }
           />

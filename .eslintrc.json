@@ -22,5 +22,8 @@
         "pragma": "React",
         "version": "detect"
       }
-  }
+    },
+    "rules": {
+      "global-require": 0 
+    }
 }

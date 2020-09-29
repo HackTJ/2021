@@ -1,21 +1,23 @@
-import * as React from "react";
+import React from "react";
 
 import DevpostCard from "./DevpostCard";
 
 import "./index.css";
 
-const Content = (): JSX.Element => (
+// "https://hacktj.org/2020/favicon.ico"
+
+const Content: React.FunctionComponent = () => (
   <div className="centered-box relative history">
     <div className="header-section">
       <div className="icon icon-clock" />
       <h3 className="title">A Walk Through Memory Lane</h3>
     </div>
     <DevpostCard
-      logo="https://raw.githubusercontent.com/HackTJ/2020/master/src/images/logo.png" // previous logo on the HackTJ webstie is encrpyted
+      logo="https://raw.githubusercontent.com/HackTJ/2020/master/src/images/logo.png"
       iteration="7.0"
       year="2020"
       url="https://hacktj2020.devpost.com/"
-      disabled // there was no devpost for this year
+      disabled
     />
     <DevpostCard
       logo="https://hacktj.org/2019/img/logo2.png"
@@ -30,7 +32,8 @@ const Content = (): JSX.Element => (
       url="https://hacktj2018.devpost.com/"
     />
     <DevpostCard
-      logo="https://hacktj.org/2017/img/favicon.png"
+      // logo="https://hacktj.org/2017/img/favicon.png"
+      logo="https://raw.githubusercontent.com/HackTJ/2017/gh-pages/img/favicon.png"
       iteration="4.0"
       year="2017"
       url="https://hacktj2017.devpost.com/"

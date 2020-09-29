@@ -29,6 +29,7 @@ function registerValidSW(swUrl: string, config?: Config) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+      /* eslint-disable no-param-reassign */
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -63,6 +64,7 @@ function registerValidSW(swUrl: string, config?: Config) {
           }
         };
       };
+      /* eslint-enable no-param-reassign */
     })
     .catch((error) => {
       console.error("Error during service worker registration:", error);

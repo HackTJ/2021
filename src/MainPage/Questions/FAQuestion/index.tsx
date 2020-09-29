@@ -1,20 +1,16 @@
-import * as React from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 import { Col } from "reactstrap";
 
 import "./index.css";
 
-type Props = {
+// TODO: HTMLSpanElement for answer?
+const FAQuestion: React.FunctionComponent<{
   question: string;
-  answer: React.ReactElement<"span">;
-  small: boolean;
-};
-
-const FAQuestion = ({
-  question,
-  answer,
-  small = false,
-}: Props): JSX.Element => {
+  answer: any;
+  small?: boolean;
+}> = ({ question, answer, small = false }) => {
   const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
   const toggleShowAnswer = () => setShowAnswer(!showAnswer);
   return (
@@ -50,6 +46,12 @@ const FAQuestion = ({
       </div>
     </Col>
   );
+};
+
+FAQuestion.propTypes = {
+  question: PropTypes.string.isRequired,
+  answer: PropTypes.element.isRequired,
+  small: PropTypes.bool,
 };
 
 FAQuestion.defaultProps = {

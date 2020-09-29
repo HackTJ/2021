@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 // import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
-const logo = require("../../images/bigweblogo.png");
+import logo from "../../images/bigweblogo.png";
 
-const Landing = (): JSX.Element => (
+const Landing: React.FunctionComponent = () => (
   <section className="hero">
     <div className="container">
       <Tilt
@@ -19,7 +19,7 @@ const Landing = (): JSX.Element => (
         tiltMaxAngleY={5}
       >
         {/* <Logo className="logo" /> */}
-        <img className="logo" src={String(logo)} alt="HackTJ" />
+        <img src={logo} className="logo" alt="HackTJ" />
         <div className="event-date landing">April 24th-25th, 2021</div>
         <div className="event-location landing">
           Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)

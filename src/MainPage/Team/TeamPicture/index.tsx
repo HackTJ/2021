@@ -18,7 +18,12 @@ const TeamPicture = ({ name, image, about }: Props): JSX.Element => {
         className="figure fade question"
         onClick={() => setShowAbout(!showAbout)}
       >
-        <CardImg className="img" src={image} />
+        {/* eslint-disable import/no-dynamic-require */}
+        <CardImg
+          className="img"
+          src={`${require(`../../../images/team/${image}`)}`}
+        />
+        {/* eslint-enable import/no-dynamic-require */}
         <CardImgOverlay>
           <CardTitle className="figcaption">{name}</CardTitle>
         </CardImgOverlay>
