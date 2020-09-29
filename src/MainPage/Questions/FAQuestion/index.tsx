@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Col } from "reactstrap";
-
 import "./index.css";
 
 // TODO: HTMLSpanElement for answer?
@@ -14,7 +12,7 @@ const FAQuestion: React.FunctionComponent<{
   const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
   const toggleShowAnswer = () => setShowAnswer(!showAnswer);
   return (
-    <Col className={`${showAnswer ? "is-open" : ""}`}>
+    <div className={`${showAnswer ? "is-open" : ""}`}>
       <h3 className={`question ${small || false ? "small" : ""}`}>
         <button type="button" onClick={toggleShowAnswer}>
           {question}
@@ -44,7 +42,7 @@ const FAQuestion: React.FunctionComponent<{
       >
         <p>{answer}</p>
       </div>
-    </Col>
+    </div>
   );
 };
 

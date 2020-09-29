@@ -42,7 +42,11 @@ import * as serviceWorker from "./serviceWorker";
 // End Single Page Apps for GitHub Pages
 
 const rootElement = document.getElementById("root");
-const app = <React.StrictMode><App /></React.StrictMode>;
+const app = (
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 if (rootElement?.hasChildNodes()) {
   hydrate(app, rootElement);
 } else {

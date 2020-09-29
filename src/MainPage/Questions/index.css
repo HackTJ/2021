@@ -1,3 +1,8 @@
+section.faq .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+}
+
 section.faq {
   padding: 1px 0;
   line-height: 1.3em;
@@ -33,10 +38,6 @@ section.faq .header-row .section-title {
     width: 100%;
     margin-bottom: 30px;
   }
-}
-
-section.faq p.bottom-question {
-  height: 72px;
 }
 
 section.faq p.large {
@@ -94,5 +95,5 @@ section.faq .faq-container .row:after {
 }
 
 section.faq .bottom-question {
-  margin-top: 1em;
+  margin: 1em auto;
 }

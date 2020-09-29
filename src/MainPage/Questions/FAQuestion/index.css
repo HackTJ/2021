@@ -1,15 +1,11 @@
-section.faq div.container div.col {
+section.faq div.container div {
   box-sizing: border-box;
-  float: left;
-  margin-bottom: 0;
-  width: 25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  gap: 1em;
   font-size: 16px;
 }
 
-section.faq div.container div.col h3.question button {
+section.faq div.container div h3.question button {
   width: 100%;
   height: 100%;
   line-height: 1em;
@@ -29,73 +25,61 @@ section.faq div.container div.col h3.question button {
   margin: 0;
   align-items: center;
 }
-section.faq div.container div.col h3.question button:hover {
+section.faq div.container div h3.question button:hover {
   background: none;
   border: none;
   color: #33cccc;
 }
 
-@media only screen and (max-width: 640px) {
-  section.faq div.container div.col {
-    box-sizing: border-box;
-    float: left;
-    margin: 10px 0;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-section.faq div.container div.col.is-open .question .icon.icon-close {
+section.faq div.container div.is-open .question .icon.icon-close {
   opacity: 1;
 }
 
-section.faq div.container div.col.is-open .question .icon.icon-plus {
+section.faq div.container div.is-open .question .icon.icon-plus {
   opacity: 0;
   transform: rotate(-45deg) translate(41%, -34%);
 }
 
-section.faq div.container div.col.is-open h3.question:hover {
+section.faq div.container div.is-open h3.question:hover {
   color: #555;
 }
 
-section.faq div.container div.col.is-open:hover {
+section.faq div.container div.is-open:hover {
   color: #555;
 }
 
-section.faq div.container div.col.is-open:hover .icon {
+section.faq div.container div.is-open:hover .icon {
   color: #33cccc;
 }
 
-section.faq div.container div.col h3.question {
+section.faq div.container div h3.question {
   transition: color 0.5s;
   font: 20px/40px "Roboto", sans-serif;
-  display: block;
+  display: flex;
   position: relative;
-  text-align: center;
   background-color: #fff;
   color: #555;
   text-align: left;
   height: calc(3em + 16px + 8px);
-  padding: 8px 40px 8px 16px;
   cursor: pointer;
   transition: color 0.5s;
   line-height: 1em;
   display: flex;
   align-items: center;
+  padding-left: 0.5em;
 }
 
-section.faq div.container div.col h3.question.small {
+section.faq div.container div h3.question.small {
   line-height: 1em;
 }
 
 @media only screen and (max-width: 640px) {
-  section.faq div.container div.col h3.question.small.not-mobile {
+  section.faq div.container div h3.question.small.not-mobile {
     line-height: 40px;
   }
 }
 
-section.faq div.container div.col h3.question .icon {
+section.faq div.container div h3.question .icon {
   transition: transform 0.5s, opacity 0.5s;
   float: right;
   display: block;
@@ -108,20 +92,20 @@ section.faq div.container div.col h3.question .icon {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-section.faq div.container div.col h3.question .icon.icon-plus {
+section.faq div.container div h3.question .icon.icon-plus {
   opacity: 1;
 }
 
-section.faq div.container div.col h3.question .icon.icon-close {
+section.faq div.container div h3.question .icon.icon-close {
   transform: translate(-55%, -50%);
 }
 
-section.faq div.container div.col h3.question:hover {
+section.faq div.container div h3.question:hover {
   color: #33cccc;
 }
 
-section.faq div.container div.col div.answer {
-  transition: all 0.5s ease-in;
+section.faq div.container div div.answer {
+  transition: all 0.5s ease-in-out;
   background: #fff;
   box-sizing: border-box;
   font-size: 15px;
@@ -132,7 +116,7 @@ section.faq div.container div.col div.answer {
   color: #555;
 }
 
-section.faq div.container div.col div.answer:before {
+section.faq div.container div div.answer:before {
   content: "";
   display: block;
   position: absolute;
@@ -143,10 +127,10 @@ section.faq div.container div.col div.answer:before {
   background-color: #33cccc;
 }
 
-section.faq div.container div.col div.answer p {
+section.faq div.container div div.answer p {
   margin: 16px;
 }
 
-section.faq div.container div.col div.answer a {
+section.faq div.container div div.answer a {
   color: #33cccc;
 }

@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-import { Container, Row } from "reactstrap";
+import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 
 import FAQuestion from "./FAQuestion";
@@ -23,7 +23,7 @@ const Questions: React.FunctionComponent = (): JSX.Element => (
         style={{ left: "-0.52%", top: "2.7%" }}
         ></div> */}
         <h1 className="section-title">FAQ</h1>
-        <Row>
+        <div className="grid-container">
           <FAQuestion
             question="What is HackTJ?"
             answer={
@@ -61,18 +61,15 @@ const Questions: React.FunctionComponent = (): JSX.Element => (
               </span>
             }
           />
-        </Row>
-        <Row>
           <FAQuestion
             question="Is there a deadline?"
             answer={
               <span>
                 Registration for participants, judges, mentors, and volunteers
-                will likely open sometime during mid-October and close near
-                mid-November. Registration for participants will also likely
-                open during mid-October and will end in late-October. All of our
-                plans are still tentative due to COVID-19; changes to our dates
-                will be reflected on this webpage as soon as they are decided!
+                opens on September 25 at 8 p.m. Registration for participants
+                closes on October 16&mdash;this is a hard deadline; we do not
+                accept submissions after 8 p.m. Judges, mentors, and volunteers
+                will be able to register until the start of the event.
               </span>
             }
           />
@@ -114,8 +111,6 @@ const Questions: React.FunctionComponent = (): JSX.Element => (
               </span>
             }
           />
-        </Row>
-        <Row>
           <FAQuestion
             question="What if I don&#39;t know how to code?"
             small
@@ -167,8 +162,20 @@ const Questions: React.FunctionComponent = (): JSX.Element => (
               </span>
             }
           />
-        </Row>
-        <div />
+          <div />
+
+          {/* <div
+        className="vertical-segment white"
+        style={{
+        borderLeft: "6px solid white",
+        height: "102.7%",
+        position: "absolute",
+        left: "auto",
+        right: "0%",
+        top: "2.7%"
+        }}
+        ></div> */}
+        </div>
         <p className="large bottom-question">
           If your question is not answered here, just ask us:{" "}
           <a
@@ -180,17 +187,6 @@ const Questions: React.FunctionComponent = (): JSX.Element => (
           </a>
           .
         </p>
-        {/* <div
-        className="vertical-segment white"
-        style={{
-        borderLeft: "6px solid white",
-        height: "102.7%",
-        position: "absolute",
-        left: "auto",
-        right: "0%",
-        top: "2.7%"
-        }}
-        ></div> */}
       </Container>
     </section>
   </>
