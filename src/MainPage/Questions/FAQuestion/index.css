@@ -105,7 +105,7 @@ section.faq div.container div h3.question:hover {
 }
 
 section.faq div.container div div.answer {
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
   background: #fff;
   box-sizing: border-box;
   font-size: 15px;
