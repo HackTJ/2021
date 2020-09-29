@@ -26,6 +26,7 @@ section.faq div.container div h3.question button {
   align-items: center;
   margin-right: 26px;
 }
+
 section.faq div.container div h3.question button:hover {
   background: none;
   border: none;

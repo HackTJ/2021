@@ -42,17 +42,14 @@ section#sponsors img.sponsor-image.hover {
   filter: none;
   -webkit-filer: none;
 } */
-
 section#sponsors a.sponsor-wrapper {
   position: relative;
 }
 
 section#sponsors img.sponsor-image {
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
+
 section#sponsors img.sponsor-image.normal {
   position: absolute;
   top: 0;
@@ -85,7 +82,6 @@ section#sponsors a.sponsor-wrapper:before {
 section#sponsors a.sponsor-wrapper:hover:before {
   background: none;
 } */
-
 div.tooltip.show {
   /* section#sponsors because reactstrap adds the tooltip to the end of <body> */
   background-color: rgba(0, 0, 0, 0.7);

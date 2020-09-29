@@ -23,8 +23,6 @@ section.faq .header-row {
 }
 
 section.faq .header-row .animation-container.horizontal {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
 }
 
