@@ -38,13 +38,12 @@ section.team .team-pictures .fade .figcaption:hover {
 }
 
 section.team li.question-group {
+  margin: 0 auto;
   font-size: 1em;
   white-space: normal;
   list-style: none;
   box-sizing: border-box;
-  float: left;
   margin-bottom: 0;
-  width: 25%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -93,7 +92,8 @@ section.team li.question-group .question:hover {
 
 section.team li.question-group .answer {
   max-height: 500px;
-  transition: max-height 0.5s ease-in;
+  transition: max-height 0.5s ease-in-out;
+  min-width: 200px;
   position: relative;
   box-sizing: border-box;
   font-size: 15px;

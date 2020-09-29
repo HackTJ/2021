@@ -3,9 +3,8 @@ section.team .container {
 }
 
 section.team .team-pictures {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   justify-content: center;
   padding: 0;
 }
