@@ -23,7 +23,7 @@ const FAQuestion: React.FunctionComponent<{
           onKeyDown={toggleShowAnswer}
           role="button"
           aria-label="Show answer"
-          tabIndex={0}
+          tabIndex={-1}
         />
         <span
           className="icon icon-close"
@@ -31,7 +31,7 @@ const FAQuestion: React.FunctionComponent<{
           onKeyDown={toggleShowAnswer}
           role="button"
           aria-label="Hide answer"
-          tabIndex={0}
+          tabIndex={-1}
         />
       </h3>
       <div

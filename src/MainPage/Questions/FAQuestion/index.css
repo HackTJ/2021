@@ -24,7 +24,7 @@ section.faq div.container div h3.question button {
   padding: 0;
   margin: 0;
   align-items: center;
-  margin-right: 52px;
+  margin-right: 52px;  /* width of icon */
 }
 
 section.faq div.container div h3.question button:hover {
