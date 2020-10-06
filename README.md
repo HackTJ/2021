@@ -1,5 +1,7 @@
 # HackTJ 8.0
 
+[![lint](https://github.com/HackTJ/2021/workflows/lint/badge.svg?event=push)](https://github.com/HackTJ/2021/actions?query=workflow%3Alint)
+
 The website for HackTJ 8.0, held on November 21st-22nd, 2020.
 
 ## Setup
@@ -45,7 +47,7 @@ We use ReactJS.
 -   `yarn run deploy-homepage`: pushes to the [hacktj.github.io repo](https://github.com/HackTJ/hacktj.github.io) and deploys the site to <https://hacktj.org>
 -   `yarn run deploy-all`: shortcut for both `yarn run deploy-event` and `yarn run deploy-homepage`
 
-In the case that one of the endpoints (/2020 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site. 
+In the case that one of the endpoints (/2020 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site.
 
 ## Notes for next year
 
