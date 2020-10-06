@@ -41,7 +41,7 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - name: install dependencies
-      run: yarn install
+      run: yarn install --frozen-lockfile
 
     - name: deploy
       run: yarn run deploy-event
