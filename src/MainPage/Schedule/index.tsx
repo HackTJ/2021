@@ -105,6 +105,7 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
                   selectedDayIndex === index ? "selected" : ""
                 }`}
                 onClick={() => setSelectedDayIndex(index)}
+                onKeyPress={() => setSelectedDayIndex(index)}
                 role="tab"
                 id={`schedule-tab-${index}`}
                 tabIndex={0}

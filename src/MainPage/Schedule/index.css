@@ -48,7 +48,6 @@ section.schedule .category-bubble.selected::before {
   display: block;
   left: 10%;
   content: "▶";
-  font-size: ;
 }
 
 section.schedule .schedule-area {
