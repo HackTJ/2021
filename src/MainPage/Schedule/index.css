@@ -22,6 +22,7 @@ section.schedule .dates {
 }
 
 section.schedule .category-bubble {
+    position: relative;
     text-align: left;
     font-size: 1.15vw;
     height: 50%;
@@ -35,6 +36,15 @@ section.schedule .category-bubble.selected {
     font-size: 1.3vw;
     font-weight: bolder;
     opacity: 100%;
+}
+
+section.schedule .category-bubble.selected::before {
+    position: absolute;
+    display: block;
+    left: 10%;
+    content: "▶";
+    font-size: 
+
 }
 
 section.schedule .schedule-area {
