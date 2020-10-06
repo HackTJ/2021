@@ -2,6 +2,89 @@ import React, { useState } from "react";
 
 import "./index.css";
 
+const scheduleData: {
+  date: string;
+  scheduleEvents: { time: string; description: string }[];
+}[] = [
+  {
+    date: "Saturday, March 21",
+    scheduleEvents: [
+      {
+        time: "10:00 a.m.",
+        description: "Student Check-In & Sponsor Fair",
+      },
+      {
+        time: "11:00 a.m.",
+        description: "Opening Ceremony",
+      },
+      {
+        time: "11:30 a.m.",
+        description: "Hacking Begins",
+      },
+      {
+        time: "1:00 p.m.",
+        description: "Lunch, Registration Closes (no entry after this time)",
+      },
+      {
+        time: "2:00 p.m.",
+        description: "Workshops Begin",
+      },
+      {
+        time: "4:00 p.m.",
+        description: "Afternoon Snack",
+      },
+      {
+        time: "7:00 p.m.",
+        description: "Dinner",
+      },
+      {
+        time: "9:00 p.m.",
+        description: "Women in Tech Panel",
+      },
+    ],
+  },
+  {
+    date: "Saturday, March 22",
+    scheduleEvents: [
+      {
+        time: "12:00 a.m.",
+        description: "Midnight Snack",
+      },
+      {
+        time: "4:00 a.m.",
+        description: "Late Night Snack",
+      },
+      {
+        time: "8:00 a.m.",
+        description: "Hacking Ends & Breakfast Begins",
+      },
+      {
+        time: "8:45 a.m.",
+        description: "Clean-up",
+      },
+      {
+        time: "9:30 a.m.",
+        description: "Judging Starts",
+      },
+      {
+        time: "11:00 a.m.",
+        description: "People's Choice Voting",
+      },
+      {
+        time: "11:30 a.m.",
+        description: "Closing Ceremony",
+      },
+      {
+        time: "12:00 p.m.",
+        description: "Hackathon Ends",
+      },
+    ],
+  },
+];
+
+// we disable the react/no-array-index-key lint rule because we'll never modify
+// the scheduleData object so using indices as keys shouldn't cause any trouble
+
 const Schedule: React.FunctionComponent = (): JSX.Element => {
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
 
@@ -14,105 +97,36 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
         <h1 className="section-title">2019 Schedule</h1>
         <div className="container">
           <div className="dates">
-            <div
-              className={`category-bubble ${
-                selectedDayIndex === 0 ? "selected" : ""
-              }`}
-              onClick={() => setSelectedDayIndex(0)}
-            >
-              Saturday, March 21
-            </div>
-            <div
-              className={`category-bubble ${
-                selectedDayIndex === 1 ? "selected" : ""
-              }`}
-              onClick={() => setSelectedDayIndex(1)}
-            >
-              Sunday, March 22
-            </div>
+            {/* eslint-disable react/no-array-index-key */}
+            {scheduleData.map((day, index) => (
+              <div
+                key={index}
+                className={`category-bubble ${
+                  selectedDayIndex === index ? "selected" : ""
+                }`}
+                onClick={() => setSelectedDayIndex(index)}
+              >
+                {day.date}
+              </div>
+            ))}
+            {/* eslint-enable react/no-array-index-key */}
           </div>
           <div className="schedule-area">
             <div className="schedule">
-              {selectedDayIndex === 0 && (
-                <>
-                  <li className="item">
-                    <h6 className="time">10:00 a.m.</h6>
-                    <div className="description">
-                      Student Check-In & Sponsor Fair
-                    </div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">11:00 a.m.</h6>
-                    <div className="description">Opening Ceremony</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">11:30 a.m.</h6>
-                    <div className="description">Hacking Begins</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">1:00 p.m.</h6>
-                    <div className="description">
-                      Lunch, Registration Closes (no entry after this time)
-                    </div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">2:00 p.m.</h6>
-                    <div className="description">Workshops Begin</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">4:00 p.m.</h6>
-                    <div className="description">Afternoon Snack</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">7:00 p.m.</h6>
-                    <div className="description">Dinner</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">9:00 p.m.</h6>
-                    <div className="description">Women in Tech Panel</div>
-                  </li>
-                </>
-              )}
-              {selectedDayIndex === 1 && (
-                <>
-                  <li className="item">
-                    <h6 className="time">12:00 a.m.</h6>
-                    <div className="description">Midnight Snack</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">4:00 a.m.</h6>
-                    <div className="description">Late Night Snack</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">8:00 a.m.</h6>
-                    <div className="description">
-                      Hacking Ends & Breakfast Begins
-                    </div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">8:45 a.m.</h6>
-                    <div className="description">Clean-Up</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">9:30 a.m.</h6>
-                    <div className="description">Judging Starts</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">11:00 a.m.</h6>
-                    <div className="description">
-                      People&apos;s Choice Voting
-                    </div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">11:30 a.m.</h6>
-                    <div className="description">Closing Ceremony</div>
-                  </li>
-                  <li className="item">
-                    <h6 className="time">12:00 p.m.</h6>
-                    <div className="description">Hackathon Ends</div>
-                  </li>
-                </>
-              )}
+              <>
+                {/* eslint-disable react/no-array-index-key */}
+                {scheduleData[selectedDayIndex].scheduleEvents.map(
+                  (scheduleEvent, index) => (
+                    <li className="item" key={index}>
+                      <h6 className="time">{scheduleEvent.time}</h6>
+                      <div className="description">
+                        {scheduleEvent.description}
+                      </div>
+                    </li>
+                  )
+                )}
+                {/* eslint-enable react/no-array-index-key */}
+              </>
             </div>
           </div>
         </div>
