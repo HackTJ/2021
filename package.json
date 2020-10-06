@@ -65,6 +65,7 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "gh-pages": "^3.1.0",
+    "jq.node": "^2.2.0",
     "prettier": "^2.1.2",
     "purgecss": "^2.3.0",
     "react-refresh": "^0.8.3",
