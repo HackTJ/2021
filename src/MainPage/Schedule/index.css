@@ -29,17 +29,18 @@ section.schedule .category-bubble {
   padding: 15% 15% 0% 20%;
   transition: 0.1s ease-in-out;
   color: white;
-  opacity: 60%;
+  opacity: 0.6;
   outline: none; /* TODO: I don't like this */
 }
-section.schedule .category-bubble:hover, section.schedule .category-bubble:focus {
-  opacity: 90%;
+section.schedule .category-bubble:hover,
+section.schedule .category-bubble:focus {
+  opacity: 0.9;
 }
 
 section.schedule .category-bubble.selected {
   font-size: 1.3vw;
   font-weight: bolder;
-  opacity: 100%;
+  opacity: 1;
 }
 
 section.schedule .category-bubble.selected::before {
