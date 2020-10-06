@@ -96,7 +96,7 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
       <section className="schedule" id="schedules">
         <h1 className="section-title">2019 Schedule</h1>
         <div className="container">
-          <div className="dates">
+          <div className="dates" role="tablist">
             {/* eslint-disable react/no-array-index-key */}
             {scheduleData.map((day, index) => (
               <div
@@ -105,6 +105,11 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
                   selectedDayIndex === index ? "selected" : ""
                 }`}
                 onClick={() => setSelectedDayIndex(index)}
+                role="tab"
+                id={`schedule-tab-${index}`}
+                tabIndex={0}
+                aria-controls={`schedule-day-${index}`}
+                aria-selected={selectedDayIndex === index}
               >
                 {day.date}
               </div>
@@ -113,7 +118,13 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
           </div>
           <div className="schedule-area">
             <div className="schedule">
-              <>
+              <ul
+                role="tabpanel"
+                aria-labelledby={`schedule-tab-${selectedDayIndex}`}
+                id={`schedule-day-${selectedDayIndex}`}
+                hidden={false}
+                aria-hidden={false}
+              >
                 {/* eslint-disable react/no-array-index-key */}
                 {scheduleData[selectedDayIndex].scheduleEvents.map(
                   (scheduleEvent, index) => (
@@ -126,7 +137,7 @@ const Schedule: React.FunctionComponent = (): JSX.Element => {
                   )
                 )}
                 {/* eslint-enable react/no-array-index-key */}
-              </>
+              </ul>
             </div>
           </div>
         </div>

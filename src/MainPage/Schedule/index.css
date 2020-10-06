@@ -30,6 +30,10 @@ section.schedule .category-bubble {
   transition: 0.1s ease-in-out;
   color: white;
   opacity: 60%;
+  outline: none; /* TODO: I don't like this */
+}
+section.schedule .category-bubble:hover, section.schedule .category-bubble:focus {
+  opacity: 90%;
 }
 
 section.schedule .category-bubble.selected {
