@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 import "./index.css";
 
-const Schedule = (): JSX.Element => {
-  const [isFirstDay, setIsFirstDay] = useState(true);
+const Schedule: React.FunctionComponent = (): JSX.Element => {
+  const [selectedDayIndex, setSelectedDayIndex] = useState(0);
 
   return (
     <>
@@ -15,21 +15,25 @@ const Schedule = (): JSX.Element => {
         <div className="container">
           <div className="dates">
             <div
-              className={`category-bubble ${isFirstDay ? "selected" : ""}`}
-              onClick={() => setIsFirstDay(true)}
+              className={`category-bubble ${
+                selectedDayIndex === 0 ? "selected" : ""
+              }`}
+              onClick={() => setSelectedDayIndex(0)}
             >
               Saturday, March 21
             </div>
             <div
-              className={`category-bubble ${!isFirstDay ? "selected" : ""}`}
-              onClick={() => setIsFirstDay(false)}
+              className={`category-bubble ${
+                selectedDayIndex === 1 ? "selected" : ""
+              }`}
+              onClick={() => setSelectedDayIndex(1)}
             >
               Sunday, March 22
             </div>
           </div>
           <div className="schedule-area">
             <div className="schedule">
-              {isFirstDay && (
+              {selectedDayIndex === 0 && (
                 <>
                   <li className="item">
                     <h6 className="time">10:00 a.m.</h6>
@@ -69,7 +73,7 @@ const Schedule = (): JSX.Element => {
                   </li>
                 </>
               )}
-              {!isFirstDay && (
+              {selectedDayIndex === 1 && (
                 <>
                   <li className="item">
                     <h6 className="time">12:00 a.m.</h6>
