@@ -31,7 +31,7 @@ section.faq div.container div h3.question button {
   padding: 0;
   margin: 0;
   align-items: center;
-  margin-right: 52px;  /* width of icon */
+  margin-right: 52px; /* width of icon */
 }
 
 section.faq div.container div h3.question button:hover {
@@ -78,7 +78,6 @@ section.faq div.container div h3.question {
   align-items: center;
   padding-left: 0.5em;
 }
-
 
 section.faq div.container div h3.question.small {
   line-height: 1em;
