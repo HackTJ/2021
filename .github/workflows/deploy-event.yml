@@ -20,12 +20,12 @@ jobs:
     # github.event.pusher.name, github.event.pusher.email, actions@github.com
     - name: setup git
       run: |
-        mkdir ~/.ssh
-        echo "${{ secrets.SECRET_PRIVATE_DEPLOY_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -t rsa github.com
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        mkdir ~/.ssh
+        echo "${{ secrets.ACTIONS_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -t rsa github.com
 
     # https://github.com/actions/cache/blob/main/examples.md#node---yarn-2
     - name: Get yarn cache directory path
