@@ -79,9 +79,6 @@ section.faq div.container div h3.question {
   padding-left: 0.5em;
 }
 
-section.faq div.container div.is-open h3.question {
-  border-radius: 25px 25px 0px 0px;
-}
 
 section.faq div.container div h3.question.small {
   line-height: 1em;
@@ -124,19 +121,7 @@ section.faq div.container div div.answer {
   line-height: 1.4em;
   opacity: 1;
   overflow: hidden;
-  background: #fff;
   color: #555;
-}
-
-section.faq div.container div div.answer:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  top: 1px;
-  height: 2px;
-  background-color: #33cccc;
 }
 
 section.faq div.container div div.answer p {
