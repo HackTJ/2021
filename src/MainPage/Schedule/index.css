@@ -1,114 +1,191 @@
-section.schedule .container {
+/* section.schedule .container {
   max-width: 800px;
+} */
+
+section.schedule .container {
+    flex-direction: row;
+    display: flex;
+    width: min(70em, 80%);
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background: #33cccc;
+    border-radius: 50px;
 }
 
-section.schedule ul.day {
-  padding-left: 50px;
-  margin-bottom: 20px;
+section.schedule .dates {
+    display: grid;
+    min-width: 30%;
+    max-width: 30%;
+    padding-top: 3%;
+    cursor: pointer;
+}
+
+section.schedule .category-bubble {
+    text-align: left;
+    font-size: 1.15vw;
+    height: 50%;
+    padding: 15% 15% 0% 20%;
+    transition: 0.1s ease-in-out;
+    color: white;
+    opacity: 60%;
+}
+
+section.schedule .category-bubble.selected {
+    font-size: 1.3vw;
+    font-weight: bolder;
+    opacity: 100%;
+}
+
+section.schedule .schedule-area {
+    padding: 2% 7%;
+    width: 100%;
+    margin-left: 0.5%;
+    overflow: auto;
+    position: relative;
+    z-index: 40;
+    border-radius: 50px;
+    box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+section.schedule .schedule-area .schedule {
+    display: flex;
+    font-size: 19px;
+    padding: 2% 0;
+    padding-bottom: 1%;
+    text-align: left;
+    flex-direction: column;
+}
+
+section.schedule .schedule-area .schedule li.item {
+    list-style: none;
+    min-width: 400px;
+    margin-bottom: 2.5%;
+    color: white;
+}
+
+section.schedule .schedule-area .schedule li.item h6.time {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    font: 1vw 'Avenir Next', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: 0.25;
+}
+
+/* section.schedule ul.day {
+    padding-left: 50px;
+    margin-bottom: 20px;
 }
 
 section.schedule ul.day .day-title {
-  box-sizing: border-box;
-  color: #33cccc;
-  display: inline-block;
-  margin-left: -50px;
-  width: 50%;
-  max-width: 220px;
-  margin-bottom: 10px;
+    box-sizing: border-box;
+    color: #33cccc;
+    display: inline-block;
+    margin-left: -50px;
+    width: 50%;
+    max-width: 220px;
+    margin-bottom: 10px;
 }
 
 section.schedule ul.day .day-title h3 {
-  font-weight: 500;
-  margin: 5px 25px;
-  font-size: 18px;
+    font-weight: 500;
+    margin: 5px 25px;
+    font-size: 18px;
 }
 
 @media only screen and (max-width: 640px) {
-  section.schedule ul.day .day-title {
-    max-width: 90%;
-    width: 90%;
-  }
+    section.schedule ul.day .day-title {
+        max-width: 90%;
+        width: 90%;
+    }
 }
 
 section.schedule ul.day li.item {
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: 0;
-  list-style: none;
-  width: 20%;
-  min-width: 400px;
-  font-size: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0;
+    list-style: none;
+    width: 20%;
+    min-width: 400px;
+    font-size: 0;
 }
 
 section.schedule ul.day li.item:before,
 section.schedule ul.day li.item:after {
-  content: "";
-  display: table;
+    content: '';
+    display: table;
 }
 
 section.schedule ul.day li.item:after {
-  clear: both;
+    clear: both;
 }
 
 @media only screen and (max-width: 640px) {
-  section.schedule ul.day li.item {
-    font-size: 1.2em;
-  }
+    section.schedule ul.day li.item {
+        font-size: 1.2em;
+    }
 }
 
 section.schedule ul.day li.item h6.time {
-  box-sizing: border-box;
-  float: left;
-  margin-bottom: 0;
-  width: 25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
-  color: #33cccc;
-  font: 16px "Avenir Next", sans-serif;
-  display: inline-block;
-  vertical-align: 0.25;
-}
-
-@media only screen and (max-width: 640px) {
-  section.schedule ul.day li.item h6.time {
     box-sizing: border-box;
     float: left;
     margin-bottom: 0;
-    width: 33.33333%;
+    width: 25%;
     padding-left: 10px;
     padding-right: 10px;
-  }
+    display: inline-block;
+    color: #33cccc;
+    font: 16px 'Avenir Next', sans-serif;
+    display: inline-block;
+    vertical-align: 0.25;
+}
+
+@media only screen and (max-width: 640px) {
+    section.schedule ul.day li.item h6.time {
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: 0;
+        width: 33.33333%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 section.schedule ul.day li.item .description {
-  box-sizing: border-box;
-  float: left;
-  margin-bottom: 0;
-  width: 75%;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: 0.75;
-  padding-left: 0;
-  display: inline-block;
-}
-
-@media only screen and (max-width: 640px) {
-  section.schedule ul.day li.item .description {
     box-sizing: border-box;
     float: left;
     margin-bottom: 0;
-    width: 66.66667%;
+    width: 75%;
     padding-left: 10px;
     padding-right: 10px;
-  }
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: 0.75;
+    padding-left: 0;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 640px) {
-  section.schedule ul.day li.item {
-    width: 100%;
-    min-width: 0;
-  }
+    section.schedule ul.day li.item .description {
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: 0;
+        width: 66.66667%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
+
+@media only screen and (max-width: 640px) {
+    section.schedule ul.day li.item {
+        width: 100%;
+        min-width: 0;
+    }
+} */
