@@ -70,6 +70,7 @@
     "purgecss": "^2.3.0",
     "react-refresh": "^0.8.3",
     "react-snap": "^1.23.0",
+    "serve": "^11.3.2",
     "source-map-explorer": "^2.5.0",
     "typescript": "^4.0.3"
   },
