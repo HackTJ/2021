@@ -1,6 +1,7 @@
 /* autoprefixer grid: autoplace */
 
-@import-normalize; /* bring in normalize.css styles */
+/* bring in normalize.css styles */
+@import-normalize;
 
 :root {
   -ms-overflow-style: -ms-autohiding-scrollbar;
