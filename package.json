@@ -28,7 +28,7 @@
     "postbuild": "react-snap; purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "lint": "prettier src/ --write; eslint src/ --fix",
     "tint": "./tint-sponsors '#269999'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",

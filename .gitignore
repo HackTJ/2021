@@ -5,11 +5,16 @@ src/**/*.js
 !src/serviceWorker.js
 !src/index.js
 
+# FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+report.*.json
+
 # yarn v2 zero-installs
 .yarn/*
 !.yarn/cache
 !.yarn/releases
 !.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
 
 # dependencies
 /node_modules
