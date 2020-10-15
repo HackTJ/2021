@@ -4,16 +4,16 @@
   "private": true,
   "homepage": "https://hacktj.org/2021",
   "dependencies": {
-    "chart.js": "^3.0.0-beta",
+    "chart.js": "^3.0.0-beta.3",
     "history": "^5.0.0",
     "lodash": "^4.17.20",
     "mapbox-gl": "^1.12.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.0-rc.2",
+    "react": "^17.0.0-rc.3",
     "react-chartjs-2": "^2.10.0",
-    "react-dom": "^17.0.0-rc.2",
-    "react-map-gl": "^5.2.8",
-    "react-parallax-tilt": "^1.4.65",
+    "react-dom": "^17.0.0-rc.3",
+    "react-map-gl": "^5.2.9",
+    "react-parallax-tilt": "^1.4.66",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^3.4.3",
@@ -28,7 +28,7 @@
     "postbuild": "react-snap; purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "prettier src/ --write; eslint src/ --fix",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
     "tint": "./tint-sponsors '#269999'",
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
@@ -41,7 +41,44 @@
     "http2PushManifest": true
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "env": {
+      "browser": true,
+      "es2020": true
+    },
+    "extends": [
+      "react-app",
+      "airbnb",
+      "airbnb/hooks",
+      "airbnb-typescript-prettier",
+      "plugin:react/recommended",
+      "prettier",
+      "plugin:prettier/recommended",
+      "prettier/react",
+      "prettier/standard",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 11,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "jsx-a11y"
+    ],
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "global-require": 0,
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    }
   },
   "browserslist": [
     "defaults"
@@ -61,7 +98,10 @@
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-react-app": "^5.2.1",
     "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
@@ -75,7 +115,7 @@
     "react-snap": "^1.23.0",
     "serve": "^11.3.2",
     "source-map-explorer": "^2.5.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.1.0-beta"
   },
   "repository": {
     "type": "git",
