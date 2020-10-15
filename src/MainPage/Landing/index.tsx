@@ -1,5 +1,3 @@
-import React from "react";
-
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 
@@ -8,7 +6,7 @@ import "./index.css";
 // import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 import logo from "../../images/bigweblogo.png";
 
-const Landing: React.FunctionComponent = () => (
+const Landing = () => (
   <section className="hero">
     <div className="container">
       <Tilt
@@ -50,4 +48,4 @@ const Landing: React.FunctionComponent = () => (
   </section>
 );
 
-export default Landing;
+export default Landing as const;

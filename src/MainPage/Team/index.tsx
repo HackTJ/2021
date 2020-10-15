@@ -1,5 +1,3 @@
-import React from "react";
-
 import TeamPicture from "./TeamPicture";
 
 import "./index.css";
@@ -103,7 +101,7 @@ const teamData = [
   },
 ];
 
-const Team: React.FunctionComponent = () => (
+const Team = () => (
   <>
     <a className="anchor" id="team" href="#team">
       Team
@@ -134,4 +132,4 @@ const Team: React.FunctionComponent = () => (
   </>
 );
 
-export default Team;
+export default Team as const;

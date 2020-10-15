@@ -1,5 +1,3 @@
-import * as React from "react";
-
 const MLHTrustBadge = (): JSX.Element => (
   <a
     id="mlh-trust-badge"

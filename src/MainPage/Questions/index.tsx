@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Container } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -7,7 +5,7 @@ import FAQuestion from "./FAQuestion";
 
 import "./index.css";
 
-const Questions: React.FunctionComponent = (): JSX.Element => (
+const Questions = (): JSX.Element => (
   <>
     <a className="anchor" id="faq" href="#faq">
       FAQ
