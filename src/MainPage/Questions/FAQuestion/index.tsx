@@ -3,14 +3,13 @@ import PropTypes from "prop-types";
 
 import "./index.css";
 
-// TODO: HTMLSpanElement for answer?
 const FAQuestion = ({
   question,
   answer,
   small = false,
 }: {
   question: string;
-  answer: any;
+  answer: JSX.Element<"span">;
   small?: boolean;
 }) => {
   const [showAnswer, setShowAnswer] = useState<boolean>(false);
