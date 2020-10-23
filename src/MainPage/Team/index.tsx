@@ -2,7 +2,7 @@ import TeamPicture from "./TeamPicture";
 
 import "./index.css";
 
-const teamData = [
+const teamData: { [key: string]: string }[] = [
   {
     name: "Nishitha Vattikonda",
     about:
@@ -101,7 +101,7 @@ const teamData = [
   },
 ];
 
-const Team = () => (
+const Team = (): JSX.Element => (
   <>
     <a className="anchor" id="team" href="#team">
       Team
