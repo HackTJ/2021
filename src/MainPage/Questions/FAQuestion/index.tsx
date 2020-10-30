@@ -6,7 +6,7 @@ import "./index.css";
 // TODO: HTMLSpanElement for answer?
 const FAQuestion: React.FunctionComponent<{
   question: string;
-  answer: JSX.Element<"span">;
+  answer: JSX.Element;
   small?: boolean;
 }> = ({ question, answer, small = false }) => {
   const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
