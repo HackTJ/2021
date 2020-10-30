@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import "./index.css";
 
@@ -85,7 +85,7 @@ const scheduleData: {
 // we disable the react/no-array-index-key lint rule because we'll never modify
 // the scheduleData object so using indices as keys shouldn't cause any trouble
 
-const Schedule = (): JSX.Element => {
+const Schedule: React.FunctionComponent = (): JSX.Element => {
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
 
   return (

@@ -1,3 +1,5 @@
+import React from "react";
+
 const Error404Content = (): JSX.Element => (
   <>
     <a className="anchor" id="notfound" href="#notfound">

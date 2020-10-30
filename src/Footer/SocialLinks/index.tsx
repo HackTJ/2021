@@ -1,10 +1,12 @@
+import * as React from "react";
+
 import "./index.css";
 
 const hidden = (text: string) => (
   <span style={{ visibility: "hidden" }}>{text}</span>
 );
 
-const twitter = (
+const twitter: React.ReactElement<"a"> = (
   <a
     className="social pe-so-twitter"
     target="_blank"
@@ -14,7 +16,7 @@ const twitter = (
     {hidden("Twitter")}
   </a>
 );
-const facebook = (
+const facebook: React.ReactElement<"a"> = (
   <a
     className="social pe-so-facebook empty"
     target="_blank"
@@ -24,7 +26,7 @@ const facebook = (
     {hidden("Facebook")}
   </a>
 );
-const instagram = (
+const instagram: React.ReactElement<"a"> = (
   <a
     className="social pe-so-instagram empty"
     target="_blank"

@@ -1,4 +1,4 @@
-import { useEffect, memo } from "react";
+import * as React from "react";
 
 const PageScrollProgress = () => {
   const [scrollPosition, setScrollPosition] = React.useState<number>(0);
@@ -33,7 +33,7 @@ const PageScrollProgress = () => {
     requestAnimationFrame(calculateScrollDistance);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener("scroll", scrollEvent);
     return () => window.removeEventListener("scroll", scrollEvent);
   });
@@ -52,4 +52,4 @@ const PageScrollProgress = () => {
   );
 };
 
-export default memo(PageScrollProgress);
+export default React.memo(PageScrollProgress);

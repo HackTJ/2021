@@ -1,10 +1,12 @@
+import React from "react";
+
 import DevpostCard from "./DevpostCard";
 
 import "./index.css";
 
 // "https://hacktj.org/2020/favicon.ico"
 
-const Content = () => (
+const Content: React.FunctionComponent = () => (
   <div className="centered-box relative history">
     <div className="header-section">
       <div className="icon icon-clock" />
@@ -51,4 +53,4 @@ const Content = () => (
   </div>
 );
 
-export default Content as const;
+export default Content;

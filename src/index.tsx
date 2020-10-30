@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React from "react";
 import { hydrate, render } from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -43,9 +43,9 @@ import * as serviceWorker from "./serviceWorker";
 
 const rootElement = document.getElementById("root");
 const app = (
-  <StrictMode>
+  <React.StrictMode>
     <App />
-  </StrictMode>
+  </React.StrictMode>
 );
 if (rootElement?.hasChildNodes()) {
   hydrate(app, rootElement);

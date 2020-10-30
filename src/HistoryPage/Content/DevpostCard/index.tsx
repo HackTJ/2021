@@ -1,20 +1,15 @@
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./index.css";
 
-const DevpostCard = ({
-  logo,
-  iteration,
-  year,
-  url,
-  disabled = false,
-}: {
+const DevpostCard: React.FunctionComponent<{
   logo: string;
   iteration: string;
   year: string;
   url: string;
   disabled?: boolean;
-}) => (
+}> = ({ logo, iteration, year, url, disabled = false }) => (
   <div className="history-section">
     <div className="action-section">
       <img
@@ -56,4 +51,4 @@ DevpostCard.defaultProps = {
   disabled: false,
 };
 
-export default DevpostCard as const;
+export default DevpostCard;

@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import SocialLinks from "./SocialLinks";
 // import MLHTrustBadge from "./MLHTrustBadge";
 

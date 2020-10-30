@@ -1,18 +1,15 @@
-import { useState, memo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import "./index.css";
 
-const FAQuestion = ({
-  question,
-  answer,
-  small = false,
-}: {
+// TODO: HTMLSpanElement for answer?
+const FAQuestion: React.FunctionComponent<{
   question: string;
   answer: JSX.Element<"span">;
   small?: boolean;
-}) => {
-  const [showAnswer, setShowAnswer] = useState<boolean>(false);
+}> = ({ question, answer, small = false }) => {
+  const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
   const toggleShowAnswer = () => setShowAnswer(!showAnswer);
   return (
     <div className={`${showAnswer ? "is-open" : ""}`}>
@@ -59,4 +56,4 @@ FAQuestion.defaultProps = {
   small: false,
 };
 
-export default memo(FAQuestion);
+export default React.memo(FAQuestion);

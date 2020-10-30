@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import "./index.css";
 
 import BounceLoader from "react-spinners/BounceLoader";
