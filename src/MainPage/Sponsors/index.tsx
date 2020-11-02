@@ -31,7 +31,7 @@ const Sponsors = (): JSX.Element => (
         <div
          className="vertical-segment green"
          style={{
-           borderLeft: "6px solid #33cccc",
+           borderLeft: "6px solid #64d861",
            left: "-10.6%",
            top: "-0.6%",
            height: "100.6"
@@ -60,22 +60,7 @@ const Sponsors = (): JSX.Element => (
 
         {/* Gold Tier */}
         <h2 className="tier-title">GOLD</h2>
-        <div className="partner-container">
-          {[
-            {
-              url: "https://aws.amazon.com/",
-              logo: "aws.png",
-              name: "Amazon Web Services",
-            },
-          ].map((company) => (
-            <Logo
-              name={company.name}
-              url={company.url}
-              logo={company.logo}
-              key={company.name}
-            />
-          ))}
-        </div>
+        <div className="partner-container">(Your company could be here!)</div>
 
         {/* Silver Tier */}
         <h2 className="tier-title">SILVER</h2>
@@ -85,11 +70,6 @@ const Sponsors = (): JSX.Element => (
               url: "https://www.yext.com",
               logo: "yext.png",
               name: "Yext",
-            },
-            {
-              url: "https://www.ensco.com",
-              logo: "ensco.png",
-              name: "Ensco",
             },
             {
               url: "https://cloudwaveinc.com/",
@@ -149,6 +129,11 @@ const Sponsors = (): JSX.Element => (
               url: "https://www.verizonmedia.com/",
               logo: "verizonmedia.png",
               name: "Verizon Media",
+            },
+            {
+              url: "https://basecamp.com/",
+              logo: "basecamp.png",
+              name: "Basecamp",
             },
             {
               url: "https://www.primamedicine.com",
