@@ -201,6 +201,7 @@ const Sponsors = (): JSX.Element => (
         <p className="large">
           Can&#39;t see our sponsors? Try disabling ad block for this page.
         </p>
+        <h1 className="section-title">Partners</h1>
         <div className="partner-container">
           {[
             {
