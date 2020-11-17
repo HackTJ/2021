@@ -60,7 +60,22 @@ const Sponsors = (): JSX.Element => (
 
         {/* Gold Tier */}
         <h2 className="tier-title">GOLD</h2>
-        <div className="partner-container">(Your company could be here!)</div>
+        <div className="partner-container">
+          {[
+            {
+              url: "2021/sponsorship8.0.pdf",
+              logo: "temporary.png",
+              name: "Sponsor",
+            },
+          ].map((company) => (
+            <Logo
+              name={company.name}
+              url={company.url}
+              logo={company.logo}
+              key={company.name}
+            />
+          ))}
+        </div>
 
         {/* Silver Tier */}
         <h2 className="tier-title">SILVER</h2>
