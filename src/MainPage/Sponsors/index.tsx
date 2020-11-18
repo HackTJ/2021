@@ -63,7 +63,7 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "2021/sponsorship8.0.pdf",
+              url: "/sponsorship8.0.pdf",
               logo: "temporary.png",
               name: "Sponsor",
             },
