@@ -1,59 +1,33 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
+// import PropTypes from 'prop-types';
 
 import "./index.css";
 
-// TODO: HTMLSpanElement for answer?
-const FAQuestion: React.FunctionComponent<{
-  question: string;
-  answer: JSX.Element;
-  small?: boolean;
-}> = ({ question, answer, small = false }) => {
-  const [showAnswer, setShowAnswer] = React.useState<boolean>(false);
-  const toggleShowAnswer = () => setShowAnswer(!showAnswer);
+type Props = {
+  data: { question: string; answer: JSX.Element }[];
+};
+const FAQuestion: React.FC<Props> = (props) => {
+  const [selected, setSelected] = useState(-1);
   return (
-    <div className={`${showAnswer ? "is-open" : ""}`}>
-      <h3 className={`question ${small || false ? "small" : ""}`}>
-        <button type="button" onClick={toggleShowAnswer}>
-          {question}
-        </button>
-        <span
-          className="icon icon-plus"
-          onClick={toggleShowAnswer}
-          onKeyDown={toggleShowAnswer}
-          role="button"
-          aria-label="Show answer"
-          tabIndex={-1}
-        />
-        <span
-          className="icon icon-close"
-          onClick={toggleShowAnswer}
-          onKeyDown={toggleShowAnswer}
-          role="button"
-          aria-label="Hide answer"
-          tabIndex={-1}
-        />
-      </h3>
-      <div
-        className="answer"
-        style={{
-          maxHeight: showAnswer ? "700px" : 0,
-        }}
-      >
-        <p>{answer}</p>
-      </div>
+    <div className="wrapper">
+      {props.data.map((data, i) => (
+        <div
+          className={`container ${selected === i ? "selected" : ""}${
+            selected - 1 === i ? " round-bottom" : ""
+          }`}
+          key={i}
+          onClick={() => {
+            setSelected(selected === i ? -1 : i);
+          }}
+        >
+          <div className="header">{data.question}</div>
+          <div className="content">
+            <div>{data.answer}</div>
+          </div>
+        </div>
+      ))}
     </div>
   );
-};
-
-FAQuestion.propTypes = {
-  question: PropTypes.string.isRequired,
-  answer: PropTypes.element.isRequired,
-  small: PropTypes.bool,
-};
-
-FAQuestion.defaultProps = {
-  small: false,
 };
 
 export default React.memo(FAQuestion);
