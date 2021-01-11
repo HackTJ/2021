@@ -1,7 +1,7 @@
-import * as React from "react";
+import { useState, useEffect, memo } from "react";
 
 const PageScrollProgress = () => {
-  const [scrollPosition, setScrollPosition] = React.useState<number>(0);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
 
   const getDocHeight = (): number => {
     const bodyExists: boolean = document.body !== null;
@@ -33,7 +33,7 @@ const PageScrollProgress = () => {
     requestAnimationFrame(calculateScrollDistance);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     document.addEventListener("scroll", scrollEvent);
     return () => window.removeEventListener("scroll", scrollEvent);
   });
@@ -52,4 +52,4 @@ const PageScrollProgress = () => {
   );
 };
 
-export default React.memo(PageScrollProgress);
+export default memo(PageScrollProgress);

@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import { useState, memo } from "react";
 
 import { Card, CardTitle, CardImg, CardImgOverlay } from "reactstrap";
 
@@ -21,7 +21,7 @@ const TeamPicture = ({ name, image, about }: Props): JSX.Element => {
         {/* eslint-disable import/no-dynamic-require */}
         <CardImg
           className="img"
-          src={`${require(`../../../images/team/${image}`)}`}
+          src={`${require(`../../../images/team/${image}`).default}`}
         />
         {/* eslint-enable import/no-dynamic-require */}
         <CardImgOverlay>

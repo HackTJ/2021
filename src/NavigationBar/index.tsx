@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { Navbar, Nav, NavLink } from "reactstrap";
 
 import "./index.css";

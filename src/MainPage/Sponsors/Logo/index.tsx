@@ -1,4 +1,4 @@
-import React, { useState, memo } from "react";
+import { useState, memo } from "react";
 
 import { Tooltip } from "reactstrap";
 
@@ -31,13 +31,13 @@ const Logo = ({ url, name, logo }: Props): JSX.Element => {
           <img
             id={`img-normal-${sponsorID}`}
             className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
-            src={require(`../../../images/sponsors/normal/${logo}`)}
+            src={require(`../../../images/sponsors/normal/${logo}`).default}
             alt={name}
           />
           <img
             id={`img-tint-${sponsorID}`}
             className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
-            src={require(`../../../images/sponsors/tint/${logo}`)}
+            src={require(`../../../images/sponsors/tint/${logo}`).default}
             alt={name}
           />
           {/* eslint-enable import/no-dynamic-require */}

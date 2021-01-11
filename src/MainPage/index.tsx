@@ -1,23 +1,23 @@
-import * as React from "react";
+import { lazy, Suspense } from "react";
 
 import IndeterminateLoadingIndicator from "../IndeterminateLoadingIndicator";
 
-const Landing = React.lazy(() => import("./Landing"));
-const NavigationBar = React.lazy(() => import("../NavigationBar"));
-const Intro = React.lazy(() => import("./Intro"));
+const Landing = lazy(() => import("./Landing"));
+const NavigationBar = lazy(() => import("../NavigationBar"));
+const Intro = lazy(() => import("./Intro"));
 // const RegistrationInfo = React.lazy(() => import("./RegistrationInfo"));
 // const RegistrationChoice = React.lazy(() => import("../RegistrationChoice"));
-const Questions = React.lazy(() => import("./Questions"));
-const Sponsors = React.lazy(() => import("./Sponsors"));
+const Questions = lazy(() => import("./Questions"));
+const Sponsors = lazy(() => import("./Sponsors"));
 // const Statistics = React.lazy(() => import("./Statistics"));
-const Schedule = React.lazy(() => import("./Schedule"));
-const Team = React.lazy(() => import("./Team"));
+const Schedule = lazy(() => import("./Schedule"));
+const Team = lazy(() => import("./Team"));
 // const VenueMap = React.lazy(() => import("./VenueMap"));
-const Footer = React.lazy(() => import("../Footer"));
+const Footer = lazy(() => import("../Footer"));
 
 const MainPage = (): JSX.Element => (
   <span className="App">
-    <React.Suspense fallback={<IndeterminateLoadingIndicator />}>
+    <Suspense fallback={<IndeterminateLoadingIndicator />}>
       <Landing />
       <NavigationBar />
       <Intro />
@@ -30,7 +30,7 @@ const MainPage = (): JSX.Element => (
       <Team />
       {/* <VenueMap /> */}
       <Footer />
-    </React.Suspense>
+    </Suspense>
   </span>
 );
 

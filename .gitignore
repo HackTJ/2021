@@ -8,6 +8,9 @@ src/**/*.js
 # FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 report.*.json
 
+# eslint
+.eslintcache
+
 # yarn v2 zero-installs
 .yarn/*
 !.yarn/cache
