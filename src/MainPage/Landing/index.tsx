@@ -20,9 +20,9 @@ const Landing: React.FunctionComponent = () => (
       >
         {/* <Logo className="logo" /> */}
         <img src={logo} className="logo" alt="HackTJ" />
-        <div className="event-date landing">April 24th-25th, 2021</div>
+        <div className="event-date landing">April 10th-11th, 2021</div>
         <div className="event-location landing">
-          Cvent HQ (1765 Greensboro Station Pl, McLean, VA 22102)
+          Online
         </div>
         <div className="register-button-block-old top">
           {/* <Link
