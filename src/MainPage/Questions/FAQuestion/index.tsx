@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as React from "react";
+import Card from './Card';
 
 import "./index.css";
 
@@ -8,6 +9,8 @@ type Props = {
 };
 const FAQuestion: React.FC<Props> = ({ data }: Props) => {
   const [selected, setSelected] = useState(-1);
+
+
   return (
     <div className="wrapper">
       {data.map(
@@ -21,10 +24,7 @@ const FAQuestion: React.FC<Props> = ({ data }: Props) => {
               setSelected(selected === i ? -1 : i);
             }}
           >
-            <div className="header">{pair.question}</div>
-            <div className="content">
-              <div>{pair.answer}</div>
-            </div>
+            <Card question={pair.question} answer={pair.answer} collapsed={selected !== i}/>
           </div>
         )
       )}
