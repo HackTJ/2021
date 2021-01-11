@@ -21,9 +21,7 @@ const Landing: React.FunctionComponent = () => (
         {/* <Logo className="logo" /> */}
         <img src={logo} className="logo" alt="HackTJ" />
         <div className="event-date landing">April 10th-11th, 2021</div>
-        <div className="event-location landing">
-          Online
-        </div>
+        <div className="event-location landing">Online</div>
         <div className="register-button-block-old top">
           {/* <Link
            className="button register-button mentor blackbutton"

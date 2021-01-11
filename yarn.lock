@@ -8093,6 +8093,7 @@ fsevents@~2.1.2:
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.22.0
+    eslint-plugin-react-hooks: ^4.2.0
     gh-pages: ^3.1.0
     history: ^5.0.0
     jq.node: ^2.2.0
