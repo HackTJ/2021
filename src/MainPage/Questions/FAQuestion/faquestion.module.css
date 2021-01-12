@@ -1,10 +1,10 @@
-section.faq .wrapper {
+.wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-section.faq .wrapper .container {
+.wrapper .container {
   font-size: 1rem;
   border-color: #a0aec0;
   background-color: white;
@@ -21,43 +21,40 @@ section.faq .wrapper .container {
   transition-property: margin, transform, border-radius, opacity;
 }
 
-section.faq .wrapper .container.round-bottom {
+.wrapper .container.roundBottom {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 
-section.faq .wrapper .container.dim {
-}
-
-section.faq .wrapper .container:hover {
+.wrapper .container:hover {
   background-color: #d8e3e6;
 }
 
-section.faq .wrapper .container:first-child {
+.wrapper .container:first-child {
   border-top-width: 2px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-section.faq .wrapper .container:last-child {
+.wrapper .container:last-child {
   border-bottom-width: 2px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 
-section.faq .wrapper .container:not(.selected) + .container:not(.selected) {
+.wrapper .container:not(.selected) + .container:not(.selected) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-section.faq .wrapper .container.selected + .container {
+.wrapper .container.selected + .container {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-top-width: 2px;
 }
 
-section.faq .wrapper .container.selected {
-  margin: 1.5rem auto;
+.wrapper .container.selected {
+  margin: 1.5rem 0;
   border-width: 2px;
   border-radius: 0.5rem;
   transform: scale3d(1.075, 1.075, 1);
