@@ -22,7 +22,7 @@ const Card: React.FC<Props> = ({question, answer, collapsed}: Props) => {
       (contentWrapperRef.current as HTMLDivElement).scrollHeight
     );
     updateElement();
-  }, [(contentWrapperRef.current as HTMLDivElement)?.scrollHeight]);
+  }, [contentWrapperRef.current]);
 
   useEffect(() => {
     updateElement();
