@@ -1,12 +1,12 @@
-import "./index.css";
+import styles from "./intro.module.css";
 
 const Intro = (): JSX.Element => (
   <>
     <a className="anchor" id="intro" href="#intro">
       Intro
     </a>
-    <section className="intro">
-      <div className="container">
+    <section className={styles.intro}>
+      <div className={styles.container}>
         {/* <div className="vertical-segment green"></div> */}
         <p className="large centered">
           Do you get excited watching your ideas come to life? Ever wanted to
