@@ -8,31 +8,31 @@ const scheduleData: {
   scheduleEvents: { time: string; description: string }[];
 }[] = [
   {
-    date: "Saturday, March 21",
+    date: "Saturday, December 12",
     scheduleEvents: [
       {
         time: "10:00 a.m.",
-        description: "Student Check-In & Sponsor Fair",
-      },
-      {
-        time: "11:00 a.m.",
         description: "Opening Ceremony",
       },
       {
-        time: "11:30 a.m.",
+        time: "11:00 a.m.",
         description: "Hacking Begins",
-      },
-      {
-        time: "1:00 p.m.",
-        description: "Lunch, Registration Closes (no entry after this time)",
       },
       {
         time: "2:00 p.m.",
         description: "Workshops Begin",
       },
       {
-        time: "4:00 p.m.",
-        description: "Afternoon Snack",
+        time: "2:30 p.m.",
+        description: "TypeRacer Tournament",
+      },
+      {
+        time: "4:30 p.m.",
+        description: "Among Us",
+      },
+      {
+        time: "8:00 p.m.",
+        description: "MLH's Bob Ross with MS Paint",
       },
       {
         time: "7:00 p.m.",
@@ -45,38 +45,26 @@ const scheduleData: {
     ],
   },
   {
-    date: "Saturday, March 22",
+    date: "Sunday, December 13",
     scheduleEvents: [
       {
-        time: "12:00 a.m.",
-        description: "Midnight Snack",
+        time: "1:00 p.m.",
+        description: "Alumni Panel for CS x Fields in STEM",
       },
       {
-        time: "4:00 a.m.",
-        description: "Late Night Snack",
+        time: "4:00 p.m.",
+        description: "Hacking Ends",
       },
       {
-        time: "8:00 a.m.",
-        description: "Hacking Ends & Breakfast Begins",
-      },
-      {
-        time: "8:45 a.m.",
-        description: "Clean-up",
-      },
-      {
-        time: "9:30 a.m.",
+        time: "4:30 p.m.",
         description: "Judging Starts",
       },
       {
-        time: "11:00 a.m.",
-        description: "People's Choice Voting",
-      },
-      {
-        time: "11:30 a.m.",
+        time: "9:30 p.m.",
         description: "Closing Ceremony",
       },
       {
-        time: "12:00 p.m.",
+        time: "10:30 p.m.",
         description: "Hackathon Ends",
       },
     ],
@@ -95,7 +83,7 @@ const Schedule: FunctionComponent = (): JSX.Element => {
         Schedule
       </a>
       <section className="schedule" id="schedules">
-        <h1 className="section-title">2019 Schedule</h1>
+        <h1 className="section-title">2020 Schedule</h1>
         <div className="container">
           <div className="dates" role="tablist">
             {/* eslint-disable react/no-array-index-key */}
