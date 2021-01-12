@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback, useEffect } from "react";
+import React, { useState, useRef, useCallback, useEffect, memo } from "react";
 
 import styles from "./card.module.css";
 
@@ -23,10 +23,7 @@ const Card: React.FC<Props> = ({ question, answer, collapsed }: Props) => {
       (contentWrapperRef.current as HTMLDivElement).scrollHeight
     );
     updateElement();
-  }, [
-    updateElement,
-    (contentWrapperRef.current as HTMLDivElement)?.scrollHeight,
-  ]);
+  }, [updateElement]);
 
   useEffect(() => {
     updateElement();
@@ -42,4 +39,4 @@ const Card: React.FC<Props> = ({ question, answer, collapsed }: Props) => {
   );
 };
 
-export default Card;
+export default memo(Card);

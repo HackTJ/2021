@@ -25,7 +25,7 @@
 }
 
 .content a {
-  color: black;
+  color: black !important;
 }
 
 .content div {
