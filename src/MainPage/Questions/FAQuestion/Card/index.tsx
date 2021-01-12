@@ -1,4 +1,5 @@
-import React, { useState, useRef, useCallback, useEffect, memo } from "react";
+import { useState, useRef, useCallback, useEffect, memo } from "react";
+import type { FunctionalComponent } from "react";
 
 import styles from "./card.module.css";
 
@@ -8,7 +9,11 @@ type Props = {
   collapsed: boolean;
 };
 
-const Card: React.FC<Props> = ({ question, answer, collapsed }: Props) => {
+const Card: FunctionalComponent<Props> = ({
+  question,
+  answer,
+  collapsed,
+}: Props) => {
   const [initialHeight, setInitialHeight] = useState(0);
   const contentWrapperRef = useRef<HTMLDivElement>(null);
 

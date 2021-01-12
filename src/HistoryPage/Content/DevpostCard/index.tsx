@@ -1,15 +1,22 @@
-import * as React from "react";
-import PropTypes from "prop-types";
+import { memo } from "react";
+import type { FunctionComponent } from "react";
 
 import "./index.css";
 
-const DevpostCard: React.FunctionComponent<{
+type Props = {
   logo: string;
   iteration: string;
   year: string;
   url: string;
   disabled?: boolean;
-}> = ({ logo, iteration, year, url, disabled = false }) => (
+};
+const DevpostCard: FunctionComponent<Props> = ({
+  logo,
+  iteration,
+  year,
+  url,
+  disabled = false,
+}: Props) => (
   <div className="history-section">
     <div className="action-section">
       <img
@@ -39,16 +46,4 @@ const DevpostCard: React.FunctionComponent<{
   </div>
 );
 
-DevpostCard.propTypes = {
-  logo: PropTypes.string.isRequired,
-  iteration: PropTypes.string.isRequired,
-  year: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  disabled: PropTypes.bool,
-};
-
-DevpostCard.defaultProps = {
-  disabled: false,
-};
-
-export default DevpostCard;
+export default memo(DevpostCard);

@@ -1,4 +1,4 @@
-import * as React from "react";
+import type { FunctionComponent } from "react";
 
 import data from "./questions";
 
@@ -6,7 +6,7 @@ import FAQuestion from "./FAQuestion";
 
 import "./index.css";
 
-const Questions: React.FC = (): JSX.Element => (
+const Questions: FunctionComponent = (): JSX.Element => (
   <>
     <a className="anchor" id="faq" href="#faq">
       FAQ

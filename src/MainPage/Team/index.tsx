@@ -1,4 +1,4 @@
-import * as React from "react";
+import type { FunctionComponent } from "react";
 
 import TeamPicture from "./TeamPicture";
 
@@ -103,7 +103,7 @@ const teamData = [
   },
 ];
 
-const Team: React.FunctionComponent = () => (
+const Team: FunctionComponent = () => (
   <>
     <a className="anchor" id="team" href="#team">
       Team
