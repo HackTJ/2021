@@ -1,5 +1,5 @@
 import { useState, memo } from "react";
-import type { FunctionalComponent } from "react";
+import type { FunctionComponent } from "react";
 import Card from "./Card";
 
 import "./index.css";
@@ -7,7 +7,7 @@ import "./index.css";
 type Props = {
   data: { question: string; answer: JSX.Element }[];
 };
-const FAQuestion: FunctionalComponent<Props> = ({ data }: Props) => {
+const FAQuestion: FunctionComponent<Props> = ({ data }: Props) => {
   const [selected, setSelected] = useState(-1);
 
   return (

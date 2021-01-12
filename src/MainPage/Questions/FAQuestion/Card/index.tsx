@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, useEffect, memo } from "react";
-import type { FunctionalComponent } from "react";
+import type { FunctionComponent } from "react";
 
 import styles from "./card.module.css";
 
@@ -9,7 +9,7 @@ type Props = {
   collapsed: boolean;
 };
 
-const Card: FunctionalComponent<Props> = ({
+const Card: FunctionComponent<Props> = ({
   question,
   answer,
   collapsed,
