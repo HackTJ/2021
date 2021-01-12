@@ -39,14 +39,11 @@ section.faq .wrapper .container:first-child {
   border-top-right-radius: 0.5rem;
 }
 
-
 section.faq .wrapper .container:last-child {
   border-bottom-width: 2px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-
-
 
 section.faq .wrapper .container:not(.selected) + .container:not(.selected) {
   border-top-left-radius: 0;
