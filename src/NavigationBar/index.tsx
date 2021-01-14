@@ -7,7 +7,7 @@ const NavigationBar = (): JSX.Element => (
   <Navbar
     sticky="top"
     className="navcontainer"
-    bg="#33cccc"
+    bg="var(--theme-primary)"
     style={{
       position: "sticky",
       top: "0px",

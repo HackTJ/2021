@@ -51,7 +51,7 @@ section.map .info-circle {
   width: 250px;
   height: 200px;
   border-radius: 8px;
-  color: #33cccc;
+  color: var(--theme-primary);
   background: #fff;
   position: absolute;
   z-index: 10;
@@ -77,8 +77,8 @@ section.map .info-circle .info-container .address {
 section.map .info-circle .info-container .button .altbutton {
   width: 100%;
   margin-top: 10px;
-  border-color: #33cccc;
-  background-color: #33cccc;
+  border-color: var(--theme-primary);
+  background-color: var(--theme-primary);
   font-weight: normal;
 }
 

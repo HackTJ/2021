@@ -4,6 +4,7 @@
 @import-normalize;
 
 :root {
+  --theme-primary: #33cccc;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   overflow-y: scroll;
   text-size-adjust: 100%;
@@ -374,7 +375,7 @@ dd {
 
   ul li,
   ol li {
-    content: "&raquo;";
+    content: "»";
   }
 }
 
@@ -592,7 +593,7 @@ a {
   transition: 150ms;
   text-decoration: underline;
   transition: color 0.3s;
-  color: #33cccc;
+  color: var(--theme-primary);
   text-decoration: underline;
   transition: color 0.3s;
 }
@@ -955,9 +956,7 @@ address {
   }
 }
 
-@media only screen and only screen and (-o-min-device-pixel-ratio: 3 / 2),
-  only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5),
+@media only screen and (min-device-pixel-ratio: 1.5),
   (min-resolution: 1.5dppx) {
   .show--hd {
     display: block;
@@ -1190,7 +1189,7 @@ button,
   line-height: 50px;
   margin: 20px auto 0;
   padding: 0 20px;
-  color: #33cccc;
+  color: var(--theme-primary);
   background: none 0 0;
   text-decoration: none;
   display: inline-block;
@@ -1228,8 +1227,8 @@ button:hover,
 .button:hover,
 .altbutton:hover {
   color: #fff;
-  background-color: #33cccc;
-  border-color: #33cccc;
+  background-color: var(--theme-primary);
+  border-color: var(--theme-primary);
 }
 
 button:active,
@@ -1538,7 +1537,7 @@ h6 .small {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  background-color: #33cccc;
+  background-color: var(--theme-primary);
   color: #fff !important;
   width: 100%;
   min-height: 30px;
@@ -1586,11 +1585,11 @@ section h1.section-title {
   font: 100 40px/1.3em "Roboto", sans-serif;
   text-align: center;
   margin-bottom: 0.4em;
-  color: #33cccc;
+  color: var(--theme-primary);
 }
 
 section.green {
-  background-color: #33cccc;
+  background-color: var(--theme-primary);
   color: #fff;
 }
 
@@ -1655,7 +1654,7 @@ button.small,
 button.small .text,
 .button.small .text,
 .altbutton.small .text {
-  background-color: #33cccc;
+  background-color: var(--theme-primary);
   line-height: 40px;
 }
 
@@ -1706,8 +1705,8 @@ a.blackbutton {
 a.altbutton {
   text-align: center;
   line-height: 50px;
-  color: #33cccc;
-  border-color: #33cccc;
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
 }
 
 a.altbutton:not([href]),
@@ -1723,8 +1722,8 @@ a.flatbutton {
   text-decoration: none;
   text-align: center;
   line-height: 50px;
-  border-color: #33cccc;
-  background-color: #33cccc;
+  border-color: var(--theme-primary);
+  background-color: var(--theme-primary);
   transition: transform 0.2s;
 }
 
@@ -1776,7 +1775,7 @@ p.large {
 }
 
 .animation-container .animated {
-  /* background: #33cccc; */
+  /* background: var(--theme-primary); */
   position: absolute;
   top: 0;
 }
@@ -1958,7 +1957,7 @@ section.register .container .register-button-block.bottom {
 
 section.register button.register-button:hover {
   background: #fff;
-  color: #33cccc;
+  color: var(--theme-primary);
 }
 
 button .text,
@@ -1996,7 +1995,7 @@ p.centered {
 }
 
 div.vertical-segment.green {
-  border-left: 6px solid #33cccc;
+  border-left: 6px solid var(--theme-primary);
   height: 113%;
   position: absolute;
   left: -20%;
@@ -2012,7 +2011,7 @@ div.vertical-segment.white {
 }
 
 div.horizontal-segment.green {
-  border-top: 6px solid #33cccc;
+  border-top: 6px solid var(--theme-primary);
   width: 100%;
   position: absolute;
 }

@@ -9,7 +9,7 @@ section.schedule .container {
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background: #33cccc;
+  background: var(--theme-primary);
   border-radius: 50px;
 }
 
@@ -99,7 +99,7 @@ section.schedule .schedule-area .schedule li.item h6.time {
 
 section.schedule ul.day .day-title {
     box-sizing: border-box;
-    color: #33cccc;
+    color: var(--theme-primary);
     display: inline-block;
     margin-left: -50px;
     width: 50%;
@@ -154,7 +154,7 @@ section.schedule ul.day li.item h6.time {
     padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
-    color: #33cccc;
+    color: var(--theme-primary);
     font: 16px 'Avenir Next', sans-serif;
     display: inline-block;
     vertical-align: 0.25;

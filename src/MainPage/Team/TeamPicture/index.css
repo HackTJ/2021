@@ -112,7 +112,7 @@ section.team li.question-group .answer:before {
   right: 16px;
   top: 1px;
   height: 2px;
-  background-color: #33cccc;
+  background-color: var(--theme-primary);
 }
 
 section.team li.question-group .answer p {

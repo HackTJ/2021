@@ -12,7 +12,12 @@ const IndeterminateLoadingIndicator = (): JSX.Element => (
       left: middle,
     }}
   >
-    <BounceLoader color="#33cccc" size={SPINNER_SIZE} />
+    <BounceLoader
+      color={getComputedStyle(document.documentElement).getPropertyValue(
+        "--theme-primary"
+      )}
+      size={SPINNER_SIZE}
+    />
   </span>
 );
 
