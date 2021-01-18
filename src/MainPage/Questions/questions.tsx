@@ -1,4 +1,10 @@
+import config from "../../config";
+
 import { Link } from "react-router-dom";
+
+const dateFormat = { weekday: "long", month: "long", day: "numeric" };
+const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
+const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 
 export default [
   {
@@ -15,7 +21,7 @@ export default [
     question: "When is HackTJ?",
     answer: (
       <span>
-        HackTJ will start on Saturday, April 24 and run until Sunday, April 25.
+        HackTJ will start on {startDate} and run until {endDate}.
       </span>
     ),
   },

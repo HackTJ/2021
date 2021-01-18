@@ -1,3 +1,5 @@
+import config from "../../config";
+
 import type { FunctionComponent } from "react";
 
 import Tilt from "react-parallax-tilt";
@@ -7,6 +9,10 @@ import "./index.css";
 
 // import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 import logo from "../../images/bigweblogo.png";
+
+const dateFormat = { year: "numeric", month: "long", day: "numeric" };
+const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
+const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 
 const Landing: FunctionComponent = () => (
   <section className="hero">
@@ -20,7 +26,9 @@ const Landing: FunctionComponent = () => (
       >
         {/* <Logo className="logo" /> */}
         <img src={logo} className="logo" alt="HackTJ" />
-        <div className="event-date landing">April 10th-11th, 2021</div>
+        <div className="event-date landing">
+          {startDate} - {endDate}
+        </div>
         <div className="event-location landing">Online</div>
         <div className="register-button-block-old top">
           {/* <Link
