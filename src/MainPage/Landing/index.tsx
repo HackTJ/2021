@@ -40,6 +40,8 @@ const Landing: FunctionComponent = () => (
           <a
             className="button register-button mentor blackbutton"
             href="https://www.facebook.com/pg/HackTJOfficial/photos/?tab=album&album_id=2168769876535523"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             2019 Pictures
           </a>
