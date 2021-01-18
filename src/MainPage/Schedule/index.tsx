@@ -1,14 +1,20 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
 
+import config from "../../config";
+
 import "./index.css";
+
+const dateFormat = { weekday: "long", month: "long", day: "numeric" };
+const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
+const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 
 const scheduleData: {
   date: string;
   scheduleEvents: { time: string; description: string }[];
 }[] = [
   {
-    date: "Saturday, December 12",
+    date: startDate,
     scheduleEvents: [
       {
         time: "10:00 a.m.",
@@ -45,7 +51,7 @@ const scheduleData: {
     ],
   },
   {
-    date: "Sunday, December 13",
+    date: endDate,
     scheduleEvents: [
       {
         time: "1:00 p.m.",
@@ -86,7 +92,6 @@ const Schedule: FunctionComponent = (): JSX.Element => {
         <h1 className="section-title">2020 Schedule</h1>
         <div className="container">
           <div className="dates" role="tablist">
-            {/* eslint-disable react/no-array-index-key */}
             {scheduleData.map((day, index) => (
               <div
                 key={index}
@@ -104,7 +109,6 @@ const Schedule: FunctionComponent = (): JSX.Element => {
                 {day.date}
               </div>
             ))}
-            {/* eslint-enable react/no-array-index-key */}
           </div>
           <div className="schedule-area">
             <div className="schedule">
@@ -115,7 +119,6 @@ const Schedule: FunctionComponent = (): JSX.Element => {
                 hidden={false}
                 aria-hidden={false}
               >
-                {/* eslint-disable react/no-array-index-key */}
                 {scheduleData[selectedDayIndex].scheduleEvents.map(
                   (scheduleEvent, index) => (
                     <li className="item" key={index}>
@@ -126,7 +129,6 @@ const Schedule: FunctionComponent = (): JSX.Element => {
                     </li>
                   )
                 )}
-                {/* eslint-enable react/no-array-index-key */}
               </ul>
             </div>
           </div>
