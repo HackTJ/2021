@@ -1,6 +1,8 @@
 import { memo } from "react";
 import type { FunctionComponent } from "react";
 
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+
 import "./index.css";
 
 type Props = {
@@ -17,33 +19,36 @@ const DevpostCard: FunctionComponent<Props> = ({
   url,
   disabled = false,
 }: Props) => (
-  <div className="history-section">
-    <div className="action-section">
-      <img
-        src={logo}
-        style={{
-          width: "200px",
-          height: "200px",
-        }}
-        alt={`HackTJ ${iteration}`}
-      />
-      <div className="info-container">
-        <h3 className="section-title">HackTJ {iteration}</h3>
-        <h4 className="section-year">{year}</h4>
-        {/* eslint-disable jsx-a11y/anchor-is-valid */}
-        <a
-          className="altbutton"
-          style={{ width: "100%" }}
-          href={disabled ? undefined : url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DevPost
-        </a>
-        {/* eslint-enable jsx-a11y/anchor-is-valid */}
-      </div>
-    </div>
-  </div>
+  <Card className="history-section">
+    <CardImg
+      left
+      src={logo}
+      style={{
+        width: "200px",
+        height: "200px",
+      }}
+      alt={`HackTJ ${iteration}`}
+    />
+    <CardBody className="info-container">
+      <CardTitle tag="h3" className="section-title">
+        HackTJ {iteration}
+      </CardTitle>
+      <CardSubtitle tag="h4" className="section-year">
+        {year}
+      </CardSubtitle>
+      {/* eslint-disable jsx-a11y/anchor-is-valid */}
+      <a
+        className="altbutton"
+        style={{ width: "100%" }}
+        href={disabled ? undefined : url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        DevPost
+      </a>
+      {/* eslint-enable jsx-a11y/anchor-is-valid */}
+    </CardBody>
+  </Card>
 );
 
 export default memo(DevpostCard);
