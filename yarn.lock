@@ -2489,10 +2489,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.21":
-  version: 14.14.21
-  resolution: "@types/node@npm:14.14.21"
-  checksum: b659823ffa01684ff2cb4edf0b70ea76d7eae6cd86af43de62ae6b460c174161850fb75a1be50ab60c4519c14babd4ec430ddbbe6689e341073ba10ff106311c
+"@types/node@npm:*, @types/node@npm:^14.14.22":
+  version: 14.14.22
+  resolution: "@types/node@npm:14.14.22"
+  checksum: e46e32685b4d0261779c13c10ba3ff220cfa714b5c12f8f571fd52cc309546bdbc8ffc86cbad20559ad88e7b17e66fc51c98b067d8c3766597092c05df157b9b
   languageName: node
   linkType: hard
 
@@ -8078,7 +8078,7 @@ fsevents@~2.1.2:
     "@types/chart.js": ^2.9.29
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
-    "@types/node": ^14.14.21
+    "@types/node": ^14.14.22
     "@types/prop-types": ^15.7.3
     "@types/react": ^17.0.0
     "@types/react-dom": ^17.0.0
@@ -8113,7 +8113,7 @@ fsevents@~2.1.2:
     react-scripts: ^4.0.1
     react-snap: ^1.23.0
     react-spinners: ^0.10.4
-    reactstrap: ^8.8.1
+    reactstrap: ^8.9.0
     serve: ^11.3.2
     sharp-cli: ^1.14.1
     source-map-explorer: ^2.5.2
@@ -13798,9 +13798,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"reactstrap@npm:^8.8.1":
-  version: 8.8.1
-  resolution: "reactstrap@npm:8.8.1"
+"reactstrap@npm:^8.9.0":
+  version: 8.9.0
+  resolution: "reactstrap@npm:8.9.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     classnames: ^2.2.3
@@ -13810,7 +13810,7 @@ fsevents@~2.1.2:
   peerDependencies:
     react: ">=16.3.0"
     react-dom: ">=16.3.0"
-  checksum: 4467aa2865e0b1b1db5f9a73068e94ed10a843d5817b066f5dbf47084c004dca6bf43b5b6427c87fb55448c335eb3e0a90782528c4be1603977464a5b0d3a68f
+  checksum: 50345ab9291eab2748c7aa9c13dccead653341049aa6d5dff0d34a20b39ee97edc4ec759b8b1468f2cfc91272b96bdedeb0b7443dddfc19ea09aa8d698390070
   languageName: node
   linkType: hard
 

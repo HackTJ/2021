@@ -7,7 +7,7 @@ const Intro = (): JSX.Element => (
     </a>
     <section className={styles.intro}>
       <div className={styles.container}>
-        {/* <div className="vertical-segment green"></div> */}
+        {/* <div className="vertical-segment colored"></div> */}
         <p className="large centered">
           Do you get excited watching your ideas come to life? Ever wanted to
           build the next Snapchat or create an Amazon Alexa skill? Program a

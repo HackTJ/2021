@@ -1587,12 +1587,12 @@ section h1.section-title {
   color: var(--theme-primary);
 }
 
-section.green {
+section.colored {
   background-color: var(--theme-primary);
   color: #fff;
 }
 
-section.green h1.section-title {
+section.colored h1.section-title {
   color: #fff;
 }
 
@@ -1993,7 +1993,7 @@ p.centered {
   text-align: center;
 }
 
-div.vertical-segment.green {
+div.vertical-segment.colored {
   border-left: 6px solid var(--theme-primary);
   height: 113%;
   position: absolute;
@@ -2009,7 +2009,7 @@ div.vertical-segment.white {
   top: -13%;
 }
 
-div.horizontal-segment.green {
+div.horizontal-segment.colored {
   border-top: 6px solid var(--theme-primary);
   width: 100%;
   position: absolute;

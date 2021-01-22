@@ -111,11 +111,11 @@ const Team: FunctionComponent = () => (
     <section className="team" id="team">
       <div className="container">
         {/* <div
-         className="horizontal-segment green"
+         className="horizontal-segment colored"
          style={{ left: "-6%", top: "-4.4%", width: "112%" }}
         ></div>
         <div
-         className="vertical-segment green"
+         className="vertical-segment colored"
          style={{ left: "-5.9%", top: "-3.4%" }}
         ></div> */}
         <h1 className="section-title">Meet the Team</h1>

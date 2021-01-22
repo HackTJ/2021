@@ -15,7 +15,7 @@ const RegistrationChoice = (): JSX.Element => (
         }}
       >
         {/* <div
-         className="vertical-segment green"
+         className="vertical-segment colored"
          style={{ left: "-15%", top: "-14%", height: "123%" }}
         ></div> */}
         <h1 className="section-title">Register</h1>

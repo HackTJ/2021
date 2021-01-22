@@ -11,7 +11,7 @@ const Questions: FunctionComponent = (): JSX.Element => (
     <a className="anchor" id="faq" href="#faq">
       FAQ
     </a>
-    <section className="green faq">
+    <section className="colored faq">
       <h1 className="section-title">FAQ</h1>
       <div className="faq-wrapper">
         <FAQuestion data={data.slice(0, data.length / 2)} />

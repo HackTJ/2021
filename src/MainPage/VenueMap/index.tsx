@@ -42,7 +42,7 @@ const VenueMap = (): JSX.Element => {
       <a className="anchor" id="map" href="#map">
         Map
       </a>
-      <section className="green map">
+      <section className="colored map">
         <ReactMapGL
           width={viewport.width}
           height={viewport.height}

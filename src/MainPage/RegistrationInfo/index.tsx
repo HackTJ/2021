@@ -7,7 +7,7 @@ const RegistrationInfo = (): JSX.Element => (
     </a>
     <section className="registration-info">
       <div className="container">
-        {/* <div className="vertical-segment green"></div> */}
+        {/* <div className="vertical-segment colored"></div> */}
         <h1 className="section-title">Registration Info</h1>
         <p className="large centered">
           Registration for participants opens on September 25 at 8 p.m. and

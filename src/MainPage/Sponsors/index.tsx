@@ -12,7 +12,7 @@ const Sponsors = (): JSX.Element => (
     <section id="sponsors">
       <div className="container">
         {/* <div
-         className="vertical-segment green"
+         className="vertical-segment colored"
          style={{
            borderLeft: "6px solid var(--theme-primary)",
            height: "3%",
@@ -23,11 +23,11 @@ const Sponsors = (): JSX.Element => (
          }}
         ></div>
         <div
-         className="horizontal-segment green"
+         className="horizontal-segment colored"
          style={{ width: "125%", top: "-0.7%", right: "-14.4%" }}
         ></div>
         <div
-         className="vertical-segment green"
+         className="vertical-segment colored"
          style={{
            borderLeft: "6px solid #64d861",
            left: "-10.6%",
