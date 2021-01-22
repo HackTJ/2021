@@ -1,12 +1,10 @@
 import NavigationBar from "../NavigationBar";
 import RegistrationChoice from "../RegistrationChoice";
-import Footer from "../Footer";
 
-const RegistrationPage = (): JSX.Element => (
+const RegistrationPage = () => (
   <>
     <NavigationBar />
     <RegistrationChoice />
-    <Footer />
   </>
 );
 

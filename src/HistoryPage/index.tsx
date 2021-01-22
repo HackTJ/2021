@@ -1,12 +1,10 @@
 import NavigationBar from "../NavigationBar";
 import Content from "./Content";
-import Footer from "../Footer";
 
-const HistoryPage = (): JSX.Element => (
+const HistoryPage = () => (
   <>
     <NavigationBar />
     <Content />
-    <Footer />
   </>
 );
 

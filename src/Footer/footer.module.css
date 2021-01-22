@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--theme-primary);
+  color: #fff;
+  margin-top: auto;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
