@@ -54,9 +54,9 @@ In the case that one of the endpoints (/2020 or /) doesn't work but the other do
 -   click "Use this template" (next to the clone or download dropdown) and name the new repository `2021`, under the HackTJ organization—that way it will be displayed on our website at <https://hacktj.org/2021> while leaving the old website up at <https://hacktj.org/2020>
 -   all of the deploy commands involve running the `switch` script in this repository
     -   if you notice that this script deletes the content of either [`public/index.html`](public/index.html) or [`src/App.js`](src/App.js), immediately quit the deploy script and restore the contents with `git` and retry the `yarn` script until it works
--   the `deploy-event` script doesn't commit the source code to the repository's master branch, it only commits the built code
-    -   you should commit the source code to the `master` branch each time you deploy
-        -   before you commit to `master`, always make sure you run `yarn run switch-event`
+-   the `deploy-event` script doesn't commit the source code to the repository's main branch, it only commits the built website
+    -   you should commit the source code to the `main` branch each time you deploy
+        -   before you commit to `main`, always make sure you run `yarn run switch-event`
             -   if you need to, create a [pre-commit hook](https://git-scm.com/docs/githooks#_pre_commit) to automatically do this
 -   don't run `git pull` after `yarn run switch-homepage`
     -   only pull when you're set up for the event repository
