@@ -1,20 +1,36 @@
-import { Suspense, lazy } from "react";
+import loadable from "@loadable/component";
+import { memo } from "react";
+import type { ComponentType, ComponentProps } from "react";
+import { PrerenderedComponent } from "react-prerendered-component";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import PageScrollProgress from "./PageScrollProgress";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Suspense } from "react";
+import IndeterminateLoadingIndicator from "./IndeterminateLoadingIndicator";
 import Footer from "./Footer";
 
-import IndeterminateLoadingIndicator from "./IndeterminateLoadingIndicator";
-import PageScrollProgress from "./PageScrollProgress";
-const RegistrationPage = lazy(() => import("./RegistrationPage"));
-const HistoryPage = lazy(() => import("./HistoryPage"));
-const MainPage = lazy(() => import("./MainPage"));
-const NotFoundPage = lazy(() => import("./NotFoundPage"));
+const prerenderedLoadable = (
+  dynamicImport: () => Promise<{ default: ComponentType<any> }>
+) => {
+  const LoadableComponent = loadable(dynamicImport);
+  return memo((props: ComponentProps<any>) => (
+    // you can use the `.preload()` method from react-loadable or react-imported-component`
+    <PrerenderedComponent live={LoadableComponent.load()}>
+      <LoadableComponent {...props} />
+    </PrerenderedComponent>
+  ));
+};
+const RegistrationPage = prerenderedLoadable(
+  () => import("./RegistrationPage")
+);
+const HistoryPage = prerenderedLoadable(() => import("./HistoryPage"));
+const MainPage = prerenderedLoadable(() => import("./MainPage"));
+const NotFoundPage = prerenderedLoadable(() => import("./NotFoundPage"));
 
 const App = () => (
   <>
     <PageScrollProgress />
-    <Router>
+    <BrowserRouter>
       <Suspense fallback={<IndeterminateLoadingIndicator />}>
         <main className="App">
           <Routes basename="/2021">
@@ -26,7 +42,7 @@ const App = () => (
         </main>
         <Footer />
       </Suspense>
-    </Router>
+    </BrowserRouter>
   </>
 );
 
