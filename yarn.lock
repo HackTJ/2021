@@ -1488,7 +1488,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.7.7, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
   version: 7.12.5
   resolution: "@babel/runtime@npm:7.12.5"
   dependencies:
@@ -1942,19 +1942,6 @@ __metadata:
     "@types/yargs": ^15.0.0
     chalk: ^4.0.0
   checksum: 5c511d7807f414b298299ae4a053abf265f39984942e0eefdfb17a7986a36f1047e0fd9a6f785bdddbf7343a5737595dfabe148719a80e118dd77486502009cc
-  languageName: node
-  linkType: hard
-
-"@loadable/component@npm:^5.14.1":
-  version: 5.14.1
-  resolution: "@loadable/component@npm:5.14.1"
-  dependencies:
-    "@babel/runtime": ^7.7.7
-    hoist-non-react-statics: ^3.3.1
-    react-is: ^16.12.0
-  peerDependencies:
-    react: ">=16.3.0"
-  checksum: 073b1752c1a3dedf039364f05acfd2fbc4371d8d15ddb129fe761cf126a10087b5a399f5d223cba715c8298812c35df8bfe8573f9c461f465ae5e65f944e7aa3
   languageName: node
   linkType: hard
 
@@ -8088,7 +8075,6 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "hacktj-2021@workspace:."
   dependencies:
-    "@loadable/component": ^5.14.1
     "@types/chart.js": ^2.9.30
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
@@ -8122,7 +8108,6 @@ fsevents@~2.1.2:
     react-helmet-async: ^1.0.7
     react-map-gl: ^6.0.3
     react-parallax-tilt: ^1.4.70
-    react-prerendered-component: ^1.2.4
     react-refresh: ^0.9.0
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
@@ -8322,32 +8307,6 @@ fsevents@~2.1.2:
   version: 6.1.3
   resolution: "hoek@npm:6.1.3"
   checksum: dfb352af5e9d126841db54c15e2bac80b9dd2feb634b89d0f218514f428a818f946fc97ecac03540585b4db1a0696faa4fbf335d94b98ce79777a6bd476a804a
-  languageName: node
-  linkType: hard
-
-"hoist-non-react-statics@npm:^2.3.1":
-  version: 2.5.5
-  resolution: "hoist-non-react-statics@npm:2.5.5"
-  checksum: 0a9ed7b8bff4b02f2e0ebf2e113ce7cb9153c656c711b33cac09153cd5013deb51277c368291e3fe5f229abae208464b2abda6cd8eb2ea9230b779f2b6dd4355
-  languageName: node
-  linkType: hard
-
-"hoist-non-react-statics@npm:^3.3.1":
-  version: 3.3.2
-  resolution: "hoist-non-react-statics@npm:3.3.2"
-  dependencies:
-    react-is: ^16.7.0
-  checksum: d3e3791d6e3a2741ce0ba38e878081dec49247ef22982a990c80941ee1f564ef16cd5a511bcc8c5e54f1ce8205535e0414ca5feea722c0690c80040be7ebf9df
-  languageName: node
-  linkType: hard
-
-"hoist-react-statics@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "hoist-react-statics@npm:1.0.2"
-  dependencies:
-    hoist-non-react-statics: ^2.3.1
-    react-display-name: ^0.2.3
-  checksum: 2159173b52a9285f08acb3b9e81224abdb702c98e033a4e2939faa343a11643a311a11c529f8e8846ea3936a9f995f2cfb7bd70eb0dac46d8912e14a077e8b6b
   languageName: node
   linkType: hard
 
@@ -11143,13 +11102,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^2.0.1":
-  version: 2.1.11
-  resolution: "nanoid@npm:2.1.11"
-  checksum: 41453e344e3abb189cd3baa3ab52685601d7220f86ce73f6a1d9594ebae286c2acf47a20b5aa9cf11933b587b69c6007e88f190ca266450c2fbe20be6db43a29
-  languageName: node
-  linkType: hard
-
 "nanoid@npm:^3.1.20":
   version: 3.1.20
   resolution: "nanoid@npm:3.1.20"
@@ -13588,13 +13540,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-display-name@npm:^0.2.3":
-  version: 0.2.5
-  resolution: "react-display-name@npm:0.2.5"
-  checksum: cadfbf2d2f050165cd247452051e11de00092aa527ae28e47a935eb2e91f00169e98158a848a477e274f15e6ae9cc7b5b2f990c41419c0ef27806fe5c2b714d2
-  languageName: node
-  linkType: hard
-
 "react-dom@npm:^17.0.1":
   version: 17.0.1
   resolution: "react-dom@npm:17.0.1"
@@ -13638,7 +13583,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.12.0, react-is@npm:^16.7.0, react-is@npm:^16.8.1":
+"react-is@npm:^16.8.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 11bcf1267a314a522615f626f3ce3727a3a24cdbf61c4d452add3550a7875326669631326cfb1ba3e92b6f72244c32ffecf93ad21c0cad8455d3e169d0e3f060
@@ -13699,20 +13644,6 @@ fsevents@~2.1.2:
   peerDependencies:
     react: 0.14.x || ^15.0.0 || ^16.0.0
   checksum: 09ef58054bd9d449283939af861cbb205aee771289884fa62e30a6927163fab53e865593c0e014364d807a8e219d9642be6d34ae58b1e4f2f0530ffc9b289e5a
-  languageName: node
-  linkType: hard
-
-"react-prerendered-component@npm:^1.2.4":
-  version: 1.2.4
-  resolution: "react-prerendered-component@npm:1.2.4"
-  dependencies:
-    detect-node: ^2.0.4
-    hoist-react-statics: ^1.0.2
-    nanoid: ^2.0.1
-    react-uid: ^2.2.0
-  peerDependencies:
-    react: ^16.3.0
-  checksum: 84687ff855154e297d92b3123b26bc5d971a3b750d63c26b840dcfa20887e3ca7141e675e7832b9be9636c3755fd946b4df0e712e4730370290ac8ab689168e9
   languageName: node
   linkType: hard
 
@@ -13877,21 +13808,6 @@ fsevents@~2.1.2:
     react: ">=15.0.0"
     react-dom: ">=15.0.0"
   checksum: eefed08c48a0d377b5fac3ac7fac54ed986d5dcdd4494f36075954c9d2d257072a9d18cc02c6d8e6698034722b1ff9419ad0c24ef068dea742edcff9f8ea4ba9
-  languageName: node
-  linkType: hard
-
-"react-uid@npm:^2.2.0":
-  version: 2.3.1
-  resolution: "react-uid@npm:2.3.1"
-  dependencies:
-    tslib: ^1.10.0
-  peerDependencies:
-    "@types/react": ^16.8.0 || ^17.0.0
-    react: ^16.8.0 || ^17.0.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: e0cf9c82469a26a7c57c2e3894db7ddd1f181bdff4b607154fe27a260c18263dc509054179ee9dc9475daffd5b92edb53338173ccdc2bcdd7f681c7df6ab2028
   languageName: node
   linkType: hard
 
