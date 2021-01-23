@@ -27,7 +27,7 @@ const Landing: FunctionComponent = () => (
         {/* <Logo className="logo" /> */}
         <img src={logo} className="logo" alt="HackTJ" />
         <div className="event-date landing">
-          {startDate} - {endDate}
+          {startDate} &ndash; {endDate}
         </div>
         <div className="event-location landing">Online</div>
         <div className="register-button-block-old top">

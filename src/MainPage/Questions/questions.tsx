@@ -1,7 +1,5 @@
 import config from "../../config";
 
-import { Link } from "react-router-dom";
-
 const dateFormat = { weekday: "long", month: "long", day: "numeric" };
 const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
 const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
@@ -58,9 +56,13 @@ export default [
     answer: (
       <span>
         Yes, good question! We have adopted the{" "}
-        <Link to="conduct.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           MLH code of conduct
-        </Link>
+        </a>
         , which all attendees will be required to adhere to.
       </span>
     ),

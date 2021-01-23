@@ -11,7 +11,7 @@ const FAQuestion: FunctionComponent<Props> = ({ data }: Props) => {
   const [selected, setSelected] = useState(-1);
 
   return (
-    <div className={`${styles.wrapper}`}>
+    <div className={styles.wrapper}>
       {data.map(
         (pair: { question: string; answer: JSX.Element }, i: number) => (
           <div

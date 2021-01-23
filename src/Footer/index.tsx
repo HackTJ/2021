@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 import styles from "./footer.module.css";
 
-const Footer = (): JSX.Element => (
+const Footer = () => (
   <>
     <footer className={styles.footer}>
       <div className="register-button-block-old bottom">
