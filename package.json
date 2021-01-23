@@ -53,6 +53,8 @@
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "reactSnap": {
+    "inlineCss": true,
+    "cacheAjaxRequests": true,
     "http2PushManifest": true
   },
   "browserslist": [
