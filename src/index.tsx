@@ -1,4 +1,5 @@
 import { StrictMode } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { hydrate, render } from "react-dom";
 import "./index.css";
 import App from "./App";
@@ -11,7 +12,9 @@ import * as serviceWorker from "./serviceWorker";
 const rootElement = document.getElementById("root");
 const app = (
   <StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </StrictMode>
 );
 if (rootElement?.hasChildNodes()) {
