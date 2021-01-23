@@ -38,7 +38,7 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "yarn run switch-homepage && react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run postbuild",
     "postbuild": "react-snap; purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -58,7 +58,7 @@
     "defaults"
   ],
   "devDependencies": {
-    "@types/chart.js": "^2.9.29",
+    "@types/chart.js": "^2.9.30",
     "@types/jest": "^26.0.20",
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.22",

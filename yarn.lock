@@ -2344,12 +2344,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chart.js@npm:^2.9.29":
-  version: 2.9.29
-  resolution: "@types/chart.js@npm:2.9.29"
+"@types/chart.js@npm:^2.9.30":
+  version: 2.9.30
+  resolution: "@types/chart.js@npm:2.9.30"
   dependencies:
     moment: ^2.10.2
-  checksum: 107a536029279c0d5002721801c0aab4c70348924139cd5a7c322cfe5bfb36172a1491eb0ab44ddac998f524801e69b0179859b45a7f7a68980a9b225fa19118
+  checksum: a129e7333091db162bfc481b3e79bd1859258768aad5f82cbe0ba89d4bbe6afcc28964350a8a5186b45a391a4d12bf3544f9435c4d01d91660ec76fe9bc4bee8
   languageName: node
   linkType: hard
 
@@ -8075,7 +8075,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "hacktj-2021@workspace:."
   dependencies:
-    "@types/chart.js": ^2.9.29
+    "@types/chart.js": ^2.9.30
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
     "@types/node": ^14.14.22
