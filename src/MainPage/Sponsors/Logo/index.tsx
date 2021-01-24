@@ -10,10 +10,10 @@ type Props = {
   logo: string;
 };
 
-const Logo = ({ url, name, logo }: Props): JSX.Element => {
+const Logo = ({ url, name, logo }: Props) => {
   const sponsorID: string = name.toLowerCase().replace(/ /g, "-");
 
-  const [showTooltip, setShowTooltip] = useState<boolean>(false);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   return (
     <>
@@ -26,22 +26,18 @@ const Logo = ({ url, name, logo }: Props): JSX.Element => {
         data-for={sponsorID}
         id={`img-${sponsorID}`}
       >
-        <>
-          {/* eslint-disable import/no-dynamic-require */}
-          <img
-            id={`img-normal-${sponsorID}`}
-            className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
-            src={require(`../../../images/sponsors/normal/${logo}`).default}
-            alt={name}
-          />
-          <img
-            id={`img-tint-${sponsorID}`}
-            className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
-            src={require(`../../../images/sponsors/tint/${logo}`).default}
-            alt={name}
-          />
-          {/* eslint-enable import/no-dynamic-require */}
-        </>
+        <img
+          id={`img-normal-${sponsorID}`}
+          className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
+          src={require(`../../../images/sponsors/normal/${logo}`).default}
+          alt={name}
+        />
+        <img
+          id={`img-tint-${sponsorID}`}
+          className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
+          src={require(`../../../images/sponsors/tint/${logo}`).default}
+          alt={name}
+        />
       </a>
       <Tooltip
         id={sponsorID}
