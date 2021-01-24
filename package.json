@@ -39,7 +39,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "yarn run switch-homepage && react-scripts start",
     "build": "react-scripts build && yarn run postbuild",
-    "postbuild": "react-snap; purgecss --css build/static/css/*.css --content build/*.html build/static/js/*.js --output build/static/css",
+    "postbuild": "react-snap; purgecss --content build/**/*.html --css build/static/{css/*.css,js/*.js} --output build/static/css --font-face --keyframes --rejected",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier . --write; eslint src/ --fix",
@@ -54,7 +54,9 @@
   "reactSnap": {
     "inlineCss": false,
     "cacheAjaxRequests": true,
-    "http2PushManifest": true
+    "http2PushManifest": true,
+    "preloadImages": true,
+    "asyncScriptTags": true
   },
   "browserslist": [
     "defaults"
