@@ -1,35 +1,83 @@
+import { useState } from "react";
 import type { FunctionComponent } from "react";
 
 import data from "./questions";
 
-import FAQuestion from "./FAQuestion";
+import Card from "./Card";
 
-import "./index.css";
+import styles from "./questions.module.css";
 
-const Questions: FunctionComponent = (): JSX.Element => (
-  <>
-    <a className="anchor" id="faq" href="#faq">
-      FAQ
-    </a>
-    <section className="colored faq">
-      <h1 className="section-title">FAQ</h1>
-      <div className="faq-wrapper">
-        <FAQuestion data={data.slice(0, data.length / 2)} />
-        <FAQuestion data={data.slice(data.length / 2)} />
-      </div>
-      <p className="large bottom-question">
-        If your question is not answered here, just ask us:{" "}
-        <a
-          href="mailto:hello@hacktj.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          hello@hacktj.org
-        </a>
-        .
-      </p>
-    </section>
-  </>
-);
+const numAccordions = 2;
+const numQuestionsPerAccordion = data.length / numAccordions;
+const accordionData = Array(numAccordions)
+  .fill(0)
+  .map((_, index) => index * numQuestionsPerAccordion)
+  .map((begin) => data.slice(begin, begin + numQuestionsPerAccordion));
+
+const Questions: FunctionComponent<{}> = () => {
+  const [selected, setSelected] = useState(-1);
+
+  return (
+    <>
+      <a className="anchor" id="faq" href="#faq">
+        FAQ
+      </a>
+      <section className="colored faq">
+        <h1 className="section-title">FAQ</h1>
+        <div className={styles.questions}>
+          {accordionData.map((accordionQuestions, accordionIndex) => {
+            const numPreviousQuestions = accordionData
+              .slice(0, accordionIndex)
+              .reduce(
+                (accumulator, currentValue) =>
+                  accumulator + currentValue.length,
+                0
+              ); // accordionIndex * numQuestionsPerAccordion;
+            return (
+              <div className={styles.column}>
+                {accordionQuestions.map(
+                  ({ question, answer }, questionIndex) => {
+                    const dataIndex = numPreviousQuestions + questionIndex + 1;
+                    return (
+                      <div
+                        className={`${styles.cardContainer} ${
+                          selected === dataIndex ? styles.selected : ""
+                        } ${
+                          selected - 1 === dataIndex ? styles.roundBottom : ""
+                        }`}
+                        key={dataIndex}
+                        onClick={() => {
+                          setSelected(selected === dataIndex ? -1 : dataIndex);
+                        }}
+                      >
+                        <Card
+                          question={question}
+                          answer={answer}
+                          collapsed={selected !== dataIndex}
+                        />
+                      </div>
+                    );
+                  }
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <p className={`large ${styles.bottomQuestion}`}>
+          If your question is not answered here, just ask us:{" "}
+          <a
+            href="mailto:hello@hacktj.org"
+            className={styles.email}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@hacktj.org
+          </a>
+          .
+        </p>
+      </section>
+    </>
+  );
+};
 
 export default Questions;

@@ -1,10 +1,22 @@
-.wrapper {
+.questions {
+  display: grid;
+  max-width: min(80%, 100rem);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 5%;
+}
+
+.bottom-question {
+  margin: 1em auto;
+}
+
+.column {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.wrapper .container {
+.cardContainer {
   font-size: 1rem;
   border-color: #a0aec0;
   background-color: white;
@@ -20,41 +32,50 @@
   transition-property: margin, transform, border-radius, opacity;
 }
 
-.wrapper .container.roundBottom {
+.roundBottom {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 
-.wrapper .container:hover {
+.cardContainer:hover {
   background-color: #d8e3e6;
 }
 
-.wrapper .container:first-child {
+.cardContainer:first-child {
   border-top-width: 2px;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-.wrapper .container:last-child {
+.cardContainer:last-child {
   border-bottom-width: 2px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 
-.wrapper .container:not(.selected) + .container:not(.selected) {
+.cardContainer:not(.selected) + .cardContainer:not(.selected) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.wrapper .container.selected + .container {
+.cardContainer .selected {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-top-width: 2px;
 }
 
-.wrapper .container.selected {
+.selected {
   margin: 1.5rem 0;
   border-width: 2px;
   border-radius: 0.5rem;
   transform: scale3d(1.075, 1.075, 1);
+}
+
+.bottomQuestion {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.email {
+  color: white;
 }

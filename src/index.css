@@ -1562,7 +1562,7 @@ a.anchor {
 }
 
 section {
-  padding: 0;
+  padding: 5px;
   display: block;
   position: relative;
   box-sizing: border-box;

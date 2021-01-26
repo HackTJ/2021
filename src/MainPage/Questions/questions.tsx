@@ -9,7 +9,7 @@ const dateFormat = {
 const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
 const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 
-export default [
+const data = [
   {
     question: "What is HackTJ?",
     answer: (
@@ -151,3 +151,5 @@ export default [
     ),
   },
 ];
+
+export default data;
