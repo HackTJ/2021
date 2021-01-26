@@ -91,7 +91,7 @@ const Schedule: FunctionComponent<{}> = () => {
         Schedule
       </a>
       <section id="schedule">
-        <h1 className="section-title">2020 Schedule</h1>
+        <h1 className="section-title">Schedule</h1>
         <div className={styles.wrapper}>
           <div className={styles.dates} role="tablist">
             {scheduleData.map((day, index) => (
