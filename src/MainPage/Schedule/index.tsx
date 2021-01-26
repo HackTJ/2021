@@ -5,7 +5,12 @@ import config from "../../config";
 
 import styles from "./schedule.module.css";
 
-const dateFormat = { weekday: "long", month: "long", day: "numeric" };
+const dateFormat = {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  timeZone: "America/New_York",
+};
 const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
 const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 

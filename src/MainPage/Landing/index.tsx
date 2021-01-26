@@ -10,7 +10,12 @@ import "./index.css";
 // import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 import logo from "../../images/bigweblogo.png";
 
-const dateFormat = { year: "numeric", month: "long", day: "numeric" };
+const dateFormat = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "America/New_York",
+};
 const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
 const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
 
