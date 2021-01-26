@@ -12,25 +12,23 @@ const FAQuestion: FunctionComponent<Props> = ({ data }: Props) => {
 
   return (
     <div className={styles.wrapper}>
-      {data.map(
-        (pair: { question: string; answer: JSX.Element }, i: number) => (
-          <div
-            className={`${styles.container} ${
-              selected === i ? styles.selected : ""
-            } ${selected - 1 === i ? styles.roundBottom : ""}`}
-            key={i}
-            onClick={() => {
-              setSelected(selected === i ? -1 : i);
-            }}
-          >
-            <Card
-              question={pair.question}
-              answer={pair.answer}
-              collapsed={selected !== i}
-            />
-          </div>
-        )
-      )}
+      {data.map(({ question, answer }, i) => (
+        <div
+          className={`${styles.container} ${
+            selected === i ? styles.selected : ""
+          } ${selected - 1 === i ? styles.roundBottom : ""}`}
+          key={i}
+          onClick={() => {
+            setSelected(selected === i ? -1 : i);
+          }}
+        >
+          <Card
+            question={question}
+            answer={answer}
+            collapsed={selected !== i}
+          />
+        </div>
+      ))}
     </div>
   );
 };
