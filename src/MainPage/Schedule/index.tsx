@@ -3,7 +3,7 @@ import type { FunctionComponent } from "react";
 
 import config from "../../config";
 
-import "./index.css";
+import styles from "./schedule.module.css";
 
 const dateFormat = { weekday: "long", month: "long", day: "numeric" };
 const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
@@ -77,10 +77,7 @@ const scheduleData: {
   },
 ];
 
-// we disable the react/no-array-index-key lint rule because we'll never modify
-// the scheduleData object so using indices as keys shouldn't cause any trouble
-
-const Schedule: FunctionComponent = (): JSX.Element => {
+const Schedule: FunctionComponent<{}> = () => {
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);
 
   return (
@@ -88,15 +85,15 @@ const Schedule: FunctionComponent = (): JSX.Element => {
       <a className="anchor" id="schedule" href="#schedule">
         Schedule
       </a>
-      <section className="schedule" id="schedules">
+      <section id="schedule">
         <h1 className="section-title">2020 Schedule</h1>
-        <div className="container">
-          <div className="dates" role="tablist">
+        <div className={styles.wrapper}>
+          <div className={styles.dates} role="tablist">
             {scheduleData.map((day, index) => (
               <div
                 key={index}
-                className={`category-bubble ${
-                  selectedDayIndex === index ? "selected" : ""
+                className={`${styles.categoryBubble} ${
+                  selectedDayIndex === index ? styles.selected : ""
                 }`}
                 onClick={() => setSelectedDayIndex(index)}
                 onKeyPress={() => setSelectedDayIndex(index)}
@@ -110,28 +107,23 @@ const Schedule: FunctionComponent = (): JSX.Element => {
               </div>
             ))}
           </div>
-          <div className="schedule-area">
-            <div className="schedule">
-              <ul
-                role="tabpanel"
-                aria-labelledby={`schedule-tab-${selectedDayIndex}`}
-                id={`schedule-day-${selectedDayIndex}`}
-                hidden={false}
-                aria-hidden={false}
-              >
-                {scheduleData[selectedDayIndex].scheduleEvents.map(
-                  (scheduleEvent, index) => (
-                    <li className="item" key={index}>
-                      <h6 className="time">{scheduleEvent.time}</h6>
-                      <div className="description">
-                        {scheduleEvent.description}
-                      </div>
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-          </div>
+          <ul
+            role="tabpanel"
+            className={styles.scheduleArea}
+            aria-labelledby={`schedule-tab-${selectedDayIndex}`}
+            id={`schedule-day-${selectedDayIndex}`}
+            hidden={false}
+            aria-hidden={false}
+          >
+            {scheduleData[selectedDayIndex].scheduleEvents.map(
+              ({ time, description }, index) => (
+                <li className={styles.event} key={index}>
+                  <span className={styles.time}>{time}</span>
+                  <span>{description}</span>
+                </li>
+              )
+            )}
+          </ul>
         </div>
       </section>
     </>

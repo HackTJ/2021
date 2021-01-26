@@ -1,0 +1,85 @@
+.wrapper {
+  flex-direction: row;
+  display: flex;
+  width: min(70em, 80%);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background: var(--theme-primary);
+  border-radius: 50px;
+}
+
+.dates {
+  display: grid;
+  min-width: 30%;
+  max-width: 30%;
+  padding-top: 3%;
+  cursor: pointer;
+}
+
+.categoryBubble {
+  position: relative;
+  text-align: left;
+  font-size: 1.15vw;
+  height: 50%;
+  padding-top: 15%;
+  padding-left: 20%;
+  transition: 0.1s ease-in-out;
+  color: white;
+  opacity: 0.6;
+  outline: none; /* TODO: I don't like this */
+}
+.categoryBubble:hover,
+.categoryBubble:focus {
+  opacity: 0.9;
+}
+
+.selected {
+  font-size: 1.3vw;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.selected::before {
+  position: absolute;
+  display: block;
+  left: 10%;
+  content: "▶";
+}
+
+.scheduleArea {
+  padding: 2% 7%;
+  width: 100%;
+  margin-left: 0.5%;
+  margin-bottom: 0;
+  overflow: auto;
+  position: relative;
+  z-index: 40;
+  border-radius: 50px;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-bottom: 2vh;
+  font-size: 19px;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.event {
+  list-style: none;
+  min-width: 400px;
+  margin-bottom: 2.5%;
+  color: white;
+}
+
+.time {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  vertical-align: middle;
+}
