@@ -25,6 +25,7 @@ const TeamPicture: FunctionComponent<Props> = ({
       >
         <CardImg
           src={require(`../../../images/team/${image}`).default}
+          alt={name}
           loading="lazy"
           width="200"
           height="200"
