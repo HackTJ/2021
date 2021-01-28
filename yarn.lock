@@ -7966,7 +7966,7 @@ fsevents@~2.1.2:
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.0.3
+    react-map-gl: ^6.1.0
     react-parallax-tilt: ^1.4.71
     react-refresh: ^0.9.0
     react-router: ^6.0.0-beta.0
@@ -10826,13 +10826,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"mjolnir.js@npm:^2.4.0":
-  version: 2.4.1
-  resolution: "mjolnir.js@npm:2.4.1"
+"mjolnir.js@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "mjolnir.js@npm:2.5.0"
   dependencies:
     "@babel/runtime": ^7.0.0
     hammerjs: ^2.0.8
-  checksum: 98e383d22b268074889c8364f24b485ed794c5408d2b5b3830a1ebe011e9a17ec2624549f4efea85066d36ad4e1ad9885030c1994de69789b4d92066f6b054d9
+  checksum: 551e680ce18f4f1e37ae13c1947e6084595231109a6c3ad1a69430662780026c99a55c52f61a6753067ecd108b98db6bcc846060cb521f2607bddc4cb6805feb
   languageName: node
   linkType: hard
 
@@ -13463,19 +13463,19 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "react-map-gl@npm:6.0.3"
+"react-map-gl@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "react-map-gl@npm:6.1.0"
   dependencies:
     "@babel/runtime": ^7.0.0
     mapbox-gl: ^2.0.1
-    mjolnir.js: ^2.4.0
+    mjolnir.js: ^2.5.0
     prop-types: ^15.7.2
-    react-virtualized-auto-sizer: ^1.0.2
+    resize-observer-polyfill: ^1.5.1
     viewport-mercator-project: ^6.2.3 || ^7.0.1
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 68ade83ac8df8a854d7e9db87bb258367d78d4927670576de2b85deff338f23a9dda039f2233759c0a19ba06a0fcb5b60b2ee7de467999e3feee4c5ea1201443
+  checksum: c63f268172db430882c9efd417ba67b87c2f332b3206365e9eccc113e23a688f3a3d0d57b0034abb347fd85a75e6ebb2128d91949da7965785cc539efd882718
   languageName: node
   linkType: hard
 
@@ -13655,16 +13655,6 @@ fsevents@~2.1.2:
     react: ">=15.0.0"
     react-dom: ">=15.0.0"
   checksum: eefed08c48a0d377b5fac3ac7fac54ed986d5dcdd4494f36075954c9d2d257072a9d18cc02c6d8e6698034722b1ff9419ad0c24ef068dea742edcff9f8ea4ba9
-  languageName: node
-  linkType: hard
-
-"react-virtualized-auto-sizer@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "react-virtualized-auto-sizer@npm:1.0.2"
-  peerDependencies:
-    react: ^15.3.0 || ^16.0.0-alpha
-    react-dom: ^15.3.0 || ^16.0.0-alpha
-  checksum: 7038b823539e5d950647a8ed9bc67b41368328f85ed22233a36e950d0359e609887cfb56916481fcc09659f9133b94c960ce734548c6f402be8c0cff052d0b81
   languageName: node
   linkType: hard
 
@@ -14051,6 +14041,13 @@ fsevents@~2.1.2:
   version: 1.0.0
   resolution: "requires-port@npm:1.0.0"
   checksum: 0db25fb2ac9b4f2345a350846b7ba99d1f25a6686b1728246d14f05450c8f2fc066bdfae4561b4be2627c184a030a27e17268cfefdf46836e271db13734bc49e
+  languageName: node
+  linkType: hard
+
+"resize-observer-polyfill@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "resize-observer-polyfill@npm:1.5.1"
+  checksum: ba14bfaf584eda299eafd6a06233a65c76586bc2bab3cdfdd1edd25fc6479f4270788ddd082e65390049b3ed542558f02bdf1f123bd912624de5b11d48857ac8
   languageName: node
   linkType: hard
 

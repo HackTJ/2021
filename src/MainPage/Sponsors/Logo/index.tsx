@@ -31,12 +31,14 @@ const Logo = ({ url, name, logo }: Props) => {
           className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
           src={require(`../../../images/sponsors/normal/${logo}`).default}
           alt={name}
+          loading="lazy"
         />
         <img
           id={`img-tint-${sponsorID}`}
           className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
           src={require(`../../../images/sponsors/tint/${logo}`).default}
           alt={name}
+          loading="lazy"
         />
       </a>
       <Tooltip

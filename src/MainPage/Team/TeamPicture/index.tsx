@@ -1,3 +1,4 @@
+import type { FunctionComponent } from "react";
 import { useState, memo } from "react";
 
 import { Card, CardTitle, CardImg, CardImgOverlay } from "reactstrap";
@@ -10,7 +11,11 @@ type Props = {
   about: string;
 };
 
-const TeamPicture = ({ name, image, about }: Props): JSX.Element => {
+const TeamPicture: FunctionComponent<Props> = ({
+  name,
+  image,
+  about,
+}: Props) => {
   const [showAbout, setShowAbout] = useState<boolean>(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
@@ -18,12 +23,12 @@ const TeamPicture = ({ name, image, about }: Props): JSX.Element => {
         className="figure fade question"
         onClick={() => setShowAbout(!showAbout)}
       >
-        {/* eslint-disable import/no-dynamic-require */}
         <CardImg
-          className="img"
-          src={`${require(`../../../images/team/${image}`).default}`}
+          src={require(`../../../images/team/${image}`).default}
+          loading="lazy"
+          width="200"
+          height="200"
         />
-        {/* eslint-enable import/no-dynamic-require */}
         <CardImgOverlay>
           <CardTitle className="figcaption">{name}</CardTitle>
         </CardImgOverlay>

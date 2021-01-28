@@ -10,10 +10,9 @@ section.team .team-pictures .figure {
   overflow: hidden;
 }
 
-section.team .team-pictures .img {
+section.team .team-pictures .card-img {
   width: 200px;
   height: 200px;
-  display: block;
 }
 
 section.team .team-pictures .fade .figcaption {
