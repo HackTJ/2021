@@ -55,6 +55,7 @@ const schoolData: {
     },
   ],
 };
+Object.freeze(schoolData);
 
 const genderData: {
   labels: Array<string>;
@@ -68,6 +69,7 @@ const genderData: {
     },
   ],
 };
+Object.freeze(genderData);
 
 const graduationData: {
   labels: Array<string>;
@@ -80,6 +82,7 @@ const graduationData: {
     },
   ],
 };
+Object.freeze(graduationData);
 
 const Statistics = (): JSX.Element => (
   <>

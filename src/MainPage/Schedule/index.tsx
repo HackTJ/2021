@@ -81,6 +81,7 @@ const scheduleData: {
     ],
   },
 ];
+Object.freeze(scheduleData);
 
 const Schedule: FunctionComponent<{}> = () => {
   const [selectedDayIndex, setSelectedDayIndex] = useState(0);

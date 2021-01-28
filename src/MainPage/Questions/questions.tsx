@@ -151,5 +151,6 @@ const data = [
     ),
   },
 ];
+Object.freeze(data);
 
 export default data;
