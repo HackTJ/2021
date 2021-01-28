@@ -12,6 +12,7 @@
   border: solid gray;
   border-width: 0 2px 2px 0;
   padding: 4px;
+  /* margin-right: 2px; */
   top: 50%;
   left: 1rem;
   transform: translate3d(0, -4px, 0) rotate(45deg);

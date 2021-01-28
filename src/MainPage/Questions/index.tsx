@@ -34,7 +34,10 @@ const Questions: FunctionComponent<{}> = () => {
                 0
               ); // accordionIndex * numQuestionsPerAccordion;
             return (
-              <div className={styles.column}>
+              <div
+                className={styles.column}
+                key={`accordion-${accordionIndex}`}
+              >
                 {accordionQuestions.map(
                   ({ question, answer }, questionIndex) => {
                     const dataIndex = numPreviousQuestions + questionIndex + 1;
@@ -45,7 +48,7 @@ const Questions: FunctionComponent<{}> = () => {
                         } ${
                           selected - 1 === dataIndex ? styles.roundBottom : ""
                         }`}
-                        key={dataIndex}
+                        key={`question-${dataIndex}`}
                         onClick={() => {
                           setSelected(selected === dataIndex ? -1 : dataIndex);
                         }}
