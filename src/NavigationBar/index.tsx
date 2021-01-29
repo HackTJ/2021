@@ -2,20 +2,9 @@ import { Navbar, Nav, NavItem, NavLink } from "reactstrap";
 
 import "./index.css";
 
-const NavigationBar = (): JSX.Element => (
-  <Navbar
-    sticky="top"
-    className="navcontainer"
-    style={{
-      position: "sticky",
-      top: "0px",
-      display: "flex",
-      flexDirection: "row",
-      zIndex: 1000,
-      marginBottom: "100px",
-    }}
-  >
-    <Nav className="nav justify-content-center">
+const NavigationBar = () => (
+  <Navbar sticky="top">
+    <Nav>
       <NavItem>
         <NavLink href="#intro">Intro</NavLink>
       </NavItem>

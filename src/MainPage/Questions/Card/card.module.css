@@ -1,7 +1,6 @@
 .header {
-  font-size: 1.25rem;
+  font-size: 20px;
   color: black;
-  position: relative;
 }
 
 .header::after {
@@ -26,7 +25,7 @@
 }
 
 .content a {
-  color: black !important;
+  color: black;
 }
 
 .content div {

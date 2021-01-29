@@ -51,19 +51,11 @@
 .scheduleArea {
   padding: 2% 7%;
   width: 100%;
-  margin-left: 0.5%;
-  margin-bottom: 0;
-  overflow: auto;
-  position: relative;
-  z-index: 40;
-  border-radius: 50px;
+  margin: 0;
+  border-radius: 50px 0 0 50px;
   box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.2);
-  text-align: center;
-  padding-bottom: 2vh;
   font-size: 19px;
-  padding-left: 5%;
-  text-align: left;
 }
 
 .event {
@@ -74,12 +66,9 @@
 }
 
 .time {
+  /* TODO: table instead of list */
   float: left;
   width: 25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-family: "Avenir Next", sans-serif;
   font-weight: 800;
   font-size: 1rem;
-  vertical-align: middle;
 }
