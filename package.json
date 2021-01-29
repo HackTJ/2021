@@ -22,7 +22,7 @@
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-helmet-async": "^1.0.7",
-    "react-map-gl": "^6.1.0",
+    "react-map-gl": "^6.1.1",
     "react-parallax-tilt": "^1.4.71",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
@@ -52,6 +52,7 @@
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "reactSnap": {
+    "fixWebpackChunksIssue": false,
     "inlineCss": false,
     "cacheAjaxRequests": true,
     "http2PushManifest": true,

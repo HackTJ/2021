@@ -2283,7 +2283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/geojson@npm:*":
+"@types/geojson@npm:*, @types/geojson@npm:^7946.0.7":
   version: 7946.0.7
   resolution: "@types/geojson@npm:7946.0.7"
   checksum: b0a614f58a169069d9978af24c4b816bc7140a722829d8786ad1ff22d8362b429c56170326c836ce661a0307f8e35820a055966c2eedc21b62671a56c472263e
@@ -2372,12 +2372,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mapbox-gl@npm:*":
-  version: 1.12.2
-  resolution: "@types/mapbox-gl@npm:1.12.2"
+"@types/mapbox-gl@npm:*, @types/mapbox-gl@npm:^2.0.3":
+  version: 2.0.3
+  resolution: "@types/mapbox-gl@npm:2.0.3"
   dependencies:
     "@types/geojson": "*"
-  checksum: 032fbefc3828a8954b448f9a3748ee2d889bc03b172bfc5d61bb08a8e000ce602b1e6fd3bbfb26245205b53f538f897567d5910b903b212a1bcff370aeb1da7e
+  checksum: d285e050387ffefb6cce62e4caffbd8916426db359656d1fed2750b47128d2f298e932614a6b9554489b24ef3487bc3f5ea26a329daf152ba8a5f8e48868affa
   languageName: node
   linkType: hard
 
@@ -7966,7 +7966,7 @@ fsevents@~2.1.2:
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.1.0
+    react-map-gl: ^6.1.1
     react-parallax-tilt: ^1.4.71
     react-refresh: ^0.9.0
     react-router: ^6.0.0-beta.0
@@ -13463,11 +13463,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "react-map-gl@npm:6.1.0"
+"react-map-gl@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "react-map-gl@npm:6.1.1"
   dependencies:
     "@babel/runtime": ^7.0.0
+    "@types/geojson": ^7946.0.7
+    "@types/mapbox-gl": ^2.0.3
     mapbox-gl: ^2.0.1
     mjolnir.js: ^2.5.0
     prop-types: ^15.7.2
@@ -13475,7 +13477,7 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.1
   peerDependencies:
     react: ">=16.3.0"
-  checksum: c63f268172db430882c9efd417ba67b87c2f332b3206365e9eccc113e23a688f3a3d0d57b0034abb347fd85a75e6ebb2128d91949da7965785cc539efd882718
+  checksum: 1f3b822fbf8066900369cea9dc1cd220d01589c75c88e6b2ec0b3acaa061041b0baa3a386b3994f8fee7b2b0c714a85d377968f8311f5806bf5fd0fecd803fb3
   languageName: node
   linkType: hard
 
