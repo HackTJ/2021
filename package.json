@@ -52,6 +52,14 @@
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "reactSnap": {
+    "minifyCss": {
+      "inline": [
+        "all"
+      ],
+      "level": 2,
+      "sourceMap": true,
+      "sourceMapInlineSources": true
+    },
     "fixWebpackChunksIssue": false,
     "inlineCss": false,
     "cacheAjaxRequests": true,
