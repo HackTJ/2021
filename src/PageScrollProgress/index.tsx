@@ -1,55 +1,47 @@
-import { useState, useEffect, memo } from "react";
+import { useRef, useCallback, useEffect } from "react";
+
+import styles from "./pagescrollprogress.module.css";
 
 const PageScrollProgress = () => {
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const progressBarEl = useRef<HTMLDivElement>(null!);
 
-  const getDocHeight = (): number => {
-    const bodyExists: boolean = document.body !== null;
-    const docElExists: boolean = document.documentElement !== null;
-    return Math.max(
-      bodyExists ? document.body.scrollHeight : 0,
-      docElExists ? document.documentElement.scrollHeight : 0,
-      bodyExists ? document.body.offsetHeight : 0,
-      docElExists ? document.documentElement.offsetHeight : 0,
-      bodyExists ? document.body.clientHeight : 0,
-      docElExists ? document.documentElement.clientHeight : 0
+  const getDocHeight = (): number =>
+    Math.max(
+      document.body?.scrollHeight ?? 0,
+      document.documentElement?.scrollHeight ?? 0,
+      document.body?.offsetHeight ?? 0,
+      document.documentElement?.offsetHeight ?? 0,
+      document.body?.clientHeight ?? 0,
+      document.documentElement?.clientHeight ?? 0
     );
-  };
 
-  const calculateScrollDistance = (): void => {
+  const calculateScrollDistance = useCallback(() => {
     const scrollTop: number = window.pageYOffset; // how much the user has scrolled by
     const winHeight: number = window.innerHeight;
     const docHeight: number = getDocHeight();
 
     const totalDocScrollLength: number = docHeight - winHeight;
-    const currentScrollPostion: number = Math.floor(
-      (scrollTop / totalDocScrollLength) * 100
+    const currentScrollPostion: number =
+      (scrollTop / totalDocScrollLength) * 100;
+
+    progressBarEl.current.style.setProperty(
+      "--scroll-position",
+      `${currentScrollPostion}%`
     );
 
-    setScrollPosition(currentScrollPostion);
-  };
+    return currentScrollPostion;
+  }, []);
 
-  const scrollEvent = (): void => {
+  const scrollEvent = useCallback(() => {
     requestAnimationFrame(calculateScrollDistance);
-  };
+  }, [calculateScrollDistance]);
 
   useEffect(() => {
     document.addEventListener("scroll", scrollEvent);
     return () => window.removeEventListener("scroll", scrollEvent);
-  });
+  }, [scrollEvent]);
 
-  const barBackground = `linear-gradient(to right, rgba(255, 255, 255, 0.9) ${scrollPosition}%, transparent 0)`;
-  return (
-    <div
-      style={{
-        position: "fixed",
-        background: barBackground,
-        width: "100%",
-        height: "6px",
-        zIndex: 10001,
-      }}
-    />
-  );
+  return <div className={styles.progress} ref={progressBarEl}></div>;
 };
 
-export default memo(PageScrollProgress);
+export default PageScrollProgress;
