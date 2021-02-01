@@ -1,47 +1,33 @@
-import type { ReactElement } from "react";
+import type { FunctionComponent } from "react";
 
 import "./index.css";
 
-const hidden = (text: string) => (
-  <span style={{ visibility: "hidden" }}>{text}</span>
-);
-
-const twitter: ReactElement<"a"> = (
-  <a
-    className="social pe-so-twitter"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://twitter.com/HackTJOfficial"
-  >
-    {hidden("Twitter")}
-  </a>
-);
-const facebook: ReactElement<"a"> = (
-  <a
-    className="social pe-so-facebook empty"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://facebook.com/HackTJOfficial"
-  >
-    {hidden("Facebook")}
-  </a>
-);
-const instagram: ReactElement<"a"> = (
-  <a
-    className="social pe-so-instagram empty"
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://instagram.com/hacktjofficial"
-  >
-    {hidden("Instagram")}
-  </a>
-);
-
-const SocialLinks = (): JSX.Element => (
+const SocialLinks: FunctionComponent<{}> = () => (
   <div className="social-links">
-    {twitter}
-    {facebook}
-    {instagram}
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://twitter.com/HackTJOfficial"
+      aria-label="Twitter"
+    >
+      <span className="social pe-so-twitter"></span>
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://facebook.com/HackTJOfficial"
+      aria-label="Facebook"
+    >
+      <span className="social pe-so-facebook empty"></span>
+    </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://instagram.com/hacktjofficial"
+      aria-label="Instagram"
+    >
+      <span className="social pe-so-instagram empty"></span>
+    </a>
   </div>
 );
 
