@@ -21,7 +21,6 @@ const DevpostCard: FunctionComponent<Props> = ({
 }: Props) => (
   <Card className="history-section">
     <CardImg
-      left
       src={logo}
       style={{
         width: "200px",
@@ -30,10 +29,10 @@ const DevpostCard: FunctionComponent<Props> = ({
       alt={`HackTJ ${iteration}`}
     />
     <CardBody className="info-container">
-      <CardTitle tag="h3" className="section-title">
+      <CardTitle tag="h2" className="section-title">
         HackTJ {iteration}
       </CardTitle>
-      <CardSubtitle tag="h4" className="section-year">
+      <CardSubtitle tag="h3" className="section-year">
         {year}
       </CardSubtitle>
       {/* eslint-disable jsx-a11y/anchor-is-valid */}

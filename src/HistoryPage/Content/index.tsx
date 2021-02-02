@@ -4,16 +4,14 @@ import DevpostCard from "./DevpostCard";
 
 import { CardDeck } from "reactstrap";
 
-import "./index.css";
+import styles from "./content.module.css";
 
-// "https://hacktj.org/2020/favicon.ico"
+// https://hacktj.org/2020/favicon.ico is too low-quality
 
-const Content: FunctionComponent = () => (
-  <div className="centered-box relative history">
-    <div className="header-section">
-      <div className="icon icon-clock" />
-      <h3 className="title">A Walk Through Memory Lane</h3>
-    </div>
+const Content: FunctionComponent<{}> = () => (
+  <section className="centered-box relative">
+    <div className={`icon icon-clock ${styles.clockIcon}`} />
+    <h1 className="section-title">A Walk Through Memory Lane</h1>
     <CardDeck>
       <DevpostCard
         logo="https://raw.githubusercontent.com/HackTJ/2020/master/src/images/logo.png"
@@ -54,7 +52,7 @@ const Content: FunctionComponent = () => (
         url="https://hacktj2015.devpost.com/"
       />
     </CardDeck>
-  </div>
+  </section>
 );
 
 export default Content;
