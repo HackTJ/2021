@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/2021/static/css/main.4b99c57a.chunk.css",
-    "main.js": "/2021/static/js/main.584bf052.chunk.js",
-    "main.js.map": "/2021/static/js/main.584bf052.chunk.js.map",
+    "main.css": "/2021/static/css/main.53943ee7.chunk.css",
+    "main.js": "/2021/static/js/main.5a269dd2.chunk.js",
+    "main.js.map": "/2021/static/js/main.5a269dd2.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.636cdd3e.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.636cdd3e.js.map",
-    "static/js/2.696a37d2.chunk.js": "/2021/static/js/2.696a37d2.chunk.js",
-    "static/js/2.696a37d2.chunk.js.map": "/2021/static/js/2.696a37d2.chunk.js.map",
+    "static/js/2.eda98788.chunk.js": "/2021/static/js/2.eda98788.chunk.js",
+    "static/js/2.eda98788.chunk.js.map": "/2021/static/js/2.eda98788.chunk.js.map",
     "index.html": "/2021/index.html",
-    "static/css/main.4b99c57a.chunk.css.map": "/2021/static/css/main.4b99c57a.chunk.css.map",
-    "static/js/2.696a37d2.chunk.js.LICENSE.txt": "/2021/static/js/2.696a37d2.chunk.js.LICENSE.txt",
+    "static/css/main.53943ee7.chunk.css.map": "/2021/static/css/main.53943ee7.chunk.css.map",
+    "static/js/2.eda98788.chunk.js.LICENSE.txt": "/2021/static/js/2.eda98788.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.e275e469.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.6f85c3d1.png",
     "static/media/index.css": "/2021/static/media/pe-icon-social.8846062f.svg",
@@ -45,6 +45,7 @@
     "static/media/temporary.png": "/2021/static/media/temporary.b465c5f8.png",
     "static/media/tensorflow.png": "/2021/static/media/tensorflow.b32579c7.png",
     "static/media/thinkfun.png": "/2021/static/media/thinkfun.fedab5d3.png",
+    "static/media/landing.module.css": "/2021/static/media/tj-dome.8162de68.jpg",
     "static/media/tjpartnershipfund.png": "/2021/static/media/tjpartnershipfund.dcbfe3e8.png",
     "static/media/ultrapress.png": "/2021/static/media/ultrapress.48138efe.png",
     "static/media/verizonmedia.png": "/2021/static/media/verizonmedia.bfb8103d.png",
@@ -53,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.636cdd3e.js",
-    "static/js/2.696a37d2.chunk.js",
-    "static/css/main.4b99c57a.chunk.css",
-    "static/js/main.584bf052.chunk.js"
+    "static/js/2.eda98788.chunk.js",
+    "static/css/main.53943ee7.chunk.css",
+    "static/js/main.5a269dd2.chunk.js"
   ]
 }
