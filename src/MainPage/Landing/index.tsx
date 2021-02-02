@@ -16,8 +16,11 @@ const dateFormat = {
   day: "numeric",
   timeZone: "America/New_York",
 };
-const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
-const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
+const startDate = config.event.startDate.toLocaleDateString(
+  "en-US",
+  dateFormat
+);
+const endDate = config.event.endDate.toLocaleDateString("en-US", dateFormat);
 
 const Landing: FunctionComponent = () => (
   <section className="hero">

@@ -1,13 +1,26 @@
 import config from "../../config";
 
-const dateFormat = {
+const dateFormatOptions = {
   weekday: "long",
   month: "long",
   day: "numeric",
   timeZone: "America/New_York",
 };
-const startDate = config.startDate.toLocaleDateString("en-US", dateFormat);
-const endDate = config.endDate.toLocaleDateString("en-US", dateFormat);
+const dateFormat = (date: Date) =>
+  date.toLocaleDateString("en-US", dateFormatOptions);
+const eventStartDate = dateFormat(config.event.startDate);
+const eventEndDate = dateFormat(config.event.endDate);
+
+const timeFormatOptions = {
+  hour: "numeric",
+  hour12: true,
+};
+const timeFormat = (date: Date) =>
+  date.toLocaleTimeString("en-US", timeFormatOptions);
+const dateTimeFormat = (date: Date) =>
+  `${dateFormat(date)} at ${timeFormat(date)}`;
+const registrationStartDate = dateTimeFormat(config.registration.startDate);
+const registrationEndDate = dateTimeFormat(config.registration.endDate);
 
 const data = [
   {
@@ -24,7 +37,7 @@ const data = [
     question: "When is HackTJ?",
     answer: (
       <span>
-        HackTJ will start on {startDate} and run until {endDate}.
+        HackTJ will start on {eventStartDate} and run until {eventEndDate}.
       </span>
     ),
   },
@@ -47,13 +60,21 @@ const data = [
   {
     question: "Is there a deadline?",
     answer: (
-      <span>
-        Registration for participants, judges, mentors, and volunteers opens on
-        September 25 at 8 p.m. Registration for participants closes on October
-        16&mdash;this is a hard deadline; we do not accept submissions after 8
-        p.m. Judges, mentors, and volunteers will be able to register until the
-        start of the event.
-      </span>
+      <>
+        <p>
+          Registration for participants, judges, mentors, and volunteers opens
+          on {registrationStartDate}.
+        </p>
+        <p>
+          Registration for participants closes on <b>{registrationEndDate}</b>
+          &mdash;this is a hard deadline; we do not accept submissions after
+          this time.{" "}
+        </p>
+        <p>
+          Judges, mentors, and volunteers will be able to register until the
+          start of the event.
+        </p>
+      </>
     ),
   },
   {
@@ -120,8 +141,8 @@ const data = [
     answer: (
       <ol>
         <li>
-          At 8 p.m. on September 25, a button will appear at the top of this
-          site. Click this.
+          On {registrationStartDate}, a button will appear at the top of this
+          site. Click it.
         </li>
         <li>
           You will be redirected to a page where you can click the appropriate
