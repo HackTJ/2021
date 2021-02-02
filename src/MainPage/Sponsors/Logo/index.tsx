@@ -2,7 +2,7 @@ import { useState, memo } from "react";
 
 import { Tooltip } from "reactstrap";
 
-import "./index.css";
+import styles from "./logo.module.css";
 
 type Props = {
   url: string;
@@ -19,23 +19,27 @@ const Logo = ({ url, name, logo }: Props) => {
     <>
       <a
         href={url}
-        className="sponsor-wrapper"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         data-tip="data-tip"
         data-for={sponsorID}
         id={`img-${sponsorID}`}
+        className={styles.link}
       >
         <img
           id={`img-normal-${sponsorID}`}
-          className={`sponsor-image normal ${showTooltip ? "show" : "hide"}`}
+          className={`${styles.logo} ${styles.normal} ${
+            showTooltip ? styles.showLogo : styles.hideLogo
+          }`}
           src={require(`../../../images/sponsors/normal/${logo}`).default}
           alt={name}
           loading="lazy"
         />
         <img
           id={`img-tint-${sponsorID}`}
-          className={`sponsor-image tint ${showTooltip ? "hide" : "show"}`}
+          className={`${styles.logo} ${
+            showTooltip ? styles.hideLogo : styles.showLogo
+          }`}
           src={require(`../../../images/sponsors/tint/${logo}`).default}
           alt={name}
           loading="lazy"
@@ -50,6 +54,7 @@ const Logo = ({ url, name, logo }: Props) => {
         toggle={() => setShowTooltip(!showTooltip)}
         autohide={false}
         target={`img-${sponsorID}`}
+        className={styles.tooltip}
       >
         {name}
       </Tooltip>

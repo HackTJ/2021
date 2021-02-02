@@ -9,6 +9,26 @@ section h2.tier-title {
   border-bottom: 1.3px solid #000000;
 }
 
+section#sponsors .partner-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+section#sponsors p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  section#sponsors .partner-container img {
+    margin: 5vh 100vw;
+    max-width: 70vw;
+    height: auto;
+  }
+}
+
 .animation-container.horizontal.sponsors {
   max-width: 70%;
 }
