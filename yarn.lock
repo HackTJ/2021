@@ -4421,10 +4421,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chart.js@npm:^3.0.0-beta.9":
-  version: 3.0.0-beta.9
-  resolution: "chart.js@npm:3.0.0-beta.9"
-  checksum: fc326943a323e7befeac9f155a9205243f617b7e40a06b9947381ef1b76d7aa703fcc4c1d633aaaf234ab53d98d7fe42ef34bcaa98b608faf1c0323207242826
+"chart.js@npm:^3.0.0-beta.10":
+  version: 3.0.0-beta.10
+  resolution: "chart.js@npm:3.0.0-beta.10"
+  checksum: f3a3c42f4fa570bdc5e0e77e3c320a60a3835891afbc63117d5d4528fb9339cc165b4c6f38d87e58ebb01312c1838522d8c26751def572b897d0dc3681e5eeea
   languageName: node
   linkType: hard
 
@@ -7946,7 +7946,7 @@ fsevents@~2.1.2:
     "@typescript-eslint/eslint-plugin": ^4.14.2
     "@typescript-eslint/parser": ^4.14.2
     babel-eslint: ^10.1.0
-    chart.js: ^3.0.0-beta.9
+    chart.js: ^3.0.0-beta.10
     eslint: ^7.19.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-flowtype: ^5.2.0
@@ -7966,7 +7966,7 @@ fsevents@~2.1.2:
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.1.1
+    react-map-gl: ^6.1.2
     react-parallax-tilt: ^1.4.74
     react-refresh: ^0.9.0
     react-router: ^6.0.0-beta.0
@@ -13463,9 +13463,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "react-map-gl@npm:6.1.1"
+"react-map-gl@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "react-map-gl@npm:6.1.2"
   dependencies:
     "@babel/runtime": ^7.0.0
     "@types/geojson": ^7946.0.7
@@ -13477,7 +13477,7 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.1
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 1f3b822fbf8066900369cea9dc1cd220d01589c75c88e6b2ec0b3acaa061041b0baa3a386b3994f8fee7b2b0c714a85d377968f8311f5806bf5fd0fecd803fb3
+  checksum: 12b3c8a683dfd879b6ddea211dd887a9104a14519c2855f8c4fa66c45a3f88e8c5a40f4047cc6c634c2feb25350a23fb316ce326420265a49ddddba8422929b2
   languageName: node
   linkType: hard
 
