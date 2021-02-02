@@ -47,8 +47,8 @@
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
     "predeploy": "yarn run build && NODE_DEBUG=gh-pages",
-    "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build -m \"Update $timestamp\"",
-    "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b main -d build -m \"Update $timestamp\" && yarn run switch-event",
+    "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build --dotfiles -m \"Update $timestamp\"",
+    "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b main -d build --dotfiles -m \"Update $timestamp\" && yarn run switch-event",
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "reactSnap": {
