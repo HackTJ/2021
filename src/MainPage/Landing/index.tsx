@@ -7,8 +7,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./landing.module.css";
 
-// import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
-import logo from "../../images/bigweblogo.png";
+import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 
 const dateFormat = {
   year: "numeric",
@@ -22,7 +21,7 @@ const startDate = config.event.startDate.toLocaleDateString(
 );
 const endDate = config.event.endDate.toLocaleDateString("en-US", dateFormat);
 
-const Landing: FunctionComponent = () => (
+const Landing: FunctionComponent<{}> = () => (
   <section className={styles.hero}>
     <Tilt
       className={styles.tilt}
@@ -31,8 +30,7 @@ const Landing: FunctionComponent = () => (
       tiltMaxAngleX={5}
       tiltMaxAngleY={5}
     >
-      {/* <Logo className={styles.logo} /> */}
-      <img src={logo} className={styles.logo} alt="HackTJ" />
+      <Logo className={styles.logo} />
       <div className={styles.date}>
         {startDate} &ndash; {endDate}
       </div>
