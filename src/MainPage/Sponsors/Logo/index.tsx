@@ -34,6 +34,7 @@ const Logo = ({ url, name, logo }: Props) => {
           src={require(`../../../images/sponsors/normal/${logo}`).default}
           alt={name}
           loading="lazy"
+          decoding="async"
         />
         <img
           id={`img-tint-${sponsorID}`}
@@ -43,6 +44,7 @@ const Logo = ({ url, name, logo }: Props) => {
           src={require(`../../../images/sponsors/tint/${logo}`).default}
           alt={name}
           loading="lazy"
+          decoding="async"
         />
       </a>
       <Tooltip

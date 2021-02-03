@@ -27,6 +27,7 @@ const DevpostCard: FunctionComponent<Props> = ({
         height: "200px",
       }}
       alt={`HackTJ ${iteration}`}
+      decoding="async"
     />
     <CardBody className="info-container">
       <CardTitle tag="h2" className="section-title">
@@ -50,4 +51,4 @@ const DevpostCard: FunctionComponent<Props> = ({
   </Card>
 );
 
-export default memo(DevpostCard);
+export default memo<Props>(DevpostCard);

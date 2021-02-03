@@ -16,7 +16,7 @@ const TeamPicture: FunctionComponent<Props> = ({
   image,
   about,
 }: Props) => {
-  const [showAbout, setShowAbout] = useState<boolean>(false);
+  const [showAbout, setShowAbout] = useState(false);
   return (
     <li className={`question-group ${showAbout ? "is-open" : ""}`}>
       <Card
@@ -29,6 +29,7 @@ const TeamPicture: FunctionComponent<Props> = ({
           loading="lazy"
           width="200"
           height="200"
+          decoding="async"
         />
         <CardImgOverlay>
           <CardTitle className="figcaption">{name}</CardTitle>
