@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.d5220459.chunk.css",
-    "main.js": "/2021/static/js/main.dd7a2457.chunk.js",
-    "main.js.map": "/2021/static/js/main.dd7a2457.chunk.js.map",
+    "main.js": "/2021/static/js/main.4ac9e24a.chunk.js",
+    "main.js.map": "/2021/static/js/main.4ac9e24a.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.636cdd3e.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.636cdd3e.js.map",
-    "static/js/2.2051ca57.chunk.js": "/2021/static/js/2.2051ca57.chunk.js",
-    "static/js/2.2051ca57.chunk.js.map": "/2021/static/js/2.2051ca57.chunk.js.map",
+    "static/js/2.28e996cc.chunk.js": "/2021/static/js/2.28e996cc.chunk.js",
+    "static/js/2.28e996cc.chunk.js.map": "/2021/static/js/2.28e996cc.chunk.js.map",
     "index.html": "/2021/index.html",
     "static/css/main.d5220459.chunk.css.map": "/2021/static/css/main.d5220459.chunk.css.map",
-    "static/js/2.2051ca57.chunk.js.LICENSE.txt": "/2021/static/js/2.2051ca57.chunk.js.LICENSE.txt",
+    "static/js/2.28e996cc.chunk.js.LICENSE.txt": "/2021/static/js/2.28e996cc.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.e275e469.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.6f85c3d1.png",
     "static/media/index.css": "/2021/static/media/pe-icon-social.8846062f.svg",
@@ -29,7 +29,7 @@
     "static/media/TammyDing.png": "/2021/static/media/TammyDing.a24b296c.png",
     "static/media/alertfive.png": "/2021/static/media/alertfive.67164196.png",
     "static/media/basecamp.png": "/2021/static/media/basecamp.81810caa.png",
-    "static/media/bigweblogo.4e9855fd.svg": "/2021/static/media/bigweblogo.4e9855fd.svg",
+    "static/media/bigweblogo.a545926d.svg": "/2021/static/media/bigweblogo.a545926d.svg",
     "static/media/citadelsecurities.png": "/2021/static/media/citadelsecurities.c59eeda8.png",
     "static/media/cloudwave.png": "/2021/static/media/cloudwave.3074a01e.png",
     "static/media/collinsaerospace.png": "/2021/static/media/collinsaerospace.c0edf749.png",
@@ -54,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.636cdd3e.js",
-    "static/js/2.2051ca57.chunk.js",
+    "static/js/2.28e996cc.chunk.js",
     "static/css/main.d5220459.chunk.css",
-    "static/js/main.dd7a2457.chunk.js"
+    "static/js/main.4ac9e24a.chunk.js"
   ]
 }
