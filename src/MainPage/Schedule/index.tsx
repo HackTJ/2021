@@ -116,23 +116,23 @@ const Schedule: FunctionComponent<{}> = () => {
               </div>
             ))}
           </div>
-          <ul
-            role="tabpanel"
-            className={styles.scheduleArea}
-            aria-labelledby={`schedule-tab-${selectedDayIndex}`}
-            id={`schedule-day-${selectedDayIndex}`}
-            hidden={false}
-            aria-hidden={false}
-          >
-            {scheduleData[selectedDayIndex].scheduleEvents.map(
-              ({ time, description }, index) => (
+          {scheduleData.map((day, index) => (
+            <ul
+              role="tabpanel"
+              className={styles.scheduleArea}
+              aria-labelledby={`schedule-tab-${index}`}
+              id={`schedule-day-${index}`}
+              hidden={index !== selectedDayIndex}
+              aria-hidden={index !== selectedDayIndex}
+            >
+              {day.scheduleEvents.map(({ time, description }, index) => (
                 <li className={styles.event} key={index}>
                   <span className={styles.time}>{time}</span>
                   <span>{description}</span>
                 </li>
-              )
-            )}
-          </ul>
+              ))}
+            </ul>
+          ))}
         </div>
       </section>
     </>
