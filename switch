@@ -5,20 +5,24 @@ if [ $1 == "event" ]; then
   cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "/2021"; u.short_name = "HackTJ 8.0"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
   rm -f public/CNAME
   git remote set-url origin git@github.com:HackTJ/2021.git
+
   meta_label="HackTJ 8.0"
+  base_url="/2021"
 elif [ $1 == "homepage" ]; then
   cat package.json | yarn jqn 'u => {u.homepage = "https://hacktj.org"; u.reactSnap.inlineCss = true; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json package.json
   sed 's|<Routes basename="/2021">|<Routes>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
   cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "/"; u.short_name = "HackTJ"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
   cp CNAME.homepage public/CNAME
   git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
+
   meta_label="HackTJ"
+  base_url="/"
 else
   echo "Invalid argument"
   exit 128
 fi
 
-# use `$meta_label` to update the meta tags:
+# use `$meta_label` and `$base_url`:
 yarn node - << JS
   const fs = require("fs");
   const htmlparser2 = require("htmlparser2");
@@ -44,7 +48,7 @@ yarn node - << JS
       // element.children[0].data: string
       element.children[0].data = "$meta_label";
     } else if (tagName === "base") {
-      element.attribs.href = "/";
+      element.attribs.href = "$base_url";
     } else if (tagName === "meta") {
       const metaValue =
         domutils.getAttributeValue(element, "property") ||
