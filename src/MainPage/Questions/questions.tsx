@@ -7,7 +7,7 @@ const dateFormatOptions = {
   timeZone: "America/New_York",
 };
 const dateFormat = (date: Date) =>
-  date.toLocaleDateString("en-US", dateFormatOptions);
+  date.toLocaleDateString([], dateFormatOptions);
 const eventStartDate = dateFormat(config.event.startDate);
 const eventEndDate = dateFormat(config.event.endDate);
 
@@ -16,7 +16,7 @@ const timeFormatOptions = {
   hour12: true,
 };
 const timeFormat = (date: Date) =>
-  date.toLocaleTimeString("en-US", timeFormatOptions);
+  date.toLocaleTimeString([], timeFormatOptions);
 const dateTimeFormat = (date: Date) =>
   `${dateFormat(date)} at ${timeFormat(date)}`;
 const registrationStartDate = dateTimeFormat(config.registration.startDate);
