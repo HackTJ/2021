@@ -5,18 +5,6 @@ import config from "../../config";
 
 import styles from "./schedule.module.css";
 
-const dateFormat = {
-  weekday: "long",
-  month: "long",
-  day: "numeric",
-  timeZone: "America/New_York",
-};
-// const startDate = config.event.startDate.toLocaleDateString(
-//   [],
-//   dateFormat
-// );
-// const endDate = config.event.endDate.toLocaleDateString([], dateFormat);
-
 const dateWithTime = (date: Date, time: string) => {
   let newDate = new Date(date.getTime());
   const parsedTime = time.match(/(\d+)(?::(\d\d))?\s*(p?)/i) || ["0", "00", ""];
@@ -93,7 +81,12 @@ scheduleEvents.forEach((event) => {
   // Date objects can't be used as indices:
   // const date = new Date(event.time.getTime());
   // date.setHours(0,0,0,0); // remove the time
-  const date = event.time.toLocaleDateString([], dateFormat);
+  const date = event.time.toLocaleDateString([], {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    timeZone: "America/New_York",
+  });
   if (scheduleData[date]) {
     scheduleData[date].push(event);
   } else {
@@ -113,9 +106,9 @@ const Schedule: FunctionComponent<{}> = () => {
       <section id="schedule">
         <h1 className="section-title">Schedule</h1>
         <div className={styles.wrapper}>
-          <div className={styles.dates} role="tablist">
+          <ul className={styles.dates} role="tablist">
             {Object.keys(scheduleData).map((day, index) => (
-              <div
+              <li
                 key={index}
                 className={`${styles.categoryBubble} ${
                   selectedDayIndex === index ? styles.selected : ""
@@ -129,11 +122,11 @@ const Schedule: FunctionComponent<{}> = () => {
                 aria-selected={selectedDayIndex === index}
               >
                 {day}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           {Object.values(scheduleData).map((event, index) => (
-            <ul
+            <table
               role="tabpanel"
               className={styles.scheduleArea}
               aria-labelledby={`schedule-tab-${index}`}
@@ -142,19 +135,25 @@ const Schedule: FunctionComponent<{}> = () => {
               aria-hidden={index !== selectedDayIndex}
               key={index}
             >
-              {event.map(({ time, description }, index) => (
-                <li className={styles.event} key={index}>
-                  <span className={styles.time}>
-                    {time.toLocaleTimeString([], {
-                      hour: "numeric",
-                      hour12: true,
-                      minute: "numeric",
-                    })}
-                  </span>
-                  <span>{description}</span>
-                </li>
-              ))}
-            </ul>
+              <thead>
+                <tr>Time</tr>
+                <tr>Description</tr>
+              </thead>
+              <tbody>
+                {event.map(({ time, description }, index) => (
+                  <tr className={styles.event} key={index}>
+                    <td className={styles.time}>
+                      {time.toLocaleTimeString([], {
+                        hour: "numeric",
+                        hour12: true,
+                        minute: "numeric",
+                      })}
+                    </td>
+                    <td>{description}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           ))}
         </div>
       </section>
