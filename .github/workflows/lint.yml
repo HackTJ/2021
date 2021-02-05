@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,6 +30,10 @@ jobs:
 
       - name: install
         run: yarn install --immutable --immutable-cache --check-cache || true
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
 
-      - name: lint
-        run: yarn run lint
+      - name: prettier
+        run: yarn prettier --check .
+
+      - name: eslint
+        run: yarn eslint src/
