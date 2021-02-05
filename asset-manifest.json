@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.45a01e8f.chunk.css",
-    "main.js": "/2021/static/js/main.246159c4.chunk.js",
-    "main.js.map": "/2021/static/js/main.246159c4.chunk.js.map",
+    "main.js": "/2021/static/js/main.d4151ef8.chunk.js",
+    "main.js.map": "/2021/static/js/main.d4151ef8.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.636cdd3e.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.636cdd3e.js.map",
-    "static/js/2.150669bb.chunk.js": "/2021/static/js/2.150669bb.chunk.js",
-    "static/js/2.150669bb.chunk.js.map": "/2021/static/js/2.150669bb.chunk.js.map",
+    "static/js/2.3829c486.chunk.js": "/2021/static/js/2.3829c486.chunk.js",
+    "static/js/2.3829c486.chunk.js.map": "/2021/static/js/2.3829c486.chunk.js.map",
     "index.html": "/2021/index.html",
     "static/css/main.45a01e8f.chunk.css.map": "/2021/static/css/main.45a01e8f.chunk.css.map",
-    "static/js/2.150669bb.chunk.js.LICENSE.txt": "/2021/static/js/2.150669bb.chunk.js.LICENSE.txt",
+    "static/js/2.3829c486.chunk.js.LICENSE.txt": "/2021/static/js/2.3829c486.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.6815652d.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.a0054322.png",
     "static/media/index.css": "/2021/static/media/pe-icon-social.8846062f.svg",
@@ -36,6 +36,7 @@
     "static/media/cvent.png": "/2021/static/media/cvent.4a325bb8.png",
     "static/media/eastbanc.png": "/2021/static/media/eastbanc.cfdd80a4.png",
     "static/media/mlh.png": "/2021/static/media/mlh.85c2767a.png",
+    "static/media/opengraph.53a7e26c.png": "/2021/static/media/opengraph.53a7e26c.png",
     "static/media/phone2action.png": "/2021/static/media/phone2action.aa678806.png",
     "static/media/primamedicine.png": "/2021/static/media/primamedicine.2597998a.png",
     "static/media/razorx2.png": "/2021/static/media/razorx2.eeca3173.png",
@@ -47,6 +48,7 @@
     "static/media/thinkfun.png": "/2021/static/media/thinkfun.fedab5d3.png",
     "static/media/landing.module.css": "/2021/static/media/tj-dome.0e890d9e.jpg",
     "static/media/tjpartnershipfund.png": "/2021/static/media/tjpartnershipfund.dcbfe3e8.png",
+    "static/media/twitter.2fabe172.png": "/2021/static/media/twitter.2fabe172.png",
     "static/media/ultrapress.png": "/2021/static/media/ultrapress.48138efe.png",
     "static/media/verizonmedia.png": "/2021/static/media/verizonmedia.bfb8103d.png",
     "static/media/wolfram.png": "/2021/static/media/wolfram.dca958f2.png",
@@ -54,8 +56,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.636cdd3e.js",
-    "static/js/2.150669bb.chunk.js",
+    "static/js/2.3829c486.chunk.js",
     "static/css/main.45a01e8f.chunk.css",
-    "static/js/main.246159c4.chunk.js"
+    "static/js/main.d4151ef8.chunk.js"
   ]
 }
