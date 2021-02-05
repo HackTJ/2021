@@ -11,79 +11,95 @@ const dateFormat = {
   day: "numeric",
   timeZone: "America/New_York",
 };
-const startDate = config.event.startDate.toLocaleDateString(
-  "en-US",
-  dateFormat
-);
-const endDate = config.event.endDate.toLocaleDateString("en-US", dateFormat);
+// const startDate = config.event.startDate.toLocaleDateString(
+//   [],
+//   dateFormat
+// );
+// const endDate = config.event.endDate.toLocaleDateString([], dateFormat);
+
+const dateWithTime = (date: Date, time: string) => {
+  let newDate = new Date(date.getTime());
+  const parsedTime = time.match(/(\d+)(?::(\d\d))?\s*(p?)/i) || ["0", "00", ""];
+  newDate.setHours(parseInt(parsedTime[1], 10) + (parsedTime[3] ? 12 : 0));
+  newDate.setMinutes(parseInt(parsedTime[2], 10) || 0);
+  return newDate;
+};
+
+interface ScheduleEvent {
+  time: Date;
+  description: string;
+}
+
+const scheduleEvents: ScheduleEvent[] = [
+  {
+    time: dateWithTime(config.event.startDate, "10:00 a.m."),
+    description: "Opening Ceremony",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "11:00 a.m."),
+    description: "Hacking Begins",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "2:00 p.m."),
+    description: "Workshops Begin",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "2:30 p.m."),
+    description: "TypeRacer Tournament",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "4:30 p.m."),
+    description: "Among Us",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "8:00 p.m."),
+    description: "MLH's Bob Ross with MS Paint",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "7:00 p.m."),
+    description: "Dinner",
+  },
+  {
+    time: dateWithTime(config.event.startDate, "9:00 p.m."),
+    description: "Women in Tech Panel",
+  },
+  {
+    time: dateWithTime(config.event.endDate, "1:00 p.m."),
+    description: "Alumni Panel for CS x Fields in STEM",
+  },
+  {
+    time: dateWithTime(config.event.endDate, "4:00 p.m."),
+    description: "Hacking Ends",
+  },
+  {
+    time: dateWithTime(config.event.endDate, "4:30 p.m."),
+    description: "Judging Starts",
+  },
+  {
+    time: dateWithTime(config.event.endDate, "9:30 p.m."),
+    description: "Closing Ceremony",
+  },
+  {
+    time: dateWithTime(config.event.endDate, "10:30 p.m."),
+    description: "Hackathon Ends",
+  },
+].sort((firstEl, secondEl) => firstEl.time.valueOf() - secondEl.time.valueOf());
+Object.freeze(scheduleEvents);
 
 const scheduleData: {
-  date: string;
-  scheduleEvents: { time: string; description: string }[];
-}[] = [
-  {
-    date: startDate,
-    scheduleEvents: [
-      {
-        time: "10:00 a.m.",
-        description: "Opening Ceremony",
-      },
-      {
-        time: "11:00 a.m.",
-        description: "Hacking Begins",
-      },
-      {
-        time: "2:00 p.m.",
-        description: "Workshops Begin",
-      },
-      {
-        time: "2:30 p.m.",
-        description: "TypeRacer Tournament",
-      },
-      {
-        time: "4:30 p.m.",
-        description: "Among Us",
-      },
-      {
-        time: "8:00 p.m.",
-        description: "MLH's Bob Ross with MS Paint",
-      },
-      {
-        time: "7:00 p.m.",
-        description: "Dinner",
-      },
-      {
-        time: "9:00 p.m.",
-        description: "Women in Tech Panel",
-      },
-    ],
-  },
-  {
-    date: endDate,
-    scheduleEvents: [
-      {
-        time: "1:00 p.m.",
-        description: "Alumni Panel for CS x Fields in STEM",
-      },
-      {
-        time: "4:00 p.m.",
-        description: "Hacking Ends",
-      },
-      {
-        time: "4:30 p.m.",
-        description: "Judging Starts",
-      },
-      {
-        time: "9:30 p.m.",
-        description: "Closing Ceremony",
-      },
-      {
-        time: "10:30 p.m.",
-        description: "Hackathon Ends",
-      },
-    ],
-  },
-];
+  [day: string]: ScheduleEvent[];
+} = {};
+scheduleEvents.forEach((event) => {
+  // Date objects can't be used as indices:
+  // const date = new Date(event.time.getTime());
+  // date.setHours(0,0,0,0); // remove the time
+  const date = event.time.toLocaleDateString([], dateFormat);
+  if (scheduleData[date]) {
+    scheduleData[date].push(event);
+  } else {
+    scheduleData[date] = [event];
+  }
+});
 Object.freeze(scheduleData);
 
 const Schedule: FunctionComponent<{}> = () => {
@@ -98,7 +114,7 @@ const Schedule: FunctionComponent<{}> = () => {
         <h1 className="section-title">Schedule</h1>
         <div className={styles.wrapper}>
           <div className={styles.dates} role="tablist">
-            {scheduleData.map((day, index) => (
+            {Object.keys(scheduleData).map((day, index) => (
               <div
                 key={index}
                 className={`${styles.categoryBubble} ${
@@ -112,11 +128,11 @@ const Schedule: FunctionComponent<{}> = () => {
                 aria-controls={`schedule-day-${index}`}
                 aria-selected={selectedDayIndex === index}
               >
-                {day.date}
+                {day}
               </div>
             ))}
           </div>
-          {scheduleData.map((day, index) => (
+          {Object.values(scheduleData).map((event, index) => (
             <ul
               role="tabpanel"
               className={styles.scheduleArea}
@@ -124,10 +140,17 @@ const Schedule: FunctionComponent<{}> = () => {
               id={`schedule-day-${index}`}
               hidden={index !== selectedDayIndex}
               aria-hidden={index !== selectedDayIndex}
+              key={index}
             >
-              {day.scheduleEvents.map(({ time, description }, index) => (
+              {event.map(({ time, description }, index) => (
                 <li className={styles.event} key={index}>
-                  <span className={styles.time}>{time}</span>
+                  <span className={styles.time}>
+                    {time.toLocaleTimeString([], {
+                      hour: "numeric",
+                      hour12: true,
+                      minute: "numeric",
+                    })}
+                  </span>
                   <span>{description}</span>
                 </li>
               ))}
