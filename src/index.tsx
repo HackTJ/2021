@@ -8,6 +8,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import openGraphImage from "./images/opengraph.png";
 import twitterImage from "./images/twitter.png";
+import preval from "preval.macro";
 
 // Redirect to /2021:
 // window.location.href = "https://hacktj.org/2021";
@@ -23,6 +24,11 @@ const app = (
          */}
         <meta property="og:image" content={openGraphImage} />
         <meta property="twitter:image" content={twitterImage} />
+
+        <meta
+          http-equiv="last-modified"
+          content={preval`module.exports = new Date().toLocaleString();`}
+        />
       </Helmet>
       <App />
     </HelmetProvider>

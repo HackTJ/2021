@@ -1501,12 +1501,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
-  version: 7.12.5
-  resolution: "@babel/runtime@npm:7.12.5"
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+  version: 7.12.13
+  resolution: "@babel/runtime@npm:7.12.13"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 423fb0079353db2faa0dad0cbdf0a90fbc5b511d1f77e5645d1aa0b144a144e24502bb023c12a31d7dca63b6e16ae36afa59992f0404e92e21de211051c361e3
+  checksum: 52e8ac97f5686fc0718592542b5aab4b231e52b89f432d81c5d7a03d43891b187c7cc3cf2ccc7b99a967c9d7c33afe3815dc04db6185017cb3933b6c8b1f535a
   languageName: node
   linkType: hard
 
@@ -2426,6 +2426,13 @@ __metadata:
   version: 2.1.6
   resolution: "@types/prettier@npm:2.1.6"
   checksum: c78a6406b0b0d167c3285c84ca63308028517bc772b16960d959ae0ab8947f58c33aac4ba4485ac878f114be230764f7d5582a43115727ba68e5fb59360d5f37
+  languageName: node
+  linkType: hard
+
+"@types/preval.macro@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/preval.macro@npm:3.0.0"
+  checksum: 3b961ab2d4223c71146d579b523b46e8d1c3fa6a7c1482e6e4db13cf0ae107c99c8e533012265201e961f7ba086da804017287d3edf9d1a99decaa6a96487805
   languageName: node
   linkType: hard
 
@@ -3624,7 +3631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-macros@npm:2.8.0":
+"babel-plugin-macros@npm:2.8.0, babel-plugin-macros@npm:^2.8.0":
   version: 2.8.0
   resolution: "babel-plugin-macros@npm:2.8.0"
   dependencies:
@@ -3641,6 +3648,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.1.0
   checksum: cc09e3679a50a6f4e86d7238a087625a3037663abf278cf0c9233932f8995ab960736dfee4c7427c45df68643391a38f6f193cf0e8f1a445573246927f05a4ef
+  languageName: node
+  linkType: hard
+
+"babel-plugin-preval@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "babel-plugin-preval@npm:5.0.0"
+  dependencies:
+    "@babel/runtime": ^7.9.2
+    babel-plugin-macros: ^2.8.0
+    require-from-string: ^2.0.2
+  checksum: d2b077276fa4c069975c873ad001d88506b4a7ddb04401987184556013d8909c78adab238a2df85dea28e7c232c8f8ef9d96619f4c582e00728e9e5e72c076ea
   languageName: node
   linkType: hard
 
@@ -7972,6 +7990,7 @@ fsevents@~2.1.2:
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
     "@types/node": ^14.14.25
+    "@types/preval.macro": ^3.0.0
     "@types/prop-types": ^15.7.3
     "@types/react": ^17.0.1
     "@types/react-dom": ^17.0.0
@@ -7994,6 +8013,7 @@ fsevents@~2.1.2:
     lodash: ^4.17.20
     mapbox-gl: ^2.1.0
     prettier: ^2.2.1
+    preval.macro: ^5.0.0
     prop-types: ^15.7.2
     purgecss: ^4.0.0
     react: ^17.0.1
@@ -13044,6 +13064,15 @@ fsevents@~2.1.2:
     ansi-styles: ^4.0.0
     react-is: ^17.0.1
   checksum: 5ad34fc128218485732cf0271d396158a00584708fc97bf063c1c3c000fe14da572e9a1d3d7b92d95c5e24965434656c56ed0e45804dea2435ca59a1f86f1b07
+  languageName: node
+  linkType: hard
+
+"preval.macro@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "preval.macro@npm:5.0.0"
+  dependencies:
+    babel-plugin-preval: ^5.0.0
+  checksum: 6d8a5b13cdbcf1ebc00332d557f319ca07d9c0dd85db2972f4e9006367d899440f3784f503c3ec5b92d2610938807a1d27a5a987a2e6a0811ddfd149505b0919
   languageName: node
   linkType: hard
 
