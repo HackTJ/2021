@@ -1,10 +1,13 @@
 import { StrictMode } from "react";
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import { hydrate, render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 // import reportWebVitals from "./reportWebVitals";
+
+import openGraphImage from "./images/opengraph.png";
+import twitterImage from "./images/twitter.png";
 
 // Redirect to /2021:
 // window.location.href = "https://hacktj.org/2021";
@@ -13,6 +16,14 @@ const rootElement = document.getElementById("root");
 const app = (
   <StrictMode>
     <HelmetProvider>
+      <Helmet>
+        {/*
+          openGraphImage and twitterImage are big, so we know Webpack/CRA won't
+          inline them; instead, URLs to the assets will be injected.
+         */}
+        <meta property="og:image" content={openGraphImage} />
+        <meta property="twitter:image" content={twitterImage} />
+      </Helmet>
       <App />
     </HelmetProvider>
   </StrictMode>
