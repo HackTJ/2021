@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/2021/static/css/main.45a01e8f.chunk.css",
-    "main.js": "/2021/static/js/main.81f704f3.chunk.js",
-    "main.js.map": "/2021/static/js/main.81f704f3.chunk.js.map",
+    "main.css": "/2021/static/css/main.a2283f3e.chunk.css",
+    "main.js": "/2021/static/js/main.e50d82e4.chunk.js",
+    "main.js.map": "/2021/static/js/main.e50d82e4.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.636cdd3e.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.636cdd3e.js.map",
     "static/js/2.3829c486.chunk.js": "/2021/static/js/2.3829c486.chunk.js",
     "static/js/2.3829c486.chunk.js.map": "/2021/static/js/2.3829c486.chunk.js.map",
     "index.html": "/2021/index.html",
-    "static/css/main.45a01e8f.chunk.css.map": "/2021/static/css/main.45a01e8f.chunk.css.map",
+    "static/css/main.a2283f3e.chunk.css.map": "/2021/static/css/main.a2283f3e.chunk.css.map",
     "static/js/2.3829c486.chunk.js.LICENSE.txt": "/2021/static/js/2.3829c486.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.6815652d.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.a0054322.png",
@@ -57,7 +57,7 @@
   "entrypoints": [
     "static/js/runtime-main.636cdd3e.js",
     "static/js/2.3829c486.chunk.js",
-    "static/css/main.45a01e8f.chunk.css",
-    "static/js/main.81f704f3.chunk.js"
+    "static/css/main.a2283f3e.chunk.css",
+    "static/js/main.e50d82e4.chunk.js"
   ]
 }
