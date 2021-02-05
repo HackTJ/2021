@@ -2,28 +2,68 @@
 if [ $1 == "event" ]; then
   cat package.json | yarn jqn 'u => {u.homepage = "https://hacktj.org/2021"; u.reactSnap.inlineCss = false; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json package.json
   sed 's|<Routes>|<Routes basename="/2021">|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
-  cat public/manifest.json | yarn jqn 'u => {u.start_url = "/2021"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/manifest.json
-  cat public/manifest.json | yarn jqn 'u => {u.short_name = "HackTJ 8.0"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/manifest.json
-  sed 's|<base href="/" />|<base href="/2021" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ</title>|<title>HackTJ 8.0</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:title" content="HackTJ" />|<meta property="og:title" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:site_name" content="HackTJ" />|<meta property="og:site_name" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta name="twitter:title" content="HackTJ" />|<meta name="twitter:title" content="HackTJ 8.0" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "/2021"; u.short_name = "HackTJ 8.0"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
   rm -f public/CNAME
   git remote set-url origin git@github.com:HackTJ/2021.git
+  meta_label="HackTJ 8.0"
 elif [ $1 == "homepage" ]; then
   cat package.json | yarn jqn 'u => {u.homepage = "https://hacktj.org"; u.reactSnap.inlineCss = true; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json package.json
   sed 's|<Routes basename="/2021">|<Routes>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
-  cat public/manifest.json | yarn jqn 'u => {u.start_url = "/"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/manifest.json
-  cat public/manifest.json | yarn jqn 'u => {u.short_name = "HackTJ"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/manifest.json
-  sed 's|<base href="/2021" />|<base href="/" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<title>HackTJ 8.0</title>|<title>HackTJ</title>|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:title" content="HackTJ 8.0" />|<meta property="og:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta property="og:site_name" content="HackTJ 8.0" />|<meta property="og:site_name" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
-  sed 's|<meta name="twitter:title" content="HackTJ 8.0" />|<meta name="twitter:title" content="HackTJ" />|' public/index.html > public/tmp.$$.html && mv public/tmp.$$.html public/index.html
+  cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "/"; u.short_name = "HackTJ"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
   cp CNAME.homepage public/CNAME
   git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
+  meta_label="HackTJ"
 else
   echo "Invalid argument"
   exit 128
 fi
+
+# use `$meta_label` to update the meta tags:
+yarn node - << JS
+  const fs = require("fs");
+  const htmlparser2 = require("htmlparser2");
+  const domutils = htmlparser2.DomUtils;
+
+  const dom = htmlparser2.parseDocument(
+    fs.readFileSync("public/index.html", "utf8")
+  );
+
+  const findElementByTagName = (tagName, parentElement = dom) =>
+    parentElement.children.find(
+      (element) => domutils.getName(element) === tagName
+    );
+  const htmlRootElement = findElementByTagName("html");
+  const htmlHeadElement = findElementByTagName("head", htmlRootElement);
+
+  for (const index in htmlHeadElement.children) {
+    let element = htmlHeadElement.children[index];
+    const tagName = domutils.getName(element);
+    if (tagName === "title") {
+      // element.children: Node[]
+      // element.children[0]: Text, because this is a title element
+      // element.children[0].data: string
+      element.children[0].data = "$meta_label";
+    } else if (tagName === "base") {
+      element.attribs.href = "/";
+    } else if (tagName === "meta") {
+      const metaValue =
+        domutils.getAttributeValue(element, "property") ||
+        domutils.getAttributeValue(element, "name") ||
+        "";
+      if (
+        metaValue === "title" ||
+        metaValue === "og:title" ||
+        metaValue === "twitter:title" ||
+        metaValue === "apple-mobile-web-app-title" ||
+        metaValue === "application-name"
+      ) {
+        element.attribs.content = "$meta_label";
+      }
+    }
+  }
+
+  const prettier = require("prettier");
+  const htmlOutput = domutils.getInnerHTML(dom);
+  const formattedHtmlOutput = prettier.format(htmlOutput, { parser: "html" });
+  fs.writeFile("public/index.html", formattedHtmlOutput);
+JS

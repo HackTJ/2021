@@ -1897,10 +1897,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mapbox/tiny-sdf@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@mapbox/tiny-sdf@npm:1.1.1"
-  checksum: c449b45c5d8023320476b9e2a33c16e971eda98a5b01d0ea6ef75c405afead0625e56538c26b372e810764414d6613d690e000309ec0209dba8e44b1d9d22fa6
+"@mapbox/tiny-sdf@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@mapbox/tiny-sdf@npm:1.2.2"
+  checksum: 7542688049644a892bf35e7b283990e1d9b0a9e61673ebe5272b92e1829e523d1c574244e9c4bfec8764469a6bdcaf4095a9ad004057b8b1847f3cb114c95718
   languageName: node
   linkType: hard
 
@@ -5932,6 +5932,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom-serializer@npm:^1.0.1":
+  version: 1.2.0
+  resolution: "dom-serializer@npm:1.2.0"
+  dependencies:
+    domelementtype: ^2.0.1
+    domhandler: ^4.0.0
+    entities: ^2.0.0
+  checksum: 77e3bff86555c853af8a5f87f7433bdaf47fd377ed201b74c465c08445daf3832380acfe25276e6806ffad87ea42e57d4fb992021aef83c5dfae2d352b90860b
+  languageName: node
+  linkType: hard
+
 "dom-serializer@npm:~0.1.0":
   version: 0.1.1
   resolution: "dom-serializer@npm:0.1.1"
@@ -5956,10 +5967,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domelementtype@npm:^2.0.1":
-  version: 2.0.2
-  resolution: "domelementtype@npm:2.0.2"
-  checksum: 80a6e339f77079de7d606f7032c1a060584081bc0a16f6161becf3d8e8c2ba555b4ee21843352cde4db9182adf336445324db5143f2e69b1e5b1883b9c548b58
+"domelementtype@npm:^2.0.1, domelementtype@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "domelementtype@npm:2.1.0"
+  checksum: c3e63b6c94bf74d6375e12370f612d1cd61c0d3bc21b46684d93c797b3924de2e84278b0b5cdf3dce21f64ee94c34a005994f373c0e420759ae1856f075f0f57
   languageName: node
   linkType: hard
 
@@ -5981,6 +5992,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"domhandler@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "domhandler@npm:4.0.0"
+  dependencies:
+    domelementtype: ^2.1.0
+  checksum: 22cc8e1335728a7c49434d1d12ff1563aea758c26c8ebf50fcf9e28ceb2bd0e5a15518d69abdb5db37aa7c0c347c8f68d323d12fc744a68853fb7641cbdcec89
+  languageName: node
+  linkType: hard
+
 "domutils@npm:1.5.1":
   version: 1.5.1
   resolution: "domutils@npm:1.5.1"
@@ -5998,6 +6018,17 @@ __metadata:
     dom-serializer: 0
     domelementtype: 1
   checksum: a5b2f01fb3ff626073e3c3b43fedcff34073fb059b1235ee31cd0b5690d826304f41bc3fd117f95d754a1666ac3a57d224b408d83dd4f1c4525fd5b636d8df6f
+  languageName: node
+  linkType: hard
+
+"domutils@npm:^2.4.4":
+  version: 2.4.4
+  resolution: "domutils@npm:2.4.4"
+  dependencies:
+    dom-serializer: ^1.0.1
+    domelementtype: ^2.0.1
+    domhandler: ^4.0.0
+  checksum: abee29c1aade78506fb9ccb7bd7a2720fb18a87f230a7f7f2e3438458c27dee03b8abad4f3e448ed39da86d2a573e8bc7323d8dd0f2a473f26a455c017e303ce
   languageName: node
   linkType: hard
 
@@ -7958,9 +7989,10 @@ fsevents@~2.1.2:
     eslint-plugin-react-hooks: ^4.2.0
     gh-pages: ^3.1.0
     history: ^5.0.0
+    htmlparser2: ^6.0.0
     jq.node: ^2.2.0
     lodash: ^4.17.20
-    mapbox-gl: ^2.0.1
+    mapbox-gl: ^2.1.0
     prettier: ^2.2.1
     prop-types: ^15.7.2
     purgecss: ^4.0.0
@@ -8305,6 +8337,18 @@ fsevents@~2.1.2:
     inherits: ^2.0.1
     readable-stream: ^3.1.1
   checksum: 94fa6312e6c378b1c0f1626d3f468f0b25c5dcf6689bfa61fa0002c044c4c77842b5122feb84b501b02539165917febba0ffe754046996c9e8ed77c1bb65e66c
+  languageName: node
+  linkType: hard
+
+"htmlparser2@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "htmlparser2@npm:6.0.0"
+  dependencies:
+    domelementtype: ^2.0.1
+    domhandler: ^4.0.0
+    domutils: ^2.4.4
+    entities: ^2.0.0
+  checksum: 03819682d894316d1f8d1a11c9212bdf9c8b2e7a2adc0e19262ac8105d0a4d0577caa1f40bf52ac4876961720342e9f12b86dbf2488f0a8263cf278c03129833
   languageName: node
   linkType: hard
 
@@ -10442,16 +10486,16 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"mapbox-gl@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "mapbox-gl@npm:2.0.1"
+"mapbox-gl@npm:^2.0.1, mapbox-gl@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "mapbox-gl@npm:2.1.0"
   dependencies:
     "@mapbox/geojson-rewind": ^0.5.0
     "@mapbox/geojson-types": ^1.0.2
     "@mapbox/jsonlint-lines-primitives": ^2.0.2
     "@mapbox/mapbox-gl-supported": ^2.0.0
     "@mapbox/point-geometry": ^0.1.0
-    "@mapbox/tiny-sdf": ^1.1.1
+    "@mapbox/tiny-sdf": ^1.2.2
     "@mapbox/unitbezier": ^0.0.0
     "@mapbox/vector-tile": ^1.3.1
     "@mapbox/whoots-js": ^3.1.0
@@ -10466,10 +10510,10 @@ fsevents@~2.1.2:
     potpack: ^1.0.1
     quickselect: ^2.0.0
     rw: ^1.3.3
-    supercluster: ^7.1.0
+    supercluster: ^7.1.2
     tinyqueue: ^2.0.3
     vt-pbf: ^3.1.1
-  checksum: 60ab0ff1844a590b57c84e7394439d9d7994fd9ea9758e234e998eadd85e754416de0e8e14db4a9ba5d1796e0e4f8b46f430ef0fec7f56b1d6f95124b7d0e719
+  checksum: b50d5b9043981b2a4266c879cb4980ef7f0ac56f9eb87c97a8ef244ef446739fd88fd4ce7ba337af3be42fad8540c99c9a6b77d77f8bcbbf85f81b855a50cff1
   languageName: node
   linkType: hard
 
@@ -15560,12 +15604,12 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"supercluster@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "supercluster@npm:7.1.0"
+"supercluster@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "supercluster@npm:7.1.2"
   dependencies:
     kdbush: ^3.0.0
-  checksum: 82ee4a0a35c278faf5095d82e2c16503ec1c08b9a7799e040c00c9993763630bd58e0d52ba483bbd23c0780e3dc49ca0600ca1c56c779e4c8320cc256a60cf2b
+  checksum: 4fec26a63678c924807b1f07109dbf5ea9e139ec84a63cf51a807b34df1e73af2bd08437f9524ec765558755a31e7d3b6960bbef0b8ca46b250c3c9c65f58ffc
   languageName: node
   linkType: hard
 
