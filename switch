@@ -1,28 +1,60 @@
 #!/usr/bin/env bash
 if [ $1 == "event" ]; then
-  cat package.json | yarn jqn 'u => {u.homepage = "https://hacktj.org/2021"; u.reactSnap.inlineCss = false; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json package.json
+  base_url="/2021"
+  reactSnap_inlineCss="false"
+
   sed 's|<Routes>|<Routes basename="/2021">|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
-  cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "https://hacktj.org/2021"; u.short_name = "HackTJ 8.0"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
-  rm -f public/CNAME
-  git remote set-url origin git@github.com:HackTJ/2021.git
 
   meta_label="HackTJ 8.0"
-  base_url="/2021"
+
+  rm -f public/CNAME
+  git remote set-url origin git@github.com:HackTJ/2021.git
 elif [ $1 == "homepage" ]; then
-  cat package.json | yarn jqn 'u => {u.homepage = "https://hacktj.org"; u.reactSnap.inlineCss = true; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json package.json
+  base_url="/"
+  reactSnap_inlineCss="true"
+
   sed 's|<Routes basename="/2021">|<Routes>|' src/App.tsx > src/tmp.$$.js && mv src/tmp.$$.js src/App.tsx
-  cat public/site.webmanifest | yarn jqn 'u => {u.start_url = "https://hacktj.org"; u.short_name = "HackTJ"; return u;}' --color=false > tmp.$$.json && mv tmp.$$.json public/site.webmanifest
-  cp CNAME.homepage public/CNAME
-  git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
 
   meta_label="HackTJ"
-  base_url="/"
+
+  cp CNAME.homepage public/CNAME
+  git remote set-url origin git@github.com:HackTJ/hacktj.github.io.git
 else
   echo "Invalid argument"
-  exit 128
+  exit 1
 fi
 
-# use `$meta_label` and `$base_url`:
+# use `$homepage` and `$reactSnap_inlineCss` to update package.json:
+yarn node - <<JS
+  const parseBoolean = (a) => String(a).toLowerCase() === "true"; // == and === are the same here
+
+  let packageJson = require("./package.json");
+  packageJson.homepage = "https://hacktj.org$base_url";
+  packageJson.reactSnap.inlineCss = parseBoolean("$reactSnap_inlineCss");
+
+  const fs = require("fs");
+  const prettier = require("prettier");
+  const jsonOutput = JSON.stringify(packageJson, null, 2);
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json" });
+  fs.writeFile("package.json", formattedJsonOutput);
+JS
+
+# use `$start_url` and `$meta_label` to update public/site.webmanifest:
+yarn node - <<JS
+  const fs = require("fs");
+  const readJson = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
+
+  let manifest = readJson("./public/site.webmanifest");
+  manifest.start_url = "https://hacktj.org$base_url";
+  manifest.short_name = "$meta_label";
+
+  const prettier = require("prettier");
+  const jsonOutput = JSON.stringify(manifest);
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json" });
+  fs.writeFile("public/site.webmanifest", formattedJsonOutput);
+JS
+
+# use `$meta_label` and `$base_url` to update public/index.html:
 yarn node - << JS
   const fs = require("fs");
   const htmlparser2 = require("htmlparser2");
