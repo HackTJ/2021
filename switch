@@ -34,8 +34,8 @@ yarn node - <<JS
 
   const fs = require("fs");
   const prettier = require("prettier");
-  const jsonOutput = JSON.stringify(packageJson, null, 2);
-  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json" });
+  const jsonOutput = JSON.stringify(packageJson);
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json-stringify" });
   fs.writeFile("package.json", formattedJsonOutput);
 JS
 
@@ -50,7 +50,7 @@ yarn node - <<JS
 
   const prettier = require("prettier");
   const jsonOutput = JSON.stringify(manifest);
-  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json" });
+  const formattedJsonOutput = prettier.format(jsonOutput, { parser: "json-stringify" });
   fs.writeFile("public/site.webmanifest", formattedJsonOutput);
 JS
 

@@ -7926,8 +7926,8 @@ fsevents@~2.1.2:
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.1.4
-    react-parallax-tilt: ^1.4.79
+    react-map-gl: ^6.1.5
+    react-parallax-tilt: ^1.4.81
     react-refresh: ^0.9.0
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
@@ -13360,9 +13360,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "react-map-gl@npm:6.1.4"
+"react-map-gl@npm:^6.1.5":
+  version: 6.1.5
+  resolution: "react-map-gl@npm:6.1.5"
   dependencies:
     "@babel/runtime": ^7.0.0
     "@types/geojson": ^7946.0.7
@@ -13374,17 +13374,17 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.1
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 75e425f941c4b5197f1638428dd1c7a646e5eac22dd66a430892291bea57ec31057be7b04e8469d8755a578a5301a3b0c1eba80b92bda77e6d686d3defc4f1f9
+  checksum: 3bf98866b7549dc3a25a43e18cb0401a433d2c15d547b63b785b707cf8c1df368f22e97403332a9e8fe5a01fb4a2e18c811a5c129cc1ab9e2cb8740e5f27a5d0
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.79":
-  version: 1.4.79
-  resolution: "react-parallax-tilt@npm:1.4.79"
+"react-parallax-tilt@npm:^1.4.81":
+  version: 1.4.81
+  resolution: "react-parallax-tilt@npm:1.4.81"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0
     react-dom: ^15.0.0 || ^16.0.0
-  checksum: c53057e8aca60c3d8d7a3b5f6706f8cf903fd99f742e5868a9754f69c35704576d76774887357613adc5cdf8e114a0a021fd8c805fcf6d0dfea63f85629073f8
+  checksum: d8d690733b345ce3de21b90b0eb2380a140939e087d2681a6762aaa409942e5ef526577ac915e9a94b3505149c9c6492cb19810ccafc061a9c9ac3d79eb17d76
   languageName: node
   linkType: hard
 
