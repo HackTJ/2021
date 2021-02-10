@@ -2,7 +2,7 @@
 
 [![lint](https://github.com/HackTJ/2021/workflows/lint/badge.svg?event=push)](https://github.com/HackTJ/2021/actions?query=workflow%3Alint)
 
-The website for HackTJ 8.0, held on November 21st-22nd, 2020.
+The website for HackTJ 8.0.
 
 ## Setup
 
@@ -10,44 +10,48 @@ The website for HackTJ 8.0, held on November 21st-22nd, 2020.
 
 ## Development
 
-We use ReactJS.
+We use React.
 
-### What to Change
+### Creating a New Event Website
 
-- update the color scheme in all the CSS files
-- [README](README.md)
-  - fix years/information
-- [`src/MainPage/Landing/MLHTrustBadge`](src/MainPage/Landing/MLHTrustBadge)
-  - update the badge to the correct year
-- [`src/MainPage/Landing/index.jsx`](src/MainPage/Landing/index.jsx)
-  - update the event date, venue, and URLs
-  - change "2019 Pictures" to "2020 Pictures" and update its URL
-  - update the URL of "Past Projects"
-- [`src/MainPage/RegistrationInfo/index.jsx`](src/MainPage/RegistrationInfo/index.jsx)
-  - update registration start date
-  - update admissions decisions date
-- [`src/MainPage/Schedule/index.jsx`](src/MainPage/Schedule/index.jsx)
-  - update the schedule
-- [`src/MainPage/Sponsors/index.jsx`](src/MainPage/Sponsors/index.jsx) and [`src/images/sponsors`](src/images/sponsors) and [`src/images/partners`](src/images/partners)
-  - update the sponsor logos, maintain ordering by donation amount
-- [`src/MainPage/Statistics/index.jsx`](src/MainPage/Statistics/index.jsx)
-  - update demographic data (`schoolData`, `genderData`, `ethnicityData`, and `graduationData`)
-- [`src/MainPage/Team/index.jsx`](src/MainPage/Team/index.jsx) and [`src/images/team`](src/images/team)
-  - update team member pictures and descriptions
-- [`src/MainPage/VenueMap/index.jsx`](src/MainPage/VenueMap)
-  - update the coordinates to match the venue
-- [`src/images/bigweblogo.png`](src/images/bigweblogo.png), [`src/images/bkg.png`](src/images/bkg.png), and [`src/images/logo.png`](src/images/logo.png)
-  - update branding images' colors
+```sh
+git clone git@github.com:HackTJ/2021.git --depth 1
+# TODO: removes commit authors:
+git reset $(git commit-tree HEAD^{tree} -m "Push HackTJ 8.0 website")  # squash all commits into 1
+git remote remove origin
+git remote add origin git@github.com:HackTJ/2022.git
+git push
+```
 
 ## Deployment
 
-- `yarn run start`: starts a server on [port 3000](localhost:3000) and watches files for changes, compiling them on the fly
+- `yarn upgrade-interactive`
+- `yarn dedupe`
+- `yarn run switch-event`: switch to the event repository (configures the project so that builds are for `/2021`)
+- `yarn run switch-homepage`: switch to the homepage repository (configures the project so that builds are for `/`)
+- `yarn run start`: starts a development server on [port 3000](localhost:3000) and watches files for changes, compiling them on the fly
 - `yarn run build`: compiles all files to the `build/` directory but doesn't watch for changes or start a server
-- `yarn run deploy-event`: pushes to the `gh-pages` branch of this repository and deploys the site to hacktj.org/202x
+- `yarn serve build/`: starts a static server using the files in `build/`
+- `yarn run deploy-event`: pushes to the `gh-pages` branch of this repository and deploys the site to <https://hacktj.org/2021>
 - `yarn run deploy-homepage`: pushes to the [hacktj.github.io repo](https://github.com/HackTJ/hacktj.github.io) and deploys the site to <https://hacktj.org>
 - `yarn run deploy-all`: shortcut for both `yarn run deploy-event` and `yarn run deploy-homepage`
 
-In the case that one of the endpoints (/2020 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site.
+In the case that one of the endpoints (/2021 or /) doesn't work but the other does, immediately set up a hardcoded redirect in the nonfunctional repository to redirect to the correct site.
+
+To test a production build locally:
+
+1.  `yarn run switch-homepage`
+2.  `yarn run build`
+3.  `yarn serve -s build`
+
+To deploy a change:
+
+1.  `yarn start`
+2.  make your changes; when you're done, close the development server
+3.  `git add . && git commit`
+4.  `yarn deploy-event`; make sure the deployed site looks good
+5.  `yarn deploy-homepage`; make sure the deployed site looks good
+6.  `git push`
 
 ## Notes for next year
 

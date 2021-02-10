@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const sharp = require("sharp");
+const jimp = require("jimp");
 
 const tintColor = "#269999";
 
@@ -21,13 +21,10 @@ const walkAndTint = async (rootImageDir) => {
       // await fs.rm(tintedPath); // only in Node.js v14.14.0 and later
       // await fs.unlink(tintedPath);
 
-      // TODO: dark logos maintain their darkness; instead,
-      // all logos should have similar brightness.
-      await sharp(untintedPath)
-        // .greyscale()
-        .tint(tintColor)
-        .gamma(1, 2)
-        .toFile(tintedPath, { quality: 100, lossless: true });
+      const image = await jimp.read(untintedPath);
+      image.color([{ apply: "mix", params: [tintColor, 90] }]);
+      image.write(tintedPath);
+
       // TODO: same output format as Prettier
       console.log(`tinted ${dirent.name}`);
     }
