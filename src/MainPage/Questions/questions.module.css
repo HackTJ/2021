@@ -16,13 +16,24 @@
   flex-direction: column;
 }
 
+/*
+don't use `composes` because that concatenates the class strings, which doesn't
+work in this component because we need to programatically apply classes.
+*/
+.roundBottom {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.roundTop {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 .cardContainer {
   font-size: 1rem;
   border-color: #a0aec0;
   background-color: white;
   border-width: 2px;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
   padding: 1em;
   max-width: none;
   margin-top: 0;
@@ -30,11 +41,6 @@
   flex-grow: none;
   transition: all 250ms ease-in-out;
   transition-property: margin, transform, border-radius, opacity;
-}
-
-.roundBottom {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 
 .cardContainer:hover {
@@ -78,4 +84,24 @@
 
 .email {
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .questions {
+    grid-gap: 0;
+  }
+  .column {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .column:last-child:not(.roundTop):not(.selected)
+    .cardContainer:first-child:not(.roundTop):not(.selected) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .column:first-child:not(.roundBottom):not(.selected)
+    .cardContainer:last-child:not(.roundBottom):not(.selected) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }

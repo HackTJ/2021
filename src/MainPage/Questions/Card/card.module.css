@@ -32,6 +32,6 @@
   margin-top: 1rem;
 }
 
-section.faq .wrapper .container.selected .header::after {
+.wrapper .container.selected .header::after {
   transform: translate3d(0, 0px, 0) rotate(-135deg);
 }

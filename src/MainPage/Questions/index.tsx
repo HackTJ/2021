@@ -41,12 +41,16 @@ const Questions: FunctionComponent<{}> = () => {
                 {accordionQuestions.map(
                   ({ question, answer }, questionIndex) => {
                     const dataIndex = numPreviousQuestions + questionIndex + 1;
+                    const cardRoundedBottom = selected - 1 === dataIndex;
+                    const cardSelected = selected === dataIndex;
+                    const cardRoundedTop =
+                      selected > -1 && selected + 1 === dataIndex;
                     return (
                       <div
                         className={`${styles.cardContainer} ${
-                          selected === dataIndex ? styles.selected : ""
-                        } ${
-                          selected - 1 === dataIndex ? styles.roundBottom : ""
+                          cardRoundedBottom ? styles.roundBottom : ""
+                        } ${cardSelected ? styles.selected : ""} ${
+                          cardRoundedTop ? styles.roundTop : ""
                         }`}
                         key={`question-${dataIndex}`}
                         onClick={() => {
