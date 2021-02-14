@@ -14,6 +14,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/code-frame@npm:7.12.11":
+  version: 7.12.11
+  resolution: "@babel/code-frame@npm:7.12.11"
+  dependencies:
+    "@babel/highlight": ^7.10.4
+  checksum: 033d3fb3bf911929c0d904282ee69d1197c8d8ae9c6492aaab09e530bca8c463b11c190185dfda79866556facb5bb4c8dc0b4b32b553d021987fcc28c8dd9c6c
+  languageName: node
+  linkType: hard
+
 "@babel/code-frame@npm:^7.0.0, @babel/code-frame@npm:^7.10.4, @babel/code-frame@npm:^7.12.13, @babel/code-frame@npm:^7.5.5":
   version: 7.12.13
   resolution: "@babel/code-frame@npm:7.12.13"
@@ -2815,10 +2824,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.25":
-  version: 14.14.25
-  resolution: "@types/node@npm:14.14.25"
-  checksum: 64c42730f4169e49ec378870622ef06c5d820b31340e224cc1b45bf06c8b0cfa28daa587b4ae2b8ea1f712ef049bae4d9c92925b157ba9ba7cde3b22ff552513
+"@types/node@npm:*, @types/node@npm:^14.14.27":
+  version: 14.14.27
+  resolution: "@types/node@npm:14.14.27"
+  checksum: efc78cf6e698e09925a2542bbea932dfe092408f4ce39b8f260b71df502221d76c925fd3227bc1f7427edd9cfb6f8c81c68a56b9ab690f08425e7e6e177e61e0
   languageName: node
   linkType: hard
 
@@ -2864,12 +2873,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.0":
-  version: 17.0.0
-  resolution: "@types/react-dom@npm:17.0.0"
+"@types/react-dom@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "@types/react-dom@npm:17.0.1"
   dependencies:
     "@types/react": "*"
-  checksum: 7ca9351b6c2523327cd7afe40082a37034898f65e9d86700236682efed910ba7c9cec10e9a3b829aa7b804b18791a28743ce468fcb42e9a788bfc33b84137e45
+  checksum: 695dd4bbef4fabdc726359e4031b2887b913d65fb2ff59e5a9e81f9ae20ca4dd8f2b6fe1f39fa5c1197babdb86f6b81b385f5d4438536f2ceeb5ff136102f45b
   languageName: node
   linkType: hard
 
@@ -2885,13 +2894,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.1":
-  version: 17.0.1
-  resolution: "@types/react@npm:17.0.1"
+"@types/react@npm:*, @types/react@npm:^17.0.2":
+  version: 17.0.2
+  resolution: "@types/react@npm:17.0.2"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 5b490728c5210ea20b20377dd8c69b12ba7283058788d431d8b35ff4d18d03aa3a0f0cc6fe83691c8b9707d3e7ee8e9aae4e50d3989e094c907030d045d0e4e2
+  checksum: de1cd27ce57a961379978f83676d60d88bf729337683d1d4cb22dd8f285ed4200db19f7243052dc67c80133fe6798da1497456fe6f67a5bba5f5e30ce2544bfa
   languageName: node
   linkType: hard
 
@@ -7030,11 +7039,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.11.0, eslint@npm:^7.19.0":
-  version: 7.19.0
-  resolution: "eslint@npm:7.19.0"
+"eslint@npm:^7.11.0, eslint@npm:^7.20.0":
+  version: 7.20.0
+  resolution: "eslint@npm:7.20.0"
   dependencies:
-    "@babel/code-frame": ^7.0.0
+    "@babel/code-frame": 7.12.11
     "@eslint/eslintrc": ^0.3.0
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -7046,7 +7055,7 @@ __metadata:
     eslint-utils: ^2.1.0
     eslint-visitor-keys: ^2.0.0
     espree: ^7.3.1
-    esquery: ^1.2.0
+    esquery: ^1.4.0
     esutils: ^2.0.2
     file-entry-cache: ^6.0.0
     functional-red-black-tree: ^1.0.1
@@ -7073,7 +7082,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 0461e8b2b53c9097995efe131f659e2df77deda1daf79d7673654e2cbdac90bd2a412758b0ee0db48d29bf58f4b4d99170a70e17df1345782f0c8fa511bb0734
+  checksum: 1d56cabc7e21f43b8bb6a1934f2488b27d86b018ce2246bc9b89e52931e26b306c5883f5e4ff5c6e0228e0e8673553a460e98eacc4890f9e5984002df0292123
   languageName: node
   linkType: hard
 
@@ -7098,12 +7107,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esquery@npm:^1.2.0":
-  version: 1.3.1
-  resolution: "esquery@npm:1.3.1"
+"esquery@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "esquery@npm:1.4.0"
   dependencies:
     estraverse: ^5.1.0
-  checksum: 0aac7572bc8cf4aad87f4424b3e5e80917c214d15a1da02718c4bb0e6030552b0dea700777747507d5e310cfba43ea719e6397a45050fb50b9b68c0f7de6b26a
+  checksum: 3293ecc1507a8cec8d2da8a4707275c2ccf5413e7a3c771fe41c16cee603cacd193bb7383a6e219d1f7d2449156ef575ffd66c839073d4a8058f72856a15f622
   languageName: node
   linkType: hard
 
@@ -8292,15 +8301,15 @@ fsevents@~2.1.2:
   dependencies:
     "@types/chart.js": ^2.9.30
     "@types/lodash": ^4.14.168
-    "@types/node": ^14.14.25
+    "@types/node": ^14.14.27
     "@types/preval.macro": ^3.0.0
-    "@types/react": ^17.0.1
-    "@types/react-dom": ^17.0.0
+    "@types/react": ^17.0.2
+    "@types/react-dom": ^17.0.1
     "@types/react-map-gl": ^5.2.9
     "@typescript-eslint/eslint-plugin": ^4.15.0
     "@typescript-eslint/parser": ^4.15.0
     chart.js: ^3.0.0-beta.10
-    eslint: ^7.19.0
+    eslint: ^7.20.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-flowtype: ^5.2.0
     eslint-plugin-import: ^2.22.1
@@ -8320,8 +8329,8 @@ fsevents@~2.1.2:
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.1.6
-    react-parallax-tilt: ^1.4.81
+    react-map-gl: ^6.1.7
+    react-parallax-tilt: ^1.4.82
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^4.0.2
@@ -8329,7 +8338,7 @@ fsevents@~2.1.2:
     reactstrap: ^8.9.0
     serve: ^11.3.2
     source-map-explorer: ^2.5.2
-    typescript: ^4.1.4
+    typescript: ^4.1.5
     web-vitals: ^1.1.0
   languageName: unknown
   linkType: soft
@@ -13734,9 +13743,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.1.6":
-  version: 6.1.6
-  resolution: "react-map-gl@npm:6.1.6"
+"react-map-gl@npm:^6.1.7":
+  version: 6.1.7
+  resolution: "react-map-gl@npm:6.1.7"
   dependencies:
     "@babel/runtime": ^7.0.0
     "@types/geojson": ^7946.0.7
@@ -13748,17 +13757,17 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.2
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 6d708db626594fe937483e37b2c9529d5859ae4fba80df95bf75d5b3f93ff0f086e1f70bab51cd39f5a709f600a1fa11f944a6f8d5fc8f49deb2eeee3f3379ab
+  checksum: 8bb5e5ce180842a3e3ddbd588345ec34719f72571c03e02eac0e85d8c294e12f2ab4bebc350f52d69d4d21af20f4d3acb0312d28bd4b6d3493c28983277342ff
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.81":
-  version: 1.4.81
-  resolution: "react-parallax-tilt@npm:1.4.81"
+"react-parallax-tilt@npm:^1.4.82":
+  version: 1.4.82
+  resolution: "react-parallax-tilt@npm:1.4.82"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0
     react-dom: ^15.0.0 || ^16.0.0
-  checksum: d8d690733b345ce3de21b90b0eb2380a140939e087d2681a6762aaa409942e5ef526577ac915e9a94b3505149c9c6492cb19810ccafc061a9c9ac3d79eb17d76
+  checksum: 794766acd1c6f69d977f4637f65884f0b01cf96f57fc2a1f1397b92372d43dacc6567267e4e7af929a11dc41ecf4891b162f5c14179da56010e721666d8ef8f9
   languageName: node
   linkType: hard
 
@@ -16302,23 +16311,23 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-typescript@^4.1.4:
-  version: 4.1.4
-  resolution: "typescript@npm:4.1.4"
+typescript@^4.1.5:
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2da55c253179d360bbc846436c42a5cbbffba99dfed69593450143b1c7f46fe43eab145b84a80f51d8e6d1be6dd4a6a0885e78495a42fc34c4a768595131e148
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.1.4#builtin<compat/typescript>":
-  version: 4.1.4
-  resolution: "typescript@patch:typescript@npm%3A4.1.4#builtin<compat/typescript>::version=4.1.4&hash=cc6730"
+"typescript@patch:typescript@^4.1.5#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d913f9d92f15437627d35ec24bb28740c5f550843a0442977cb61be0973aa760d618b33f4426205ccff920442ed38256b7d4b48731cfb7084ce0977c07e35404
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 

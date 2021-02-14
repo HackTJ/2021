@@ -7,7 +7,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
     "chart.js": "^3.0.0-beta.10",
-    "eslint": "^7.19.0",
+    "eslint": "^7.20.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -20,8 +20,8 @@
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-helmet-async": "^1.0.7",
-    "react-map-gl": "^6.1.6",
-    "react-parallax-tilt": "^1.4.81",
+    "react-map-gl": "^6.1.7",
+    "react-parallax-tilt": "^1.4.82",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^4.0.2",
@@ -45,8 +45,8 @@
     "switch-event": "./switch event",
     "switch-homepage": "./switch homepage",
     "predeploy": "yarn run build && NODE_DEBUG=gh-pages",
-    "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build --dotfiles -m \"Update $timestamp\"",
-    "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b main -d build --dotfiles -m \"Update $timestamp\" && yarn run switch-event",
+    "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build --dotfiles --remove '.DS_Store' -m \"Update $timestamp\"",
+    "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b main -d build --dotfiles --remove '.DS_Store' -m \"Update $timestamp\" && yarn run switch-event",
     "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
   },
   "reactSnap": {
@@ -71,10 +71,10 @@
   "devDependencies": {
     "@types/chart.js": "^2.9.30",
     "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.25",
+    "@types/node": "^14.14.27",
     "@types/preval.macro": "^3.0.0",
-    "@types/react": "^17.0.1",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
     "@types/react-map-gl": "^5.2.9",
     "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
@@ -86,7 +86,7 @@
     "react-snap": "^1.23.0",
     "serve": "^11.3.2",
     "source-map-explorer": "^2.5.2",
-    "typescript": "^4.1.4"
+    "typescript": "^4.1.5"
   },
   "repository": {
     "type": "git",

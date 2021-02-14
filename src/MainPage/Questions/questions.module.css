@@ -94,13 +94,13 @@ work in this component because we need to programatically apply classes.
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
   }
-  .column:last-child:not(.roundTop):not(.selected)
-    .cardContainer:first-child:not(.roundTop):not(.selected) {
+  .column:last-child:not(.roundTop)
+    .cardContainer:first-child:not(.roundTop, .selected) {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .column:first-child:not(.roundBottom):not(.selected)
-    .cardContainer:last-child:not(.roundBottom):not(.selected) {
+  .column:first-child:not(.roundBottom)
+    .cardContainer:last-child:not(.roundBottom, .selected) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
