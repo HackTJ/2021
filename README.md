@@ -15,7 +15,7 @@ We use React.
 ### Creating a New Event Website
 
 ```sh
-git clone git@github.com:HackTJ/2021.git --depth 1
+git clone git@github.com:HackTJ/2021.git
 # TODO: removes commit authors:
 git reset $(git commit-tree HEAD^{tree} -m "Push HackTJ 8.0 website")  # squash all commits into 1
 git remote remove origin
@@ -42,22 +42,20 @@ To test a production build locally:
 
 1.  `yarn run switch-homepage`
 2.  `yarn run build`
-3.  `yarn serve -s build`
+3.  `yarn serve build`
 
 To deploy a change:
 
-1.  `yarn start`
+1.  `yarn run start`
 2.  make your changes; when you're done, close the development server
 3.  `git add . && git commit`
-4.  `yarn deploy-event`; make sure the deployed site looks good
-5.  `yarn deploy-homepage`; make sure the deployed site looks good
+4.  `yarn run deploy-event`; make sure the deployed site looks good
+5.  `yarn run deploy-homepage`; make sure the deployed site looks good
 6.  `git push`
 
 ## Notes for next year
 
-- click "Use this template" (next to the clone or download dropdown) and name the new repository `2021`, under the HackTJ organization—that way it will be displayed on our website at <https://hacktj.org/2021> while leaving the old website up at <https://hacktj.org/2020>
-- all of the deploy commands involve running the `switch` script in this repository
-  - if you notice that this script deletes the content of either [`public/index.html`](public/index.html) or [`src/App.js`](src/App.js), immediately quit the deploy script and restore the contents with `git` and retry the `yarn` script until it works
+- create a new repository under the HackTJ organization for each event
 - the `deploy-event` script doesn't commit the source code to the repository's main branch, it only commits the built website
   - you should commit the source code to the `main` branch each time you deploy
     - before you commit to `main`, always make sure you run `yarn run switch-event`

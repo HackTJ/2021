@@ -37,7 +37,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "yarn run switch-homepage && react-scripts start",
     "build": "react-scripts build && yarn run postbuild",
-    "postbuild": "react-snap; purgecss --content build/**/*.html --css build/static/{css/*.css,js/*.js} --output build/static/css --font-face --keyframes --rejected",
+    "postbuild": "react-snap; purgecss --content build/**/*.{html,js} --css build/**/*.css --output build/static/css --font-face --keyframes --rejected",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "prettier . --write; eslint src/ --fix",
