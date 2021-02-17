@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://hacktj.org/2021",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.0",
-    "@typescript-eslint/parser": "^4.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
     "chart.js": "^3.0.0-beta.10",
     "eslint": "^7.20.0",
     "eslint-config-react-app": "^6.0.0",
@@ -20,8 +20,8 @@
     "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.1",
     "react-helmet-async": "^1.0.7",
-    "react-map-gl": "^6.1.7",
-    "react-parallax-tilt": "^1.4.82",
+    "react-map-gl": "^6.1.8",
+    "react-parallax-tilt": "^1.4.83",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "^4.0.2",
@@ -35,19 +35,15 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "yarn run switch-homepage && react-scripts start",
-    "build": "react-scripts build && yarn run postbuild",
-    "postbuild": "react-snap; purgecss --content build/**/*.{html,js} --css build/**/*.css --output build/static/css --font-face --keyframes --rejected",
+    "start": "yarn run switch homepage && react-scripts start",
+    "build:js": "react-scripts build",
+    "build:css": "purgecss --content build/**/*.{html,js} --css build/**/*.css --output build/static/css --font-face --keyframes --rejected",
+    "build": "yarn run build:js && yarn run build:css && react-snap && yarn run build:css",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "lint": "prettier . --write; eslint src/ --fix",
     "tint": "node tint-sponsor-images.js",
-    "switch-event": "./switch event",
-    "switch-homepage": "./switch homepage",
-    "predeploy": "yarn run build && NODE_DEBUG=gh-pages",
-    "deploy-event": "yarn run switch-event && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -d build --dotfiles --remove '.DS_Store' -m \"Update $timestamp\"",
-    "deploy-homepage": "yarn run switch-homepage && yarn run predeploy && timestamp=$(date -u +\"%FT%TZ\") && gh-pages -b main -d build --dotfiles --remove '.DS_Store' -m \"Update $timestamp\" && yarn run switch-event",
-    "deploy-all": "yarn run deploy-event && yarn run deploy-homepage"
+    "switch": "./switch",
+    "deploy": "./deploy"
   },
   "reactSnap": {
     "minifyCss": {
@@ -71,7 +67,7 @@
   "devDependencies": {
     "@types/chart.js": "^2.9.30",
     "@types/lodash": "^4.14.168",
-    "@types/node": "^14.14.27",
+    "@types/node": "^14.14.28",
     "@types/preval.macro": "^3.0.0",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
