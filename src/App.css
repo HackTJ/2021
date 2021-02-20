@@ -1,0 +1,10 @@
+.Content {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Footer {
+    flex-shrink: 0;
+}
