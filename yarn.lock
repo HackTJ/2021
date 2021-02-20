@@ -2824,10 +2824,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^14.14.28":
-  version: 14.14.28
-  resolution: "@types/node@npm:14.14.28"
-  checksum: e750df4d5e93c639d04100e7d54d9e416ecc649d4d7951ac1d5b82d092c556f6e7775a191995e06d6def65ae7bc25533d188fe122dc660724d119ce3ddae2cea
+"@types/node@npm:*, @types/node@npm:^14.14.31":
+  version: 14.14.31
+  resolution: "@types/node@npm:14.14.31"
+  checksum: 635dc8a0898a923621e02ca179e17baa39fdfa44f0096fcc1b7046c9b32317e74a99956a7b45ca0e8069874f51f4e7873a418239a318a4b6e7936f6510ac5992
   languageName: node
   linkType: hard
 
@@ -6872,15 +6872,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-flowtype@npm:^5.2.0":
-  version: 5.2.0
-  resolution: "eslint-plugin-flowtype@npm:5.2.0"
+"eslint-plugin-flowtype@npm:^5.2.0, eslint-plugin-flowtype@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "eslint-plugin-flowtype@npm:5.2.2"
   dependencies:
     lodash: ^4.17.15
     string-natural-compare: ^3.0.1
   peerDependencies:
     eslint: ^7.1.0
-  checksum: bf70a9bb38b60deb93b1ab14e2516709de912ea02d05ea531e8e1b3e5d56fa58ba893720081e36bffe498055de49868e7052a09468759592ed35ba253e0e40da
+  checksum: 9e44c190dcb7de120d4dc8572eb137fbc0f2080f966aee6f6ab8913708e16fd67c673bdb86dee48860c9c0e37d1cd430a6f07dc2ccfd4db7501b625334a65de2
   languageName: node
   linkType: hard
 
@@ -8301,7 +8301,7 @@ fsevents@~2.1.2:
   dependencies:
     "@types/chart.js": ^2.9.30
     "@types/lodash": ^4.14.168
-    "@types/node": ^14.14.28
+    "@types/node": ^14.14.31
     "@types/preval.macro": ^3.0.0
     "@types/react": ^17.0.2
     "@types/react-dom": ^17.0.1
@@ -8311,7 +8311,7 @@ fsevents@~2.1.2:
     chart.js: ^3.0.0-beta.10
     eslint: ^7.20.0
     eslint-config-react-app: ^6.0.0
-    eslint-plugin-flowtype: ^5.2.0
+    eslint-plugin-flowtype: ^5.2.2
     eslint-plugin-import: ^2.22.1
     eslint-plugin-jsx-a11y: ^6.4.1
     eslint-plugin-react: ^7.22.0
@@ -8330,7 +8330,7 @@ fsevents@~2.1.2:
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
     react-map-gl: ^6.1.8
-    react-parallax-tilt: ^1.4.83
+    react-parallax-tilt: ^1.4.86
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^4.0.2
@@ -13761,13 +13761,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.83":
-  version: 1.4.83
-  resolution: "react-parallax-tilt@npm:1.4.83"
+"react-parallax-tilt@npm:^1.4.86":
+  version: 1.4.86
+  resolution: "react-parallax-tilt@npm:1.4.86"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0
     react-dom: ^15.0.0 || ^16.0.0
-  checksum: bb3fd1ce30763718da6e70220a4d4d460981be612df774fb7010181a15269b749e4807321dbb3dee84e0ffa9941d082976a793affb8dbf7f6e2efb815230107e
+  checksum: d4fd61f5208663938518aa7ba3ee810477bc593bf96e977389f5f0015835b53ba1a35905383e580a892f738fe2352bbbb91d4d23821e0af2a5c4ff3986f687d0
   languageName: node
   linkType: hard
 
