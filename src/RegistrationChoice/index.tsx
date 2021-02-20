@@ -10,39 +10,34 @@ const RegistrationChoice = () => {
 
   const currentTime = new Date();
 
-  let studentRegistrationIsOpen: boolean;
-  let studentRegistrationLabel: string;
-  if (
+  const studentRegistrationIsOpen =
     config.registration.startDate <= currentTime &&
-    currentTime < config.registration.endDate
-  ) {
-    studentRegistrationIsOpen = true;
+    currentTime < config.registration.endDate;
+  let studentRegistrationLabel: string;
+  if (studentRegistrationIsOpen) {
     studentRegistrationLabel = "is open";
   } else {
-    studentRegistrationIsOpen = false;
     if (config.registration.startDate > currentTime) {
       studentRegistrationLabel = "has not opened yet";
     } else if (currentTime >= config.registration.endDate) {
       studentRegistrationLabel = "has closed";
     } else {
       // unreachable code
-      studentRegistrationLabel = "is unavailable";
+      studentRegistrationLabel = "is currently unavailable";
     }
   }
+
+  const volunteerRegistrationIsOpen =
+    config.registration.startDate < currentTime &&
+    currentTime < config.event.startDate;
+
   return (
     <>
       <a className="anchor" id="register" href="#register">
         Register
       </a>
       <section id="register">
-        <div
-          className="container"
-          style={{
-            paddingLeft: "20px",
-            paddingRight: "20px",
-            margin: "auto",
-          }}
-        >
+        <div className="container">
           {/* <div
          className="vertical-segment colored"
          style={{ left: "-15%", top: "-14%", height: "123%" }}
@@ -64,14 +59,16 @@ const RegistrationChoice = () => {
                 <span className="text">Participants</span>
               </a>
             )}
-            {(currentTime >= config.event.startDate) && <a
-              className="flatbutton long-label"
-              href="https://forms.gle/e4KZ6px1vRN24YEy5"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="text">Judges/Mentors</span>
-            </a>}
+            {volunteerRegistrationIsOpen && (
+              <a
+                className="flatbutton long-label"
+                href="https://forms.gle/e4KZ6px1vRN24YEy5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text">Judges/Mentors</span>
+              </a>
+            )}
           </div>
           <p className="large centered">
             Registration for participants {studentRegistrationLabel}!

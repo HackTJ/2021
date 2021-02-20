@@ -1,6 +1,28 @@
 import "./index.css";
 
-const RegistrationInfo = (): JSX.Element => (
+import config from "../../config";
+
+const dateFormatOptions = {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  timeZone: "America/New_York",
+};
+const dateFormat = (date: Date) =>
+  date.toLocaleDateString([], dateFormatOptions);
+
+const timeFormatOptions = {
+  hour: "numeric",
+  hour12: true,
+};
+const timeFormat = (date: Date) =>
+  date.toLocaleTimeString([], timeFormatOptions);
+const dateTimeFormat = (date: Date) =>
+  `${dateFormat(date)} at ${timeFormat(date)}`;
+const registrationStartDate = dateTimeFormat(config.registration.startDate);
+const registrationEndDate = dateTimeFormat(config.registration.endDate);
+
+const RegistrationInfo = () => (
   <>
     <a className="anchor" id="registration" href="#registration">
       Registration Info
@@ -10,38 +32,17 @@ const RegistrationInfo = (): JSX.Element => (
         {/* <div className="vertical-segment colored"></div> */}
         <h1 className="section-title">Registration Info</h1>
         <p className="large centered">
-          Registration for participants opens on September 25 at 8 p.m. and
-          closes on October 16!
+          Registration for participants opens on {registrationStartDate} and
+          closes on {registrationEndDate}.
         </p>
         <p className="large centered">
-          When you register you&apos;ll be asked for several forms. If you want
-          to be able to submit your registration quickly, fill them out in
-          advance. The required forms are the{" "}
-          <a href={`${process.env.PUBLIC_URL || ""}/forms/ecc.pdf`}>
-            Emergency Care Form
-          </a>
-          ,{" "}
+          When you register you&apos;ll be asked for the{" "}
           <a href={`${process.env.PUBLIC_URL || ""}/forms/field_trip.pdf`}>
-            Field Trip Form
+            FCPS field trip form
           </a>
-          , and the Cvent Visitor and Publicity waiver (see the links below). If
-          you are under 18 years old, fill out the{" "}
-          <a
-            href={`${
-              process.env.PUBLIC_URL || ""
-            }/forms/cvent_minor_waiver.pdf`}
-          >
-            form for minors
-          </a>
-          , and if you are over 18 years old, fill out the{" "}
-          <a
-            href={`${
-              process.env.PUBLIC_URL || ""
-            }/forms/cvent_adult_waiver.pdf`}
-          >
-            form for adults
-          </a>
-          . Remember, HackTJ is only open to current high school students!
+          . If you want to be able to submit your registration quickly, fill it
+          out in advance. Remember, HackTJ is only open to current high school
+          students in the United States!
         </p>
         <div className="register-button-block-old top">
           {/* TODO: change from <a> to <Link> */}
@@ -51,32 +52,10 @@ const RegistrationInfo = (): JSX.Element => (
           >
             Field Trip Form
           </a>
-          <a
-            className="flatbutton register-button"
-            href={`${process.env.PUBLIC_URL || ""}/forms/ecc.pdf`}
-          >
-            Emergency Care Form
-          </a>
-          {/* <a
-           className="flatbutton register-button"
-           href={
-             (process.env.PUBLIC_URL || "") + "/forms/cvent_minor_waiver.pdf"
-           }
-          >
-           Cvent Waiver (for minors)
-          </a> */}
-          <a
-            className="flatbutton register-button"
-            href={`${
-              process.env.PUBLIC_URL || ""
-            }/forms/cvent_adult_waiver.pdf`}
-          >
-            Cvent Waiver (for adults)
-          </a>
         </div>
         <p className="large centered">
           When registering you&#39;ll also have the option to upload a
-          r&eacute;sum&eacute;, which would be given to certain sponsors looking
+          r&eacute;sum&eacute;, which will be given to certain sponsors looking
           to recruit hackers. You will also have a chance to submit your
           r&eacute;sum&eacute; after you register if you are not ready to upload
           it now.
@@ -85,7 +64,7 @@ const RegistrationInfo = (): JSX.Element => (
           Please note that registering alone does not guarantee you will receive
           a ticket. Tickets decisions will be made based on a variety of factors
           including the date/time you register, so make sure to sign up quickly!
-          Tickets decisions will be sent out on March 2.
+          {/* Tickets decisions will be sent out on March 2. */}
         </p>
       </div>
     </section>
