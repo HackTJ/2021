@@ -14,21 +14,27 @@ import styles from "./App.module.css";
 const App = () => {
   const currentTime = new Date();
 
-  const registrationIsOpen = config.registration.startDate <= currentTime && currentTime < config.event.startDate;
-  return <div className={styles.content}>
-    <div>
-      <PageScrollProgress />
-      <BrowserRouter>
-        <Routes basename="/2021">
-          {registrationIsOpen && <Route path="/registration" element={<RegistrationPage />} />}
-          <Route path="/history" element={<HistoryPage />} />
-          <Route path="/" element={<MainPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
+  const registrationIsOpen =
+    config.registration.startDate <= currentTime &&
+    currentTime < config.event.startDate;
+  return (
+    <div className={styles.content}>
+      <div>
+        <PageScrollProgress />
+        <BrowserRouter>
+          <Routes basename="/2021">
+            {registrationIsOpen && (
+              <Route path="/registration" element={<RegistrationPage />} />
+            )}
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
+  );
 };
 
 export default App;
