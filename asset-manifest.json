@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.fe837ee5.chunk.css",
-    "main.js": "/2021/static/js/main.e6babb71.chunk.js",
-    "main.js.map": "/2021/static/js/main.e6babb71.chunk.js.map",
+    "main.js": "/2021/static/js/main.8c5a5138.chunk.js",
+    "main.js.map": "/2021/static/js/main.8c5a5138.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.636cdd3e.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.636cdd3e.js.map",
-    "static/js/2.10b0fbb8.chunk.js": "/2021/static/js/2.10b0fbb8.chunk.js",
-    "static/js/2.10b0fbb8.chunk.js.map": "/2021/static/js/2.10b0fbb8.chunk.js.map",
+    "static/js/2.6fbddeff.chunk.js": "/2021/static/js/2.6fbddeff.chunk.js",
+    "static/js/2.6fbddeff.chunk.js.map": "/2021/static/js/2.6fbddeff.chunk.js.map",
     "index.html": "/2021/index.html",
     "static/css/main.fe837ee5.chunk.css.map": "/2021/static/css/main.fe837ee5.chunk.css.map",
-    "static/js/2.10b0fbb8.chunk.js.LICENSE.txt": "/2021/static/js/2.10b0fbb8.chunk.js.LICENSE.txt",
+    "static/js/2.6fbddeff.chunk.js.LICENSE.txt": "/2021/static/js/2.6fbddeff.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.6815652d.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.a0054322.png",
     "static/media/index.css": "/2021/static/media/pe-icon-social.8846062f.svg",
@@ -57,8 +57,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.636cdd3e.js",
-    "static/js/2.10b0fbb8.chunk.js",
+    "static/js/2.6fbddeff.chunk.js",
     "static/css/main.fe837ee5.chunk.css",
-    "static/js/main.e6babb71.chunk.js"
+    "static/js/main.8c5a5138.chunk.js"
   ]
 }
