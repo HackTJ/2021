@@ -1,5 +1,3 @@
-import config from "./config";
-
 import PageScrollProgress from "./PageScrollProgress";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
@@ -11,32 +9,37 @@ import NotFoundPage from "./NotFoundPage";
 
 import styles from "./App.module.css";
 
-import { DateTime } from "luxon";
+// it would be nice to automagically enable the `/registration` route based
+// on the time (i.e., open 1 week before registration opens and close when
+// event starts).
 
-const App = () => {
-  const currentTime = DateTime.now();
+// if we try to do this at client-side runtime, this results in a flash/flicker
+// for the `/registration` route when showRegistrationPage is `true`. this is
+// because React Router first returns <NotFoundPage /> because of the catch-all
+// 404, and then replaces the webpage content with the contents of
+// `RegistrationPage`.
 
-  const showRegistrationPage =
-    config.registration.start.minus({ days: 7 }) <= currentTime &&
-    currentTime < config.event.start;
-  return (
-    <div className={styles.content}>
-      <div>
-        <PageScrollProgress />
-        <BrowserRouter>
-          <Routes basename="/2021">
-            {showRegistrationPage && (
-              <Route path="/registration" element={<RegistrationPage />} />
-            )}
-            <Route path="/history" element={<HistoryPage />} />
-            <Route path="/" element={<MainPage />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-      <Footer />
+// trying to do this at build-time using `preval.macro` is non-trivial and
+// we don't get the "magic" of automagically enabling/disabling the route.
+
+// as such, we need to manually enable and disable the `/registration` route
+// when needed.
+
+const App = () => (
+  <div className={styles.content}>
+    <div>
+      <PageScrollProgress />
+      <BrowserRouter>
+        <Routes basename="/2021">
+          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  );
-};
+    <Footer />
+  </div>
+);
 
 export default App;
