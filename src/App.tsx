@@ -16,8 +16,8 @@ import { DateTime } from "luxon";
 const App = () => {
   const currentTime = DateTime.now();
 
-  const registrationIsOpen =
-    config.registration.start <= currentTime &&
+  const showRegistrationPage =
+    config.registration.start.minus({ days: 7 }) <= currentTime &&
     currentTime < config.event.start;
   return (
     <div className={styles.content}>
@@ -25,7 +25,7 @@ const App = () => {
         <PageScrollProgress />
         <BrowserRouter>
           <Routes basename="/2021">
-            {registrationIsOpen && (
+            {showRegistrationPage && (
               <Route path="/registration" element={<RegistrationPage />} />
             )}
             <Route path="/history" element={<HistoryPage />} />
