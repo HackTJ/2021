@@ -12,12 +12,13 @@ import Team from "./Team";
 
 import config from "../config";
 
-const MainPage = () => {
-  const today = new Date();
-  const oneWeekAfter = new Date(today.getTime());
-  oneWeekAfter.setDate(today.getDate() + 14);
+import { DateTime } from "luxon";
 
-  const showRegistrationInfo = oneWeekAfter >= config.registration.startDate;
+const MainPage = () => {
+  const today = DateTime.now();
+  const oneWeekAfter = today.plus({ days: 7 });
+
+  const showRegistrationInfo = oneWeekAfter >= config.registration.start;
   return (
     <>
       <Landing />

@@ -1,13 +1,50 @@
-// dates are constructed via (year, month, day), where month is 0-indexed
+import { DateTime, Interval } from "luxon";
+
 const globals = {
-  registration: {
-    startDate: new Date(2021, 1, 22, 20), // 8pm
-    endDate: new Date(2021, 2, 19, 20), // 8pm
-  },
-  event: {
-    startDate: new Date(2021, 3, 10),
-    endDate: new Date(2021, 3, 11),
-  },
+  registration: Interval.fromDateTimes(
+    DateTime.fromObject({
+      year: 2021,
+      month: 2,
+      day: 22,
+      hour: 20,
+      minute: 0,
+      second: 0,
+      millisecond: 0,
+      zone: "America/New_York",
+    }),
+    DateTime.fromObject({
+      year: 2021,
+      month: 3,
+      day: 19,
+      hour: 20,
+      minute: 0,
+      second: 0,
+      millisecond: 0,
+      zone: "America/New_York",
+    })
+  ),
+  event: Interval.fromDateTimes(
+    DateTime.fromObject({
+      year: 2021,
+      month: 4,
+      day: 10,
+      hour: 0,
+      minute: 0,
+      second: 0,
+      millisecond: 0,
+      zone: "America/New_York",
+    }),
+    DateTime.fromObject({
+      year: 2021,
+      month: 4,
+      day: 11,
+      hour: 0,
+      minute: 0,
+      second: 0,
+      millisecond: 0,
+      zone: "America/New_York",
+    })
+  ),
 };
 
 Object.freeze(globals);

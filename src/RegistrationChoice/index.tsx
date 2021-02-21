@@ -1,25 +1,23 @@
 import "./index.css";
 import config from "../config";
 
+import { DateTime, Interval } from "luxon";
+
 const RegistrationChoice = () => {
   // TODO: not real-time; to update the page, the user must refresh.
   // this can easily be solved using a state variable and an effect to create
   // an interval timer, but this will decrease performance.
 
-  // TODO: time zones...
+  const currentTime = DateTime.now();
 
-  const currentTime = new Date();
-
-  const studentRegistrationIsOpen =
-    config.registration.startDate <= currentTime &&
-    currentTime < config.registration.endDate;
+  const studentRegistrationIsOpen = config.registration.contains(currentTime);
   let studentRegistrationLabel: string;
   if (studentRegistrationIsOpen) {
     studentRegistrationLabel = "is open";
   } else {
-    if (config.registration.startDate > currentTime) {
+    if (config.registration.start > currentTime) {
       studentRegistrationLabel = "has not opened yet";
-    } else if (currentTime >= config.registration.endDate) {
+    } else if (currentTime >= config.registration.end) {
       studentRegistrationLabel = "has closed";
     } else {
       // unreachable code
@@ -27,9 +25,13 @@ const RegistrationChoice = () => {
     }
   }
 
-  const volunteerRegistrationIsOpen =
-    config.registration.startDate < currentTime &&
-    currentTime < config.event.startDate;
+  const volunteerRegistrationInterval = Interval.fromDateTimes(
+    config.registration.start,
+    config.event.start
+  );
+  const volunteerRegistrationIsOpen = volunteerRegistrationInterval.contains(
+    currentTime
+  );
 
   return (
     <>

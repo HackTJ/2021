@@ -1,91 +1,84 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
+import { DateTime } from "luxon";
 
 import config from "../../config";
 
 import styles from "./schedule.module.css";
 
-const dateWithTime = (date: Date, time: string) => {
-  let newDate = new Date(date.getTime());
-  const parsedTime = time.match(/(\d+)(?::(\d\d))?\s*(p?)/i) || ["0", "00", ""];
-  newDate.setHours(parseInt(parsedTime[1], 10) + (parsedTime[3] ? 12 : 0));
-  newDate.setMinutes(parseInt(parsedTime[2], 10) || 0);
-  return newDate;
-};
-
 interface ScheduleEvent {
-  time: Date;
+  time: DateTime;
   description: string;
 }
 
 const scheduleEvents: ScheduleEvent[] = [
   {
-    time: dateWithTime(config.event.startDate, "10:00 a.m."),
+    time: config.event.start.set({ hour: 10 }), // 10:00 a.m.
     description: "Opening Ceremony",
   },
   {
-    time: dateWithTime(config.event.startDate, "11:00 a.m."),
+    time: config.event.start.set({ hour: 11 }), // 11:00 a.m.
     description: "Hacking Begins",
   },
   {
-    time: dateWithTime(config.event.startDate, "2:00 p.m."),
+    time: config.event.start.set({ hour: 14 }), // 2:00 p.m.
     description: "Workshops Begin",
   },
   {
-    time: dateWithTime(config.event.startDate, "2:30 p.m."),
+    time: config.event.start.set({ hour: 14, minute: 30 }), // 2:30 p.m.
     description: "TypeRacer Tournament",
   },
   {
-    time: dateWithTime(config.event.startDate, "4:30 p.m."),
+    time: config.event.start.set({ hour: 16, minute: 30 }), // 4:40 p.m.
     description: "Among Us",
   },
   {
-    time: dateWithTime(config.event.startDate, "8:00 p.m."),
-    description: "MLH's Bob Ross with MS Paint",
-  },
-  {
-    time: dateWithTime(config.event.startDate, "7:00 p.m."),
+    time: config.event.start.set({ hour: 19 }), // 7:00 p.m.
     description: "Dinner",
   },
   {
-    time: dateWithTime(config.event.startDate, "9:00 p.m."),
+    time: config.event.start.set({ hour: 20 }), // 8:00 p.m.
+    description: "MLH's Bob Ross with MS Paint",
+  },
+  {
+    time: config.event.start.set({ hour: 21 }), // 9:00 p.m.
     description: "Women in Tech Panel",
   },
   {
-    time: dateWithTime(config.event.endDate, "1:00 p.m."),
+    time: config.event.end.set({ hour: 13 }), // 1:00 p.m.
     description: "Alumni Panel for CS x Fields in STEM",
   },
   {
-    time: dateWithTime(config.event.endDate, "4:00 p.m."),
+    time: config.event.end.set({ hour: 16 }), // 4:00 p.m.
     description: "Hacking Ends",
   },
   {
-    time: dateWithTime(config.event.endDate, "4:30 p.m."),
+    time: config.event.end.set({ hour: 15, minute: 30 }), // 4:30 p.m.
     description: "Judging Starts",
   },
   {
-    time: dateWithTime(config.event.endDate, "9:30 p.m."),
+    time: config.event.end.set({ hour: 21, minute: 30 }), // 9:30 p.m.
     description: "Closing Ceremony",
   },
   {
-    time: dateWithTime(config.event.endDate, "10:30 p.m."),
+    time: config.event.end.set({ hour: 22, minute: 30 }), // 10:30 p.m.
     description: "Hackathon Ends",
   },
-].sort((firstEl, secondEl) => firstEl.time.valueOf() - secondEl.time.valueOf());
+].sort(
+  (firstEl: ScheduleEvent, secondEl: ScheduleEvent) =>
+    firstEl.time.valueOf() - secondEl.time.valueOf()
+);
 Object.freeze(scheduleEvents);
 
 const scheduleData: {
   [day: string]: ScheduleEvent[];
 } = {};
-scheduleEvents.forEach((event) => {
-  // Date objects can't be used as indices:
-  // const date = new Date(event.time.getTime());
-  // date.setHours(0,0,0,0); // remove the time
-  const date = event.time.toLocaleDateString([], {
+scheduleEvents.forEach((event: ScheduleEvent) => {
+  // DateTime objects can't be used as indices
+  const date = event.time.toLocaleString({
     weekday: "long",
     month: "long",
-    day: "numeric",
-    timeZone: "America/New_York",
+    day: "2-digit",
   });
   if (scheduleData[date]) {
     scheduleData[date].push(event);
@@ -143,11 +136,7 @@ const Schedule: FunctionComponent<{}> = () => {
                 {event.map(({ time, description }, index) => (
                   <tr className={styles.event} key={index}>
                     <td className={styles.time}>
-                      {time.toLocaleTimeString([], {
-                        hour: "numeric",
-                        hour12: true,
-                        minute: "numeric",
-                      })}
+                      {time.toLocaleString(DateTime.TIME_SIMPLE)}
                     </td>
                     <td>{description}</td>
                   </tr>

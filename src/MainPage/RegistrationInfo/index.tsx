@@ -2,25 +2,17 @@ import "./index.css";
 
 import config from "../../config";
 
-const dateFormatOptions = {
-  weekday: "long",
-  month: "long",
-  day: "numeric",
-  timeZone: "America/New_York",
-};
-const dateFormat = (date: Date) =>
-  date.toLocaleDateString([], dateFormatOptions);
+import { DateTime } from "luxon";
 
-const timeFormatOptions = {
-  hour: "numeric",
-  hour12: true,
-};
-const timeFormat = (date: Date) =>
-  date.toLocaleTimeString([], timeFormatOptions);
-const dateTimeFormat = (date: Date) =>
+const dateFormatOptions = { weekday: "long", month: "long", day: "2-digit" };
+const dateFormat = (date: DateTime) => date.toLocaleString(dateFormatOptions);
+
+const timeFormat = (date: DateTime) =>
+  date.toLocaleString(DateTime.TIME_SIMPLE);
+const dateTimeFormat = (date: DateTime) =>
   `${dateFormat(date)} at ${timeFormat(date)}`;
-const registrationStartDate = dateTimeFormat(config.registration.startDate);
-const registrationEndDate = dateTimeFormat(config.registration.endDate);
+const registrationStartDate = dateTimeFormat(config.registration.start);
+const registrationEndDate = dateTimeFormat(config.registration.end);
 
 const RegistrationInfo = () => (
   <>

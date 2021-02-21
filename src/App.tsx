@@ -11,12 +11,14 @@ import NotFoundPage from "./NotFoundPage";
 
 import styles from "./App.module.css";
 
+import { DateTime } from "luxon";
+
 const App = () => {
-  const currentTime = new Date();
+  const currentTime = DateTime.now();
 
   const registrationIsOpen =
-    config.registration.startDate <= currentTime &&
-    currentTime < config.event.startDate;
+    config.registration.start <= currentTime &&
+    currentTime < config.event.start;
   return (
     <div className={styles.content}>
       <div>

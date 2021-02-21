@@ -2641,7 +2641,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/dom@npm:^7.28.1":
+"@testing-library/dom@npm:^7.28.1, @testing-library/dom@npm:^7.29.6":
   version: 7.29.6
   resolution: "@testing-library/dom@npm:7.29.6"
   dependencies:
@@ -2683,6 +2683,17 @@ __metadata:
     react: "*"
     react-dom: "*"
   checksum: 1389b4eb110ad32ac328634846fd92570979c0cb739a3ee99eeb2278860a1910a81126612457379fc306dbd6417b4b5ff1ddd88ede3d8ebb1da3972e70877e83
+  languageName: node
+  linkType: hard
+
+"@testing-library/user-event@npm:^12.7.1":
+  version: 12.7.1
+  resolution: "@testing-library/user-event@npm:12.7.1"
+  dependencies:
+    "@babel/runtime": ^7.12.5
+  peerDependencies:
+    "@testing-library/dom": ">=7.21.4"
+  checksum: 8dd17c7e50e7f5276619140313eec31fc4d10cad553c921a01c8ff0f974cc4882fcf7a9c8e8ca1306084632e083203226932364f6a8b12d4a963a13c4657748a
   languageName: node
   linkType: hard
 
@@ -2867,6 +2878,13 @@ __metadata:
   version: 4.14.168
   resolution: "@types/lodash@npm:4.14.168"
   checksum: 9a4e25f89fc035b9f0388f1f7be85e5eff49f9e6db0d93432c9a89fce0916f8a89db4e8290415f7ea02de6b00d3573826378dcb655b7b2d20530a6e8d6dd6fd0
+  languageName: node
+  linkType: hard
+
+"@types/luxon@npm:^1.26.0":
+  version: 1.26.0
+  resolution: "@types/luxon@npm:1.26.0"
+  checksum: e03965e909590344a01b10c0e5265cc90d65ec63d530f59cad72d8a65a752d9a3af45629eeec82ad27f70a36ff15337bbf02995cc80d9ba39677bef7219c2a0d
   languageName: node
   linkType: hard
 
@@ -8405,11 +8423,14 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "hacktj-2021@workspace:."
   dependencies:
+    "@testing-library/dom": ^7.29.6
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
+    "@testing-library/user-event": ^12.7.1
     "@types/chart.js": ^2.9.30
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
+    "@types/luxon": ^1.26.0
     "@types/node": ^14.14.31
     "@types/preval.macro": ^3.0.0
     "@types/react": ^17.0.2
@@ -8430,15 +8451,16 @@ fsevents@~2.1.2:
     htmlparser2: ^6.0.0
     jimp: ^0.16.1
     lodash: ^4.17.21
+    luxon: ^1.26.0
     mapbox-gl: ^2.1.1
     prettier: ^2.2.1
     preval.macro: ^5.0.0
-    purgecss: ^4.0.0
+    purgecss: ^4.0.2
     react: ^17.0.1
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
-    react-map-gl: ^6.1.8
+    react-map-gl: ^6.1.9
     react-parallax-tilt: ^1.4.87
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
@@ -10800,6 +10822,13 @@ fsevents@~2.1.2:
   dependencies:
     yallist: ^4.0.0
   checksum: b8b78353d2391c0f135cdc245c4744ad41c2efb1a6d98f31bc57a2cf48ebf02de96e4876657c3026673576bf1f1f61fc3fdd77ab00ad1ead737537bf17d8019d
+  languageName: node
+  linkType: hard
+
+"luxon@npm:^1.26.0":
+  version: 1.26.0
+  resolution: "luxon@npm:1.26.0"
+  checksum: e12bb8bfdd69707f0f3e57b1b2ff39042c67904bdc437602064519f3eb87d3267497bc56cc0b7611faa40e22019991440a8e8e179d4c6a0440e9f226571fce46
   languageName: node
   linkType: hard
 
@@ -13591,9 +13620,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"purgecss@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "purgecss@npm:4.0.0"
+"purgecss@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "purgecss@npm:4.0.2"
   dependencies:
     commander: ^6.0.0
     glob: ^7.0.0
@@ -13601,7 +13630,7 @@ fsevents@~2.1.2:
     postcss-selector-parser: ^6.0.2
   bin:
     purgecss: bin/purgecss.js
-  checksum: 4eb4439ef236487ab436efc4716a29b8494fe388abba9a8e40a0c7af8597b56726a9e521a3df1bd4a31511b3b6bb264dc0289395b310d1991e4702a53740aa33
+  checksum: c09f20c5518a6a6edef729ea77712ca145bac3ebc709047ac8c33dd2cd344490e82d36fd7c1ada6e65fa6213d69891ad3734bfe4ce9f3e5b93590f4e2071dcab
   languageName: node
   linkType: hard
 
@@ -13868,9 +13897,9 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-map-gl@npm:^6.1.8":
-  version: 6.1.8
-  resolution: "react-map-gl@npm:6.1.8"
+"react-map-gl@npm:^6.1.9":
+  version: 6.1.9
+  resolution: "react-map-gl@npm:6.1.9"
   dependencies:
     "@babel/runtime": ^7.0.0
     "@types/geojson": ^7946.0.7
@@ -13882,7 +13911,7 @@ fsevents@~2.1.2:
     viewport-mercator-project: ^6.2.3 || ^7.0.2
   peerDependencies:
     react: ">=16.3.0"
-  checksum: 06acaf8bce3ae283f7ddd71998c539c44377913b17cd17a67c7dc1e49e55fa7fac0e80e5063091716a673f96f35e03a0466d8bce12708611e9c40dd6027502b1
+  checksum: a3c888b1ba28bd8342883d3b2a9629b99626e0eb2160cf52a7748b226a7246b32e47bc9a472304737b2043a08ecb311f8c978ea3e9f20887c22d17b0aac500b2
   languageName: node
   linkType: hard
 
