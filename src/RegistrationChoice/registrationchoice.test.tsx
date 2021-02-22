@@ -1,38 +1,30 @@
 import { render, screen } from "@testing-library/react";
+import { DateTime, Interval } from "luxon";
 import RegistationChoice from "./index";
 import config from "../config";
 
-const today = new Date();
+const now = DateTime.now();
 
-const oneDayBefore = new Date(today.getTime());
-oneDayBefore.setDate(today.getDate() - 1);
-
-const twoDaysBefore = new Date(oneDayBefore.getTime());
-twoDaysBefore.setDate(oneDayBefore.getDate() - 1);
-
-const oneDayAfter = new Date(today.getTime());
-oneDayAfter.setDate(today.getDate() + 1);
-
-const twoDaysAfter = new Date(oneDayAfter.getTime());
-twoDaysAfter.setDate(oneDayAfter.getDate() + 1);
+const fiveMinAgo = now.minus({ minutes: 5 });
+const tenMinAgo = now.minus({ minutes: 10 });
+const fiveMinLater = now.plus({ minutes: 5 });
+const tenMinLater = now.plus({ minutes: 10 });
 
 describe("registration", () => {
   it("has not opened for anyone", () => {
     Object.defineProperty(config, "registration", {
       // registration has not opened
-      value: {
-        startDate: oneDayAfter,
-        endDate: oneDayAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        fiveMinLater.setZone("America/New_York"),
+        tenMinLater.setZone("America/New_York")
+      ),
     });
     Object.defineProperty(config, "event", {
       // event hasn't started
-      value: {
-        startDate: twoDaysAfter,
-        endDate: twoDaysAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        tenMinLater.setZone("America/New_York"),
+        tenMinLater.setZone("America/New_York")
+      ),
     });
 
     render(<RegistationChoice />);
@@ -49,19 +41,17 @@ describe("registration", () => {
   it("is open for everyone", () => {
     Object.defineProperty(config, "registration", {
       // registration has opened but not closed
-      value: {
-        startDate: oneDayBefore,
-        endDate: oneDayAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        fiveMinAgo.setZone("America/New_York"),
+        fiveMinLater.setZone("America/New_York")
+      ),
     });
     Object.defineProperty(config, "event", {
       // event hasn't started yet
-      value: {
-        startDate: twoDaysAfter,
-        endDate: twoDaysAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        tenMinLater.setZone("America/New_York"),
+        tenMinLater.setZone("America/New_York")
+      ),
     });
 
     render(<RegistationChoice />);
@@ -78,19 +68,17 @@ describe("registration", () => {
   it("has closed for students and is open for volunteers", () => {
     Object.defineProperty(config, "registration", {
       // registration for students has opened and closed
-      value: {
-        startDate: twoDaysBefore,
-        endDate: oneDayBefore,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        tenMinAgo.setZone("America/New_York"),
+        fiveMinAgo.setZone("America/New_York")
+      ),
     });
     Object.defineProperty(config, "event", {
       // event hasn't started yet
-      value: {
-        startDate: oneDayAfter,
-        endDate: twoDaysAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        fiveMinLater.setZone("America/New_York"),
+        tenMinLater.setZone("America/New_York")
+      ),
     });
 
     render(<RegistationChoice />);
@@ -107,19 +95,17 @@ describe("registration", () => {
   it("has closed for everyone", () => {
     Object.defineProperty(config, "registration", {
       // registration for students has opened and closed
-      value: {
-        startDate: twoDaysBefore,
-        endDate: twoDaysBefore,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        tenMinAgo.setZone("America/New_York"),
+        fiveMinAgo.setZone("America/New_York")
+      ),
     });
     Object.defineProperty(config, "event", {
       // event has started but not ended
-      value: {
-        startDate: oneDayBefore,
-        endDate: oneDayAfter,
-      },
-      writable: true,
+      value: Interval.fromDateTimes(
+        fiveMinAgo.setZone("America/New_York"),
+        fiveMinLater.setZone("America/New_York")
+      ),
     });
 
     render(<RegistationChoice />);

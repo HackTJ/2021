@@ -17,7 +17,9 @@ import styles from "./App.module.css";
 // for the `/registration` route when showRegistrationPage is `true`. this is
 // because React Router first returns <NotFoundPage /> because of the catch-all
 // 404, and then replaces the webpage content with the contents of
-// `RegistrationPage`.
+// `RegistrationPage`. pre-rendering via react-snap also adds complications
+// when using this method because react-snap may not detect the /registration
+// route at build-time.
 
 // trying to do this at build-time using `preval.macro` is non-trivial and
 // we don't get the "magic" of automagically enabling/disabling the route.

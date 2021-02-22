@@ -2686,14 +2686,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.7.1":
-  version: 12.7.1
-  resolution: "@testing-library/user-event@npm:12.7.1"
+"@testing-library/user-event@npm:^12.7.2":
+  version: 12.7.2
+  resolution: "@testing-library/user-event@npm:12.7.2"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 8dd17c7e50e7f5276619140313eec31fc4d10cad553c921a01c8ff0f974cc4882fcf7a9c8e8ca1306084632e083203226932364f6a8b12d4a963a13c4657748a
+  checksum: 703daa08bc47201adca46cac6974f867e3e50d6c5b73644ab235245f7e6c3c2e8d30f9fa8a6bd063a38f36e9f4404bc9cc0f85ef23734ab95b541d1ac3be11f3
   languageName: node
   linkType: hard
 
@@ -8426,7 +8426,7 @@ fsevents@~2.1.2:
     "@testing-library/dom": ^7.29.6
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^11.2.5
-    "@testing-library/user-event": ^12.7.1
+    "@testing-library/user-event": ^12.7.2
     "@types/chart.js": ^2.9.30
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
@@ -8461,7 +8461,7 @@ fsevents@~2.1.2:
     react-dom: ^17.0.1
     react-helmet-async: ^1.0.7
     react-map-gl: ^6.1.9
-    react-parallax-tilt: ^1.4.87
+    react-parallax-tilt: ^1.4.88
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^4.0.2
@@ -13915,13 +13915,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.87":
-  version: 1.4.87
-  resolution: "react-parallax-tilt@npm:1.4.87"
+"react-parallax-tilt@npm:^1.4.88":
+  version: 1.4.88
+  resolution: "react-parallax-tilt@npm:1.4.88"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0
     react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: c21df82e77704dcef3ae247fc773b1b8af90263a4724eba0135a6278afa0697455a9e2ff3270d6c7fbc794e6f83813910ad28f5c50b6b7c20715d78f4ceb7ee6
+  checksum: 29a44bf10457afc9564658dc85086fb9de707c6d10b03904b56521631c38cde7a3db124f1ad222d6c2c41619f45869ef0b6f01a9d5ee74c7b269abdbb04d07ad
   languageName: node
   linkType: hard
 
