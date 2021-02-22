@@ -1,10 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# typescript (compiled to javascript)
-src/**/*.js
-!src/serviceWorker.js
-!src/index.js
-
 # FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 report.*.json
 
