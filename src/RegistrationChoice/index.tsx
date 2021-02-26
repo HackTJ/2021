@@ -6,7 +6,10 @@ import { DateTime, Interval } from "luxon";
 const RegistrationChoice = () => {
   // TODO: not real-time; to update the page, the user must refresh.
   // this can easily be solved using a state variable and an effect to create
-  // an interval timer, but this will decrease performance.
+  // an interval timer, but this will decrease performance. this will also
+  // make it easier for page viewers to access links before registration opens
+  // since they can override the `Date` constructor to trick the browser into
+  // thinking registration has opened.
 
   const currentTime = DateTime.now();
 

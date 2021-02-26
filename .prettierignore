@@ -1,4 +1,5 @@
 build/
 .pnp.js
+.pnp.cjs
 .yarn/
 node_modules/
