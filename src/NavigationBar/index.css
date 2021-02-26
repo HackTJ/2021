@@ -13,6 +13,7 @@
   justify-content: space-around;
   margin: 0;
   padding: 20px 0;
+  padding-right: calc(60px + 50px); /* MLHTrustBadge */
 }
 
 .nav-item {
