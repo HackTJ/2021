@@ -2,10 +2,10 @@ import PageScrollProgress from "./PageScrollProgress";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 
-import RegistrationPage from "./RegistrationPage";
-import HistoryPage from "./HistoryPage";
-import MainPage from "./MainPage";
-import NotFoundPage from "./NotFoundPage";
+import RegistrationPage from "./pages/registration";
+import HistoryPage from "./pages/history";
+import MainPage from "./pages/index";
+import NotFoundPage from "./pages/404";
 
 import styles from "./App.module.css";
 
