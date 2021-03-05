@@ -15,7 +15,7 @@ const walkAndTint = async (rootImageDir) => {
   );
 
   for await (const dirent of normalDir) {
-    if (dirent.isFile()) {
+    if (dirent.isFile() && !dirent.name.startsWith(".")) {
       const untintedPath = path.resolve(normalDir.path, dirent.name);
       const tintedPath = path.resolve(tintDir.path, dirent.name);
       // await fs.rm(tintedPath); // only in Node.js v14.14.0 and later

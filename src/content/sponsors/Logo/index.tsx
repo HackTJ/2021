@@ -11,7 +11,7 @@ type Props = {
 };
 
 const Logo = ({ url, name, logo }: Props) => {
-  const sponsorID: string = name.toLowerCase().replace(/ /g, "-");
+  const sponsorID: string = logo.replace(/\.[^/.]+$/, ""); // remove extension
 
   const [showTooltip, setShowTooltip] = useState(false);
 

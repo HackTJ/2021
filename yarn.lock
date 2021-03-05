@@ -8513,9 +8513,9 @@ fsevents@^1.2.7:
     react: ^17.0.1
     react-chartjs-2: ^2.11.1
     react-dom: ^17.0.1
-    react-helmet-async: ^1.0.7
+    react-helmet-async: ^1.0.9
     react-map-gl: ^6.1.10
-    react-parallax-tilt: ^1.4.90
+    react-parallax-tilt: ^1.4.91
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^4.0.3
@@ -13929,19 +13929,19 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-helmet-async@npm:^1.0.7":
-  version: 1.0.7
-  resolution: "react-helmet-async@npm:1.0.7"
+"react-helmet-async@npm:^1.0.9":
+  version: 1.0.9
+  resolution: "react-helmet-async@npm:1.0.9"
   dependencies:
-    "@babel/runtime": ^7.11.2
+    "@babel/runtime": ^7.12.5
     invariant: ^2.2.4
     prop-types: ^15.7.2
     react-fast-compare: ^3.2.0
     shallowequal: ^1.1.0
   peerDependencies:
-    react: ^16.6.0
-    react-dom: ^16.6.0
-  checksum: 4f42301e17bea201d1014caa526232727f3e2b09ea2acc6bade5f18b2c5c443d468332a862632faf0cd8b167fd73eb4076cf7064134763fbf6e269f8da6a085d
+    react: ^16.6.0 || ^17.0.0
+    react-dom: ^16.6.0 || ^17.0.0
+  checksum: 69d082670e7b09f2df1784d1d58f8361d7bd3f57f37f2f4155aaf4f6cace1c213bb25a4cea9e1bd4bfaeb56b1dc83f614f5f6e4713f9d2465cf3d716c0ec897b
   languageName: node
   linkType: hard
 
@@ -13984,13 +13984,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.4.90":
-  version: 1.4.90
-  resolution: "react-parallax-tilt@npm:1.4.90"
+"react-parallax-tilt@npm:^1.4.91":
+  version: 1.4.91
+  resolution: "react-parallax-tilt@npm:1.4.91"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0
     react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 1e850b543f253c264a03f47d9e9e35092a4702c0b1ef5476cc1bb568449d92b7ff3fff3e093779ab65664c7e3dc300197557065f444c359b2109ecd86d92eb6e
+  checksum: d5ff7080704316e3140d95c4327f2ef76b131ad9b9533a380b6f6a806d5f5fa3bb36e876a32d0cd455a125438ee98fd3e47e833cbcc5bd68bcafaad1874f1e9a
   languageName: node
   linkType: hard
 

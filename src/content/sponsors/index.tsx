@@ -61,9 +61,19 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "/sponsorship8.0.pdf",
-              logo: "temporary.png",
-              name: "Sponsor",
+              url: "https://phone2action.com/",
+              logo: "phone2action.png",
+              name: "Phone2Action",
+            },
+            {
+              url: "https://www.elliotttechnologies.aero/",
+              logo: "elliott.png",
+              name: "Elliott Technologies",
+            },
+            {
+              url: "https://repl.it/",
+              logo: "replit.png",
+              name: "Repl.it",
             },
           ].map((company) => (
             <Logo
@@ -80,19 +90,9 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "https://www.yext.com",
-              logo: "yext.png",
-              name: "Yext",
-            },
-            {
-              url: "https://cloudwaveinc.com/",
-              logo: "cloudwave.png",
-              name: "CloudWave",
-            },
-            {
-              url: "https://www.citadelsecurities.com/",
-              logo: "citadelsecurities.png",
-              name: "Citadel Securities",
+              url: "/sponsorship8.0.pdf",
+              logo: "temporary.png",
+              name: "Sponsor",
             },
           ].map((company) => (
             <Logo
@@ -109,54 +109,9 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "https://phone2action.com",
-              logo: "phone2action.png",
-              name: "Phone2Action",
-            },
-            {
-              url: "https://www.tensorflow.org/",
-              logo: "tensorflow.png",
-              name: "TensorFlow",
-            },
-            {
-              url: "https://www.wolfram.com",
-              logo: "wolfram.png",
-              name: "Wolfram",
-            },
-            {
-              url: "https://www.collinsaerospace.com",
-              logo: "collinsaerospace.png",
-              name: "Collins Aerospace",
-            },
-            {
-              url: "https://www.alertfive.io",
-              logo: "alertfive.png",
-              name: "Alert Five",
-            },
-            {
-              url: "http://razorx2.com",
-              logo: "razorx2.png",
-              name: "RazorX2",
-            },
-            {
-              url: "https://www.verizonmedia.com/",
-              logo: "verizonmedia.png",
-              name: "Verizon Media",
-            },
-            {
-              url: "https://basecamp.com/",
-              logo: "basecamp.png",
-              name: "Basecamp",
-            },
-            {
-              url: "https://www.primamedicine.com",
-              logo: "primamedicine.png",
-              name: "Prima Medicine",
-            },
-            {
-              url: "https://www.digitalocean.com",
-              logo: "digitalocean.png",
-              name: "DigitalOcean",
+              url: "https://www.cvent.com",
+              logo: "cvent.png",
+              name: "Cvent",
             },
           ].map((company) => (
             <Logo
@@ -173,34 +128,9 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "https://www.thinkfun.com",
-              logo: "thinkfun.png",
-              name: "ThinkFun",
-            },
-            {
-              url: "http://spontit.io",
-              logo: "spontit.png",
-              name: "Spontit",
-            },
-            {
-              url: "https://ultrapress.com",
-              logo: "ultrapress.png",
-              name: "UltraPress",
-            },
-            {
-              url: "https://www.usehawkeye.com",
-              logo: "hawkeye.png",
-              name: "Hawkeye",
-            },
-            {
-              url: "https://stackoverflow.com",
-              logo: "stackoverflow.png",
-              name: "StackOverflow",
-            },
-            {
-              url: "http://hackp.ac/mlh-stickermule-hackathons",
-              logo: "stickermule.png",
-              name: "Sticker Mule",
+              url: "https://www.echoar.xyz/",
+              logo: "echoar.png",
+              name: "EchoAR",
             },
           ].map((company) => (
             <Logo
@@ -223,14 +153,14 @@ const Sponsors = (): JSX.Element => (
               name: "Major League Hacking",
             },
             {
-              url: "https://www.cvent.com",
-              logo: "cvent.png",
-              name: "Cvent",
-            },
-            {
               url: "https://www.tjpartnershipfund.org",
               logo: "tjpartnershipfund.png",
               name: "TJ Partnership Fund",
+            },
+            {
+              url: "https://www.brandmakers.com/",
+              logo: "brandmakers.png",
+              name: "Brand Makers",
             },
           ].map((partner) => (
             <Logo

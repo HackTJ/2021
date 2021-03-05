@@ -27,6 +27,8 @@ git push
 
 - `yarn upgrade-interactive`
 - `yarn dedupe`
+- `yarn run lint`
+- `yarn run test`
 - `yarn run switch event`: switch to the event repository (configures the project so that builds are for `/2021`)
 - `yarn run switch homepage`: switch to the homepage repository (configures the project so that builds are for `/`)
 - `yarn run start`: starts a development server on [port 3000](localhost:3000) and watches files for changes, compiling them on the fly
@@ -48,10 +50,11 @@ To deploy a change:
 
 1.  `yarn run start`
 2.  make your changes; when you're done, close the development server
-3.  `git add . && git commit`
-4.  `yarn run deploy event`; make sure the deployed site looks good
-5.  `yarn run deploy homepage`; make sure the deployed site looks good
-6.  `git push`
+3.  `yarn run lint`
+4.  `git add . && git commit`
+5.  `yarn run deploy event`; make sure the deployed site looks good
+6.  `yarn run deploy homepage`; make sure the deployed site looks good
+7.  `git push`
 
 ## Notes for next year
 
