@@ -1,7 +1,8 @@
 import "./index.css";
 import config from "../../config";
 
-import { DateTime, Interval } from "luxon";
+// import dayjs from "dayjs";
+const dayjs = require("dayjs");
 
 const RegistrationChoice = () => {
   // TODO: not real-time; to update the page, the user must refresh.
@@ -11,9 +12,12 @@ const RegistrationChoice = () => {
   // since they can override the `Date` constructor to trick the browser into
   // thinking registration has opened.
 
-  const currentTime = DateTime.now();
+  const currentTime = dayjs();
 
-  const studentRegistrationIsOpen = config.registration.contains(currentTime);
+  const studentRegistrationIsOpen = currentTime.isBetween(
+    config.registration.start,
+    config.registration.end
+  );
   let studentRegistrationLabel: string;
   if (studentRegistrationIsOpen) {
     studentRegistrationLabel = "is open";
@@ -28,12 +32,9 @@ const RegistrationChoice = () => {
     }
   }
 
-  const volunteerRegistrationInterval = Interval.fromDateTimes(
+  const volunteerRegistrationIsOpen = currentTime.isBetween(
     config.registration.start,
     config.event.start
-  );
-  const volunteerRegistrationIsOpen = volunteerRegistrationInterval.contains(
-    currentTime
   );
 
   return (

@@ -4,14 +4,14 @@ import type { FunctionComponent } from "react";
 
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
-import { DateTime } from "luxon";
 
 import styles from "./landing.module.css";
 
 import { ReactComponent as Logo } from "../../images/bigweblogo.svg";
 
-const startDate = config.event.start.toLocaleString(DateTime.DATE_FULL);
-const endDate = config.event.end.toLocaleString(DateTime.DATE_FULL);
+const dateFormat = "MMMM D, YYYY";
+const startDate = config.event.start.format(dateFormat);
+const endDate = config.event.end.format(dateFormat);
 
 const Landing: FunctionComponent<{}> = () => (
   <section className={styles.hero}>

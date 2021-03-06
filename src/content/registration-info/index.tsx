@@ -2,14 +2,12 @@ import "./index.css";
 
 import config from "../../config";
 
-import { DateTime } from "luxon";
+import type { Dayjs } from "dayjs";
 
-const dateFormatOptions = { weekday: "long", month: "long", day: "2-digit" };
-const dateFormat = (date: DateTime) => date.toLocaleString(dateFormatOptions);
+const dateFormat = (date: Dayjs) => date.format("dddd, MMMM D");
 
-const timeFormat = (date: DateTime) =>
-  date.toLocaleString(DateTime.TIME_SIMPLE);
-const dateTimeFormat = (date: DateTime) =>
+const timeFormat = (date: Dayjs) => date.format("h:mm A");
+const dateTimeFormat = (date: Dayjs) =>
   `${dateFormat(date)} at ${timeFormat(date)}`;
 const registrationStartDate = dateTimeFormat(config.registration.start);
 const registrationEndDate = dateTimeFormat(config.registration.end);

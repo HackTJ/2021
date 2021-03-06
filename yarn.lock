@@ -2909,13 +2909,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^1.26.1":
-  version: 1.26.1
-  resolution: "@types/luxon@npm:1.26.1"
-  checksum: 5aac5bc7e77839fc006e28f1a4f9ca15f1708e995669e1624f3c43ebc75463290d6e57e836670c7a9560a68d4787fa818aa4f41d802664ad29a67deaedbbaef2
-  languageName: node
-  linkType: hard
-
 "@types/mapbox-gl@npm:*, @types/mapbox-gl@npm:^2.0.3":
   version: 2.1.0
   resolution: "@types/mapbox-gl@npm:2.1.0"
@@ -5011,10 +5004,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chart.js@npm:^3.0.0-beta.12":
-  version: 3.0.0-beta.12
-  resolution: "chart.js@npm:3.0.0-beta.12"
-  checksum: a85792ae32fb1f11ee4adb2aa54a0315663c5815627be6a43d751538c8916d278bbcfd67caa61f332878cbe584874d1fda99d2b77aa150cbb5073c0cd17c3198
+"chart.js@npm:^3.0.0-beta.13":
+  version: 3.0.0-beta.13
+  resolution: "chart.js@npm:3.0.0-beta.13"
+  checksum: 862f6fcd3151622d7e03cb0424334a830ed066d5c07aa0f6ab84f2770e3530a4a03799d87220943ef6867c9ad9e6db1c699cd29510a2fd902491a2cc6e6838a9
   languageName: node
   linkType: hard
 
@@ -6153,6 +6146,13 @@ __metadata:
     whatwg-mimetype: ^2.3.0
     whatwg-url: ^8.0.0
   checksum: 42239927c6a202e2d02b7f41c94ca53e3cea036898b97b8bf6120ed1b25e0dd11c48ec7aa5c84cf807c2cb9f3a637df9fb50f3ca25a52863186a4ac46254726b
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.10.4":
+  version: 1.10.4
+  resolution: "dayjs@npm:1.10.4"
+  checksum: 3b7bb2232fff808209870bc72d4b2000941a1aa45f0226e2907f9dd1dda306d4b3a1eb9058450fd2c324b01a007a37809ac6f9b525806a86902c55e2934cd5d5
   languageName: node
   linkType: hard
 
@@ -8483,7 +8483,6 @@ fsevents@^1.2.7:
     "@types/chart.js": ^2.9.31
     "@types/jest": ^26.0.20
     "@types/lodash": ^4.14.168
-    "@types/luxon": ^1.26.1
     "@types/node": ^14.14.31
     "@types/preval.macro": ^3.0.0
     "@types/react": ^17.0.2
@@ -8491,7 +8490,8 @@ fsevents@^1.2.7:
     "@types/react-map-gl": ^5.2.9
     "@typescript-eslint/eslint-plugin": ^4.16.1
     "@typescript-eslint/parser": ^4.16.1
-    chart.js: ^3.0.0-beta.12
+    chart.js: ^3.0.0-beta.13
+    dayjs: ^1.10.4
     eslint: ^7.21.0
     eslint-config-react-app: ^6.0.0
     eslint-plugin-flowtype: ^5.3.1
@@ -8505,7 +8505,6 @@ fsevents@^1.2.7:
     identity-obj-proxy: ^3.0.0
     jimp: ^0.16.1
     lodash: ^4.17.21
-    luxon: ^1.26.0
     mapbox-gl: ^2.1.1
     prettier: ^2.2.1
     preval.macro: ^5.0.0
@@ -10893,13 +10892,6 @@ fsevents@^1.2.7:
   dependencies:
     yallist: ^4.0.0
   checksum: b8b78353d2391c0f135cdc245c4744ad41c2efb1a6d98f31bc57a2cf48ebf02de96e4876657c3026673576bf1f1f61fc3fdd77ab00ad1ead737537bf17d8019d
-  languageName: node
-  linkType: hard
-
-"luxon@npm:^1.26.0":
-  version: 1.26.0
-  resolution: "luxon@npm:1.26.0"
-  checksum: e12bb8bfdd69707f0f3e57b1b2ff39042c67904bdc437602064519f3eb87d3267497bc56cc0b7611faa40e22019991440a8e8e179d4c6a0440e9f226571fce46
   languageName: node
   linkType: hard
 

@@ -12,11 +12,11 @@ import Team from "../../content/team";
 
 import config from "../../config";
 
-import { DateTime } from "luxon";
+import dayjs from "dayjs";
 
 const MainPage = () => {
-  const today = DateTime.now();
-  const oneWeekAfter = today.plus({ days: 7 });
+  const today = dayjs();
+  const oneWeekAfter = today.add(7, "day");
 
   const showRegistrationInfo = oneWeekAfter >= config.registration.start;
   return (

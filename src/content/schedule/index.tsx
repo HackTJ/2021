@@ -1,13 +1,14 @@
 import { useState } from "react";
 import type { FunctionComponent } from "react";
-import { DateTime } from "luxon";
+
+import type { Dayjs } from "dayjs";
 
 import config from "../../config";
 
 import styles from "./schedule.module.css";
 
 interface ScheduleEvent {
-  time: DateTime;
+  time: Dayjs;
   description: string;
 }
 
@@ -75,11 +76,7 @@ const scheduleData: {
 } = {};
 scheduleEvents.forEach((event: ScheduleEvent) => {
   // DateTime objects can't be used as indices
-  const date = event.time.toLocaleString({
-    weekday: "long",
-    month: "long",
-    day: "2-digit",
-  });
+  const date = event.time.format("dddd, MMMM D");
   if (scheduleData[date]) {
     scheduleData[date].push(event);
   } else {
@@ -135,9 +132,7 @@ const Schedule: FunctionComponent<{}> = () => {
               <tbody>
                 {event.map(({ time, description }, index) => (
                   <tr className={styles.event} key={index}>
-                    <td className={styles.time}>
-                      {time.toLocaleString(DateTime.TIME_SIMPLE)}
-                    </td>
+                    <td className={styles.time}>{time.format("h:mm A")}</td>
                     <td>{description}</td>
                   </tr>
                 ))}

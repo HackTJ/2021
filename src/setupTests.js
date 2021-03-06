@@ -15,11 +15,9 @@ beforeAll(() => {
   process.env.TZ = "PST";
 });
 
-// import { DateTime } from "luxon";
-//
 // describe('timezone', () => {
 //   it('should always be PST when testing', () => {
 //     expect(new Date().getTimezoneOffset()).toBe(8 * 60);
-//     expect(DateTime.now().zone.name).toBe("America/Los_Angeles");
+//     // TODO: assert that dayjs uses LA time
 //   });
 // });

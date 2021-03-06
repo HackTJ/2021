@@ -1,15 +1,13 @@
 import config from "../../config";
 
-import { DateTime } from "luxon";
+import dayjs from "dayjs";
 
-const dateFormatOptions = { weekday: "long", month: "long", day: "2-digit" };
-const dateFormat = (date: DateTime) => date.toLocaleString(dateFormatOptions);
+const dateFormat = (date: dayjs.Dayjs) => date.format("dddd, MMMM D");
 const eventStartDate = dateFormat(config.event.start);
 const eventEndDate = dateFormat(config.event.end);
 
-const timeFormat = (date: DateTime) =>
-  date.toLocaleString(DateTime.TIME_SIMPLE);
-const dateTimeFormat = (date: DateTime) =>
+const timeFormat = (date: dayjs.Dayjs) => date.format("h:mm A");
+const dateTimeFormat = (date: dayjs.Dayjs) =>
   `${dateFormat(date)} at ${timeFormat(date)}`;
 const registrationStartDate = dateTimeFormat(config.registration.start);
 const registrationEndDate = dateTimeFormat(config.registration.end);

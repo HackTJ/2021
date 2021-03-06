@@ -1,30 +1,30 @@
 import { render, screen } from "@testing-library/react";
-import { DateTime, Interval } from "luxon";
+import dayjs from "dayjs";
 import RegistationChoice from "./index";
 import config from "../../config";
 
-const now = DateTime.now();
+const now = dayjs();
 
-const fiveMinAgo = now.minus({ minutes: 5 });
-const tenMinAgo = now.minus({ minutes: 10 });
-const fiveMinLater = now.plus({ minutes: 5 });
-const tenMinLater = now.plus({ minutes: 10 });
+const fiveMinAgo = now.subtract({ minute: 5 });
+const tenMinAgo = now.subtract({ minute: 10 });
+const fiveMinLater = now.add({ minute: 5 });
+const tenMinLater = now.add({ minute: 10 });
 
 describe("registration", () => {
   it("has not opened for anyone", () => {
     Object.defineProperty(config, "registration", {
       // registration has not opened
-      value: Interval.fromDateTimes(
-        fiveMinLater.setZone("America/New_York"),
-        tenMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: fiveMinLater,
+        end: tenMinLater,
+      },
     });
     Object.defineProperty(config, "event", {
       // event hasn't started
-      value: Interval.fromDateTimes(
-        tenMinLater.setZone("America/New_York"),
-        tenMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: tenMinLater,
+        end: tenMinLater,
+      },
     });
 
     render(<RegistationChoice />);
@@ -41,17 +41,17 @@ describe("registration", () => {
   it("is open for everyone", () => {
     Object.defineProperty(config, "registration", {
       // registration has opened but not closed
-      value: Interval.fromDateTimes(
-        fiveMinAgo.setZone("America/New_York"),
-        fiveMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: fiveMinAgo,
+        end: fiveMinLater,
+      },
     });
     Object.defineProperty(config, "event", {
       // event hasn't started yet
-      value: Interval.fromDateTimes(
-        tenMinLater.setZone("America/New_York"),
-        tenMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: tenMinLater,
+        end: tenMinLater,
+      },
     });
 
     render(<RegistationChoice />);
@@ -68,17 +68,17 @@ describe("registration", () => {
   it("has closed for students and is open for volunteers", () => {
     Object.defineProperty(config, "registration", {
       // registration for students has opened and closed
-      value: Interval.fromDateTimes(
-        tenMinAgo.setZone("America/New_York"),
-        fiveMinAgo.setZone("America/New_York")
-      ),
+      value: {
+        start: tenMinAgo,
+        end: fiveMinAgo,
+      },
     });
     Object.defineProperty(config, "event", {
       // event hasn't started yet
-      value: Interval.fromDateTimes(
-        fiveMinLater.setZone("America/New_York"),
-        tenMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: fiveMinLater,
+        end: tenMinLater,
+      },
     });
 
     render(<RegistationChoice />);
@@ -95,17 +95,17 @@ describe("registration", () => {
   it("has closed for everyone", () => {
     Object.defineProperty(config, "registration", {
       // registration for students has opened and closed
-      value: Interval.fromDateTimes(
-        tenMinAgo.setZone("America/New_York"),
-        fiveMinAgo.setZone("America/New_York")
-      ),
+      value: {
+        start: tenMinAgo,
+        end: fiveMinAgo,
+      },
     });
     Object.defineProperty(config, "event", {
       // event has started but not ended
-      value: Interval.fromDateTimes(
-        fiveMinAgo.setZone("America/New_York"),
-        fiveMinLater.setZone("America/New_York")
-      ),
+      value: {
+        start: fiveMinAgo,
+        end: fiveMinLater,
+      },
     });
 
     render(<RegistationChoice />);
