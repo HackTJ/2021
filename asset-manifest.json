@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.e7e2aa9c.chunk.css",
-    "main.js": "/2021/static/js/main.5aebb39d.chunk.js",
-    "main.js.map": "/2021/static/js/main.5aebb39d.chunk.js.map",
+    "main.js": "/2021/static/js/main.662e474c.chunk.js",
+    "main.js.map": "/2021/static/js/main.662e474c.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.d01bc500.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.d01bc500.js.map",
     "static/js/2.445c4c64.chunk.js": "/2021/static/js/2.445c4c64.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/SumanthRatna.png": "/2021/static/media/SumanthRatna.c4b7353f.png",
     "static/media/TammyDing.png": "/2021/static/media/TammyDing.a3af72f8.png",
     "static/media/bigweblogo.a545926d.svg": "/2021/static/media/bigweblogo.a545926d.svg",
-    "static/media/brandmakers.png": "/2021/static/media/brandmakers.5d60d810.png",
+    "static/media/brandmakers.png": "/2021/static/media/brandmakers.e396b738.png",
     "static/media/cvent.png": "/2021/static/media/cvent.877f8ddb.png",
     "static/media/eastbanc.png": "/2021/static/media/eastbanc.cfdd80a4.png",
     "static/media/echoar.png": "/2021/static/media/echoar.aa923df9.png",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.d01bc500.js",
     "static/js/2.445c4c64.chunk.js",
     "static/css/main.e7e2aa9c.chunk.css",
-    "static/js/main.5aebb39d.chunk.js"
+    "static/js/main.662e474c.chunk.js"
   ]
 }
