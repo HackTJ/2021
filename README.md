@@ -31,7 +31,7 @@ git push
 - `yarn run test`
 - `yarn run switch event`: switch to the event repository (configures the project so that builds are for `/2021`)
 - `yarn run switch homepage`: switch to the homepage repository (configures the project so that builds are for `/`)
-- `yarn run start`: starts a development server on [port 3000](localhost:3000) and watches files for changes, compiling them on the fly
+- `yarn run start`: starts a development server on [port 8080](localhost:8080) and watches files for changes, compiling them on the fly
 - `yarn run build`: compiles all files to the `build/` directory but doesn't watch for changes or start a server
 - `yarn serve build/`: starts a static server using the files in `build/`
 - `yarn run deploy event`: pushes to the `gh-pages` branch of this repository and deploys the site to <https://hacktj.org/2021>
