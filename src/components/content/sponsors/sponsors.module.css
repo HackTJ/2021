@@ -1,0 +1,44 @@
+.tierTitle {
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+}
+
+.tierLogos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+section#sponsors p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .tierLogos img {
+    margin: 5vh 100vw;
+    max-width: 70vw;
+    height: auto;
+  }
+}
+
+.animation-container.horizontal.sponsors {
+  max-width: 70%;
+}
+
+@media only screen and (max-width: 640px) {
+  .animation-container.horizontal.sponsors {
+    display: block;
+    left: -25px;
+    width: calc(100% + 25px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .animation-container.horizontal.sponsors .animated.right {
+    width: 100%;
+  }
+}

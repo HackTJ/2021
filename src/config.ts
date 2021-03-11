@@ -1,6 +1,6 @@
 const dayjs = require("dayjs");
-const objectSupport = require("dayjs/plugin/objectSupport");
-const isBetween = require("dayjs/plugin/isBetween");
+const objectSupport = require("dayjs/plugin/objectSupport"); // import * as objectSupport from "dayjs/plugin/objectSupport";
+const isBetween = require("dayjs/plugin/isBetween"); // import * as isBetween from "dayjs/plugin/isBetween";
 dayjs.extend(objectSupport);
 dayjs.extend(isBetween);
 
