@@ -1,10 +1,8 @@
-import { h, FunctionalComponent } from "preact";
+import { h, FunctionalComponent, Fragment } from "preact";
+const dayjs = require("dayjs");
 
 import "./index.css";
 import config from "../../../config";
-
-// import dayjs from "dayjs";
-const dayjs = require("dayjs");
 
 const RegistrationChoice: FunctionalComponent = () => {
   // TODO: not real-time; to update the page, the user must refresh.
@@ -24,21 +22,22 @@ const RegistrationChoice: FunctionalComponent = () => {
   if (studentRegistrationIsOpen) {
     studentRegistrationLabel = "is open";
   } else if (config.registration.start > currentTime) {
-      studentRegistrationLabel = "has not opened yet";
-    } else if (currentTime >= config.registration.end) {
-      studentRegistrationLabel = "has closed";
-    } else {
-      // unreachable code
-      studentRegistrationLabel = "is currently unavailable";
-    }
+    studentRegistrationLabel = "has not opened yet";
+  } else if (currentTime >= config.registration.end) {
+    studentRegistrationLabel = "has closed";
+  } else {
+    // unreachable code
+    studentRegistrationLabel = "is currently unavailable";
+  }
 
   const volunteerRegistrationIsOpen = currentTime.isBetween(
     config.registration.start,
     config.event.start
   );
 
+  // use `Fragment` explicitly to fix `ReferenceError` in the test:
   return (
-    <>
+    <Fragment>
       <a className="anchor" id="register" href="#register">
         Register
       </a>
@@ -98,7 +97,7 @@ const RegistrationChoice: FunctionalComponent = () => {
           </p>
         </div>
       </section>
-    </>
+    </Fragment>
   );
 };
 

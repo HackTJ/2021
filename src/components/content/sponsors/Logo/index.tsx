@@ -1,6 +1,6 @@
 import { h, FunctionalComponent } from "preact";
 import { memo } from "preact/compat";
-import { usePopperTooltip } from 'react-popper-tooltip';
+import { usePopperTooltip } from "react-popper-tooltip";
 
 import styles from "./logo.module.css";
 
@@ -19,7 +19,7 @@ const Logo: FunctionalComponent<Props> = ({ url, name, logo }: Props) => {
     setTooltipRef,
     setTriggerRef,
     visible,
-  } = usePopperTooltip({placement: 'top'});
+  } = usePopperTooltip({ placement: "top" });
 
   return (
     <>
@@ -31,16 +31,18 @@ const Logo: FunctionalComponent<Props> = ({ url, name, logo }: Props) => {
         ref={setTriggerRef}
       >
         <img
-          className={`${styles.logo} ${styles.normal} ${visible ? styles.showLogo : styles.hideLogo
-            }`}
+          className={`${styles.logo} ${styles.normal} ${
+            visible ? styles.showLogo : styles.hideLogo
+          }`}
           src={require(`../../../../images/sponsors/normal/${logo}`).default}
           alt={name}
           loading="lazy"
           decoding="async"
         />
         <img
-          className={`${styles.logo} ${visible ? styles.hideLogo : styles.showLogo
-            }`}
+          className={`${styles.logo} ${
+            visible ? styles.hideLogo : styles.showLogo
+          }`}
           src={require(`../../../../images/sponsors/tint/${logo}`).default}
           alt={name}
           loading="lazy"

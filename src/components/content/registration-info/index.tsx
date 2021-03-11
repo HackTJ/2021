@@ -27,18 +27,13 @@ const RegistrationInfo: FunctionalComponent = () => (
         </p>
         <p className="large centered">
           When you register you&apos;ll be asked for the{" "}
-          <a href="forms/field_trip.pdf">
-            FCPS field trip form
-          </a>
-          . If you want to be able to submit your registration quickly, fill it
-          out in advance. Remember, HackTJ is only open to current high school
-          students in the United States!
+          <a href="forms/field_trip.pdf">FCPS field trip form</a>. If you want
+          to be able to submit your registration quickly, fill it out in
+          advance. Remember, HackTJ is only open to current high school students
+          in the United States!
         </p>
         <div className="register-button-block-old top">
-          <a
-            className="flatbutton register-button"
-            href="forms/field_trip.pdf"
-          >
+          <a className="flatbutton register-button" href="forms/field_trip.pdf">
             Field Trip Form
           </a>
         </div>

@@ -1,4 +1,4 @@
-import { h, FunctionalComponent } from "preact";
+import { h, FunctionalComponent, Fragment } from "preact";
 import { useState, useRef, useCallback, useEffect } from "preact/hooks";
 import { memo } from "preact/compat";
 
@@ -35,13 +35,14 @@ const Card: FunctionalComponent<Props> = ({
     updateElement();
   }, [updateElement, collapsed]);
 
+  // use `Fragment` explicitly to fix `ReferenceError` in the test:
   return (
-    <>
+    <Fragment>
       <div className={styles.header}>{question}</div>
       <div className={styles.content} ref={contentWrapperRef}>
         <div>{answer}</div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

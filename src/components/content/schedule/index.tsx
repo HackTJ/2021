@@ -1,5 +1,5 @@
-import {h, FunctionalComponent} from "preact";
-import {useState} from "preact/hooks";
+import { h, FunctionalComponent } from "preact";
+import { useState } from "preact/hooks";
 
 import type { Dayjs } from "dayjs";
 

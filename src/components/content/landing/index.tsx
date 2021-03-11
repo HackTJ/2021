@@ -44,10 +44,7 @@ const Landing: FunctionalComponent = () => (
         >
           2019 Pictures
         </a>
-        <a
-          className="button register-button mentor blackbutton"
-          href="history"
-        >
+        <a className="button register-button mentor blackbutton" href="history">
           Past Projects
         </a>
         {/* <a className="button register-button mentor" href="https://hacktj2019.devpost.com/">Devpost</a> */}

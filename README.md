@@ -10,7 +10,7 @@ The website for HackTJ 8.0.
 
 ## Development
 
-We use React.
+We use Preact.
 
 ### Creating a New Event Website
 

@@ -1,4 +1,4 @@
-import { FunctionalComponent, h } from 'preact';
+import { FunctionalComponent, h } from "preact";
 import dayjs from "dayjs";
 
 import Landing from "../../components/content/landing";

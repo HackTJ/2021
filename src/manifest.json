@@ -1,14 +1,14 @@
 {
-  "name": "HackTJ",
+  "name": "HackTJ 8.0",
   "short_name": "HackTJ 8.0",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png?v=JyAvAkJmXn",
+      "src": "/assets/icons/android-chrome-192x192.png?v=JyAvAkJmXn",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png?v=JyAvAkJmXn",
+      "src": "/assets/icons/android-chrome-512x512.png?v=JyAvAkJmXn",
       "sizes": "512x512",
       "type": "image/png"
     }

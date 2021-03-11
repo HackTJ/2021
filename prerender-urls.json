@@ -1,11 +1,11 @@
 [
-    {
-        "url": "/"
-    },
-    {
-        "url": "/history"
-    },
-    {
-        "url": "/registration"
-    }
+  {
+    "url": "/"
+  },
+  {
+    "url": "/history"
+  },
+  {
+    "url": "/registration"
+  }
 ]

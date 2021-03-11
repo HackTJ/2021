@@ -1,4 +1,4 @@
-import { h } from "preact";
+import { h, Fragment } from "preact";
 import dayjs from "dayjs";
 
 import config from "../../../config";
@@ -51,7 +51,8 @@ const data = [
   {
     question: "Is there a deadline?",
     answer: (
-      <>
+      // use `Fragment` explicitly to fix `ReferenceError` in the test:
+      <Fragment>
         <p>
           Registration for participants, judges, mentors, and volunteers opens
           on {registrationStartDate}.
@@ -65,7 +66,7 @@ const data = [
           Judges, mentors, and volunteers will be able to register until the
           start of the event.
         </p>
-      </>
+      </Fragment>
     ),
   },
   {

@@ -3,10 +3,10 @@ import NavigationBar from "../../components/navbar";
 import HistoryPageContent from "../../components/content/history";
 
 const HistoryPage: FunctionalComponent = () => (
-    <>
-        <NavigationBar />
-        <HistoryPageContent />
-    </>
+  <>
+    <NavigationBar />
+    <HistoryPageContent />
+  </>
 );
 
 export default HistoryPage;

@@ -17,7 +17,7 @@ const TeamPicture: FunctionalComponent<Props> = ({
 }: Props) => {
   const [showAbout, setShowAbout] = useState(false);
   return (
-    <li className={`${styles.wrapper} ${showAbout ? "is-open" : ""}`}>
+    <figure className={`${styles.wrapper} ${showAbout ? "is-open" : ""}`}>
       <div
         className={styles.imgParent}
         onClick={() => setShowAbout(!showAbout)}
@@ -31,21 +31,18 @@ const TeamPicture: FunctionalComponent<Props> = ({
           height="200"
           decoding="async"
         />
-        <div className={styles.imgOverlay}>
-          <div className={styles.personName}>
-            {name}
-          </div>
-        </div>
+        <span className={styles.personName}>{name}</span>
       </div>
-      <div
+      <figcaption
         className={styles.personBiography}
         style={{
-          maxHeight: showAbout ? "500px" : 0,
+          // can't use 100% here because that ruins the animation
+          maxHeight: showAbout ? "100vh" : 0,
         }}
       >
         <p>{about}</p>
-      </div>
-    </li>
+      </figcaption>
+    </figure>
   );
 };
 

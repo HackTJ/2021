@@ -1,4 +1,4 @@
-import { h, FunctionalComponent } from "preact";
+import { h, FunctionalComponent, Fragment } from "preact";
 import { useState } from "preact/hooks";
 
 import data from "./questions";
@@ -17,8 +17,9 @@ const accordionData = Array(numAccordions)
 const Questions: FunctionalComponent = () => {
   const [selected, setSelected] = useState(-1);
 
+  // use `Fragment` explicitly to fix `ReferenceError` in the test:
   return (
-    <>
+    <Fragment>
       <a className="anchor" id="faq" href="#faq">
         FAQ
       </a>
@@ -83,7 +84,7 @@ const Questions: FunctionalComponent = () => {
           .
         </p>
       </section>
-    </>
+    </Fragment>
   );
 };
 

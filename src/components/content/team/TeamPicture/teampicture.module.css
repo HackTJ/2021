@@ -20,7 +20,7 @@
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity .15s linear;
+  transition: opacity 0.15s linear;
   cursor: pointer;
   transition: color 0.5s;
 }
@@ -40,7 +40,7 @@
   word-wrap: break-word;
   line-height: 200px;
   /* TODO: use var(--theme-primary) with 50% opacity for background: */
-  background: rgba(51, 204, 204, .5);
+  background: rgba(51, 204, 204, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 1rem;
