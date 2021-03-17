@@ -113,6 +113,11 @@ const Sponsors = (): JSX.Element => (
               logo: "cvent.png",
               name: "Cvent",
             },
+            {
+              url: "https://tjptsa.com/",
+              logo: "tjptsa.png",
+              name: "TJ PTSA",
+            },
           ].map((company) => (
             <Logo
               name={company.name}

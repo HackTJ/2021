@@ -21,7 +21,7 @@ const globals = {
     end: dayjs({
       year: 2021,
       month: 2,
-      day: 19,
+      day: 26,
       hour: 20,
       minute: 0,
       second: 0,
