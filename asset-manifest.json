@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.e7e2aa9c.chunk.css",
-    "main.js": "/2021/static/js/main.228cada9.chunk.js",
-    "main.js.map": "/2021/static/js/main.228cada9.chunk.js.map",
+    "main.js": "/2021/static/js/main.b00d5670.chunk.js",
+    "main.js.map": "/2021/static/js/main.b00d5670.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.d01bc500.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.d01bc500.js.map",
-    "static/js/2.7bb3d674.chunk.js": "/2021/static/js/2.7bb3d674.chunk.js",
-    "static/js/2.7bb3d674.chunk.js.map": "/2021/static/js/2.7bb3d674.chunk.js.map",
+    "static/js/2.77363371.chunk.js": "/2021/static/js/2.77363371.chunk.js",
+    "static/js/2.77363371.chunk.js.map": "/2021/static/js/2.77363371.chunk.js.map",
     "index.html": "/2021/index.html",
     "static/css/main.e7e2aa9c.chunk.css.map": "/2021/static/css/main.e7e2aa9c.chunk.css.map",
-    "static/js/2.7bb3d674.chunk.js.LICENSE.txt": "/2021/static/js/2.7bb3d674.chunk.js.LICENSE.txt",
+    "static/js/2.77363371.chunk.js.LICENSE.txt": "/2021/static/js/2.77363371.chunk.js.LICENSE.txt",
     "static/media/AnikaKarpurapu.png": "/2021/static/media/AnikaKarpurapu.6815652d.png",
     "static/media/ArjunJagannathan.png": "/2021/static/media/ArjunJagannathan.a0054322.png",
     "static/media/index.css": "/2021/static/media/pe-icon-social.8846062f.svg",
@@ -32,20 +32,23 @@
     "static/media/cvent.png": "/2021/static/media/cvent.877f8ddb.png",
     "static/media/eastbanc.png": "/2021/static/media/eastbanc.cfdd80a4.png",
     "static/media/echoar.png": "/2021/static/media/echoar.aa923df9.png",
+    "static/media/lunchclub.png": "/2021/static/media/lunchclub.d1f71610.png",
     "static/media/mlh.png": "/2021/static/media/mlh.4062342f.png",
     "static/media/opengraph.53a7e26c.png": "/2021/static/media/opengraph.53a7e26c.png",
     "static/media/phone2action.png": "/2021/static/media/phone2action.aa678806.png",
     "static/media/replit.png": "/2021/static/media/replit.f75678aa.png",
     "static/media/temporary.png": "/2021/static/media/temporary.a2c81bdb.png",
+    "static/media/thecodex.png": "/2021/static/media/thecodex.f4345255.png",
     "static/media/landing.module.css": "/2021/static/media/tj-dome.0e890d9e.jpg",
     "static/media/tjpartnershipfund.png": "/2021/static/media/tjpartnershipfund.09607b55.png",
     "static/media/tjptsa.png": "/2021/static/media/tjptsa.fc24a280.png",
-    "static/media/twitter.2fabe172.png": "/2021/static/media/twitter.2fabe172.png"
+    "static/media/twitter.2fabe172.png": "/2021/static/media/twitter.2fabe172.png",
+    "static/media/yext.png": "/2021/static/media/yext.9e50171a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.d01bc500.js",
-    "static/js/2.7bb3d674.chunk.js",
+    "static/js/2.77363371.chunk.js",
     "static/css/main.e7e2aa9c.chunk.css",
-    "static/js/main.228cada9.chunk.js"
+    "static/js/main.b00d5670.chunk.js"
   ]
 }
