@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.e7e2aa9c.chunk.css",
-    "main.js": "/2021/static/js/main.b00d5670.chunk.js",
-    "main.js.map": "/2021/static/js/main.b00d5670.chunk.js.map",
+    "main.js": "/2021/static/js/main.bf5fced4.chunk.js",
+    "main.js.map": "/2021/static/js/main.bf5fced4.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.d01bc500.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.d01bc500.js.map",
     "static/js/2.77363371.chunk.js": "/2021/static/js/2.77363371.chunk.js",
@@ -38,7 +38,7 @@
     "static/media/phone2action.png": "/2021/static/media/phone2action.aa678806.png",
     "static/media/replit.png": "/2021/static/media/replit.f75678aa.png",
     "static/media/temporary.png": "/2021/static/media/temporary.a2c81bdb.png",
-    "static/media/thecodex.png": "/2021/static/media/thecodex.f4345255.png",
+    "static/media/thecodex.png": "/2021/static/media/thecodex.9142f872.png",
     "static/media/landing.module.css": "/2021/static/media/tj-dome.0e890d9e.jpg",
     "static/media/tjpartnershipfund.png": "/2021/static/media/tjpartnershipfund.09607b55.png",
     "static/media/tjptsa.png": "/2021/static/media/tjptsa.fc24a280.png",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.d01bc500.js",
     "static/js/2.77363371.chunk.js",
     "static/css/main.e7e2aa9c.chunk.css",
-    "static/js/main.b00d5670.chunk.js"
+    "static/js/main.bf5fced4.chunk.js"
   ]
 }
