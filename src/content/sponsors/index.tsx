@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 import "./index.css";
 
-const Sponsors = (): JSX.Element => (
+const Sponsors = () => (
   <>
     <a className="anchor" id="sponsor" href="#sponsor">
       Sponsors
@@ -66,14 +66,14 @@ const Sponsors = (): JSX.Element => (
               name: "Phone2Action",
             },
             {
-              url: "https://www.elliotttechnologies.aero/",
-              logo: "elliott.png",
-              name: "Elliott Technologies",
+              url: "https://lunchclub.com/",
+              logo: "lunchclub.png",
+              name: "Lunchclub",
             },
             {
-              url: "https://repl.it/",
+              url: "https://replit.com/",
               logo: "replit.png",
-              name: "Repl.it",
+              name: "Replit",
             },
           ].map((company) => (
             <Logo
@@ -90,9 +90,9 @@ const Sponsors = (): JSX.Element => (
         <div className="partner-container">
           {[
             {
-              url: "/sponsorship8.0.pdf",
-              logo: "temporary.png",
-              name: "Sponsor",
+              url: "https://www.yext.com/",
+              logo: "yext.png",
+              name: "Yext",
             },
           ].map((company) => (
             <Logo
@@ -137,6 +137,11 @@ const Sponsors = (): JSX.Element => (
               logo: "echoar.png",
               name: "EchoAR",
             },
+            // {
+            //   url: "https://thecodex.me/",
+            //   logo: "thecodex.png",
+            //   name: "The Codex",
+            // },
           ].map((company) => (
             <Logo
               name={company.name}
