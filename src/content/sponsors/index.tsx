@@ -137,11 +137,11 @@ const Sponsors = () => (
               logo: "echoar.png",
               name: "EchoAR",
             },
-            // {
-            //   url: "https://thecodex.me/",
-            //   logo: "thecodex.png",
-            //   name: "The Codex",
-            // },
+            {
+              url: "https://thecodex.me/",
+              logo: "thecodex.png",
+              name: "The Codex",
+            },
           ].map((company) => (
             <Logo
               name={company.name}
