@@ -71,6 +71,11 @@ const Sponsors = () => (
               name: "Lunchclub",
             },
             {
+              url: "https://www.goarmy.com/rotc/ways-to-attend.html",
+              logo: "armyrotc.png",
+              name: "Army ROTC",
+            },
+            {
               url: "https://replit.com/",
               logo: "replit.png",
               name: "Replit",
