@@ -138,6 +138,16 @@ const Sponsors = () => (
         <div className="partner-container">
           {[
             {
+              url: "https://www.inspiritai.com/",
+              logo: "inspiritai.png",
+              name: "Inspirit AI"
+            },
+            {
+              url: "https://www.hestia.academy/",
+              logo: "hestiaacademy.png",
+              name: "Hestia Academy",
+            },
+            {
               url: "https://www.echoar.xyz/",
               logo: "echoar.png",
               name: "EchoAR",
