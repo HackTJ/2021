@@ -140,7 +140,7 @@ const Sponsors = () => (
             {
               url: "https://www.inspiritai.com/",
               logo: "inspiritai.png",
-              name: "Inspirit AI"
+              name: "Inspirit AI",
             },
             {
               url: "https://www.hestia.academy/",
@@ -156,6 +156,11 @@ const Sponsors = () => (
               url: "https://thecodex.me/",
               logo: "thecodex.png",
               name: "The Codex",
+            },
+            {
+              url: "https://www.volarelabs.io/",
+              logo: "volarelabs.png",
+              name: "Volare Labs",
             },
           ].map((company) => (
             <Logo
