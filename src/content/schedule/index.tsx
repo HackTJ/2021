@@ -22,6 +22,18 @@ const scheduleEvents: ScheduleEvent[] = [
     description: "Hacking Begins",
   },
   {
+    time: config.event.start.set({ hour: 11, minutes: 15 }), // 11:15 a.m.
+    description: "Team Building",
+  },
+  {
+    time: config.event.start.set({ hour: 12 }), // 12:00 p.m.
+    description: "Check-in Form Due",
+  },
+  {
+    time: config.event.start.set({ hour: 13 }), // 1:00 p.m.
+    description: "Sponsorship Fair",
+  },
+  {
     time: config.event.start.set({ hour: 14 }), // 2:00 p.m.
     description: "Workshops Begin",
   },
@@ -30,32 +42,44 @@ const scheduleEvents: ScheduleEvent[] = [
     description: "TypeRacer Tournament",
   },
   {
-    time: config.event.start.set({ hour: 16, minute: 30 }), // 4:40 p.m.
+    time: config.event.start.set({ hour: 16, minute: 30 }), // 4:30 p.m.
     description: "Among Us",
   },
   {
-    time: config.event.start.set({ hour: 19 }), // 7:00 p.m.
-    description: "Dinner",
-  },
-  {
-    time: config.event.start.set({ hour: 20 }), // 8:00 p.m.
-    description: "MLH's Bob Ross with MS Paint",
-  },
-  {
-    time: config.event.start.set({ hour: 21 }), // 9:00 p.m.
+    time: config.event.start.set({ hour: 18 }), // 6:00 p.m.
     description: "Women in Tech Panel",
   },
   {
+    time: config.event.start.set({ hour: 20 }), // 8:00 p.m.
+    description: "MLH Event (Bob Ross MS Paint)",
+  },
+  {
+    time: config.event.start.set({ hour: 21 }), // 9:00 p.m.
+    description: "Chess Blitz Tournament",
+  },
+  {
+    time: config.event.end.set({ hour: 11 }), // 11:00 a.m.
+    description: "CSXBio Panel",
+  },
+  {
     time: config.event.end.set({ hour: 13 }), // 1:00 p.m.
-    description: "Alumni Panel for CS x Fields in STEM",
+    description: "CSXFinance Panel",
+  },
+  {
+    time: config.event.end.set({ hour: 14 }), // 2:00 p.m.
+    description: "Pictionary",
   },
   {
     time: config.event.end.set({ hour: 16 }), // 4:00 p.m.
     description: "Hacking Ends",
   },
   {
-    time: config.event.end.set({ hour: 15, minute: 30 }), // 4:30 p.m.
+    time: config.event.end.set({ hour: 16, minute: 30 }), // 4:30 p.m.
     description: "Judging Starts",
+  },
+  {
+    time: config.event.end.set({ hour: 21 }), // 9:00 p.m.
+    description: "Keynote Speaker",
   },
   {
     time: config.event.end.set({ hour: 21, minute: 30 }), // 9:30 p.m.
