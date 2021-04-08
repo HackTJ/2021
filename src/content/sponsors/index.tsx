@@ -163,7 +163,7 @@ const Sponsors = () => (
               name: "Volare Labs",
             },
             {
-              url: "https://www.stickermule.com/",
+              url: "https://hackp.ac/mlh-stickermule-hackathons",
               logo: "stickermule.png",
               name: "Sticker Mule",
             },
