@@ -162,6 +162,11 @@ const Sponsors = () => (
               logo: "volarelabs.png",
               name: "Volare Labs",
             },
+            {
+              url: "https://www.stickermule.com/",
+              logo: "stickermule.png",
+              name: "Sticker Mule",
+            },
           ].map((company) => (
             <Logo
               name={company.name}

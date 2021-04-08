@@ -14,7 +14,7 @@
     "react-dom": "^17.0.2",
     "react-helmet-async": "^1.0.9",
     "react-map-gl": "^6.1.11",
-    "react-parallax-tilt": "^1.5.2",
+    "react-parallax-tilt": "^1.5.3",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "reactstrap": "^8.9.0",
@@ -61,7 +61,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^13.1.1",
-    "@types/chart.js": "^2.9.31",
+    "@types/chart.js": "^2.9.32",
     "@types/jest": "^26.0.22",
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.37",
@@ -89,7 +89,7 @@
     "react-snap": "^1.23.0",
     "serve": "^11.3.2",
     "source-map-explorer": "^2.5.2",
-    "typescript": "4.2.3"
+    "typescript": "4.2.4"
   },
   "repository": {
     "type": "git",

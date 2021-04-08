@@ -2787,12 +2787,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chart.js@npm:^2.9.31":
-  version: 2.9.31
-  resolution: "@types/chart.js@npm:2.9.31"
+"@types/chart.js@npm:^2.9.32":
+  version: 2.9.32
+  resolution: "@types/chart.js@npm:2.9.32"
   dependencies:
     moment: ^2.10.2
-  checksum: 3cb82bd8209d337161899f0dd4fcd6896e44992bd648cd54390805feb67e322c04722dc9c377f1a828029a23e753391073359d271ede52ca6d7be0fed72025be
+  checksum: c7606fc1b399425cd152186d6933cd588d41dd42eca145601cc7f7b238a7f65d6a1117e59c36b3a0783d5b85b29502c83801876f2b59b760a2dd5e17e4875865
   languageName: node
   linkType: hard
 
@@ -8498,7 +8498,7 @@ fsevents@^1.2.7:
     "@testing-library/jest-dom": ^5.11.10
     "@testing-library/react": ^11.2.6
     "@testing-library/user-event": ^13.1.1
-    "@types/chart.js": ^2.9.31
+    "@types/chart.js": ^2.9.32
     "@types/jest": ^26.0.22
     "@types/lodash": ^4.14.168
     "@types/node": ^14.14.37
@@ -8532,7 +8532,7 @@ fsevents@^1.2.7:
     react-dom: ^17.0.2
     react-helmet-async: ^1.0.9
     react-map-gl: ^6.1.11
-    react-parallax-tilt: ^1.5.2
+    react-parallax-tilt: ^1.5.3
     react-router: ^6.0.0-beta.0
     react-router-dom: ^6.0.0-beta.0
     react-scripts: ^4.0.3
@@ -8540,7 +8540,7 @@ fsevents@^1.2.7:
     reactstrap: ^8.9.0
     serve: ^11.3.2
     source-map-explorer: ^2.5.2
-    typescript: 4.2.3
+    typescript: 4.2.4
     web-vitals: ^1.1.1
   languageName: unknown
   linkType: soft
@@ -13994,13 +13994,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-parallax-tilt@npm:^1.5.2":
-  version: 1.5.2
-  resolution: "react-parallax-tilt@npm:1.5.2"
+"react-parallax-tilt@npm:^1.5.3":
+  version: 1.5.3
+  resolution: "react-parallax-tilt@npm:1.5.3"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0
     react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 85968e318a86fa85f0de28d7215402345b3406d9e00aa40c75cd26e5d4dd09989284617ad53e08131bbef2c5852ff62e32c4e467b2d576c19daac0c9c3bcb16d
+  checksum: cd01182aff5154a689567565e958c8861f510505eb97bc22acfe12ce2446e4cb1aa2e5fe673000418db331b5b36993773ac49c89f1051d6e0bf6b6ca562622ee
   languageName: node
   linkType: hard
 
@@ -16610,23 +16610,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@4.2.3:
-  version: 4.2.3
-  resolution: "typescript@npm:4.2.3"
+typescript@4.2.4:
+  version: 4.2.4
+  resolution: "typescript@npm:4.2.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 06e8470f317db6f5e2fce809b20eb84a67a7d8179057abff36e5427bd1b891bd08e54581ff81f0fa36aef9b6d1eb0f54eaf6e2643c6dbd4e37a0adcc41eed256
+  checksum: edaede2fa77f56b7fba80ee624a2368ab1216e75b0434d968ccb47ab0a5e2f6d94f848b3b111c1237dd71e988cd376af26370dcdad3b94355c76e759f0dd0a1e
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.2.3#builtin<compat/typescript>":
-  version: 4.2.3
-  resolution: "typescript@patch:typescript@npm%3A4.2.3#builtin<compat/typescript>::version=4.2.3&hash=a45b0e"
+"typescript@patch:typescript@4.2.4#builtin<compat/typescript>":
+  version: 4.2.4
+  resolution: "typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: a8956044aabf730699bcc3c2475efdd3f35e509329325cf60b4989761d4c2188e2c474183e2cf92b8c201fcf976814a5a16f144508b2a832643c4f972d0ab803
+  checksum: 3be44317593182e8ce494c114e7ad9b0bb2553a22f3085cc6da4f0a36912c20850daa9be4c898af2ab6fc8b12f430c1c9e46ac715721867cd38643f2350d3ef9
   languageName: node
   linkType: hard
 
