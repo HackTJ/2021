@@ -16,11 +16,11 @@ const data = [
   {
     question: "What is HackTJ?",
     answer: (
-      <p>
+      <span>
         HackTJ is a student-run hackathon where you will have 24 hours to learn
         how to code and/or work with your friends to make your idea come to
         life.
-      </p>
+      </span>
     ),
   },
   {
@@ -117,13 +117,20 @@ const data = [
   {
     question: "What prizes can I win?",
     answer: (
-      <span>
+      <p>
         HackTJ hosts prizes for the best projects in the following categories:
-        Overall Hack, Web App, Mobile App,Design, Social Impact Hack, and
-        Beginner Hack (first-year coder teams). Major League Hacking and some of
-        our partners also host their own Sponsored Prizes, which you can explore
-        when the 7.5 Devpost goes live.
-      </span>
+        <ul>
+          <li>Overall Hack</li>
+          <li>Web App</li>
+          <li>Mobile App</li>
+          <li>Machine Learning/Artificial Intelligence Hack</li>
+          <li>Design</li>
+          <li>Social Impact</li>
+          <li>Beginner Hack (first-year coder teams)</li>
+        </ul>
+        Major League Hacking and some of our partners also host their own
+        Sponsored Prizes, which you can explore when the 8.0 Devpost goes live.
+      </p>
     ),
   },
   {

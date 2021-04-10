@@ -20,7 +20,7 @@ const teamData = [
   {
     name: "Forrest Meng",
     about:
-      "Forrest is a senior and serves as a sponsorship coordinator and maintains DevPost for HackTJ 7.5. He became interested in organizing HackTJ after participating in the hackathon for two years. Being interested in robotics and AI, Forrest is interested in how to spread STEM education and technology into everyday life, so he serves as part of the BranchOut! STEM Education Program management team. Besides interests in engineering and programming, Forrest also is a member of TJ’s Model UN team, a yearbook photographer, a school newspaper staff writer, and participates in the FIRST Tech Challenge.",
+      "Forrest is a senior and serves as a sponsorship coordinator and maintains DevPost for HackTJ. He became interested in organizing HackTJ after participating in the hackathon for two years. Being interested in robotics and AI, Forrest is interested in how to spread STEM education and technology into everyday life, so he serves as part of the BranchOut! STEM Education Program management team. Besides interests in engineering and programming, Forrest also is a member of TJ’s Model UN team, a yearbook photographer, a school newspaper staff writer, and participates in the FIRST Tech Challenge.",
     image: "ForrestMeng.png",
   },
   {
@@ -98,7 +98,7 @@ const teamData = [
   {
     name: "Ms. Razzino",
     about:
-      "Ms. Razzino is a Math Teacher at TJ and also one of the faculty sponsors of HackTJ 7.5. She was the Division Manager for Math and Computer Science at TJ for 5 years and gained an understanding and appreciation for computer science during that time. She also attended TJ back in the late 1990s and fondly remembers her Foundations of CS class. When not creating tests and grading papers, Ms. Razzino enjoys baking, skiing, travelling, and spending time with family and friends. ",
+      "Ms. Razzino is a Math Teacher at TJ and also the faculty sponsor of HackTJ. She was the Division Manager for Math and Computer Science at TJ for 5 years and gained an understanding and appreciation for computer science during that time. She also attended TJ back in the late 1990s and fondly remembers her Foundations of CS class. When not creating tests and grading papers, Ms. Razzino enjoys baking, skiing, travelling, and spending time with family and friends. ",
     image: "MsRazzino.jpg",
   },
 ];
