@@ -11,5 +11,15 @@
   </head>
   <body>
     <% preact.bodyEnd %>
+
+    <!-- Cloudflare Web Analytics -->
+    <!-- if someone tries to steal this script tag, they will not succeed
+      because CORS requires that the domain match hacktj.org -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "be2edd696ccd4193b6d93baebe896ec1"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>

@@ -1,4 +1,4 @@
-import { h, FunctionalComponent, Fragment } from "preact";
+import { h, VNode, FunctionalComponent, Fragment } from "preact";
 import { useState, useRef, useCallback, useEffect } from "preact/hooks";
 import { memo } from "preact/compat";
 
@@ -6,7 +6,7 @@ import styles from "./card.module.css";
 
 type Props = {
   question: string;
-  answer: JSX.Element;
+  answer: VNode;
   collapsed: boolean;
 };
 
