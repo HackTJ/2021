@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/2021/static/css/main.e7e2aa9c.chunk.css",
-    "main.js": "/2021/static/js/main.a5dcb9f5.chunk.js",
-    "main.js.map": "/2021/static/js/main.a5dcb9f5.chunk.js.map",
+    "main.js": "/2021/static/js/main.da116fb8.chunk.js",
+    "main.js.map": "/2021/static/js/main.da116fb8.chunk.js.map",
     "runtime-main.js": "/2021/static/js/runtime-main.d01bc500.js",
     "runtime-main.js.map": "/2021/static/js/runtime-main.d01bc500.js.map",
     "static/js/2.0e2124de.chunk.js": "/2021/static/js/2.0e2124de.chunk.js",
@@ -28,7 +28,7 @@
     "static/media/SumanthRatna.png": "/2021/static/media/SumanthRatna.c4b7353f.png",
     "static/media/TammyDing.png": "/2021/static/media/TammyDing.a3af72f8.png",
     "static/media/armyrotc.png": "/2021/static/media/armyrotc.bc084e6c.png",
-    "static/media/bigweblogo.a545926d.svg": "/2021/static/media/bigweblogo.a545926d.svg",
+    "static/media/bigweblogo.5d65412c.svg": "/2021/static/media/bigweblogo.5d65412c.svg",
     "static/media/brandmakers.png": "/2021/static/media/brandmakers.e396b738.png",
     "static/media/cvent.png": "/2021/static/media/cvent.877f8ddb.png",
     "static/media/eastbanc.png": "/2021/static/media/eastbanc.cfdd80a4.png",
@@ -52,6 +52,6 @@
     "static/js/runtime-main.d01bc500.js",
     "static/js/2.0e2124de.chunk.js",
     "static/css/main.e7e2aa9c.chunk.css",
-    "static/js/main.a5dcb9f5.chunk.js"
+    "static/js/main.da116fb8.chunk.js"
   ]
 }
