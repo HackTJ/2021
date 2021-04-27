@@ -84,7 +84,7 @@ const graduationData: {
 };
 Object.freeze(graduationData);
 
-const Statistics = (): JSX.Element => (
+const Statistics = () => (
   <>
     <a className="anchor" id="demographics" href="#demographics">
       Demographics
