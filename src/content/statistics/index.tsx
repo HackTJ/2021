@@ -30,27 +30,7 @@ const schoolData: {
   datasets: [
     {
       data: [
-        413,
-        19,
-        15,
-        13,
-        12,
-        9,
-        9,
-        6,
-        5,
-        4,
-        4,
-        4,
-        4,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        15,
+        413, 19, 15, 13, 12, 9, 9, 6, 5, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 15,
       ],
     },
   ],
@@ -96,13 +76,13 @@ const Statistics = () => (
         </div>
         <h1 className="section-title">Demographics</h1>
         <div>
-          <Pie data={schoolData} />
+          <Pie data={schoolData} type="pie" />
         </div>
         <div>
-          <Pie data={genderData} />
+          <Pie data={genderData} type="pie" />
         </div>
         <div>
-          <Pie data={graduationData} />
+          <Pie data={graduationData} type="pie" />
         </div>
       </div>
     </section>
