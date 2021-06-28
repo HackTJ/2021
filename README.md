@@ -15,10 +15,10 @@ We use React.
 ### Creating a New Event Website
 
 ```sh
-git clone git@github.com:HackTJ/2021.git
+git clone git@github.com:HackTJ/2021.git 2022 && cd 2022/
+yarn install
 git reset "$(git commit-tree HEAD^"{tree}" -m "Push HackTJ 8.0 website" -m "$(yarn run git-history-coauthors)")"  # squash all commits into 1
-git remote remove origin
-git remote add origin git@github.com:HackTJ/2022.git
+git remote set-url origin git@github.com:HackTJ/2022.git
 git push
 ```
 
